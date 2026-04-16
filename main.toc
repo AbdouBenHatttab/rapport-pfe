@@ -1,0 +1,25 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{General Introduction}{1}{section*.1}%
+\contentsline {chapter}{Chapter 1: Project Context Presentation}{2}{section*.2}%
+\contentsline {section}{Introduction}{2}{section*.3}%
+\contentsline {section}{I. Host organization presentation}{2}{section*.4}%
+\contentsline {subsection}{I.1 General presentation of Arab Soft}{2}{section*.5}%
+\contentsline {subsection}{I.2 Arab Soft in Tunisia}{3}{section*.8}%
+\contentsline {section}{II. Project presentation}{3}{section*.9}%
+\contentsline {subsection}{II.1 Current-state study}{3}{section*.10}%
+\contentsline {subsection}{II.2 Current-state critique}{3}{section*.11}%
+\contentsline {subsection}{II.3 Proposed solution}{4}{section*.12}%
+\contentsline {section}{III. Adopted methodologies and formalism}{5}{section*.13}%
+\contentsline {subsection}{III.1 Modeling and design methodology}{5}{section*.14}%
+\contentsline {subsection}{III.2 Working methodology}{5}{section*.17}%
+\contentsline {section}{IV. Development environment}{7}{section*.20}%
+\contentsline {subsection}{IV.1 Hardware environment}{7}{section*.23}%
+\contentsline {subsection}{IV.2 Software environment}{8}{section*.26}%
+\contentsline {subsection}{IV.3 Technologies used}{9}{section*.27}%
+\contentsline {section}{V. Application architecture}{9}{section*.28}%
+\contentsline {subsection}{V.1 Global architecture}{9}{section*.29}%
+\contentsline {subsection}{V.2 Frontend part: SPA architecture with React}{10}{section*.30}%
+\contentsline {subsection}{V.3 Backend part: layered architecture with Spring Boot}{11}{section*.33}%
+\contentsline {subsection}{V.4 Why these architectures?}{11}{section*.36}%
+\contentsline {subsection}{V.5 Global architecture illustration}{12}{section*.37}%
+\contentsline {section}{Conclusion}{12}{section*.39}%

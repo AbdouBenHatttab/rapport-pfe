@@ -1,0 +1,21 @@
+﻿% NO \documentclass
+% NO \usepackage
+% NO \begin{document}
+\newpage
+\thispagestyle{empty}
+
+% Format: "Figure X : " before each entry
+\renewcommand{\cftfigpresnum}{Figure }
+\renewcommand{\cftfigaftersnum}{ : }
+\setlength{\cftfignumwidth}{6em}
+
+\renewcommand{\listfigurename}{%
+  \begin{center}%
+    {\fontsize{24}{28}\selectfont \textbf{List of Figures}}%
+  \end{center}%
+}
+
+\listoffigures
+\thispagestyle{empty}
+
+% NO \end{document}

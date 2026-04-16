@@ -1,0 +1,687 @@
+% NO \documentclass
+% NO \usepackage
+% NO \begin{document}
+\newpage
+
+% ============================================================
+% HEADER: enabled here for all pages of this chapter
+% ============================================================
+\fancyhead[L]{\fontsize{10}{12}\selectfont Chapter 1: Project Context Presentation}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+% First page of chapter: no header, page number only
+\thispagestyle{plain}
+
+% ============================================================
+%  TABLE OF CONTENTS ENTRIES
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{chapter}{Chapter 1: Project Context Presentation}
+
+% ============================================================
+%  CHAPTER TITLE
+% ============================================================
+\begin{center}
+  {\fontsize{20}{24}\selectfont \textbf{Chapter 1}}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.3cm}
+
+\begin{center}
+  {\fontsize{20}{24}\selectfont \textbf{Project Context Presentation}}
+\end{center}
+
+\vspace{0.6cm}
+
+% ============================================================
+%  INTRODUCTION
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{Introduction}
+{\fontsize{16}{20}\selectfont \textbf{Introduction}}
+
+\vspace{6pt}
+
+{\fontsize{12}{16}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This chapter establishes the foundations of my project. I first present the host organization Arab Soft, its background, and its mission. Next, I analyze the current challenges related to the management of internal administrative requests, project and task follow-up, and organizational coordination. Finally, I present my proposed solution and the methodology adopted for implementation.
+
+}
+
+\vspace{6pt}
+
+% ============================================================
+%  I. HOST ORGANIZATION PRESENTATION
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{I. Host organization presentation}
+{\fontsize{16}{20}\selectfont \textbf{I. Host organization presentation}}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{I.1 General presentation of Arab Soft}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 1. General presentation of Arab Soft}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent \textbf{Arab Soft} is a company specialized in software engineering and digital solutions for organizations. It operates in several areas such as business process management, enterprise application development, systems integration, and digital transformation support. Through its experience in information systems, the company assists institutions in modernizing operations and improving service quality.
+
+\indent Arab Soft combines \textbf{technological expertise} and \textbf{business understanding} to deliver reliable and scalable solutions adapted to client needs. With a structured project approach and multidisciplinary teams, the company supports organizations in optimizing internal workflows, improving traceability, and increasing overall operational efficiency.
+
+}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{1}Arab Soft logo}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=5cm]{arabsoft_logo.jpg}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 1 :} Arab Soft logo}
+\end{figure}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{I.2 Arab Soft in Tunisia}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 2. Arab Soft in Tunisia}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent In Tunisia, \textbf{Arab Soft} supports both public and private organizations in the digitalization of their internal processes. Its teams work on the design, development, deployment, and maintenance of business-oriented platforms, with a focus on security, scalability, and long-term maintainability. Key missions include process automation, workflow management, data centralization, and decision-support through structured reporting.
+
+}
+
+\vspace{6pt}
+
+% ============================================================
+%  II. PROJECT PRESENTATION
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{II. Project presentation}
+{\fontsize{16}{20}\selectfont \textbf{II. Project presentation}}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{II.1 Current-state study}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 1. Current-state study}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent At present, internal process management at Arab Soft relies on a combination of office tools and partially connected workflows. Daily practices include Excel files, email exchanges, messaging channels, and manual follow-up sheets to handle administrative requests and monitor project execution.
+
+\indent Although these tools support day-to-day operations, information remains distributed across multiple sources and teams. This fragmentation limits process visibility, slows coordination, and increases the risk of inconsistencies between request status, project progress, and assigned tasks.
+
+\indent The current operational flow mainly covers:
+
+\begin{itemize}[leftmargin=2cm, itemsep=2pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Administrative request handling}, to receive, validate, and process internal service requests.
+  \item \textbf{Project and task follow-up}, to plan activities, assign responsibilities, and track execution progress.
+  \item \textbf{Operational coordination}, to synchronize information between teams and ensure timely communication.
+  }
+\end{itemize}
+
+}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{II.2 Current-state critique}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 2. Current-state critique}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent Despite the use of multiple tools, several difficulties remain and reduce operational efficiency. Main issues include:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Data fragmentation:} Request, project, and task information is spread across multiple files and channels, which makes a coherent global view difficult.
+  \item \textbf{Decision-making limitations:} Without centralized data, decisions are often based on incomplete or outdated information, causing delays.
+  \item \textbf{Inefficient coordination:} Teams often work in silos without a shared platform, resulting in duplication, errors, and missed opportunities.
+  \item \textbf{Limited information access:} Stakeholders do not always have real-time access to updated information, reducing responsiveness.
+  }
+\end{itemize}
+
+\indent These limitations show that current tools and processes no longer fully meet Arab Soft's needs in a context where responsiveness, traceability, and coordination are essential.
+
+}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{II.3 Proposed solution}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 3. Proposed solution}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent To address these challenges, I propose the development of an \textbf{internal platform for request, project, and task management at Arab Soft}. The platform is designed to centralize operational data, structure workflow execution, and improve coordination across departments through a practical and intuitive environment. Key features include:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Data centralization:} All requests, projects, and tasks are stored in a unified database accessible in real time.
+  \item \textbf{Workflow management:} Structured request lifecycle with clear statuses, validation steps, and processing history.
+  \item \textbf{Project and task tracking:} Planning, assignment, prioritization, and progress monitoring through dedicated views.
+  \item \textbf{Role-based access:} Secure access control according to user profiles and organizational responsibilities.
+  \item \textbf{Dashboards and reporting:} Operational indicators for monitoring performance, identifying bottlenecks, and supporting decision-making.
+  }
+\end{itemize}
+
+\indent This solution provides a global real-time view of internal activities and improves efficiency, responsiveness, and traceability across the organization.
+
+\indent \textbf{Modular, secure, and scalable}, the platform is designed to adapt to Arab Soft's evolving needs while enabling progressive adoption and continuous process improvement.
+
+}
+
+\vspace{6pt}
+
+% ============================================================
+%  III. METHODOLOGIES AND FORMALISM
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{III. Adopted methodologies and formalism}
+{\fontsize{16}{20}\selectfont \textbf{III. Adopted methodologies and formalism}}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{III.1 Modeling and design methodology}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 1. Modeling and design methodology}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent For project modeling and design, I chose \textbf{UML (Unified Modeling Language)}. UML is a standardized visual language used to represent both system structure and behavior.
+
+\indent Using UML in this project allows me to:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Visualize requirements:} Use-case diagrams capture expected functionalities and actor-system interactions.
+  \item \textbf{Structure the system:} Class and sequence diagrams define module architecture and data/interaction flows.
+  \item \textbf{Facilitate communication:} UML provides a common language for developers, project managers, and clients.
+  }
+\end{itemize}
+
+\indent UML was selected for its flexibility, standardization, and ability to fit complex project needs. [1]
+
+}
+
+% Figure 2
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{2}UML logo}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=3cm]{uml_logo.png}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 2 :} UML logo}
+\end{figure}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{III.2 Working methodology}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 2. Working methodology}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent For project management, I adopted the \textbf{Agile} methodology, specifically the \textbf{Scrum} framework. This iterative and incremental approach supports requirement changes and continuous user feedback.
+
+}
+
+\vspace{6pt}
+
+{\fontsize{14}{18}\selectfont \textbf{\hspace{1cm} 2.1. Methodological choice (Scrum)}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent Scrum was chosen for several reasons:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Flexibility:} Scrum adapts quickly to change, which is critical when requirements evolve.
+  \item \textbf{Transparency:} Regular meetings (daily stand-ups, sprint reviews) ensure clear communication.
+  \item \textbf{Continuous delivery:} Sprint cycles provide continuous validation of implemented features.
+  }
+\end{itemize}
+
+}
+
+\vspace{6pt}
+
+{\fontsize{14}{18}\selectfont \textbf{\hspace{1cm} 2.2. Why Scrum?}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent Scrum is well suited to this project because it supports multidisciplinary teams and collaboration. It also helps to:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Maximize value:} Focus on high-priority features aligned with project objectives.
+  \item \textbf{Improve quality:} Frequent feedback and regular testing enable rapid issue detection and correction.
+  }
+\end{itemize}
+
+}
+
+\vspace{6pt}
+
+{\fontsize{14}{18}\selectfont \textbf{\hspace{1cm} 2.3. Scrum team roles}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent In this project, Scrum roles are distributed as follows:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Product Owner:} Defines priorities and manages the backlog to ensure delivered features meet user needs. In this project, the Product Owner is \textbf{Mr Mouadh Zidi}, my company supervisor.
+  \item \textbf{Scrum Master:} Ensures Scrum principles are followed and helps remove obstacles. In this project, the Scrum Master is \textbf{Mme Anissa CHALOUAH}, my ISET supervisor.
+  \item \textbf{Development Team:} Responsible for design, development, and testing of platform features. In this project, the development team is composed of \textbf{Abderrahmen Ben Hattab} only.
+  }
+\end{itemize}
+
+\indent This role distribution enables efficient collaboration and clear responsibilities, contributing directly to project success. [2]
+
+}
+
+\vspace{6pt}
+
+% Figure 3
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{3}Scrum team roles}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=13cm]{scrum_roles_custom.png}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 3 :} Scrum team roles}
+\end{figure}
+
+\vspace{6pt}
+
+% ============================================================
+%  IV. DEVELOPMENT ENVIRONMENT
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{IV. Development environment}
+{\fontsize{16}{20}\selectfont \textbf{IV. Development environment}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent To complete this project, an appropriate development environment was set up. It includes hardware resources, software tools, and modern technologies to ensure effective design, development, and deployment.
+
+}
+
+% Figure 4
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{4}SCRUM method}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=12cm]{scrum.png}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 4 :} SCRUM method}
+\end{figure}
+
+\vspace{6pt}
+
+% --- IV.1 ---
+\phantomsection
+\addcontentsline{toc}{subsection}{IV.1 Hardware environment}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 1. Hardware environment}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This project was developed on a laptop with the following specifications:
+
+}
+
+% Figure 5
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{5}my PC specifications}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=13cm]{specs_abderrahmen_ben_hattab.png}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 5 :} Abderrahmen Ben Hattab's PC specifications}
+\end{figure}
+
+
+
+% --- IV.2 ---
+\phantomsection
+\addcontentsline{toc}{subsection}{IV.2 Software environment}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 2. Software environment}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent For developing the internal request, project, and task management platform, several software tools were used. Each tool was selected for its specific features and its fit with project requirements.
+
+}
+
+% -------------------------------------------------------
+% Tool macro
+% -------------------------------------------------------
+\newcommand{\outil}[3]{%
+  \vspace{6pt}
+  \noindent\hspace{1.2cm}$\bullet$\space{\fontsize{12}{14}\selectfont\textbf{#1 :}}
+  \vspace{4pt}
+
+  \noindent\hspace{1.2cm}%
+  \begin{minipage}[c]{2.2cm}
+    \centering
+    \safeimg[height=1.8cm,keepaspectratio]{#2}
+  \end{minipage}%
+  \hspace{0.6cm}%
+  \begin{minipage}[c]{\dimexpr\textwidth-4.0cm\relax}
+    {\fontsize{12}{18}\selectfont\justifying\setlength{\parskip}{0pt} #3}
+  \end{minipage}
+  \vspace{6pt}
+  \par
+}
+
+\outil{Visual Studio Code}{vscode.png}{%
+  Main code editor used for \textbf{frontend} development with \textbf{React} and \textbf{Tailwind CSS}. Its lightweight design and extension ecosystem provide a productive environment for UI implementation.
+}
+
+\outil{IntelliJ IDEA}{intellij.png}{%
+  Integrated development environment used for \textbf{backend} development with \textbf{Spring Boot} and \textbf{PostgreSQL}. IntelliJ IDEA provides advanced autocompletion, debugging, refactoring, and native integration with Maven and Spring.
+}
+
+\outil{Postman}{postman.png}{%
+  Used to test and validate REST APIs developed with Spring Boot through an intuitive interface and strong debugging/documentation features.
+}
+
+\outil{Draw.io}{drawio.png}{%
+  Used to design UML diagrams (use case, class, sequence) and functional mockups due to ease of use and free access.
+}
+
+% Git and GitHub
+\vspace{6pt}
+\noindent\hspace{1.2cm}$\bullet$\space{\fontsize{12}{14}\selectfont\textbf{Git and GitHub :}}
+\vspace{4pt}
+
+\noindent\hspace{1.2cm}%
+\begin{minipage}[c]{2.2cm}
+  \centering
+  \safeimg[height=1.5cm,keepaspectratio]{git.png}\hspace{0.2cm}%
+  \safeimg[height=1.5cm,keepaspectratio]{github.png}
+\end{minipage}%
+\hspace{0.6cm}%
+\begin{minipage}[c]{\dimexpr\textwidth-4.0cm\relax}
+  {\fontsize{12}{18}\selectfont\justifying Used for version control and team collaboration, with reliable workflows and easy integration in Visual Studio Code and IntelliJ IDEA.}
+\end{minipage}
+\vspace{6pt}
+\par
+
+\clearpage
+\outil{Jira}{jira.png}{%
+  Used for task management and Scrum sprint tracking. It supports user-story planning, sprint monitoring, and progress reporting.
+}
+
+\outil{LaTeX}{latex.png}{%
+  \LaTeX{} was selected for report writing to ensure professional layout, accurate references, and typographic consistency across the document.
+}
+
+\outil{Figma}{figma.png}{%
+  Used to create wireframes for the user interface. It enables quick visual prototyping and ergonomic validation before development.
+}
+
+
+
+
+
+\vspace{12pt}
+
+% ============================================================
+%  IV.3 TECHNOLOGIES USED
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{subsection}{IV.3 Technologies used}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 3. Technologies used}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The following technologies were chosen for their fit with project requirements and their ability to deliver a modern, high-performance solution.
+
+}
+
+\vspace{4pt}
+
+\outil{React}{react.png}{%
+  Main frontend library used to build the platform interface. React provides reusable components, efficient rendering, and flexible state management for scalable user interfaces.
+}
+
+\outil{Tailwind CSS}{tailwind.png}{%
+  Utility-first CSS framework used for interface styling and layout. Tailwind CSS enables fast, consistent, and responsive UI development while supporting design customization.
+}
+
+\outil{Spring Boot}{springboot.png}{%
+  Java framework used for \textbf{backend} development based on a \textbf{layered architecture}. Spring Boot simplifies secure and high-performance REST API development through auto-configuration and a rich ecosystem.
+}
+
+\outil{PostgreSQL}{postgresql.png}{%
+  Relational database management system used for platform data storage and management. PostgreSQL was selected for reliability, performance, and strong support for complex queries and data integrity.
+}
+
+
+
+\vspace{12pt}
+
+% ============================================================
+%  V. APPLICATION ARCHITECTURE
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{V. Application architecture}
+{\fontsize{16}{20}\selectfont \textbf{V. Application architecture}}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{V.1 Global architecture}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 1. Global architecture}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The application follows a web-only architecture based on two complementary parts: a \textbf{Single-Page Application (SPA)} frontend and a \textbf{layered} backend. This structure ensures clear separation of responsibilities, smooth integration through REST APIs, and maintainable system evolution.
+
+}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{V.2 Frontend part: SPA architecture with React}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 2. Frontend part: SPA architecture with React}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The frontend part is implemented as a \textbf{Single-Page Application (SPA)} using \textbf{React} and \textbf{Tailwind CSS}. This architecture was selected for modularity, responsiveness, and smooth client-side navigation.
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{UI component layer:} Contains reusable React components responsible for rendering views and handling user interactions.
+  \item \textbf{State and service layer:} Centralizes frontend logic, state handling, and REST API communication with the backend.
+  \item \textbf{Routing layer:} Manages client-side navigation between pages without full page reload.
+  }
+\end{itemize}
+
+}
+
+% Figure 7
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{7}SPA frontend architecture with React}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=13cm]{arch_frontend.jpg}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 7 :} SPA frontend architecture with React}
+\end{figure}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{V.3 Backend part: layered architecture with Spring Boot}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 3. Backend part: layered architecture with Spring Boot}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The backend is based on a \textbf{layered architecture}, implemented with \textbf{Spring Boot} and \textbf{PostgreSQL}. This architecture structures the backend into clear functional layers, improving maintainability, testability, and scalability.
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Controller layer:} Spring MVC REST controllers expose API endpoints and handle HTTP requests from the React frontend.
+  \item \textbf{Service layer:} Contains business logic, validation rules, and orchestration of application use cases.
+  \item \textbf{Repository layer:} Spring Data JPA repositories handle persistence and data access in \textbf{PostgreSQL}.
+  }
+\end{itemize}
+
+}
+
+% Figure 8
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{8}Layered architecture with Spring Boot}
+\begin{figure}[H]
+  \centering
+  \safeimg[width=11cm]{arch_backend.jpg}
+  \caption*{\fontsize{10}{12}\selectfont \textbf{Figure 8 :} Layered architecture with Spring Boot}
+\end{figure}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{V.4 Why these architectures?}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 4. Why these architectures?}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These architectures were selected for several reasons:
+
+\begin{itemize}[leftmargin=2cm, itemsep=4pt]
+  {\fontsize{12}{18}\selectfont
+  \item \textbf{Separation of concerns:} Layered architecture for both web and backend provides clear responsibility boundaries.
+  \item \textbf{Compatibility and modularity:} React and Spring Boot are complementary and modular technologies.
+  \item \textbf{Scalability:} The application structure supports growth and adaptation to new needs.
+  \item \textbf{Performance:} REST APIs ensure efficient communication between frontend and backend with responsive asynchronous flows.
+  }
+\end{itemize}
+
+}
+
+\vspace{6pt}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{V.5 Global architecture illustration}
+{\fontsize{14}{18}\selectfont \textbf{\hspace{0.5cm} 5. Global architecture illustration}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The image below illustrates the global application architecture, including the SPA frontend (React) connected to a layered Spring Boot backend via REST APIs, with PostgreSQL as the database management system:
+
+}
+
+\vspace{6pt}
+
+% Figure 9
+\phantomsection
+\addcontentsline{lof}{figure}{\protect\numberline{9}Global Application Architecture}
+\begin{center}
+  \safeimg[width=13cm]{arch_globale.jpg}\\[6pt]
+  {\fontsize{10}{12}\selectfont \textbf{Figure 9 :} Global Application Architecture}
+\end{center}
+
+\vspace{12pt}
+
+% ============================================================
+%  CHAPTER CONCLUSION
+% ============================================================
+\phantomsection
+\addcontentsline{toc}{section}{Conclusion}
+{\fontsize{16}{20}\selectfont \textbf{Conclusion}}
+
+\vspace{6pt}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This chapter presented the general project context: the host organization  ArabSoft, current training management challenges, the proposed solution, as well as the adopted methodologies and development environment. These elements provide the foundation for the rest of the work. The next chapter focuses on product backlog planning and functional requirement identification.
+
+}
+
+% NO \end{document}

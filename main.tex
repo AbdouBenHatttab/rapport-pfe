@@ -1,0 +1,158 @@
+﻿\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{mathptmx}          % Times New Roman 12pt (guide)
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{setspace}          % 1.5 line spacing
+\usepackage{ragged2e}          % \justify command
+\usepackage{tocloft}           % TOC / LOF / LOT formatting
+\usepackage{fancyhdr}          % custom headers
+\usepackage{caption}           % figure captions
+\usepackage[english]{babel}    % English typography
+\usepackage[hidelinks]{hyperref} % clickable TOC links without colored borders
+\usepackage{xcolor}
+
+% Margins: top=2.5, bottom=2.5, left=3, right=2
+\geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=2cm}
+\graphicspath{{sections/page_garde/img/}{sections/dedicace/img/}{sections/remerciements/img/}{sections/table_matieres/img/}{sections/liste_figures/img/}{sections/liste_tableaux/img/}{sections/introduction_generale/img/}{sections/chapitre1/img/}}
+
+% Fallback image macro: if image file is missing, show an inline warning box
+\newcommand{\safeimg}[2][]{%
+  \IfFileExists{#2}{%
+    \includegraphics[#1]{#2}%
+  }{%
+    \IfFileExists{sections/page_garde/img/#2}{%
+      \includegraphics[#1]{sections/page_garde/img/#2}%
+    }{%
+      \IfFileExists{sections/chapitre1/img/#2}{%
+        \includegraphics[#1]{sections/chapitre1/img/#2}%
+      }{%
+          \IfFileExists{sections/introduction_generale/img/#2}{%
+            \includegraphics[#1]{sections/introduction_generale/img/#2}%
+          }{%
+            \IfFileExists{sections/remerciements/img/#2}{%
+              \includegraphics[#1]{sections/remerciements/img/#2}%
+            }{%
+              \IfFileExists{sections/dedicace/img/#2}{%
+                \includegraphics[#1]{sections/dedicace/img/#2}%
+              }{%
+                \IfFileExists{sections/table_matieres/img/#2}{%
+                  \includegraphics[#1]{sections/table_matieres/img/#2}%
+                }{%
+                  \IfFileExists{sections/liste_figures/img/#2}{%
+                    \includegraphics[#1]{sections/liste_figures/img/#2}%
+                  }{%
+                    \IfFileExists{sections/liste_tableaux/img/#2}{%
+                      \includegraphics[#1]{sections/liste_tableaux/img/#2}%
+                    }{%
+                      \fcolorbox{red}{white}{\textcolor{red}{* \texttt{\detokenize{#2}} not found}}%
+                    }%
+                  }%
+                }%
+              }%
+            }%
+          }%
+        }%
+    }%
+  }%
+}
+
+% 1.5 line spacing
+\onehalfspacing
+
+% Justified body text by default
+\justifying
+
+% -------------------------------------------------------
+% GLOBAL FANCYHDR CONFIGURATION
+% -------------------------------------------------------
+\fancyhf{}                           % clear all header/footer fields
+\renewcommand{\headrulewidth}{0.4pt} % horizontal line under header
+\fancyfoot[C]{\thepage}              % centered page number in footer
+
+% -------------------------------------------------------
+% TABLE OF CONTENTS - centered bold 24pt
+% -------------------------------------------------------
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{24}{28}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\setlength{\cftbeforetoctitleskip}{-1cm}
+\setlength{\cftaftertoctitleskip}{0.8cm}
+
+% Chapter style in TOC (bold)
+\renewcommand{\cftchapfont}{\fontsize{12}{16}\selectfont\bfseries}
+\renewcommand{\cftchappagefont}{\fontsize{12}{16}\selectfont\bfseries}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforechapskip}{6pt}
+
+% Section style in TOC
+\renewcommand{\cftsecfont}{\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsecpagefont}{\fontsize{12}{16}\selectfont}
+\renewcommand{\cftdotsep}{1}
+\setlength{\cftbeforesecskip}{3pt}
+
+% Subsection style in TOC
+\renewcommand{\cftsubsecfont}{\fontsize{12}{16}\selectfont}
+\renewcommand{\cftsubsecpagefont}{\fontsize{12}{16}\selectfont}
+\setlength{\cftbeforesubsecskip}{2pt}
+
+% -------------------------------------------------------
+% LIST OF FIGURES - centered bold 16pt
+% -------------------------------------------------------
+\renewcommand{\cftloftitlefont}{\hfill\fontsize{16}{19.2}\selectfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\setlength{\cftbeforeloftitleskip}{-1cm}
+\setlength{\cftafterloftitleskip}{0.8cm}
+\renewcommand{\cftfigpresnum}{Figure\space}
+\renewcommand{\cftfigaftersnum}{ : }
+\setlength{\cftfignumwidth}{5.5em}
+\renewcommand{\cftfigfont}{\fontsize{12}{16}\selectfont}
+\renewcommand{\cftfigpagefont}{\fontsize{12}{16}\selectfont}
+\setlength{\cftbeforefigskip}{4pt}
+
+% -------------------------------------------------------
+% LIST OF TABLES - centered bold 16pt
+% -------------------------------------------------------
+\renewcommand{\cftlottitlefont}{\hfill\fontsize{16}{19.2}\selectfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\setlength{\cftbeforelottitleskip}{-1cm}
+\setlength{\cftafterlottitleskip}{0.8cm}
+\renewcommand{\cfttabpresnum}{Table\space}
+\renewcommand{\cfttabaftersnum}{ : }
+\setlength{\cfttabnumwidth}{5.5em}
+\renewcommand{\cfttabfont}{\fontsize{12}{16}\selectfont}
+\renewcommand{\cfttabpagefont}{\fontsize{12}{16}\selectfont}
+\setlength{\cftbeforetabskip}{4pt}
+
+\begin{document}
+
+% -------------------------------------------------------
+% PRELIMINARY PAGES: no numbering, no header
+% -------------------------------------------------------
+\pagestyle{empty}
+\pagenumbering{gobble}
+\include{sections/page_garde/page_garde}
+\include{sections/dedicace/dedicace}
+\include{sections/remerciements/remerciements}
+\include{sections/table_matieres/table_matieres}
+\include{sections/liste_figures/liste_figures}
+\include{sections/liste_tableaux/liste_tableaux}
+
+% -------------------------------------------------------
+% REPORT BODY: arabic numbering from introduction
+% -------------------------------------------------------
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{plain}
+\include{sections/introduction_generale/introduction_generale}
+\include{sections/chapitre1/chapitre1}
+% Uncomment for next chapters:
+% \include{chapitre2}
+% \include{chapitre3}
+
+\end{document}
