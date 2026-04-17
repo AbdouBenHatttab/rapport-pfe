@@ -35,16 +35,17 @@
 \contentsline {subsection}{II.3 Team and employee management}{17}{section*.42}%
 \contentsline {subsection}{II.4 Project and task management}{17}{section*.43}%
 \contentsline {subsection}{II.5 Notification and reporting}{17}{section*.44}%
-\contentsline {section}{III. Non-Functional Requirements}{17}{section*.45}%
-\contentsline {subsection}{III.1 Security}{17}{section*.46}%
-\contentsline {subsection}{III.2 Performance}{17}{section*.47}%
-\contentsline {subsection}{III.3 Usability}{17}{section*.48}%
-\contentsline {subsection}{III.4 Maintainability}{17}{section*.49}%
-\contentsline {subsection}{III.5 Scalability}{18}{section*.50}%
-\contentsline {section}{IV. User Stories}{18}{section*.51}%
-\contentsline {subsection}{IV.1 Employee User Stories}{18}{section*.52}%
-\contentsline {subsection}{IV.2 Team Leader User Stories}{19}{section*.53}%
-\contentsline {subsection}{IV.3 HR Manager User Stories}{20}{section*.54}%
-\contentsline {section}{V. Product Backlog}{21}{section*.55}%
-\contentsline {section}{VI. Release Organization}{27}{section*.56}%
-\contentsline {section}{Conclusion}{27}{section*.58}%
+\contentsline {subsection}{II.6 AI assistance and decision support}{17}{section*.45}%
+\contentsline {section}{III. Non-Functional Requirements}{17}{section*.46}%
+\contentsline {subsection}{III.1 Security}{17}{section*.47}%
+\contentsline {subsection}{III.2 Performance}{17}{section*.48}%
+\contentsline {subsection}{III.3 Usability}{17}{section*.49}%
+\contentsline {subsection}{III.4 Maintainability}{18}{section*.50}%
+\contentsline {subsection}{III.5 Scalability}{18}{section*.51}%
+\contentsline {section}{IV. User Stories}{18}{section*.52}%
+\contentsline {subsection}{IV.1 Employee User Stories}{18}{section*.53}%
+\contentsline {subsection}{IV.2 Team Leader User Stories}{19}{section*.54}%
+\contentsline {subsection}{IV.3 HR Manager User Stories}{20}{section*.55}%
+\contentsline {section}{V. Product Backlog}{22}{section*.56}%
+\contentsline {section}{VI. Release Organization}{28}{section*.57}%
+\contentsline {section}{Conclusion}{28}{section*.59}%
