@@ -1,9 +1,10 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}Arab Soft logo}{2}{section*.6}%
-\contentsline {figure}{\numberline {2}UML logo}{5}{section*.15}%
-\contentsline {figure}{\numberline {3}Scrum team roles}{7}{section*.18}%
-\contentsline {figure}{\numberline {4}SCRUM method}{7}{section*.21}%
-\contentsline {figure}{\numberline {5}my PC specifications}{7}{section*.24}%
-\contentsline {figure}{\numberline {7}SPA frontend architecture with React}{10}{section*.31}%
-\contentsline {figure}{\numberline {8}Layered architecture with Spring Boot}{11}{section*.34}%
-\contentsline {figure}{\numberline {9}Global Application Architecture}{12}{section*.38}%
+\contentsline {figure}{\numberline {1}{\ignorespaces ArabSoft logo}}{2}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces UML logo}}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Scrum team roles}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces SCRUM method}}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {5}{\ignorespaces PC specifications used for development}}{8}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces MVVM frontend architecture with React}}{12}{figure.caption.25}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Layered architecture with Spring Boot}}{13}{figure.caption.27}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Global application architecture}}{15}{figure.caption.30}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Organization of Releases}}{27}{figure.caption.57}%

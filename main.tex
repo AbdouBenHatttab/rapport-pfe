@@ -6,8 +6,10 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{multirow}
+\usepackage{tabularx}
 \usepackage{array}
 \usepackage{enumitem}
+\usepackage{needspace}
 \usepackage{setspace}          % 1.5 line spacing
 \usepackage{ragged2e}          % \justify command
 \usepackage{tocloft}           % TOC / LOF / LOT formatting
@@ -15,7 +17,11 @@
 \usepackage{caption}           % figure captions
 \usepackage[english]{babel}    % English typography
 \usepackage[hidelinks]{hyperref} % clickable TOC links without colored borders
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,fit,positioning}
 
 % Margins: top=2.5, bottom=2.5, left=3, right=2
 \geometry{top=2.5cm, bottom=2.5cm, left=3cm, right=2cm}
@@ -67,6 +73,29 @@
 
 % Justified body text by default
 \justifying
+
+% Report-specific heading helpers.
+\newcommand{\ReportSection}[2]{%
+  \Needspace{5\baselineskip}%
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}%
+  {\fontsize{16}{20}\selectfont \textbf{#2}}%
+  \par\vspace{6pt}%
+}
+
+\newcommand{\ReportSubsection}[2]{%
+  \Needspace{4\baselineskip}%
+  \phantomsection
+  \addcontentsline{toc}{subsection}{#1}%
+  {\fontsize{14}{18}\selectfont \textbf{#2}}%
+  \par\vspace{6pt}%
+}
+
+\newcommand{\ReportSubsubsection}[1]{%
+  \Needspace{4\baselineskip}%
+  {\fontsize{14}{18}\selectfont \textbf{#1}}%
+  \par\vspace{6pt}%
+}
 
 % -------------------------------------------------------
 % GLOBAL FANCYHDR CONFIGURATION
@@ -151,6 +180,7 @@
 \pagestyle{plain}
 \include{sections/introduction_generale/introduction_generale}
 \include{sections/chapitre1/chapitre1}
+\input{sections/chapitre2/chapitre2}
 % Uncomment for next chapters:
 % \include{chapitre2}
 % \include{chapitre3}
