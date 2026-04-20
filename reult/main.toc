@@ -1,0 +1,68 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{General Introduction}{1}{section*.1}%
+\contentsline {chapter}{Chapter 1: Project Context Presentation}{2}{section*.2}%
+\contentsline {section}{I. Host organization presentation}{2}{section*.3}%
+\contentsline {subsection}{I.1 General presentation of ArabSoft}{2}{section*.4}%
+\contentsline {subsection}{I.2 ArabSoft in Tunisia}{2}{section*.6}%
+\contentsline {section}{II. Project presentation}{3}{section*.7}%
+\contentsline {subsection}{II.1 Current-state study}{3}{section*.8}%
+\contentsline {subsection}{II.2 Current-state critique}{3}{section*.9}%
+\contentsline {subsection}{II.3 Proposed solution}{4}{section*.10}%
+\contentsline {section}{III. Adopted methodologies and formalism}{5}{section*.11}%
+\contentsline {subsection}{III.1 Modeling and design methodology}{5}{section*.12}%
+\contentsline {subsection}{III.2 Working methodology}{5}{section*.14}%
+\contentsline {section}{IV. Development environment}{7}{section*.16}%
+\contentsline {subsection}{IV.1 Hardware environment}{7}{section*.18}%
+\contentsline {subsection}{IV.2 Software environment}{8}{section*.20}%
+\contentsline {subsection}{IV.3 Technologies used}{9}{section*.21}%
+\contentsline {section}{V. Application architecture}{11}{section*.22}%
+\contentsline {subsection}{V.1 Global architecture}{11}{section*.23}%
+\contentsline {subsection}{V.2 Frontend part: MVVM architecture with React}{11}{section*.24}%
+\contentsline {subsection}{V.3 Backend part: layered architecture with Spring Boot}{13}{section*.26}%
+\contentsline {subsection}{V.4 Why these architectures?}{14}{section*.28}%
+\contentsline {subsection}{V.5 Global architecture illustration}{14}{section*.29}%
+\contentsline {section}{Conclusion}{15}{section*.31}%
+\contentsline {chapter}{Chapter 2: Product Backlog Planning}{16}{section*.32}%
+\contentsline {section}{Introduction}{16}{section*.33}%
+\contentsline {section}{I. Actor Identification}{16}{section*.34}%
+\contentsline {subsection}{I.1 Employee}{16}{section*.35}%
+\contentsline {subsection}{I.2 Team Leader}{16}{section*.36}%
+\contentsline {subsection}{I.3 HR Manager}{16}{section*.37}%
+\contentsline {subsection}{I.4 New User}{16}{section*.38}%
+\contentsline {section}{II. Functional Requirements}{16}{section*.39}%
+\contentsline {subsection}{II.1 Authentication and access management}{16}{section*.40}%
+\contentsline {subsection}{II.2 Administrative request management}{17}{section*.41}%
+\contentsline {subsection}{II.3 Team and employee management}{17}{section*.42}%
+\contentsline {subsection}{II.4 Project and task management}{17}{section*.43}%
+\contentsline {subsection}{II.5 Notification and reporting}{17}{section*.44}%
+\contentsline {subsection}{II.6 AI assistance and decision support}{17}{section*.45}%
+\contentsline {section}{III. Non-Functional Requirements}{17}{section*.46}%
+\contentsline {subsection}{III.1 Security}{17}{section*.47}%
+\contentsline {subsection}{III.2 Performance}{17}{section*.48}%
+\contentsline {subsection}{III.3 Usability}{17}{section*.49}%
+\contentsline {subsection}{III.4 Maintainability}{18}{section*.50}%
+\contentsline {subsection}{III.5 Scalability}{18}{section*.51}%
+\contentsline {section}{IV. User Stories}{18}{section*.52}%
+\contentsline {subsection}{IV.1 Employee User Stories}{18}{section*.53}%
+\contentsline {subsection}{IV.2 Team Leader User Stories}{19}{section*.54}%
+\contentsline {subsection}{IV.3 HR Manager User Stories}{20}{section*.55}%
+\contentsline {section}{V. Product Backlog}{21}{section*.56}%
+\contentsline {section}{VI. Release Organization}{28}{section*.57}%
+\contentsline {section}{Conclusion}{28}{section*.59}%
+\contentsline {chapter}{Chapter 3: Release 1 - Foundations}{29}{section*.60}%
+\contentsline {section}{Introduction}{29}{section*.61}%
+\contentsline {section}{I. Release Organization}{29}{section*.62}%
+\contentsline {section}{II. Sprint 1: Access}{29}{section*.64}%
+\contentsline {subsection}{II.1 Sprint Goal}{29}{section*.65}%
+\contentsline {subsection}{II.2 Visual Sprint Journal}{30}{section*.66}%
+\contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.68}%
+\contentsline {subsection}{II.4 Sprint Implementation}{32}{section*.71}%
+\contentsline {subsection}{II.5 Sprint Review}{37}{section*.85}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{38}{section*.86}%
+\contentsline {section}{III. Sprint 2: Leave Management}{38}{section*.87}%
+\contentsline {subsection}{III.1 Sprint Goal}{38}{section*.88}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{38}{section*.89}%
+\contentsline {subsection}{III.3 Sprint Implementation}{39}{section*.91}%
+\contentsline {subsection}{III.4 Sprint Review}{45}{section*.106}%
+\contentsline {subsection}{III.5 Sprint Retrospective}{46}{section*.107}%
+\contentsline {section}{Conclusion}{46}{section*.108}%

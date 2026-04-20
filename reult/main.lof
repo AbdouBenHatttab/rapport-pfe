@@ -1,0 +1,40 @@
+\babel@toc {english}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces ArabSoft logo}}{2}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces UML logo}}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Scrum team roles}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces SCRUM method}}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {5}{\ignorespaces PC specifications used for development}}{8}{figure.caption.19}%
+\contentsline {figure}{\numberline {6}{\ignorespaces MVVM frontend architecture with React}}{12}{figure.caption.25}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Layered architecture with Spring Boot}}{13}{figure.caption.27}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Global application architecture}}{15}{figure.caption.30}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Organization of Releases}}{28}{figure.caption.58}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Release 1 Organization}}{29}{figure.caption.63}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Jira Backlog -- Sprint 1}}{30}{figure.caption.67}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Use Case Diagram -- Sprint 1 Access}}{33}{figure.caption.72}%
+\contentsline {figure}{\numberline {13}{\ignorespaces System Sequence Diagram -- User Registration}}{34}{figure.caption.73}%
+\contentsline {figure}{\numberline {14}{\ignorespaces System Sequence Diagram -- Secure Login}}{34}{figure.caption.74}%
+\contentsline {figure}{\numberline {15}{\ignorespaces System Sequence Diagram -- Frontend Logout}}{34}{figure.caption.75}%
+\contentsline {figure}{\numberline {16}{\ignorespaces System Sequence Diagram -- Password Reset}}{35}{figure.caption.76}%
+\contentsline {figure}{\numberline {17}{\ignorespaces System Sequence Diagram -- HR Role Assignment}}{35}{figure.caption.77}%
+\contentsline {figure}{\numberline {18}{\ignorespaces System Sequence Diagram -- Account Activation / Deactivation}}{35}{figure.caption.78}%
+\contentsline {figure}{\numberline {19}{\ignorespaces State Diagram -- User Account Lifecycle}}{36}{figure.caption.79}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Domain Model -- Sprint 1}}{36}{figure.caption.80}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Participant Class Diagram -- Secure Login}}{36}{figure.caption.81}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Participant Class Diagram -- HR Role Assignment}}{37}{figure.caption.82}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Design Class Diagram -- Secure Login}}{37}{figure.caption.83}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Design Class Diagram -- HR Role Assignment}}{37}{figure.caption.84}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Jira Backlog -- Sprint 2}}{39}{figure.caption.90}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Use Case Diagram -- Sprint 2 Leave Management}}{41}{figure.caption.92}%
+\contentsline {figure}{\numberline {27}{\ignorespaces System Sequence Diagram -- Submit Leave Request}}{41}{figure.caption.93}%
+\contentsline {figure}{\numberline {28}{\ignorespaces System Sequence Diagram -- Cancel Leave Request}}{41}{figure.caption.94}%
+\contentsline {figure}{\numberline {29}{\ignorespaces System Sequence Diagram -- Track Leave Request Status}}{42}{figure.caption.95}%
+\contentsline {figure}{\numberline {30}{\ignorespaces System Sequence Diagram -- Team Leader Reviews Leave Request}}{42}{figure.caption.96}%
+\contentsline {figure}{\numberline {31}{\ignorespaces System Sequence Diagram -- Team Leader Approves / Rejects Leave Request}}{42}{figure.caption.97}%
+\contentsline {figure}{\numberline {32}{\ignorespaces System Sequence Diagram -- HR Final Decision on Leave Request}}{43}{figure.caption.98}%
+\contentsline {figure}{\numberline {33}{\ignorespaces State Diagram -- Leave Request Lifecycle}}{43}{figure.caption.99}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Domain Model -- Sprint 2}}{43}{figure.caption.100}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Participant Class Diagram -- Submit Leave Request}}{44}{figure.caption.101}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Participant Class Diagram -- Team Review of Leave Request}}{44}{figure.caption.102}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Participant Class Diagram -- HR Final Decision}}{44}{figure.caption.103}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Design Class Diagram -- Submit Leave Request}}{45}{figure.caption.104}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Design Class Diagram -- Leave Approval Workflow}}{45}{figure.caption.105}%

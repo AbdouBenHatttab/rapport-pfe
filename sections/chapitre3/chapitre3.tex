@@ -1,0 +1,486 @@
+% ============================================================
+%  CHAPTER 3: RELEASE 1 - FOUNDATIONS
+% ============================================================
+
+\fancyhead[L]{\fontsize{10}{12}\selectfont Chapter 3: Release 1 - Foundations}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Chapter 3: Release 1 - Foundations}
+
+\newcommand{\ChapterThreePlaceholder}[1]{%
+  \fbox{%
+    \begin{minipage}[c][5.2cm][c]{0.88\textwidth}
+      \centering
+      {\fontsize{13}{16}\selectfont\bfseries #1}
+    \end{minipage}%
+  }%
+}
+
+\newcommand{\ChapterThreeFigure}[3]{%
+  \begin{figure}[H]
+    \centering
+    \if\relax\detokenize{#1}\relax
+      \ChapterThreePlaceholder{#2}
+    \else
+      \IfFileExists{#1}{%
+        \includegraphics[width=0.9\textwidth,keepaspectratio]{#1}%
+      }{%
+        \ChapterThreePlaceholder{#2}%
+      }%
+    \fi
+    \caption{#2}
+    \label{fig:#3}
+  \end{figure}
+}
+
+\begin{center}
+  {\fontsize{18}{22}\selectfont \textbf{Chapter 3}}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{center}
+  {\fontsize{20}{24}\selectfont \textbf{Release 1 -- Foundations}}
+\end{center}
+
+\vspace{0.6cm}
+
+% ============================================================
+%  INTRODUCTION
+% ============================================================
+\ReportSection{Introduction}{Introduction}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This chapter focuses on Release 1, which forms the functional and technical foundation of the ArabSoft internal platform.
+Through its use case diagrams, system sequence diagrams, state diagrams, class diagrams, and interface illustrations, this chapter presents how the first core functionalities of the platform are structured.
+It highlights the implementation logic of secure access management and the first complete administrative workflow.
+More specifically, Release 1 covers user registration, authentication, role assignment, account control, and leave request management.
+Together, these elements establish the first operational base of the platform for employees, team leaders, and HR managers.
+
+}
+
+\vspace{6pt}
+
+% ============================================================
+%  I. RELEASE ORGANIZATION
+% ============================================================
+\ReportSection{I. Release Organization}{I. Release Organization}
+
+\ChapterThreeFigure{sections/chapitre3/img/other/release1_organization.png}{Release 1 Organization}{release1_organization}
+
+\vspace{6pt}
+
+% ============================================================
+%  II. SPRINT 1: ACCESS
+% ============================================================
+\ReportSection{II. Sprint 1: Access}{II. Sprint 1: Access}
+
+\ReportSubsection{II.1 Sprint Goal}{\hspace{0.5cm} 1. Sprint Goal}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This first sprint aims to establish the technical and functional access foundation of the platform.
+It implements the core access features: user registration, secure authentication, password reset, role assignment with notification and email, account activation or deactivation, profile update, and login history consultation.
+It also introduces the restricted \textbf{NEW\_USER} state to control onboarding before HR validation.
+The objective is to obtain an operational base for the next functional developments of the platform.
+
+}
+
+\ReportSubsection{II.2 Visual Sprint Journal}{\hspace{0.5cm} 2. Visual Sprint Journal}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The visual sprint journal shows the selected user stories of Sprint 1 and their progress in Jira.
+
+}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/jira_screenshots/jira 1.png}
+
+    \vspace{0.6cm}
+
+    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/jira_screenshots/jira 2.png}
+    \caption{Jira Backlog -- Sprint 1}
+    \label{fig:jira_sprint1}
+\end{figure}
+
+\ReportSubsection{II.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The table below presents the backlog of the first and second sprints.
+
+}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.36}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.5cm}|>{\centering\bfseries\arraybackslash}m{3.6cm}|>{\RaggedRight\arraybackslash}m{7.4cm}|>{\centering\arraybackslash}m{1.6cm}|}
+\hline
+\rowcolor{blue!20}
+\textbf{Sprint} & \textbf{Stories} & \centering\textbf{Tasks} & \textbf{Duration} \\
+\hline
+\multirow{13}{=}{\centering\textbf{Sprint 1}}
+& \multirow{3}{=}{\centering\textbf{Configure security and infrastructure}}
+& Configure Keycloak realm, client, and roles
+& \multirow{3}{=}{\centering 2d} \\
+\cline{3-3}
+& & Set up PostgreSQL, Docker, and Kafka & \\
+\cline{3-3}
+& & Connect Spring Boot to PostgreSQL and Keycloak & \\
+\cline{2-4}
+& \multirow{4}{=}{\centering\textbf{Registration and access control}}
+& Implement user registration
+& \multirow{4}{=}{\centering 3d} \\
+\cline{3-3}
+& & Enforce the restricted \textbf{NEW\_USER} state & \\
+\cline{3-3}
+& & Implement secure login & \\
+\cline{3-3}
+& & Implement frontend logout & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{Password recovery and profile management}}
+& Implement password reset
+& \multirow{2}{=}{\centering 2d} \\
+\cline{3-3}
+& & Implement profile update & \\
+\cline{2-4}
+& \multirow{3}{=}{\centering\textbf{HR account governance}}
+& Implement HR role assignment
+& \multirow{3}{=}{\centering 2d} \\
+\cline{3-3}
+& & Trigger role assignment notification and email & \\
+\cline{3-3}
+& & Implement account activation and deactivation & \\
+\cline{2-4}
+& \textbf{Access audit}
+& Implement login history consultation
+& 1d \\
+\cline{1-4}
+\multirow{12}{=}{\centering\textbf{Sprint 2}}
+& \multirow{4}{=}{\centering\textbf{Leave request workflow foundation}}
+& Create the leave request entity, DTOs, repository, and service
+& \multirow{4}{=}{\centering 3d} \\
+\cline{3-3}
+& & Implement leave submission & \\
+\cline{3-3}
+& & Implement leave tracking & \\
+\cline{3-3}
+& & Implement leave history & \\
+\cline{2-4}
+& \multirow{3}{=}{\centering\textbf{Team leader review flow}}
+& Implement team review of leave requests
+& \multirow{3}{=}{\centering 2d} \\
+\cline{3-3}
+& & Implement leave approval & \\
+\cline{3-3}
+& & Implement leave rejection with reason & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{HR final decision flow}}
+& Implement HR final decision on leave requests
+& \multirow{2}{=}{\centering 2d} \\
+\cline{3-3}
+& & Handle workflow state transitions & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{Leave control and communication}}
+& Implement leave cancellation before decision
+& \multirow{2}{=}{\centering 2d} \\
+\cline{3-3}
+& & Implement leave decision notifications and emails & \\
+\cline{2-4}
+& \textbf{Team leader personal leave actions}
+& Reuse employee-side leave actions for the team leader’s own leave requests
+& 1d \\
+\hline
+\end{tabular}
+\caption{Sprint Backlog -- Release 1}
+\label{tab:release_1_sprint_backlog}
+\end{table}
+\clearpage
+\ReportSubsection{II.4 Sprint Implementation}{\hspace{0.5cm} 4. Sprint Implementation}
+
+\subsubsection*{4.1 Requirements Analysis}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This section presents the functional requirements identified for Sprint 1 of my final-year project. The sprint focuses on the access and account management foundation of the Arab Soft internal platform, including registration, authentication, password reset, role assignment, and account control.
+
+\indent To represent these requirements, I produced a use case diagram, the corresponding system sequence diagrams, and a state diagram. These diagrams illustrate the interactions between the main actors of the platform, the core functionalities covered by this sprint, and the main status changes of the user account, such as the \textbf{NEW\_USER}, active, and deactivated states.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/use_case_diagrams/Sprint 1 Access.png}{Use Case Diagram -- Sprint 1 Access}{use_case_sprint_1_access}
+\subsubsection*{a. User Registration}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during user registration, from form submission by the user to account creation and the generation of the restricted \textbf{NEW\_USER} state.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/user registration.png}{System Sequence Diagram -- User Registration}{ssd_user_registration}
+
+\subsubsection*{b. Login}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during login, from credential submission by the user to authentication through Keycloak and redirection according to the result.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/S login .png}{System Sequence Diagram -- Login}{ssd_secure_login}
+
+\subsubsection*{c. Logout}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during logout, from the user action in the interface to the clearing of the local session and redirection to the login page.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/logout.png}{System Sequence Diagram -- Logout}{ssd_logout}
+
+\subsubsection*{d. Password Reset}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during password reset, from the reset request and OTP generation to password update and confirmation of the operation.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/reset password.png}{System Sequence Diagram -- Password Reset}{password_reset}
+
+\subsubsection*{e. HR Role Assignment}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during HR role assignment, from the selection of a user role by the HR manager to role update, possible account activation, and notification by email.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/hr role assignment.png}{System Sequence Diagram -- HR Role Assignment}{ssd_hr_role_assignment}
+
+\subsubsection*{f. Account Activation / Deactivation}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below models the system interaction flow during account activation and deactivation, from the HR manager action to the update of the account status in both the application and Keycloak.
+}
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/account activation.png}{System Sequence Diagram -- Account Activation / Deactivation}{ssd_account_activation_deactivation}
+\subsubsection*{e. Manage Profile}
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The following diagram decomposes the \textbf{Manage User Accounts} use case into sub-functionalities, including its extension relationships.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/use_case_diagrams/manage profile.png}{Use Case Diagram -- Manage Profile}{Manage Profile}
+
+\indent The diagram below models the system interaction flow during profile update, from the user's access to the profile page to validation and confirmation of the updated information.
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/update_profile_information.png}{System Sequence Diagram -- Update Profile Information}{ssd_update_profile_information}
+
+\indent The diagram below models the system interaction flow during password change, either by validating the current password or by requesting an OTP code before submitting the new password.
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/change_password.png}{System Sequence Diagram -- Change Password}{ssd_change_password}
+
+\subsubsection*{4.2. Analysis}
+
+\textbf{State Diagrams:}
+
+\vspace{0.4cm}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+
+}  
+
+\indent The diagram below models the role assignment lifecycle of a user account during Sprint 1, from registration in the restricted \textbf{NEW\_USER} state to assignment of one of the operational platform roles by the HR manager.
+\ChapterThreeFigure{sections/chapitre3/img/state_diagrams/user_role_assignment_lifecycle.png}{State Diagram -- User Role Assignment Lifecycle}{state_user_role_assignment_lifecycle}
+
+\indent The diagram below models the lifecycle of a user account during Sprint 1, from restricted onboarding to activation, deactivation, and reactivation according to HR control actions.
+\ChapterThreeFigure{sections/chapitre3/img/state_diagrams/user_account_lifecycle.png}{State Diagram -- User Account Lifecycle}{state_user_account_lifecycle}  
+
+
+
+\textbf{Participant Class Diagrams:}
+
+\vspace{0.4cm}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The following participant class diagrams identify the main classes involved in the implementation of Sprint 1 use cases and clarify their structural responsibilities and interactions within the access and account management foundation of the platform.
+}
+\ChapterThreeFigure{sections/chapitre3/img/domain_model/domain_model_sprint1.png}{Domain Model -- Sprint 1}{domain_model_sprint1}
+
+
+\textbf{Participant Class Diagrams:}
+
+\vspace{0.4cm}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The following participant class diagrams identify the main classes involved in the implementation of Sprint 1 use cases and clarify their structural responsibilities and interactions within the access and account management foundation of the platform.
+}
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/User Registration.drawio.png}{Class Diagram -- Sprint 1}{class_diagram_sprint1}
+
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the participant classes involved in the secure login and logout process, including authentication, account-state verification, token management, and login history recording.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_secure_login_logout.png}{Participant Class Diagram -- Secure Login and Logout}{participant_secure_login_logout}
+
+
+
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the participant classes involved in the password reset process, from reset request submission to token validation and password update.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_password_reset.png}{Participant Class Diagram -- Password Reset}{participant_password_reset}
+
+
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the participant classes involved in profile update and authenticated password change, including personal information update, avatar customization, and password change support.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_profile_update_password_change.png}{Participant Class Diagram -- Profile Update and Password Change}{participant_profile_update_password_change}
+
+
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the participant classes involved in HR account management, including pending account consultation, role assignment, account activation or deactivation, and login history consultation.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_hr_account_management.png}{Participant Class Diagram -- HR Account Management}{participant_hr_account_management}
+
+
+\textbf{Design Class Diagrams:}
+
+\vspace{0.4cm}
+
+
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception structure of the registration and pending-access workflow.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_registration_pending_access_v2.png}{Design Class Diagram -- Registration and Pending Access}{design_registration_pending_access}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception structure of the secure login, logout, and access-control workflow.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_secure_login_logout_access_control.png}{Design Class Diagram -- Secure Login, Logout, and Access Control}{design_secure_login_logout_access_control}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception structure of the password-reset workflow.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_password_reset.png}{Design Class Diagram -- Password Reset}{design_password_reset}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception structure of profile update and password change.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_profile_update_password_change.png}{Design Class Diagram -- Profile Update and Password Change}{design_profile_update_password_change}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception structure of HR account management and login-history consultation.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_hr_account_management_login_history.png}{Design Class Diagram -- HR Account Management and Login History}{design_hr_account_management_login_history}
+
+
+\textbf{Conception Sequence Diagrams:}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception interaction flow of registration and pending access.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_registration_pending_access.png}{Conception Sequence Diagram -- Registration and Pending Access}{conception_sequence_registration_pending_access}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception interaction flow of secure login and logout.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_secure_login_logout.png}{Conception Sequence Diagram -- Secure Login and Logout}{conception_sequence_secure_login_logout}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception interaction flow of password reset.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_password_reset.png}{Conception Sequence Diagram -- Password Reset}{conception_sequence_password_reset}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception interaction flow of profile update and authenticated password change.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_profile_update_password_change.png}{Conception Sequence Diagram -- Profile Update and Authenticated Password Change}{conception_sequence_profile_update_password_change}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The diagram below presents the conception interaction flow of HR account management and login history.
+}
+
+\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_hr_account_management_login_history.png}{Conception Sequence Diagram -- HR Account Management and Login History}{conception_sequence_hr_account_management_login_history}

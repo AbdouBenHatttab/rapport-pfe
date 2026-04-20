@@ -46,6 +46,14 @@
 \contentsline {subsection}{IV.1 Employee User Stories}{18}{section*.53}%
 \contentsline {subsection}{IV.2 Team Leader User Stories}{19}{section*.54}%
 \contentsline {subsection}{IV.3 HR Manager User Stories}{20}{section*.55}%
-\contentsline {section}{V. Product Backlog}{22}{section*.56}%
+\contentsline {section}{V. Product Backlog}{21}{section*.56}%
 \contentsline {section}{VI. Release Organization}{28}{section*.57}%
 \contentsline {section}{Conclusion}{28}{section*.59}%
+\contentsline {chapter}{Chapter 3: Release 1 - Foundations}{29}{section*.60}%
+\contentsline {section}{Introduction}{29}{section*.61}%
+\contentsline {section}{I. Release Organization}{29}{section*.62}%
+\contentsline {section}{II. Sprint 1: Access}{29}{section*.64}%
+\contentsline {subsection}{II.1 Sprint Goal}{29}{section*.65}%
+\contentsline {subsection}{II.2 Visual Sprint Journal}{30}{section*.66}%
+\contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.68}%
+\contentsline {subsection}{II.4 Sprint Implementation}{32}{section*.70}%

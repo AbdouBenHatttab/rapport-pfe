@@ -8,3 +8,33 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Layered architecture with Spring Boot}}{13}{figure.caption.27}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Global application architecture}}{15}{figure.caption.30}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Organization of Releases}}{28}{figure.caption.58}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Release 1 Organization}}{29}{figure.caption.63}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Jira Backlog -- Sprint 1}}{30}{figure.caption.67}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Use Case Diagram -- Sprint 1 Access}}{32}{figure.caption.72}%
+\contentsline {figure}{\numberline {13}{\ignorespaces System Sequence Diagram -- User Registration}}{33}{figure.caption.74}%
+\contentsline {figure}{\numberline {14}{\ignorespaces System Sequence Diagram -- Login}}{34}{figure.caption.76}%
+\contentsline {figure}{\numberline {15}{\ignorespaces System Sequence Diagram -- Logout}}{35}{figure.caption.78}%
+\contentsline {figure}{\numberline {16}{\ignorespaces System Sequence Diagram -- Password Reset}}{36}{figure.caption.80}%
+\contentsline {figure}{\numberline {17}{\ignorespaces System Sequence Diagram -- HR Role Assignment}}{37}{figure.caption.82}%
+\contentsline {figure}{\numberline {18}{\ignorespaces System Sequence Diagram -- Account Activation / Deactivation}}{38}{figure.caption.84}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Use Case Diagram -- Manage Profile}}{38}{figure.caption.86}%
+\contentsline {figure}{\numberline {20}{\ignorespaces System Sequence Diagram -- Update Profile Information}}{39}{figure.caption.87}%
+\contentsline {figure}{\numberline {21}{\ignorespaces System Sequence Diagram -- Change Password}}{40}{figure.caption.88}%
+\contentsline {figure}{\numberline {22}{\ignorespaces State Diagram -- User Role Assignment Lifecycle}}{41}{figure.caption.90}%
+\contentsline {figure}{\numberline {23}{\ignorespaces State Diagram -- User Account Lifecycle}}{42}{figure.caption.91}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Domain Model -- Sprint 1}}{43}{figure.caption.92}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Class Diagram -- Sprint 1}}{43}{figure.caption.93}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Participant Class Diagram -- Secure Login and Logout}}{44}{figure.caption.94}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Participant Class Diagram -- Password Reset}}{44}{figure.caption.95}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Participant Class Diagram -- Profile Update and Password Change}}{45}{figure.caption.96}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Participant Class Diagram -- HR Account Management}}{45}{figure.caption.97}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Design Class Diagram -- Registration and Pending Access}}{46}{figure.caption.98}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Design Class Diagram -- Secure Login, Logout, and Access Control}}{46}{figure.caption.99}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Design Class Diagram -- Password Reset}}{47}{figure.caption.100}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Design Class Diagram -- Profile Update and Password Change}}{47}{figure.caption.101}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Design Class Diagram -- HR Account Management and Login History}}{47}{figure.caption.102}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Conception Sequence Diagram -- Registration and Pending Access}}{48}{figure.caption.103}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Conception Sequence Diagram -- Secure Login and Logout}}{49}{figure.caption.104}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Conception Sequence Diagram -- Password Reset}}{50}{figure.caption.105}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Conception Sequence Diagram -- Profile Update and Authenticated Password Change}}{51}{figure.caption.106}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Conception Sequence Diagram -- HR Account Management and Login History}}{52}{figure.caption.107}%
