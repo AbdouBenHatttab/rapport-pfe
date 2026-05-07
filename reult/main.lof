@@ -11,3 +11,20 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Release 1 Organization}}{29}{figure.caption.63}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Use Case Diagram – Sprint 1 Access and Account Management}}{31}{figure.caption.70}%
 \contentsline {figure}{\numberline {12}{\ignorespaces System Sequence Diagram – User Registration}}{32}{figure.caption.71}%
+\contentsline {figure}{\numberline {13}{\ignorespaces System Sequence Diagram – Secure Login}}{33}{figure.caption.72}%
+\contentsline {figure}{\numberline {14}{\ignorespaces System Sequence Diagram – Logout}}{34}{figure.caption.73}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Use Case Diagram – Personal Account Management}}{34}{figure.caption.74}%
+\contentsline {figure}{\numberline {16}{\ignorespaces System Sequence Diagram – Password Reset}}{35}{figure.caption.75}%
+\contentsline {figure}{\numberline {17}{\ignorespaces System Sequence Diagram – Profile Update}}{36}{figure.caption.76}%
+\contentsline {figure}{\numberline {18}{\ignorespaces System Sequence Diagram – Authenticated Password Change}}{37}{figure.caption.77}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Use Case Diagram – HR User Account Management}}{38}{figure.caption.78}%
+\contentsline {figure}{\numberline {20}{\ignorespaces System Sequence Diagram – HR User Account Setup}}{38}{figure.caption.79}%
+\contentsline {figure}{\numberline {21}{\ignorespaces System Sequence Diagram – Account Activation and Deactivation}}{39}{figure.caption.80}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Domain Model – Sprint 1 Access and Account Management}}{40}{figure.caption.81}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Participant Class Diagram – Authentication and Access Control}}{40}{figure.caption.82}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Participant Class Diagram – Password Reset and Password Change}}{41}{figure.caption.83}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Participant Class Diagram – HR Account Management}}{41}{figure.caption.84}%
+\contentsline {figure}{\numberline {26}{\ignorespaces State Diagram – User Account Lifecycle}}{42}{figure.caption.85}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Design Class Diagram – Registration and Pending Access}}{43}{figure.caption.86}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Design Class Diagram – Security, Keycloak, and Access Control}}{43}{figure.caption.87}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Design Class Diagram – HR Account Setup and Notification}}{44}{figure.caption.88}%
