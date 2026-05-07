@@ -1,391 +1,390 @@
-% NO \documentclass
-% NO \usepackage
-% NO \begin{document}
-\newpage
+  % NO \documentclass
+  % NO \usepackage
+  % NO \begin{document}
+  \newpage
 
-% ============================================================
-% HEADER: enabled here for all pages of this chapter
-% ============================================================
-\fancyhead[L]{\fontsize{10}{12}\selectfont Chapter 2: Product Backlog Planning}
-\fancyhead[R]{}
-\fancyfoot[C]{\thepage}
-\pagestyle{fancy}
+  % ============================================================
+  % HEADER: enabled here for all pages of this chapter
+  % ============================================================
+  \fancyhead[L]{\fontsize{10}{12}\selectfont Chapter 2: Product Backlog Planning}
+  \fancyhead[R]{}
+  \fancyfoot[C]{\thepage}
+  \pagestyle{fancy}
 
-% First page of chapter: no header, page number only
-\thispagestyle{plain}
+  % First page of chapter: no header, page number only
+  \thispagestyle{plain}
 
-% ============================================================
-%  TABLE OF CONTENTS ENTRIES
-% ============================================================
-\phantomsection
-\addcontentsline{toc}{chapter}{Chapter 2: Product Backlog Planning}
+  % ============================================================
+  %  TABLE OF CONTENTS ENTRIES
+  % ============================================================
+  \phantomsection
+  \addcontentsline{toc}{chapter}{Chapter 2: Product Backlog Planning}
 
-% ============================================================
-%  CHAPTER TITLE
-% ============================================================
-\begin{center}
-  {\fontsize{20}{24}\selectfont \textbf{Chapter 2}}
-\end{center}
+  % ============================================================
+  %  CHAPTER TITLE
+  % ============================================================
+  \begin{center}
+    {\fontsize{20}{24}\selectfont \textbf{Chapter 2}}
+  \end{center}
 
-\noindent\rule{\textwidth}{0.4pt}
+  \noindent\rule{\textwidth}{0.4pt}
 
-\vspace{0.3cm}
+  \vspace{0.3cm}
 
-\begin{center}
-  {\fontsize{20}{24}\selectfont \textbf{Product Backlog Planning}}
-\end{center}
+  \begin{center}
+    {\fontsize{20}{24}\selectfont \textbf{Product Backlog Planning}}
+  \end{center}
 
-\vspace{0.6cm}
+  \vspace{0.6cm}
 
-% ============================================================
-%  INTRODUCTION
-% ============================================================
-\ReportSection{Introduction}{Introduction}
+  % ============================================================
+  %  INTRODUCTION
+  % ============================================================
+  \ReportSection{Introduction}{Introduction}
 
-{\fontsize{12}{16}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{16}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent This chapter defines the product backlog planning for the proposed internal platform at ArabSoft. It identifies the actors, structures the functional and non-functional requirements, and formalizes user stories and backlog priorities that will guide sprint planning and implementation.
+  \indent This chapter defines the product backlog planning for the proposed internal platform at ArabSoft. It identifies the actors, structures the functional and non-functional requirements, and formalizes user stories and backlog priorities that will guide sprint planning and implementation.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-% ============================================================
-%  I. ACTOR IDENTIFICATION
-% ============================================================
-\ReportSection{I. Actor Identification}{I. Actor Identification}
+  % ============================================================
+  %  I. ACTOR IDENTIFICATION
+  % ============================================================
+  \ReportSection{I. Actor Identification}{I. Actor Identification}
 
-\ReportSubsection{I.1 Employee}{\hspace{0.5cm} 1. Employee}
+  \ReportSubsection{I.1 Employee}{\hspace{0.5cm} 1. Employee}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The employee submits administrative requests, tracks processing status, accesses assigned tasks, and receives notifications related to approvals, rejections, and project activities.
+  \indent The employee submits administrative requests, tracks processing status, accesses assigned tasks, and receives notifications related to approvals, rejections, and project activities.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{I.2 Team Leader}{\hspace{0.5cm} 2. Team Leader}
+  \ReportSubsection{I.2 Team Leader}{\hspace{0.5cm} 2. Team Leader}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The team leader supervises team activities, validates requests requiring managerial approval, assigns and follows tasks, and monitors project execution indicators.
+  \indent The team leader supervises team activities, validates requests requiring managerial approval, assigns and follows tasks, and monitors project execution indicators.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{I.3 HR Manager}{\hspace{0.5cm} 3. HR Manager}
+  \ReportSubsection{I.3 HR Manager}{\hspace{0.5cm} 3. HR Manager}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The HR manager manages employee records and roles, performs final validation of administrative requests, and monitors compliance through dashboards and reports.
+  \indent The HR manager manages employee records and roles, performs final validation of administrative requests, and monitors compliance through dashboards and reports.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{I.4 New User}{\hspace{0.5cm} 4. New User}
+  \ReportSubsection{I.4 New User}{\hspace{0.5cm} 4. New User}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent A new user is registered in the platform but remains in a restricted state until HR validation and role assignment are completed.
+  \indent A new user is registered in the platform but remains in a restricted state until HR validation and role assignment are completed.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-% ============================================================
-%  II. FUNCTIONAL REQUIREMENTS
-% ============================================================
-\ReportSection{II. Functional Requirements}{II. Functional Requirements}
+  % ============================================================
+  %  II. FUNCTIONAL REQUIREMENTS
+  % ============================================================
+  \ReportSection{II. Functional Requirements}{II. Functional Requirements}
 
-\ReportSubsection{II.1 Authentication and access management}{\hspace{0.5cm} 1. Authentication and access management}
+  \ReportSubsection{II.1 Authentication and access management}{\hspace{0.5cm} 1. Authentication and access management}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The system shall support registration, secure authentication, logout, account activation by HR, and role-based access control according to user profile.
+  \indent The system shall support registration, secure authentication, logout, account activation by HR, and role-based access control according to user profile.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{II.2 Administrative request management}{\hspace{0.5cm} 2. Administrative request management}
+  \ReportSubsection{II.2 Administrative request management}{\hspace{0.5cm} 2. Administrative request management}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The platform shall manage submission, validation, rejection, and history tracking for leave requests, document requests, loan requests, and authorization requests.
+  \indent The platform shall manage submission, validation, rejection, and history tracking for leave requests, document requests, loan requests, and authorization requests.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{II.3 Team and employee management}{\hspace{0.5cm} 3. Team and employee management}
+  \ReportSubsection{II.3 Team and employee management}{\hspace{0.5cm} 3. Team and employee management}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The system shall provide profile management, team assignment, leader designation, and maintenance of employee administrative information.
+  \indent The system shall provide profile management, team assignment, leader designation, and maintenance of employee administrative information.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{II.4 Project and task management}{\hspace{0.5cm} 4. Project and task management}
+  \ReportSubsection{II.4 Project and task management}{\hspace{0.5cm} 4. Project and task management}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The platform shall support project creation, task assignment, workload organization, progress tracking, and status visibility for all authorized stakeholders.
+  \indent The platform shall support project creation, task assignment, workload organization, progress tracking, and status visibility for all authorized stakeholders.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{II.5 Notification and reporting}{\hspace{0.5cm} 5. Notification and reporting}
+  \ReportSubsection{II.5 Notification and reporting}{\hspace{0.5cm} 5. Notification and reporting}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The system shall send operational notifications and provide reports and dashboards to support monitoring, traceability, and decision-making.
+  \indent The system shall send operational notifications and provide reports and dashboards to support monitoring, traceability, and decision-making.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{II.6 AI assistance and decision support}{\hspace{0.5cm} 6. AI assistance and decision support}
+  \ReportSubsection{II.6 AI assistance and decision support}{\hspace{0.5cm} 6. AI assistance and decision support}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The platform shall provide AI-assisted support to help employees prepare administrative requests, assist team leaders in reviewing requests and workload constraints, and support HR managers with recommendation-oriented decision assistance while preserving human validation, traceability, and auditability.
+  \indent The platform shall provide AI-assisted support to help employees prepare administrative requests, assist team leaders in reviewing requests and workload constraints, and support HR managers with recommendation-oriented decision assistance while preserving human validation, traceability, and auditability.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-% ============================================================
-%  III. NON-FUNCTIONAL REQUIREMENTS
-% ============================================================
-\ReportSection{III. Non-Functional Requirements}{III. Non-Functional Requirements}
+  % ============================================================
+  %  III. NON-FUNCTIONAL REQUIREMENTS
+  % ============================================================
+  \ReportSection{III. Non-Functional Requirements}{III. Non-Functional Requirements}
 
-\ReportSubsection{III.1 Security}{\hspace{0.5cm} 1. Security}
+  \ReportSubsection{III.1 Security}{\hspace{0.5cm} 1. Security}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The application must guarantee secure authentication, protection of sensitive data, strict role-based permissions, and complete audit traceability.
+  \indent The application must guarantee secure authentication, protection of sensitive data, strict role-based permissions, and complete audit traceability.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{III.2 Performance}{\hspace{0.5cm} 2. Performance}
+  \ReportSubsection{III.2 Performance}{\hspace{0.5cm} 2. Performance}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The platform must maintain acceptable response times under expected internal usage and support concurrent request processing without significant delays.
+  \indent The platform must maintain acceptable response times under expected internal usage and support concurrent request processing without significant delays.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{III.3 Usability}{\hspace{0.5cm} 3. Usability}
+  \ReportSubsection{III.3 Usability}{\hspace{0.5cm} 3. Usability}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent Interfaces must be clear and intuitive to reduce training effort and facilitate adoption by employees, team leaders, and HR managers.
+  \indent Interfaces must be clear and intuitive to reduce training effort and facilitate adoption by employees, team leaders, and HR managers.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{III.4 Maintainability}{\hspace{0.5cm} 4. Maintainability}
+  \ReportSubsection{III.4 Maintainability}{\hspace{0.5cm} 4. Maintainability}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The system architecture must allow efficient correction, enhancement, and extension through modular and well-documented components.
+  \indent The system architecture must allow efficient correction, enhancement, and extension through modular and well-documented components.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-\ReportSubsection{III.5 Scalability}{\hspace{0.5cm} 5. Scalability}
+  \ReportSubsection{III.5 Scalability}{\hspace{0.5cm} 5. Scalability}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-\indent The platform should support future growth in users, workflows, and modules without requiring major redesign.
+  \indent The platform should support future growth in users, workflows, and modules without requiring major redesign.
 
-}
+  }
 
-\vspace{6pt}
+  \vspace{6pt}
 
-% ============================================================
-%  IV. USER STORIES
-% ============================================================
-\ReportSection{IV. User Stories}{IV. User Stories}
+  % ============================================================
+  %  IV. USER STORIES
+  % ============================================================
+  \ReportSection{IV. User Stories}{IV. User Stories}
 
-% Reusable user-story card component and 3-column grid helpers
-\definecolor{empfill}{RGB}{252,236,238}
-\definecolor{empborder}{RGB}{220,158,165}
-\definecolor{leadfill}{RGB}{235,244,253}
-\definecolor{leadborder}{RGB}{153,187,219}
-\definecolor{hrfill}{RGB}{236,248,236}
-\definecolor{hrborder}{RGB}{156,198,158}
+  % Reusable user-story card component and 3-column grid helpers
+  \definecolor{empfill}{RGB}{252,236,238}
+  \definecolor{empborder}{RGB}{220,158,165}
+  \definecolor{leadfill}{RGB}{235,244,253}
+  \definecolor{leadborder}{RGB}{153,187,219}
+  \definecolor{hrfill}{RGB}{236,248,236}
+  \definecolor{hrborder}{RGB}{156,198,158}
 
-\newcommand{\storycard}[3]{%
-  \begin{tikzpicture}
-    \node[
-      draw=#2,
-      fill=#1,
-      rounded corners=3mm,
-      line width=0.35pt,
-      inner sep=8pt,
-      text width=0.27\textwidth,
-      minimum height=3.7cm,
-      align=left,
-      anchor=north
-    ] {\fontsize{10.5}{13}\selectfont #3};
-  \end{tikzpicture}%
-}
+  \newcommand{\storycard}[3]{%
+    \begin{tikzpicture}
+      \node[
+        draw=#2,
+        fill=#1,
+        rounded corners=3mm,
+        line width=0.35pt,
+        inner sep=8pt,
+        text width=0.27\textwidth,
+        minimum height=3.7cm,
+        align=left,
+        anchor=north
+      ] {\fontsize{10.5}{13}\selectfont #3};
+    \end{tikzpicture}%
+  }
 
-\newcommand{\storyrow}[3]{%
-  \noindent\begin{tabular}{m{0.32\textwidth}m{0.32\textwidth}m{0.32\textwidth}}
-    \centering #1 & \centering #2 & \centering #3
-  \end{tabular}\par\vspace{8pt}%
-}
+  \newcommand{\storyrow}[3]{%
+    \noindent\begin{tabular}{m{0.32\textwidth}m{0.32\textwidth}m{0.32\textwidth}}
+      \centering #1 & \centering #2 & \centering #3
+    \end{tabular}\par\vspace{8pt}%
+  }
 
-\newcommand{\storyempty}{\mbox{}}
+  \newcommand{\storyempty}{\mbox{}}
 
-\ReportSubsection{IV.1 Employee User Stories}{\hspace{0.5cm} 1. Employee User Stories}
+  \ReportSubsection{IV.1 Employee User Stories}{\hspace{0.5cm} 1. Employee User Stories}
 
-\vspace{4pt}
-\begin{center}
-  {\fontsize{13}{16}\selectfont \textbf{Employee User Stories}}
-\end{center}
-\vspace{4pt}
+  \vspace{4pt}
+  \begin{center}
+    {\fontsize{13}{16}\selectfont \textbf{Employee User Stories}}
+  \end{center}
+  \vspace{4pt}
 
-\storyrow
-{\storycard{empfill}{empborder}{As an employee, I want to sign in securely so that I can access the platform according to my role.}}
-{\storycard{empfill}{empborder}{As an employee, I want to sign out securely so that I can protect my account after use.}}
-{\storycard{empfill}{empborder}{As an employee, I want to manage my profile information so that my personal data stays accurate.}}
+  \storyrow
+  {\storycard{empfill}{empborder}{As an employee, I want to sign in securely so that I can access the platform according to my role.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to sign out securely so that I can protect my account after use.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to manage my profile information so that my personal data stays accurate.}}
 
-\storyrow
-{\storycard{empfill}{empborder}{As an employee, I want to change my password securely so that I can keep my account protected.}}
-{\storycard{empfill}{empborder}{As an employee, I want to access my personal dashboard so that I can quickly view the most relevant information.}}
-{\storycard{empfill}{empborder}{As an employee, I want to submit and cancel a leave request before decision so that my leave workflow stays accurate.}}
+  \storyrow
+  {\storycard{empfill}{empborder}{As an employee, I want to change my password securely so that I can keep my account protected.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to access my personal dashboard so that I can quickly view the most relevant information.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to submit and cancel a leave request before decision so that my leave workflow stays accurate.}}
 
-\storyrow
-{\storycard{empfill}{empborder}{As an employee, I want to submit a document request so that I can obtain official HR documents.}}
-{\storycard{empfill}{empborder}{As an employee, I want to submit a loan request so that I can ask for financial support through the platform.}}
-{\storycard{empfill}{empborder}{As an employee, I want to submit an authorization request so that I can formalize exceptional permissions.}}
+  \storyrow
+  {\storycard{empfill}{empborder}{As an employee, I want to submit a document request so that I can obtain official HR documents.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to submit a loan request so that I can ask for financial support through the platform.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to submit an authorization request so that I can formalize exceptional permissions.}}
 
-\storyrow
-{\storycard{empfill}{empborder}{As an employee, I want to track request status and history so that I can follow leave and administrative workflows.}}
-{\storycard{empfill}{empborder}{As an employee, I want to view my assigned tasks and project calendar so that I can organize my work efficiently.}}
-{\storycard{empfill}{empborder}{As an employee, I want to filter tasks by project so that I can focus on the work context concerned.}}
+  \storyrow
+  {\storycard{empfill}{empborder}{As an employee, I want to track request status and history so that I can follow leave and administrative workflows.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to view my assigned tasks and project calendar so that I can organize my work efficiently.}}
+  {\storycard{empfill}{empborder}{As an employee, I want to filter tasks by project so that I can focus on the work context concerned.}}
 
-\storyrow
-{\storycard{empfill}{empborder}{As an employee, I want to receive notifications and emails about role, request, leave, and task updates so that I stay informed.}}
-{\storyempty}
-{\storyempty}
+  \storyrow
+  {\storycard{empfill}{empborder}{As an employee, I want to receive notifications and emails about role, request, leave, and task updates so that I stay informed.}}
+  {\storyempty}
+  {\storyempty}
 
-\vspace{8pt}
+  \vspace{8pt}
 
-\ReportSubsection{IV.2 Team Leader User Stories}{\hspace{0.5cm} 2. Team Leader User Stories}
+  \ReportSubsection{IV.2 Team Leader User Stories}{\hspace{0.5cm} 2. Team Leader User Stories}
 
-\vspace{4pt}
-\begin{center}
-  {\fontsize{13}{16}\selectfont \textbf{Team Leader User Stories}}
-\end{center}
-\vspace{4pt}
+  \vspace{4pt}
+  \begin{center}
+    {\fontsize{13}{16}\selectfont \textbf{Team Leader User Stories}}
+  \end{center}
+  \vspace{4pt}
 
-\storyrow
-{\storycard{leadfill}{leadborder}{As a team leader, I want to sign in securely so that I can access the platform according to my role.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to sign out securely so that I can protect my account after use.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to manage my profile information so that my personal data stays accurate.}}
+  \storyrow
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to sign in securely so that I can access the platform according to my role.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to sign out securely so that I can protect my account after use.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to manage my profile information so that my personal data stays accurate.}}
 
-\storyrow
-{\storycard{leadfill}{leadborder}{As a team leader, I want to change my password securely so that I can keep my account protected.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to access my dashboard so that I can quickly monitor team activity.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to review team leave requests so that I can process them according to team constraints.}}
+  \storyrow
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to change my password securely so that I can keep my account protected.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to access my dashboard so that I can quickly monitor team activity.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to review team leave requests so that I can process them according to team constraints.}}
 
-\storyrow
-{\storycard{leadfill}{leadborder}{As a team leader, I want to approve or reject leave requests with a reason so that decisions remain clear and traceable.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to monitor team workload so that I can balance responsibilities effectively.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to assign tasks to team members so that project work is distributed properly.}}
+  \storyrow
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to approve or reject leave requests with a reason so that decisions remain clear and traceable.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to monitor team workload so that I can balance responsibilities effectively.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to assign tasks to team members so that project work is distributed properly.}}
 
-\storyrow
-{\storycard{leadfill}{leadborder}{As a team leader, I want to follow task progress and receive completion notifications so that I can monitor delivery.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to view the team leave calendar within my scope so that I can anticipate availability issues.}}
-{\storycard{leadfill}{leadborder}{As a team leader, I want to use employee-side leave and request actions for my own needs so that personal workflows remain consistent.}}
+  \storyrow
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to follow task progress and receive completion notifications so that I can monitor delivery.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to view the team leave calendar within my scope so that I can anticipate availability issues.}}
+  {\storycard{leadfill}{leadborder}{As a team leader, I want to use employee-side leave and request actions for my own needs so that personal workflows remain consistent.}}
 
-\vspace{8pt}
+  \vspace{8pt}
 
-\ReportSubsection{IV.3 HR Manager User Stories}{\hspace{0.5cm} 3. HR Manager User Stories}
+  \ReportSubsection{IV.3 HR Manager User Stories}{\hspace{0.5cm} 3. HR Manager User Stories}
 
-\vspace{4pt}
-\begin{center}
-  {\fontsize{13}{16}\selectfont \textbf{HR Manager User Stories}}
-\end{center}
-\vspace{4pt}
+  \vspace{4pt}
+  \begin{center}
+    {\fontsize{13}{16}\selectfont \textbf{HR Manager User Stories}}
+  \end{center}
+  \vspace{4pt}
 
-\storyrow
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to sign in securely so that I can access the platform according to my role.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to sign out securely so that I can protect my account after use.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to manage my profile information so that my personal data stays accurate.}}
+  \storyrow
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to sign in securely so that I can access the platform according to my role.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to sign out securely so that I can protect my account after use.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to manage my profile information so that my personal data stays accurate.}}
 
-\storyrow
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to change my password securely so that I can keep my account protected.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to access my dashboard so that I can monitor operational activity.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to assign roles and trigger user notification so that access changes are communicated clearly.}}
+  \storyrow
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to change my password securely so that I can keep my account protected.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to access my dashboard so that I can monitor operational activity.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to assign roles and trigger user notification so that access changes are communicated clearly.}}
 
-\storyrow
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to activate or deactivate accounts so that access remains controlled.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to manage employee administrative information so that records stay complete and accurate.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to make final decisions on leave and administrative requests so that workflows are completed properly.}}
+  \storyrow
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to activate or deactivate accounts so that access remains controlled.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to manage employee administrative information so that records stay complete and accurate.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to make final decisions on leave and administrative requests so that workflows are completed properly.}}
 
-\storyrow
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to manage teams and team leaders so that the organizational structure remains consistent.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want broad leave calendar visibility and filters so that I can supervise teams, employees, dates, and statuses.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to consult login history and available audit traces so that system activity remains supervised.}}
+  \storyrow
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to manage teams and team leaders so that the organizational structure remains consistent.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want broad leave calendar visibility and filters so that I can supervise teams, employees, dates, and statuses.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to review pending user accounts so that I can complete their access setup.}}
 
-\storyrow
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to upload official request files and notify users so that final HR outputs are communicated.}}
-{\storycard{hrfill}{hrborder}{As an HR manager, I want to trace request history and cancellations before decision so that workflow follow-up remains clear.}}
-{\storyempty}
-
+  \storyrow
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to upload official request files and notify users so that final HR outputs are communicated.}}
+  {\storycard{hrfill}{hrborder}{As an HR manager, I want to trace request history and cancellations before decision so that workflow follow-up remains clear.}}
+  {\storyempty}
 % ============================================================
 %  V. PRODUCT BACKLOG
 % ============================================================
-  \ReportSection{V. Product Backlog}{V. Product Backlog}
+\ReportSection{V. Product Backlog}{V. Product Backlog}
 
 \vspace{0.15cm}
 
@@ -393,373 +392,390 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The product backlog is organized into six functional sprints. Each sprint groups related features according to business value and implementation logic, from platform access and request workflows to HR administration, project tracking, and AI-assisted support.
+\indent The product backlog is organized into six functional sprints. Each sprint groups a coherent set of user stories and technical tasks according to business value, implementation dependencies, and the progressive delivery of the platform. The backlog was tracked through Jira and structured around access management, leave workflows, administrative requests, HR operations, collaboration features, reporting, notifications, and AI-assisted support.
 
 }
 
 \vspace{0.15cm}
+
 \small
 \renewcommand{\arraystretch}{1.18}
 \setlength{\tabcolsep}{3.2pt}
 \setlength{\LTleft}{-0.6cm}
+
 \newcommand{\BacklogSprintPageGuard}{\Needspace{0.80\textheight}}
 \newcommand{\BacklogNextSprintTable}{%
   \par
   \BacklogSprintPageGuard
   \par
 }
-\newcommand{\BacklogContinuedCaption}{\caption*{Table \ref{tab:product_backlog}: Product Backlog (continued)}}
+\newcommand{\BacklogContinuedCaption}{\multicolumn{5}{c}{Table \ref{tab:product_backlog}: Product Backlog (continued)}}
 
 % ---------- Sprint 1 ----------
 \BacklogSprintPageGuard
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\caption{Product Backlog}\label{tab:product_backlog}\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{11}{=}{\centering\textbf{Sprint 1\\[4pt] Access}}
-& US 1 & Registration & As a new user, I want to create an account so that I can request platform access. & Medium \\
-\cline{2-5}
-& US 2 & Secure login & As a user, I want to sign in securely so that I can access the platform according to my role. & Low \\
-\cline{2-5}
-& US 3 & Logout & As a user, I want to sign out securely so that I can protect my account after use. & Low \\
-\cline{2-5}
-& US 4 & Password reset & As a user, I want to reset my password securely so that I can recover access. & Medium \\
-\cline{2-5}
-& US 5 & Profile update & As a user, I want to update my profile so that my personal data stays accurate. & Low \\
-\cline{2-5}
-& US 6 & NEW\_USER restriction & As an HR manager, I want new users to remain restricted until HR validation. & High \\
-\cline{2-5}
-& US 7 & Role assignment & As an HR manager, I want to assign roles so that each user receives the correct access rights. & Medium \\
-\cline{2-5}
-& US 8 & Role assignment notification and email & As a user, I want to receive a notification and email when my role is assigned. & Low \\
-\cline{2-5}
-& US 9 & Account activation & As an HR manager, I want to activate approved accounts so that validated users can access the platform. & Medium \\
-\cline{2-5}
-& US 10 & Account deactivation & As an HR manager, I want to deactivate accounts so that access can be revoked when needed. & Medium \\
-\cline{2-5}
-& US 11 & Login history & As an HR manager, I want to consult login history so that authentication activity can be traced. & Medium \\
-\hline
 
+\multirow{10}{=}{\centering\textbf{Sprint 1\\[4pt] Access and Account\\Management}}
+& US 01 & User registration & As a new user, I want to create an account so that I can request access to the platform. & Medium \\
+\cline{2-5}
+& US 02 & Secure authentication & As a user, I want to sign in securely so that I can access features according to my role. & Medium \\
+\cline{2-5}
+& US 03 & Pending access state & As a new user, I want to see a pending-access page until HR assigns my role. & Low \\
+\cline{2-5}
+& US 04 & Password reset & As a user, I want to reset my password so that I can recover access to my account. & Medium \\
+\cline{2-5}
+& US 05 & Profile update & As a user, I want to update my profile information so that my personal data remains accurate. & Low \\
+\cline{2-5}
+& US 06 & Role assignment & As an HR manager, I want to assign roles so that users receive the correct access rights. & Medium \\
+\cline{2-5}
+& US 07 & Account control & As an HR manager, I want to activate or deactivate accounts so that platform access remains controlled. & Medium \\
+\cline{2-5}
+& US 08 & Pending user review & As an HR manager, I want to review pending user accounts so that I can complete their access setup. & Medium \\
+\cline{2-5}
+& TS 01 & Security configuration & Configure Keycloak, PostgreSQL, and Spring Security for secure role-based access. & High \\
+\cline{2-5}
+& TS 02 & Role notification & Send notification and email after role assignment. & Low \\
+\hline
 \end{longtable}
 
+% ---------- Sprint 2 ----------
 \BacklogNextSprintTable
-
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\BacklogContinuedCaption\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{10}{=}{\centering\textbf{Sprint 2\\[4pt] Leave\\Management}}
-& US 12 & Leave submission & As an employee, I want to submit a leave request so that I can ask for time off through a structured workflow. & Medium \\
-\cline{2-5}
-& US 13 & Leave tracking & As an employee, I want to track my leave request status so that I can follow its progress. & Low \\
-\cline{2-5}
-& US 14 & Leave history & As an employee, I want to view my leave history so that I can review my previous leave requests in one place. & Low \\
-\cline{2-5}
-& US 15 & Team review & As a team leader, I want to review team leave requests before making a decision. & Medium \\
-\cline{2-5}
-& US 16 & Team approval & As a team leader, I want to approve leave requests so that valid requests can move forward in the workflow. & Medium \\
-\cline{2-5}
-& US 17 & Team rejection with reason & As a team leader, I want to reject leave requests with a reason so that the decision remains traceable. & Medium \\
-\cline{2-5}
-& US 18 & HR final decision & As an HR manager, I want to make the final decision on leave requests so that the workflow is completed properly. & High \\
-\cline{2-5}
-& US 19 & Leave cancellation before decision & As an employee, I want to cancel a leave request before a decision is taken so that I can withdraw an unnecessary request. & Low \\
-\cline{2-5}
-& US 20 & Leave decision notifications and emails & As an employee, I want notifications and emails about leave approvals or rejections. & Low \\
-\cline{2-5}
-& US 21 & Team leader personal leave actions & As a team leader, I want to submit and follow my own leave requests as an employee so that my personal requests follow the same workflow. & Low \\
-\hline
 
+\multirow{11}{=}{\centering\textbf{Sprint 2\\[4pt] Leave\\Management}}
+& US 09 & Leave submission & As an employee, I want to submit a leave request so that I can ask for time off. & Medium \\
+\cline{2-5}
+& US 10 & Leave balance and history & As an employee, I want to view my leave balance and leave history. & Medium \\
+\cline{2-5}
+& US 11 & Working-day validation & As an employee, I want the system to validate leave dates using working days and public holidays. & High \\
+\cline{2-5}
+& US 12 & Overlap prevention & As an employee, I want the system to prevent overlapping leave requests. & High \\
+\cline{2-5}
+& US 13 & Edit and cancellation & As an employee, I want to edit or cancel a leave request before final decision. & Medium \\
+\cline{2-5}
+& US 14 & Team leader decision & As a team leader, I want to approve or reject team leave requests. & Medium \\
+\cline{2-5}
+& US 15 & HR final decision & As an HR manager, I want to make the final decision on leave requests. & High \\
+\cline{2-5}
+& US 16 & Leave calendar & As a user, I want to view leave requests in a calendar. & Medium \\
+\cline{2-5}
+& US 17 & Leave filters & As an HR manager, I want to filter leave records by employee, status, and date. & Low \\
+\cline{2-5}
+& TS 03 & Leave notifications & Send leave decision notifications and emails. & Low \\
+\cline{2-5}
+& TS 04 & Leave reports & Generate leave approval reports. & Medium \\
+\hline
 \end{longtable}
 
+% ---------- Sprint 3 ----------
 \BacklogNextSprintTable
-
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\BacklogContinuedCaption\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{10}{=}{\centering\textbf{Sprint 3\\[4pt] Administrative\\Requests}}
-& US 22 & Document submission & As an employee, I want to submit a document request so that I can obtain official HR documents through the platform. & Medium \\
-\cline{2-5}
-& US 23 & Loan submission & As an employee, I want to submit a loan request so that I can ask for financial support through a structured workflow. & Medium \\
-\cline{2-5}
-& US 24 & Authorization submission & As an employee, I want to submit an authorization request so that I can formalize exceptional permissions. & Medium \\
-\cline{2-5}
-& US 25 & Request tracking & As an employee, I want to track the status of my administrative requests so that I can follow their progress. & Low \\
-\cline{2-5}
-& US 26 & Request history & As an employee, I want to view my administrative request history so that I can consult previous submissions. & Low \\
-\cline{2-5}
-& US 27 & HR final decision & As an HR manager, I want to make the final decision on administrative requests so that each request receives an official outcome. & High \\
-\cline{2-5}
-& US 28 & Official file upload & As an HR manager, I want to upload finalized files so that approved requests include official documents. & Medium \\
-\cline{2-5}
-& US 29 & Request status notifications and emails & As a user, I want notifications and emails about request status changes and decisions. & Low \\
-\cline{2-5}
-& US 30 & Request cancellation before decision & As an employee, I want to cancel an administrative request before a decision is taken so that I can withdraw it when it is no longer needed. & Low \\
-\cline{2-5}
-& US 31 & Team leader personal request actions & As a team leader, I want to submit and follow my own administrative requests as an employee so that my personal requests follow the same logic. & Low \\
-\hline
 
+\multirow{11}{=}{\centering\textbf{Sprint 3\\[4pt] Administrative\\Requests}}
+& US 18 & Document request & As an employee, I want to submit a document request so that I can obtain official HR documents. & Medium \\
+\cline{2-5}
+& US 19 & Document processing & As an HR manager, I want to process document requests and upload final files. & Medium \\
+\cline{2-5}
+& US 20 & Loan request & As an employee, I want to submit a loan request so that I can request financial support. & Medium \\
+\cline{2-5}
+& US 21 & Loan eligibility & As an HR manager, I want to check loan eligibility before making a decision. & High \\
+\cline{2-5}
+& US 22 & Loan meeting & As an HR manager, I want to schedule a loan meeting with valid time slots. & High \\
+\cline{2-5}
+& US 23 & Authorization request & As an employee, I want to submit an authorization request for exceptional permission. & Medium \\
+\cline{2-5}
+& US 24 & HR request decision & As an HR manager, I want to approve or reject administrative requests. & High \\
+\cline{2-5}
+& US 25 & Request tracking & As a user, I want to track the status and history of my administrative requests. & Low \\
+\cline{2-5}
+& US 26 & Request filters & As an HR manager, I want to search and filter administrative requests. & Low \\
+\cline{2-5}
+& TS 05 & Request notifications & Send request status notifications and emails. & Low \\
+\cline{2-5}
+& TS 06 & Final files & Manage final request files and downloads. & Medium \\
+\hline
 \end{longtable}
 
+% ---------- Sprint 4 ----------
 \BacklogNextSprintTable
-
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\BacklogContinuedCaption\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{10}{=}{\centering\textbf{Sprint 4\\[4pt] HR Management\\\& Calendar}}
-& US 32 & Employee records & As an HR manager, I want to manage employee information so that records stay accurate. & Medium \\
-\cline{2-5}
-& US 33 & Team management & As an HR manager, I want to manage teams so that the organizational structure remains consistent. & Medium \\
-\cline{2-5}
-& US 34 & Team leader assignment & As an HR manager, I want to assign team leaders so that each team has the correct supervisor. & Medium \\
-\cline{2-5}
-& US 35 & Role management & As an HR manager, I want to manage roles so that access rights match responsibilities. & Medium \\
-\cline{2-5}
-& US 36 & HR dashboard & As an HR manager, I want to access an HR dashboard so that I can monitor operational activity at a glance. & Medium \\
-\cline{2-5}
-& US 37 & Login history and audit traces & As an HR manager, I want to review login history and available audit traces. & Medium \\
-\cline{2-5}
-& US 38 & Team leave calendar view & As a team leader, I want to view the leave calendar within my team scope so that I can plan availability. & Medium \\
-\cline{2-5}
-& US 39 & Leave calendar filters & As a team leader or HR manager, I want to filter leave information by employee, status, and date so that calendar views stay focused. & Low \\
-\cline{2-5}
-& US 40 & HR leave calendar view & As an HR manager, I want broader leave visibility across teams and employees so that I can supervise planning. & Medium \\
-\cline{2-5}
-& US 41 & Request traceability & As an HR manager, I want to trace request history so that each workflow decision remains auditable. & Medium \\
-\hline
 
+\multirow{11}{=}{\centering\textbf{Sprint 4\\[4pt] HR Management\\and Calendar}}
+& US 27 & Employee records & As an HR manager, I want to manage employee records. & Medium \\
+\cline{2-5}
+& US 28 & Department management & As an HR manager, I want to manage departments. & Medium \\
+\cline{2-5}
+& US 29 & Job title management & As an HR manager, I want to manage job titles. & Medium \\
+\cline{2-5}
+& US 30 & Team management & As an HR manager, I want to create teams and assign team leaders. & High \\
+\cline{2-5}
+& US 31 & Employee movement & As an HR manager, I want to move employees between teams. & Medium \\
+\cline{2-5}
+& US 32 & User search and filters & As an HR manager, I want to search and filter users. & Low \\
+\cline{2-5}
+& US 33 & HR dashboard & As an HR manager, I want to view HR dashboard indicators. & Medium \\
+\cline{2-5}
+& US 34 & HR calendar & As an HR manager, I want to supervise leave planning through the HR calendar. & Medium \\
+\cline{2-5}
+& US 35 & Team calendar & As a team leader, I want to view my team calendar to understand availability. & Medium \\
+\cline{2-5}
+& TS 07 & Calendar filters & Add calendar filters by employee, status, and date. & Low \\
+\cline{2-5}
+& TS 08 & HR approval views & Improve HR request and approval views. & Medium \\
+\hline
 \end{longtable}
 
+% ---------- Sprint 5 ----------
 \BacklogNextSprintTable
-
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\BacklogContinuedCaption\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{11}{=}{\centering\textbf{Sprint 5\\[4pt] Projects and\\Tasks}}
-& US 42 & Project creation & As a team leader, I want to create projects so that I can organize work around clear objectives. & Medium \\
-\cline{2-5}
-& US 43 & Project list & As a user, I want to view the project list so that I can access the projects relevant to me. & Low \\
-\cline{2-5}
-& US 44 & Task creation & As a team leader, I want to create tasks so that project work can be broken into manageable actions. & Medium \\
-\cline{2-5}
-& US 45 & Task assignment & As a team leader, I want to assign tasks to team members so that project work is distributed properly. & Medium \\
-\cline{2-5}
-& US 46 & Task status update & As an assignee, I want to update task status so that task progress remains visible to the team. & Low \\
-\cline{2-5}
-& US 47 & Task tracking & As a user, I want to track task status so that I can monitor progress toward completion. & Medium \\
-\cline{2-5}
-& US 48 & Project/task dashboard & As a team leader, I want a project and task dashboard so that I can monitor delivery. & Medium \\
-\cline{2-5}
-& US 49 & Project and task calendar view & As a user, I want to view project and task dates in a calendar so that planning information is easier to follow. & Medium \\
-\cline{2-5}
-& US 50 & Project-based task filters & As a user, I want to filter tasks by project so that I can focus on a specific work context. & Low \\
-\cline{2-5}
-& US 51 & Assignee task assignment notification and email & As an assignee, I want a notification and email when a task is assigned to me. & Low \\
-\cline{2-5}
-& US 52 & Team leader task completion notification and email & As a team leader, I want a notification and email when a task is completed. & Low \\
-\hline
 
+\multirow{11}{=}{\centering\textbf{Sprint 5\\[4pt] Projects, Tasks,\\Reports and\\Notifications}}
+& US 36 & Project management & As a team leader, I want to create and manage projects. & Medium \\
+\cline{2-5}
+& US 37 & Task assignment & As a team leader, I want to create and assign tasks to team members. & Medium \\
+\cline{2-5}
+& US 38 & Task status update & As an assignee, I want to update task status so that progress remains visible. & Low \\
+\cline{2-5}
+& US 39 & Task filters & As a user, I want to filter tasks by project and status. & Low \\
+\cline{2-5}
+& US 40 & Availability check & As a team leader, I want to check availability before assigning work. & High \\
+\cline{2-5}
+& US 41 & Notifications & As a user, I want to receive in-app notifications about important updates. & Medium \\
+\cline{2-5}
+& US 42 & PDF reports & As a user, I want to download generated PDF reports. & Medium \\
+\cline{2-5}
+& US 43 & QR verification & As a public verifier, I want to verify official documents using a QR code. & Medium \\
+\cline{2-5}
+& US 44 & Reports and statistics & As an HR manager, I want to monitor reports and statistics. & Medium \\
+\cline{2-5}
+& TS 09 & Kafka events & Configure Kafka event publishing and consumers. & High \\
+\cline{2-5}
+& TS 10 & Outbox monitoring & Monitor failed outbox events and replay them. & High \\
+\hline
 \end{longtable}
 
+% ---------- Sprint 6 ----------
 \BacklogNextSprintTable
-
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.8cm}|>{\centering\bfseries}m{2.8cm}|m{7cm}|>{\centering\arraybackslash}m{1.55cm}|}
+\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
+\BacklogContinuedCaption\\
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endfirsthead
 \hline
 \rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
+\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
 \endfoot
 \endlastfoot
-\multirow{10}{=}{\centering\textbf{Sprint 6\\[4pt] AI Assistance\\\& Decision\\Support}}
-& US 53 & AI request assistant & As an employee, I want an AI request assistant so that I can get guided help while preparing a request. & Medium \\
+
+\multirow{11}{=}{\centering\textbf{Sprint 6\\[4pt] AI, Deployment\\and Stabilization}}
+& US 45 & Platform questions & As a user, I want to ask platform questions using the assistant. & Medium \\
 \cline{2-5}
-& US 54 & AI leave drafting & As an employee, I want AI assistance to draft my leave request so that I can prepare it faster before confirming submission. & Medium \\
+& US 46 & Role-aware answers & As a user, I want the assistant to answer according to my role. & High \\
 \cline{2-5}
-& US 55 & AI document drafting & As an employee, I want AI assistance to draft my document request so that I can submit a clearer request after confirmation. & Medium \\
+& US 47 & Leave draft assistance & As an employee, I want the assistant to help draft a leave request. & High \\
 \cline{2-5}
-& US 56 & AI loan drafting & As an employee, I want AI assistance to draft my loan request so that I can structure my request before confirming it. & Medium \\
+& US 48 & Draft validation & As an employee, I want the system to validate the leave draft before submission. & High \\
 \cline{2-5}
-& US 57 & AI authorization drafting & As an employee, I want AI assistance to draft my authorization request so that I can prepare the request before submitting it. & Medium \\
+& US 49 & Explicit confirmation & As an employee, I want leave submission to require explicit confirmation. & Medium \\
 \cline{2-5}
-& US 58 & TL request summary & As a team leader, I want AI to summarize requests so that I can review them faster before making a human decision. & Medium \\
+& US 50 & Unsafe-action refusal & As a user, I want the assistant to refuse unsafe actions. & Medium \\
 \cline{2-5}
-& US 59 & TL workload hints & As a team leader, I want AI workload and conflict hints so that I can detect scheduling risks before validating team requests. & Medium \\
+& TS 11 & React assistant integration & Integrate the React chatbot with the Spring Boot assistant gateway. & High \\
 \cline{2-5}
-& US 60 & TL reassignment suggestions & As a team leader, I want AI suggestions for task reassignment so that I can balance workload more effectively. & Medium \\
+& TS 12 & FastAPI integration & Connect the Spring Boot assistant gateway with the FastAPI AI service. & High \\
 \cline{2-5}
-& US 61 & HR recommendation support & As an HR manager, I want AI recommendation support so that I can review requests with decision assistance. & High \\
+& TS 13 & Demo deployment preparation & Prepare local demonstration deployment configuration. & Medium \\
 \cline{2-5}
-& US 62 & Explanation and traceability & As a team leader or HR manager, I want AI explanations and traceability so that every suggestion remains understandable and auditable. & High \\
+& TS 14 & Final build checks & Run final frontend, backend, and AI service build checks. & Medium \\
+\cline{2-5}
+& TS 15 & Final stabilization & Stabilize the platform and correct final integration issues. & High \\
 \hline
-\BacklogContinuedCaption
 \end{longtable}
 
 \normalsize
 \setlength{\tabcolsep}{6pt}
+\setcounter{table}{1}
 
 \vspace{6pt}
+  % ============================================================
+  %  VI. RELEASE ORGANIZATION
+  % ============================================================
+  \Needspace{24\baselineskip}
+  \ReportSection{VI. Release Organization}{VI. Release Organization}
 
-% ============================================================
-%  VI. RELEASE ORGANIZATION
-% ============================================================
-\Needspace{24\baselineskip}
-\ReportSection{VI. Release Organization}{VI. Release Organization}
+  {\fontsize{12}{18}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+  \indent The six planned sprints are grouped into three major releases to ensure progressive and coherent delivery of the platform.
 
-\indent The six planned sprints are grouped into three major releases to ensure progressive and coherent delivery of the platform.
+  }
 
-}
-
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[
-  x=1cm,
-  y=1cm,
-  font=\fontsize{7.4}{8.6}\selectfont,
-  planbox/.style={
-    draw=black!70,
-    fill=cyan!18,
-    line width=0.32pt,
-    align=center,
-    inner sep=2pt
-  },
-  releasebox/.style={
-    planbox,
-    minimum width=2.62cm,
-    minimum height=0.78cm,
-    text width=2.35cm,
-    font=\fontsize{7.4}{8.5}\selectfont\bfseries
-  },
+  \begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[
+    x=1cm,
+    y=1cm,
+    font=\fontsize{7.4}{8.6}\selectfont,
+    planbox/.style={
+      draw=black!70,
+      fill=cyan!18,
+      line width=0.32pt,
+      align=center,
+      inner sep=2pt
+    },
+    releasebox/.style={
+      planbox,
+      minimum width=2.62cm,
+      minimum height=0.78cm,
+      text width=2.35cm,
+      font=\fontsize{7.4}{8.5}\selectfont\bfseries
+    },
   sprintbox/.style={
     planbox,
-    minimum width=2.54cm,
-    minimum height=0.92cm,
-    text width=2.28cm,
-    font=\fontsize{6.95}{8.2}\selectfont\bfseries
-  },
-  tag/.style={
-    draw=black!70,
-    fill=white,
-    line width=0.28pt,
-    minimum width=1.02cm,
-    minimum height=0.24cm,
-    inner sep=1pt,
-    align=center,
-    font=\fontsize{6.25}{7.1}\selectfont\bfseries
-  },
-  connector/.style={
-    draw=yellow!75!black,
-    line width=0.32pt,
-    line cap=round
+    minimum width=3.00cm,
+    minimum height=1.05cm,
+    text width=2.72cm,
+    font=\fontsize{5.85}{6.85}\selectfont\bfseries
+    },
+    tag/.style={
+      draw=black!70,
+      fill=white,
+      line width=0.28pt,
+      minimum width=1.02cm,
+      minimum height=0.24cm,
+      inner sep=1pt,
+      align=center,
+      font=\fontsize{6.25}{7.1}\selectfont\bfseries
+    },
+    connector/.style={
+      draw=orange!62!yellow!82!black,
+      line width=0.38pt,
+      line cap=butt
+    }
+  ]
+
+  \draw[line width=0.38pt, draw=black] (0.00,0.05) rectangle (14.95,-4.08);
+
+  \node[releasebox] (r1) at (1.30,-0.55) {Core\\Foundation};
+  \node[releasebox] (r2) at (6.35,-0.50) {Workflow\\Management};
+  \node[releasebox] (r3) at (11.55,-0.55) {Advanced Support\\and Intelligence};
+
+  \node[tag] (rt1) at (1.75,-0.91) {Release 1};
+  \node[tag] (rt2) at (6.80,-0.86) {Release 2};
+  \node[tag] (rt3) at (12.00,-0.91) {Release 3};
+
+  \node[sprintbox] (s1) at (3.15,-2.08) {Access and Account\\Management};
+  \node[sprintbox] (s2) at (4.20,-3.18) {Leave\\Management};
+
+  \node[sprintbox] (s3) at (8.30,-1.78) {Administrative\\Requests};
+  \node[sprintbox] (s4) at (8.20,-3.22) {HR Management\\and Calendar};
+
+  \node[sprintbox] (s5) at (13.40,-1.78) {Projects, Tasks,\\Reports and\\Notifications};
+  \node[sprintbox] (s6) at (13.45,-3.22) {AI, Deployment\\and Stabilization};
+
+  \node[tag] at (3.75,-2.48) {Sprint 1};
+  \node[tag] at (4.80,-3.58) {Sprint 2};
+  \node[tag] at (8.90,-2.18) {Sprint 3};
+  \node[tag] at (8.80,-3.62) {Sprint 4};
+  \node[tag] at (14.00,-2.18) {Sprint 5};
+  \node[tag] at (14.05,-3.62) {Sprint 6};
+
+  \draw[connector] (1.30,-1.20) -- (1.30,-3.18);
+  \draw[connector] (1.30,-2.08) -- (s1.west);
+  \draw[connector] (1.30,-3.18) -- (s2.west);
+
+  \draw[connector] (6.35,-1.18) -- (6.35,-3.22);
+  \draw[connector] (6.35,-1.78) -- (s3.west);
+  \draw[connector] (6.35,-3.22) -- (s4.west);
+
+  \draw[connector] (11.55,-1.20) -- (11.55,-3.22);
+  \draw[connector] (11.55,-1.78) -- (s5.west);
+  \draw[connector] (11.55,-3.22) -- (s6.west);
+
+  \end{tikzpicture}
+  \caption{Organization of Releases}
+  \end{figure}
+
+  \vspace{6pt}
+  % ============================================================
+  %  CONCLUSION
+  % ============================================================
+  \ReportSection{Conclusion}{Conclusion}
+
+  {\fontsize{12}{16}\selectfont
+  \setlength{\parindent}{1.2cm}
+  \setlength{\parskip}{6pt}
+
+  \indent This chapter established the backlog-planning foundation of the project through actor identification, requirement structuring, user stories, and prioritized backlog definition. It provides the planning baseline for sprint execution and the progressive realization of the platform at ArabSoft.
+
   }
-]
-
-\draw[line width=0.38pt, draw=black] (0.00,0.05) rectangle (14.95,-4.08);
-
-\node[releasebox] (r1) at (1.30,-0.55) {Core\\Foundation};
-\node[releasebox] (r2) at (6.35,-0.50) {Workflow\\Management};
-\node[releasebox] (r3) at (11.55,-0.55) {Advanced Support\\and Intelligence};
-
-\node[tag] (rt1) at (1.75,-0.91) {Release 1};
-\node[tag] (rt2) at (6.80,-0.86) {Release 2};
-\node[tag] (rt3) at (12.00,-0.91) {Release 3};
-
-\node[sprintbox] (s1) at (3.15,-2.08) {Access};
-\node[sprintbox] (s2) at (4.20,-3.18) {Leave\\Management};
-
-\node[sprintbox] (s3) at (8.30,-1.78) {Administrative\\Requests};
-\node[sprintbox] (s4) at (8.20,-3.22) {HR Management\\and Calendar};
-
-\node[sprintbox] (s5) at (13.40,-1.78) {Projects\\and Tasks};
-\node[sprintbox] (s6) at (13.45,-3.22) {AI Assistance\\and Decision\\Support};
-
-\node[tag] at (3.75,-2.48) {Sprint 1};
-\node[tag] at (4.80,-3.58) {Sprint 2};
-\node[tag] at (8.90,-2.18) {Sprint 3};
-\node[tag] at (8.80,-3.62) {Sprint 4};
-\node[tag] at (14.00,-2.18) {Sprint 5};
-\node[tag] at (14.05,-3.62) {Sprint 6};
-
-\draw[connector] (rt1.south) -- (1.75,-1.62) -- (1.75,-2.08) -- (s1.west);
-\draw[connector] (1.75,-1.62) -- (1.75,-3.18) -- (s2.west);
-
-\draw[connector] (rt2.south) -- (6.80,-1.48) -- (6.80,-1.78) -- (s3.west);
-\draw[connector] (6.80,-1.48) -- (6.80,-3.22) -- (s4.west);
-
-\draw[connector] (rt3.south) -- (12.00,-1.48) -- (12.00,-1.78) -- (s5.west);
-\draw[connector] (12.00,-1.48) -- (12.00,-3.22) -- (s6.west);
-
-\end{tikzpicture}
-\caption{Organization of Releases}
-\end{figure}
-
-\vspace{6pt}
-% ============================================================
-%  CONCLUSION
-% ============================================================
-\ReportSection{Conclusion}{Conclusion}
-
-{\fontsize{12}{16}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent This chapter established the backlog-planning foundation of the project through actor identification, requirement structuring, user stories, and prioritized backlog definition. It provides the planning baseline for sprint execution and the progressive realization of the platform at ArabSoft.
-
-}

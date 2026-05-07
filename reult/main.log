@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  18 APR 2026 17:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  7 MAY 2026 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -829,13 +829,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
-) (main.aux (sections/page_garde/page_garde.aux)
-(sections/dedicace/dedicace.aux) (sections/remerciements/remerciements.aux)
-(sections/table_matieres/table_matieres.aux)
-(sections/liste_figures/liste_figures.aux)
-(sections/liste_tableaux/liste_tableaux.aux)
-(sections/introduction_generale/introduction_generale.aux)
-(sections/chapitre1/chapitre1.aux))
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 160.
@@ -935,13 +929,13 @@ Package hyperref Info: Link coloring OFF on input line 160.
 \openout2 = `sections/page_garde/page_garde.aux'.
 
  (sections/page_garde/page_garde.tex
-<sections/page_garde/img/iset_logo.png, id=274, 217.81375pt x 232.87pt>
+<sections/page_garde/img/iset_logo.png, id=6, 217.81375pt x 232.87pt>
 File: sections/page_garde/img/iset_logo.png Graphic file (type png)
 <use sections/page_garde/img/iset_logo.png>
 Package pdftex.def Info: sections/page_garde/img/iset_logo.png  used on input l
 ine 8.
 (pdftex.def)             Requested size: 71.13188pt x 76.04784pt.
-<sections/page_garde/img/arabsoft_logo.jpg, id=275, 200.75pt x 200.75pt>
+<sections/page_garde/img/arabsoft_logo.jpg, id=7, 200.75pt x 200.75pt>
 File: sections/page_garde/img/arabsoft_logo.jpg Graphic file (type jpg)
 <use sections/page_garde/img/arabsoft_logo.jpg>
 Package pdftex.def Info: sections/page_garde/img/arabsoft_logo.jpg  used on inp
@@ -1039,23 +1033,7 @@ l.169 ...ude{sections/remerciements/remerciements}
 \openout2 = `sections/table_matieres/table_matieres.aux'.
 
 
-(sections/table_matieres/table_matieres.tex (main.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 ... Functional Requirements}{16}{section*.39}
-                                                  % [3
-
-
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66 ...on}{III.4 Sprint Review}{45}{section*.106}
-                                                  % [4])
+(sections/table_matieres/table_matieres.tex (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1065,21 +1043,15 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.170 ...e{sections/table_matieres/table_matieres}
-                                                   [5]
+                                                   [3
+
+
+
+]
 \openout2 = `sections/liste_figures/liste_figures.aux'.
 
 
-(sections/liste_figures/liste_figures.tex (main.lof
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 ...ews Leave Request}}{42}{figure.caption.96}
-                                                  % [6
-
-
-
-])
+(sections/liste_figures/liste_figures.tex (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -1089,7 +1061,11 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.171 ...ude{sections/liste_figures/liste_figures}
-                                                   [7]
+                                                   [4
+
+
+
+]
 \openout2 = `sections/liste_tableaux/liste_tableaux.aux'.
 
 
@@ -1103,7 +1079,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.172 ...e{sections/liste_tableaux/liste_tableaux}
-                                                   [8
+                                                   [5
 
 
 
@@ -1150,7 +1126,7 @@ ment, pri-or-i-ti-za-tion, and progress mon-
  []
 
 [4]
-<sections/chapitre1/img/uml_logo.png, id=480, 1284.8pt x 935.495pt>
+<sections/chapitre1/img/uml_logo.png, id=60, 1284.8pt x 935.495pt>
 File: sections/chapitre1/img/uml_logo.png Graphic file (type png)
 <use sections/chapitre1/img/uml_logo.png>
 Package pdftex.def Info: sections/chapitre1/img/uml_logo.png  used on input lin
@@ -1164,21 +1140,21 @@ Overfull \hbox (2.56657pt too wide) in paragraph at lines 199--200
  []
 
 [5 <./sections/chapitre1/img/uml_logo.png>]
-<sections/chapitre1/img/scrum_roles_custom.png, id=487, 1059.96pt x 578.16pt>
+<sections/chapitre1/img/scrum_roles_custom.png, id=71, 1059.96pt x 578.16pt>
 File: sections/chapitre1/img/scrum_roles_custom.png Graphic file (type png)
 <use sections/chapitre1/img/scrum_roles_custom.png>
 Package pdftex.def Info: sections/chapitre1/img/scrum_roles_custom.png  used on
  input line 274.
 (pdftex.def)             Requested size: 369.88582pt x 201.75912pt.
  [6]
-<sections/chapitre1/img/scrum.png, id=492, 1027.84pt x 501.875pt>
+<sections/chapitre1/img/scrum.png, id=76, 1027.84pt x 501.875pt>
 File: sections/chapitre1/img/scrum.png Graphic file (type png)
 <use sections/chapitre1/img/scrum.png>
 Package pdftex.def Info: sections/chapitre1/img/scrum.png  used on input line 2
 95.
 (pdftex.def)             Requested size: 341.43306pt x 166.71434pt.
-<sections/chapitre1/img/specs_abderrahmen_ben_hattab.png, id=493, 801.59476pt x
- 154.77824pt>
+<sections/chapitre1/img/specs_abderrahmen_ben_hattab.png, id=77, 801.59476pt x 
+154.77824pt>
 File: sections/chapitre1/img/specs_abderrahmen_ben_hattab.png Graphic file (typ
 e png)
 <use sections/chapitre1/img/specs_abderrahmen_ben_hattab.png>
@@ -1187,19 +1163,19 @@ g  used on input line 315.
 (pdftex.def)             Requested size: 369.88582pt x 71.42085pt.
  [7 <./sections/chapitre1/img/scrum_roles_custom.png> <./sections/chapitre1/img
 /scrum.png>]
-<sections/chapitre1/img/vscode.png, id=500, 1204.5pt x 632.3625pt>
+<sections/chapitre1/img/vscode.png, id=89, 1204.5pt x 632.3625pt>
 File: sections/chapitre1/img/vscode.png Graphic file (type png)
 <use sections/chapitre1/img/vscode.png>
 Package pdftex.def Info: sections/chapitre1/img/vscode.png  used on input line 
 380.
 (pdftex.def)             Requested size: 71.13013pt x 69.51375pt.
-<sections/chapitre1/img/intellij.png, id=502, 256.96pt x 256.96pt>
+<sections/chapitre1/img/intellij.png, id=91, 256.96pt x 256.96pt>
 File: sections/chapitre1/img/intellij.png Graphic file (type png)
 <use sections/chapitre1/img/intellij.png>
 Package pdftex.def Info: sections/chapitre1/img/intellij.png  used on input lin
 e 384.
 (pdftex.def)             Requested size: 65.43962pt x 65.43962pt.
-<sections/chapitre1/img/postman.png, id=503, 200.75pt x 200.75pt>
+<sections/chapitre1/img/postman.png, id=92, 200.75pt x 200.75pt>
 File: sections/chapitre1/img/postman.png Graphic file (type png)
 <use sections/chapitre1/img/postman.png>
 Package pdftex.def Info: sections/chapitre1/img/postman.png  used on input line
@@ -1208,37 +1184,37 @@ Package pdftex.def Info: sections/chapitre1/img/postman.png  used on input line
  [8 <./sections/chapitre1/img/specs_abderrahmen_ben_hattab.png> <./sections/cha
 pitre1/img/intellij.png> <./sections/chapitre1/img/postman.png> <./sections/cha
 pitre1/img/vscode.png>]
-<sections/chapitre1/img/drawio.png, id=513, 813.0375pt x 457.71pt>
+<sections/chapitre1/img/drawio.png, id=104, 813.0375pt x 457.71pt>
 File: sections/chapitre1/img/drawio.png Graphic file (type png)
 <use sections/chapitre1/img/drawio.png>
 Package pdftex.def Info: sections/chapitre1/img/drawio.png  used on input line 
 392.
 (pdftex.def)             Requested size: 54.05266pt x 30.42964pt.
-<sections/chapitre1/img/git.png, id=514, 973.6375pt x 501.875pt>
+<sections/chapitre1/img/git.png, id=105, 973.6375pt x 501.875pt>
 File: sections/chapitre1/img/git.png Graphic file (type png)
 <use sections/chapitre1/img/git.png>
 Package pdftex.def Info: sections/chapitre1/img/git.png  used on input line 404
 .
 (pdftex.def)             Requested size: 38.41005pt x 18.77823pt.
-<sections/chapitre1/img/github.png, id=516, 224.84pt x 224.84pt>
+<sections/chapitre1/img/github.png, id=107, 224.84pt x 224.84pt>
 File: sections/chapitre1/img/github.png Graphic file (type png)
 <use sections/chapitre1/img/github.png>
 Package pdftex.def Info: sections/chapitre1/img/github.png  used on input line 
 405.
 (pdftex.def)             Requested size: 49.79086pt x 49.79086pt.
-<sections/chapitre1/img/jira.png, id=517, 2509.375pt x 2509.375pt>
+<sections/chapitre1/img/jira.png, id=108, 2509.375pt x 2509.375pt>
 File: sections/chapitre1/img/jira.png Graphic file (type png)
 <use sections/chapitre1/img/jira.png>
 Package pdftex.def Info: sections/chapitre1/img/jira.png  used on input line 41
 8.
 (pdftex.def)             Requested size: 54.02708pt x 54.02708pt.
-<sections/chapitre1/img/latex.png, id=518, 869.2475pt x 652.4375pt>
+<sections/chapitre1/img/latex.png, id=109, 869.2475pt x 652.4375pt>
 File: sections/chapitre1/img/latex.png Graphic file (type png)
 <use sections/chapitre1/img/latex.png>
 Package pdftex.def Info: sections/chapitre1/img/latex.png  used on input line 4
 22.
 (pdftex.def)             Requested size: 54.04929pt x 40.56818pt.
-<sections/chapitre1/img/figma.png, id=519, 319.1925pt x 159.59625pt>
+<sections/chapitre1/img/figma.png, id=110, 319.1925pt x 159.59625pt>
 File: sections/chapitre1/img/figma.png Graphic file (type png)
 <use sections/chapitre1/img/figma.png>
 Package pdftex.def Info: sections/chapitre1/img/figma.png  used on input line 4
@@ -1247,31 +1223,31 @@ Package pdftex.def Info: sections/chapitre1/img/figma.png  used on input line 4
  [9 <./sections/chapitre1/img/drawio.png> <./sections/chapitre1/img/github.png>
  <./sections/chapitre1/img/jira.png> <./sections/chapitre1/img/latex.png> <./se
 ctions/chapitre1/img/figma.png> <./sections/chapitre1/img/git.png>]
-<sections/chapitre1/img/react.png, id=531, 238.8925pt x 212.795pt>
+<sections/chapitre1/img/react.png, id=123, 238.8925pt x 212.795pt>
 File: sections/chapitre1/img/react.png Graphic file (type png)
 <use sections/chapitre1/img/react.png>
 Package pdftex.def Info: sections/chapitre1/img/react.png  used on input line 4
 45.
 (pdftex.def)             Requested size: 59.74849pt x 53.22134pt.
-<sections/chapitre1/img/tailwind.png, id=532, 331.2375pt x 202.7575pt>
+<sections/chapitre1/img/tailwind.png, id=124, 331.2375pt x 202.7575pt>
 File: sections/chapitre1/img/tailwind.png Graphic file (type png)
 <use sections/chapitre1/img/tailwind.png>
 Package pdftex.def Info: sections/chapitre1/img/tailwind.png  used on input lin
 e 449.
 (pdftex.def)             Requested size: 59.74652pt x 36.57211pt.
-<sections/chapitre1/img/springboot.png, id=533, 401.5pt x 401.5pt>
+<sections/chapitre1/img/springboot.png, id=125, 401.5pt x 401.5pt>
 File: sections/chapitre1/img/springboot.png Graphic file (type png)
 <use sections/chapitre1/img/springboot.png>
 Package pdftex.def Info: sections/chapitre1/img/springboot.png  used on input l
 ine 453.
 (pdftex.def)             Requested size: 59.74649pt x 27.1574pt.
-<sections/chapitre1/img/PostgreSQL.png, id=535, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/PostgreSQL.png, id=127, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/PostgreSQL.png Graphic file (type png)
 <use sections/chapitre1/img/PostgreSQL.png>
 Package pdftex.def Info: sections/chapitre1/img/PostgreSQL.png  used on input l
 ine 457.
 (pdftex.def)             Requested size: 59.7518pt x 59.7518pt.
-<sections/chapitre1/img/keycloak.jpg, id=536, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/keycloak.jpg, id=128, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/keycloak.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/keycloak.jpg>
 Package pdftex.def Info: sections/chapitre1/img/keycloak.jpg  used on input lin
@@ -1280,13 +1256,13 @@ e 461.
  [10 <./sections/chapitre1/img/react.png> <./sections/chapitre1/img/tailwind.pn
 g> <./sections/chapitre1/img/PostgreSQL.png> <./sections/chapitre1/img/keycloak
 .jpg> <./sections/chapitre1/img/springboot.png>]
-<sections/chapitre1/img/docker.png, id=547, 241.90375pt x 209.78375pt>
+<sections/chapitre1/img/docker.png, id=138, 241.90375pt x 209.78375pt>
 File: sections/chapitre1/img/docker.png Graphic file (type png)
 <use sections/chapitre1/img/docker.png>
 Package pdftex.def Info: sections/chapitre1/img/docker.png  used on input line 
 465.
 (pdftex.def)             Requested size: 59.74863pt x 51.81519pt.
-<sections/chapitre1/img/kafka.png, id=548, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/kafka.png, id=139, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/kafka.png Graphic file (type png)
 <use sections/chapitre1/img/kafka.png>
 Package pdftex.def Info: sections/chapitre1/img/kafka.png  used on input line 4
@@ -1304,21 +1280,21 @@ sed of two com-ple-men-tary parts:
  []
 
 [11 <./sections/chapitre1/img/docker.png> <./sections/chapitre1/img/kafka.png>]
-<sections/chapitre1/img/arch_frontend.jpg, id=557, 477.9456pt x 460.119pt>
+<sections/chapitre1/img/arch_frontend.jpg, id=151, 477.9456pt x 460.119pt>
 File: sections/chapitre1/img/arch_frontend.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_frontend.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_frontend.jpg  used on inpu
 t line 510.
 (pdftex.def)             Requested size: 409.71692pt x 394.4379pt.
 [12 <./sections/chapitre1/img/arch_frontend.jpg>]
-<sections/chapitre1/img/arch_backend.jpg, id=562, 647.5392pt x 514.0806pt>
+<sections/chapitre1/img/arch_backend.jpg, id=157, 1011.78pt x 803.25093pt>
 File: sections/chapitre1/img/arch_backend.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_backend.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_backend.jpg  used on input
  line 536.
-(pdftex.def)             Requested size: 409.71692pt x 325.27661pt.
+(pdftex.def)             Requested size: 409.71692pt x 325.27808pt.
  [13 <./sections/chapitre1/img/arch_backend.jpg>]
-<sections/chapitre1/img/arch_globale.jpg, id=567, 1003.95074pt x 449.2785pt>
+<sections/chapitre1/img/arch_globale.jpg, id=165, 1003.95074pt x 449.2785pt>
 File: sections/chapitre1/img/arch_globale.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_globale.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_globale.jpg  used on input
@@ -1398,49 +1374,120 @@ Overfull \hbox (17.80022pt too wide) in paragraph at lines 383--383
 [] 
  []
 
-[20] [21] [22] [23] [24] [25] [26] [27]) [28] (sections/chapitre3/chapitre3.tex
-<sections/chapitre3/img/other/release1_organization.png, id=646, 1204.5pt x 456
-.70625pt>
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+[]|\T1/ptm/m/n/10.95 Configure Key-cloak, Post-greSQL, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
+\T1/ptm/m/n/10.95 Spring Se-cu-rity for se-cure role-based
+ []
+
+[22]
+
+LaTeX Warning: Reference `tab:product_backlog' on page 23 undefined on input li
+ne 457.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--490
+[]|\T1/ptm/m/n/10.95 Send leave de-ci-sion no-ti-fi-ca-tions and
+ []
+
+[23]
+
+LaTeX Warning: Reference `tab:product_backlog' on page 24 undefined on input li
+ne 499.
+
+[24]
+
+LaTeX Warning: Reference `tab:product_backlog' on page 25 undefined on input li
+ne 541.
+
+[25]
+
+LaTeX Warning: Reference `tab:product_backlog' on page 26 undefined on input li
+ne 583.
+
+[26]
+
+LaTeX Warning: Reference `tab:product_backlog' on page 27 undefined on input li
+ne 625.
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 656--656
+[]|\T1/ptm/m/n/10.95 Prepare lo-cal demon-stra-tion de-ploy-ment
+ []
+
+[27]) [28] (sections/chapitre3/chapitre3.tex
+<sections/chapitre3/img/other/release1_organization.png, id=266, 903.375pt x 34
+2.5297pt>
 File: sections/chapitre3/img/other/release1_organization.png Graphic file (type
  png)
 <use sections/chapitre3/img/other/release1_organization.png>
 Package pdftex.def Info: sections/chapitre3/img/other/release1_organization.png
-  used on input line 75.
-(pdftex.def)             Requested size: 409.71692pt x 155.34775pt.
-[29
+  used on input line 103.
+(pdftex.def)             Requested size: 409.71692pt x 155.35472pt.
+ [29
 
- <./sections/chapitre3/img/other/release1_organization.png (PNG copy)>]
-<sections/chapitre3/img/jira_screenshots/jira 1.png, id=651, 1028.643pt x 419.7
-6825pt>
-File: sections/chapitre3/img/jira_screenshots/jira 1.png Graphic file (type png
-)
-<use sections/chapitre3/img/jira_screenshots/jira 1.png>
-Package pdftex.def Info: sections/chapitre3/img/jira_screenshots/jira 1.png  us
-ed on input line 109.
-(pdftex.def)             Requested size: 432.48051pt x 176.4872pt.
-<sections/chapitre3/img/jira_screenshots/jira 2.png, id=652, 1131.0255pt x 324.
-0105pt>
-File: sections/chapitre3/img/jira_screenshots/jira 2.png Graphic file (type png
-)
-<use sections/chapitre3/img/jira_screenshots/jira 2.png>
-Package pdftex.def Info: sections/chapitre3/img/jira_screenshots/jira 2.png  us
-ed on input line 113.
-(pdftex.def)             Requested size: 432.48051pt x 123.89653pt.
+ <./sections/chapitre3/img/other/release1_organization.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
 
-Overfull \vbox (3.80803pt too high) detected at line 157
+Overfull \vbox (3.80803pt too high) detected at line 178
  []
 
-[30 <./sections/chapitre3/img/jira_screenshots/jira 1.png> <./sections/chapitre
-3/img/jira_screenshots/jira 2.png>] [31] [32] [33] [34] [35] [36] [37] [38]
-[39] [40] [41] [42] [43] [44]) [45] (main.aux
-(sections/page_garde/page_garde.aux) (sections/dedicace/dedicace.aux)
-(sections/remerciements/remerciements.aux)
+[30]
+<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/
+sprint1_access_account_management_use_case.png, id=285, 889.3225pt x 753.81625p
+t>
+File: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diag
+rams/sprint1_access_account_management_use_case.png Graphic file (type png)
+<use sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagr
+ams/sprint1_access_account_management_use_case.png>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_manageme
+nt/02_use_case_diagrams/sprint1_access_account_management_use_case.png  used on
+ input line 212.
+(pdftex.def)             Requested size: 409.71692pt x 347.28879pt.
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_di
+agrams/registration_system_sequence.png, id=286, 995.72pt x 693.59125pt>
+File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequen
+ce_diagrams/registration_system_sequence.png Graphic file (type png)
+<use sections/chapitre3/img/sprint1_access_account_management/03_system_sequenc
+e_diagrams/registration_system_sequence.png>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_manageme
+nt/03_system_sequence_diagrams/registration_system_sequence.png  used on input 
+line 224.
+(pdftex.def)             Requested size: 409.71692pt x 285.40083pt.
+ [31
+
+ <./sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagra
+ms/sprint1_access_account_management_use_case.png>]
+
+LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <8.5> not available
+(Font)              size <8> substituted on input line 229.
+
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 229.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 229.
+[32 <./sections/chapitre3/img/sprint1_access_account_management/03_system_seque
+nce_diagrams/registration_system_sequence.png>] [33] [34] [35] [36] [37]
+[38])
+Overfull \hbox (10.53471pt too wide) in paragraph at lines 433--189
+[]\T1/ptm/m/n/12 The main pos-i-tive point of Sprint 1 was the es-tab-lish-ment
+ of a co-her-ent access-management
+ []
+
+[39] (main.aux (sections/page_garde/page_garde.aux)
+(sections/dedicace/dedicace.aux) (sections/remerciements/remerciements.aux)
 (sections/table_matieres/table_matieres.aux)
 (sections/liste_figures/liste_figures.aux)
 (sections/liste_tableaux/liste_tableaux.aux)
@@ -1450,59 +1497,39 @@ Overfull \vbox (3.80803pt too high) detected at line 157
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 32A2F64217744C656D8E8B28747F9912;12652.
+(rerunfilecheck)             Checksum: FF17A3E8684D193CD90541961B7E8A89;11544.
  ) 
 Here is how much of TeX's memory you used:
- 25336 strings out of 467867
- 492382 string characters out of 5418334
- 894869 words of memory out of 5000000
- 53526 multiletter control sequences out of 15000+600000
- 749079 words of font info for 181 fonts, out of 8000000 for 9000
+ 25199 strings out of 467867
+ 490058 string characters out of 5418334
+ 875500 words of memory out of 5000000
+ 53452 multiletter control sequences out of 15000+600000
+ 759166 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,15n,94p,898b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{table.caption.70} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
-t exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.90} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.84} has been referenced but does not
- exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section*.108} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section*.91} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section*.89} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section*.71} has been referenced but does not exist
-, replaced by a fixed one
-
-<C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
-mb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
-mbi8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
-tmri8a.pfb>
+ 88i,15n,94p,723b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+0800.pk><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmbi8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmri8a.pfb>
 Output written on "C:\Users\abdou\Downloads\rapport pfe abderrahmen ben hattab\
-abdou\reult\main.pdf" (54 pages, 2077077 bytes).
+abdou\reult\main.pdf" (45 pages, 1729012 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 713 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -36,6 +36,34 @@
   \end{figure}
 }
 
+\newcommand{\SprintOneImplementationHeading}[1]{%
+  \vspace{0.45cm}
+  \noindent{\fontsize{13}{16}\selectfont\textbf{#1}}\par
+  \vspace{0.12cm}
+}
+
+\newcommand{\SprintOneScenarioHeading}[1]{%
+  \vspace{0.25cm}
+  \noindent\textbf{#1}\par
+  \vspace{0.08cm}
+}
+
+\newcommand{\SprintOneAssetPlaceholder}[2]{%
+  \begin{center}
+    \fbox{%
+      \begin{minipage}[c][3.4cm][c]{0.88\textwidth}
+        \centering
+        {\fontsize{12}{15}\selectfont\textbf{#1}}\par
+        \vspace{0.28cm}
+        \begin{minipage}{0.82\textwidth}
+          \centering
+          {\fontsize{8.5}{10.5}\selectfont\path{#2}}
+        \end{minipage}
+      \end{minipage}%
+    }%
+  \end{center}
+}
+
 \begin{center}
   {\fontsize{18}{22}\selectfont \textbf{Chapter 3}}
 \end{center}
@@ -77,9 +105,9 @@ Together, these elements establish the first operational base of the platform fo
 \vspace{6pt}
 
 % ============================================================
-%  II. SPRINT 1: ACCESS
+%  II. SPRINT 1: ACCESS AND ACCOUNT MANAGEMENT
 % ============================================================
-\ReportSection{II. Sprint 1: Access}{II. Sprint 1: Access}
+\ReportSection{II. Sprint 1: Access and Account Management}{II. Sprint 1: Access and Account Management}
 
 \ReportSubsection{II.1 Sprint Goal}{\hspace{0.5cm} 1. Sprint Goal}
 
@@ -88,8 +116,9 @@ Together, these elements establish the first operational base of the platform fo
 \setlength{\parskip}{6pt}
 
 \indent This first sprint aims to establish the technical and functional access foundation of the platform.
-It implements the core access features: user registration, secure authentication, password reset, role assignment with notification and email, account activation or deactivation, profile update, and login history consultation.
+It implements the core access features: user registration, secure authentication, password reset, HR user account setup, role assignment with notification and email, account activation and deactivation, profile update, and access control.
 It also introduces the restricted \textbf{NEW\_USER} state to control onboarding before HR validation.
+The sprint is planned as a two-week iteration.
 The objective is to obtain an operational base for the next functional developments of the platform.
 
 }
@@ -100,20 +129,12 @@ The objective is to obtain an operational base for the next functional developme
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The visual sprint journal shows the selected user stories of Sprint 1 and their progress in Jira.
+\indent The visual sprint journal will document the selected user stories of Sprint 1 and their completion status in Jira. The corrected Sprint 1 journal screenshot will be inserted after validation.
 
 }
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/jira_screenshots/jira 1.png}
-
-    \vspace{0.6cm}
-
-    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/jira_screenshots/jira 2.png}
-    \caption{Jira Backlog -- Sprint 1}
-    \label{fig:jira_sprint1}
-\end{figure}
+% TODO: Add Figure -- Jira Backlog -- Sprint 1 Access and Account Management
+% Target path: sections/chapitre3/img/sprint1_access_account_management/01_jira/sprint1_jira_done.png
 
 \ReportSubsection{II.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
 
@@ -121,7 +142,7 @@ The objective is to obtain an operational base for the next functional developme
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The table below presents the backlog of the first and second sprints.
+\indent The table below presents the backlog of the first sprint, planned as a two-week iteration.
 
 }
 
@@ -168,319 +189,246 @@ The objective is to obtain an operational base for the next functional developme
 \cline{3-3}
 & & Implement account activation and deactivation & \\
 \cline{2-4}
-& \textbf{Access audit}
-& Implement login history consultation
-& 1d \\
-\cline{1-4}
-\multirow{12}{=}{\centering\textbf{Sprint 2}}
-& \multirow{4}{=}{\centering\textbf{Leave request workflow foundation}}
-& Create the leave request entity, DTOs, repository, and service
-& \multirow{4}{=}{\centering 3d} \\
-\cline{3-3}
-& & Implement leave submission & \\
-\cline{3-3}
-& & Implement leave tracking & \\
-\cline{3-3}
-& & Implement leave history & \\
-\cline{2-4}
-& \multirow{3}{=}{\centering\textbf{Team leader review flow}}
-& Implement team review of leave requests
-& \multirow{3}{=}{\centering 2d} \\
-\cline{3-3}
-& & Implement leave approval & \\
-\cline{3-3}
-& & Implement leave rejection with reason & \\
-\cline{2-4}
-& \multirow{2}{=}{\centering\textbf{HR final decision flow}}
-& Implement HR final decision on leave requests
-& \multirow{2}{=}{\centering 2d} \\
-\cline{3-3}
-& & Handle workflow state transitions & \\
-\cline{2-4}
-& \multirow{2}{=}{\centering\textbf{Leave control and communication}}
-& Implement leave cancellation before decision
-& \multirow{2}{=}{\centering 2d} \\
-\cline{3-3}
-& & Implement leave decision notifications and emails & \\
-\cline{2-4}
-& \textbf{Team leader personal leave actions}
-& Reuse employee-side leave actions for the team leader’s own leave requests
+& \textbf{HR account setup validation}
+& Validate pending users and complete their access setup
 & 1d \\
 \hline
 \end{tabular}
-\caption{Sprint Backlog -- Release 1}
+\caption{Sprint Backlog -- Sprint 1}
 \label{tab:release_1_sprint_backlog}
 \end{table}
 \clearpage
 \ReportSubsection{II.4 Sprint Implementation}{\hspace{0.5cm} 4. Sprint Implementation}
 
-\subsubsection*{4.1 Requirements Analysis}
+\SprintOneImplementationHeading{Requirements Analysis}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section presents the functional requirements identified for Sprint 1 of my final-year project. The sprint focuses on the access and account management foundation of the Arab Soft internal platform, including registration, authentication, password reset, role assignment, and account control.
-
-\indent To represent these requirements, I produced a use case diagram, the corresponding system sequence diagrams, and a state diagram. These diagrams illustrate the interactions between the main actors of the platform, the core functionalities covered by this sprint, and the main status changes of the user account, such as the \textbf{NEW\_USER}, active, and deactivated states.
+\indent This part introduces the main requirements covered by Sprint 1. The sprint prepares the access and account management foundation through registration, authentication, password reset, profile management, HR user account setup, account activation and deactivation, and access control.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/use_case_diagrams/Sprint 1 Access.png}{Use Case Diagram -- Sprint 1 Access}{use_case_sprint_1_access}
-\subsubsection*{a. User Registration}
+\ChapterThreeFigure{sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png}{Use Case Diagram – Sprint 1 Access and Account Management}{sprint1_access_account_management_use_case}
+
+\SprintOneImplementationHeading{System Sequence Diagrams}
+
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below models the system interaction flow during user registration, from form submission by the user to account creation and the generation of the restricted \textbf{NEW\_USER} state.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/user registration.png}{System Sequence Diagram -- User Registration}{ssd_user_registration}
-
-\subsubsection*{b. Login}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below models the system interaction flow during login, from credential submission by the user to authentication through Keycloak and redirection according to the result.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/S login .png}{System Sequence Diagram -- Login}{ssd_secure_login}
-
-\subsubsection*{c. Logout}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below models the system interaction flow during logout, from the user action in the interface to the clearing of the local session and redirection to the login page.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/logout.png}{System Sequence Diagram -- Logout}{ssd_logout}
-
-\subsubsection*{d. Password Reset}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below models the system interaction flow during password reset, from the reset request and OTP generation to password update and confirmation of the operation.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/reset password.png}{System Sequence Diagram -- Password Reset}{password_reset}
-
-\subsubsection*{e. HR Role Assignment}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below models the system interaction flow during HR role assignment, from the selection of a user role by the HR manager to role update, possible account activation, and notification by email.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/hr role assignment.png}{System Sequence Diagram -- HR Role Assignment}{ssd_hr_role_assignment}
-
-\subsubsection*{f. Account Activation / Deactivation}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below models the system interaction flow during account activation and deactivation, from the HR manager action to the update of the account status in both the application and Keycloak.
-}
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/account activation.png}{System Sequence Diagram -- Account Activation / Deactivation}{ssd_account_activation_deactivation}
-\subsubsection*{e. Manage Profile}
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The following diagram decomposes the \textbf{Manage User Accounts} use case into sub-functionalities, including its extension relationships.
+\indent The following system sequence diagrams describe the main interactions between the user, the interface, and the platform services during Sprint 1 scenarios.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/use_case_diagrams/manage profile.png}{Use Case Diagram -- Manage Profile}{Manage Profile}
+\SprintOneScenarioHeading{User Registration}
+\ChapterThreeFigure{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png}{System Sequence Diagram – User Registration}{sprint1_registration_system_sequence}
 
-\indent The diagram below models the system interaction flow during profile update, from the user's access to the profile page to validation and confirmation of the updated information.
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/update_profile_information.png}{System Sequence Diagram -- Update Profile Information}{ssd_update_profile_information}
+\SprintOneScenarioHeading{Secure Login}
 
-\indent The diagram below models the system interaction flow during password change, either by validating the current password or by requesting an OTP code before submitting the new password.
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/change_password.png}{System Sequence Diagram -- Change Password}{ssd_change_password}
-
-\subsubsection*{4.2. Analysis}
-
-\textbf{State Diagrams:}
-
-\vspace{0.4cm}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+\ChapterThreeFigure{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png}{System Sequence Diagram – User Registration}{sprint1_registration_system_sequence}
 
 
-}  
+\SprintOneScenarioHeading{Logout}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- Logout}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png}
 
-\indent The diagram below models the role assignment lifecycle of a user account during Sprint 1, from registration in the restricted \textbf{NEW\_USER} state to assignment of one of the operational platform roles by the HR manager.
-\ChapterThreeFigure{sections/chapitre3/img/state_diagrams/user_role_assignment_lifecycle.png}{State Diagram -- User Role Assignment Lifecycle}{state_user_role_assignment_lifecycle}
+\SprintOneScenarioHeading{Password Reset}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- Password Reset}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png}
 
-\indent The diagram below models the lifecycle of a user account during Sprint 1, from restricted onboarding to activation, deactivation, and reactivation according to HR control actions.
-\ChapterThreeFigure{sections/chapitre3/img/state_diagrams/user_account_lifecycle.png}{State Diagram -- User Account Lifecycle}{state_user_account_lifecycle}  
+\SprintOneScenarioHeading{HR User Account Setup}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- HR User Account Setup}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png}
 
+\SprintOneScenarioHeading{Account Activation and Deactivation}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- Account Activation and Deactivation}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png}
 
+\SprintOneScenarioHeading{Profile Management}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- Profile Update}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png}
 
-\textbf{Participant Class Diagrams:}
+\SprintOneAssetPlaceholder
+{System Sequence Diagram -- Authenticated Password Change}
+{sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png}
 
-\vspace{0.4cm}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The following participant class diagrams identify the main classes involved in the implementation of Sprint 1 use cases and clarify their structural responsibilities and interactions within the access and account management foundation of the platform.
-}
-\ChapterThreeFigure{sections/chapitre3/img/domain_model/domain_model_sprint1.png}{Domain Model -- Sprint 1}{domain_model_sprint1}
-
-
-\textbf{Participant Class Diagrams:}
-
-\vspace{0.4cm}
+\SprintOneImplementationHeading{Analysis}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The following participant class diagrams identify the main classes involved in the implementation of Sprint 1 use cases and clarify their structural responsibilities and interactions within the access and account management foundation of the platform.
-}
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/User Registration.drawio.png}{Class Diagram -- Sprint 1}{class_diagram_sprint1}
-
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the participant classes involved in the secure login and logout process, including authentication, account-state verification, token management, and login history recording.
+\indent The analysis phase clarifies the account lifecycle and the domain concepts used in Sprint 1. It focuses on the transition from the restricted \textbf{NEW\_USER} state to validated, active, or deactivated access.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_secure_login_logout.png}{Participant Class Diagram -- Secure Login and Logout}{participant_secure_login_logout}
+\SprintOneAssetPlaceholder
+{State Diagram -- User Account Lifecycle}
+{sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png}
 
+\SprintOneAssetPlaceholder
+{Domain Model -- Sprint 1 Access and Account Management}
+{sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png}
 
-
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the participant classes involved in the password reset process, from reset request submission to token validation and password update.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_password_reset.png}{Participant Class Diagram -- Password Reset}{participant_password_reset}
-
-
+\SprintOneImplementationHeading{Participant Class Diagrams}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the participant classes involved in profile update and authenticated password change, including personal information update, avatar customization, and password change support.
+\indent The participant class diagrams identify the main interface, service, and data elements involved in Sprint 1 use cases. They help connect each user action to the application components responsible for processing it.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_profile_update_password_change.png}{Participant Class Diagram -- Profile Update and Password Change}{participant_profile_update_password_change}
+\SprintOneAssetPlaceholder
+{Participant Class Diagram -- Authentication and Access Control}
+{sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png}
 
+\SprintOneAssetPlaceholder
+{Participant Class Diagram -- Password Reset and Password Change}
+{sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png}
 
+\SprintOneAssetPlaceholder
+{Participant Class Diagram -- HR Account Management}
+{sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png}
+
+\SprintOneImplementationHeading{Design Class Diagrams}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the participant classes involved in HR account management, including pending account consultation, role assignment, account activation or deactivation, and login history consultation.
+\indent The design class diagrams describe the internal structure that supports registration, pending access, security integration, HR account setup, and notification behavior.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/participant_hr_account_management.png}{Participant Class Diagram -- HR Account Management}{participant_hr_account_management}
+\SprintOneAssetPlaceholder
+{Design Class Diagram -- Registration and Pending Access}
+{sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png}
 
+\SprintOneAssetPlaceholder
+{Design Class Diagram -- Security, Keycloak, and Access Control}
+{sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png}
 
-\textbf{Design Class Diagrams:}
+\SprintOneAssetPlaceholder
+{Design Class Diagram -- HR Account Setup and Notification}
+{sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png}
 
-\vspace{0.4cm}
-
-
+\SprintOneImplementationHeading{Conception Sequence Diagrams}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the conception structure of the registration and pending-access workflow.
+\indent The conception sequence diagrams present the detailed interaction flow between the interface, application services, Keycloak, persistence layer, and notification mechanisms.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_registration_pending_access_v2.png}{Design Class Diagram -- Registration and Pending Access}{design_registration_pending_access}
+\SprintOneAssetPlaceholder
+{Conception Sequence Diagram -- Registration and Pending Access}
+{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_pending_access_conception_sequence.png}
+
+\SprintOneAssetPlaceholder
+{Conception Sequence Diagram -- Secure Login and Logout}
+{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_logout_conception_sequence.png}
+
+\SprintOneAssetPlaceholder
+{Conception Sequence Diagram -- Password Reset}
+{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_conception_sequence.png}
+
+\SprintOneAssetPlaceholder
+{Conception Sequence Diagram -- Profile Update and Password Change}
+{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_password_conception_sequence.png}
+
+\SprintOneAssetPlaceholder
+{Conception Sequence Diagram -- HR Account Setup and Account Control}
+{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_account_setup_control_conception_sequence.png}
+
+\SprintOneImplementationHeading{Interface Realization}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the conception structure of the secure login, logout, and access-control workflow.
+\indent The interface realization section will present the main screens produced during Sprint 1. These screens cover user access, pending validation, password recovery, profile operations, and HR account management actions.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_secure_login_logout_access_control.png}{Design Class Diagram -- Secure Login, Logout, and Access Control}{design_secure_login_logout_access_control}
+\SprintOneAssetPlaceholder
+{Login Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/login_page.png}
+
+\SprintOneAssetPlaceholder
+{Registration Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/registration_page.png}
+
+\SprintOneAssetPlaceholder
+{Pending Access Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/pending_access_page.png}
+
+\SprintOneAssetPlaceholder
+{Password Reset Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/password_reset_page.png}
+
+\SprintOneAssetPlaceholder
+{Profile Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/profile_page.png}
+
+\SprintOneAssetPlaceholder
+{HR User Management Page}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/hr_user_management_page.png}
+
+\SprintOneAssetPlaceholder
+{HR Account Setup Modal}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/hr_account_setup_modal.png}
+
+\SprintOneAssetPlaceholder
+{Account Activation / Deactivation Confirmation}
+{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/account_activation_deactivation_confirmation.png}
+
+\SprintOneImplementationHeading{Test and Validation}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the conception structure of the password-reset workflow.
+\indent The test and validation section will collect proof screenshots for the main Sprint 1 scenarios. The objective is to confirm access behavior, validation feedback, password recovery, HR account setup, and account status changes.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_password_reset.png}{Design Class Diagram -- Password Reset}{design_password_reset}
+\SprintOneAssetPlaceholder
+{Login Success and Invalid Credentials}
+{sections/chapitre3/img/sprint1_access_account_management/10_test_screenshots/login_validation_test.png}
+
+\SprintOneAssetPlaceholder
+{Registration and Pending Access}
+{sections/chapitre3/img/sprint1_access_account_management/10_test_screenshots/registration_pending_access_test.png}
+
+\SprintOneAssetPlaceholder
+{Password Reset}
+{sections/chapitre3/img/sprint1_access_account_management/10_test_screenshots/password_reset_test.png}
+
+\SprintOneAssetPlaceholder
+{HR Account Setup}
+{sections/chapitre3/img/sprint1_access_account_management/10_test_screenshots/hr_account_setup_test.png}
+
+\SprintOneAssetPlaceholder
+{Account Activation and Deactivation}
+{sections/chapitre3/img/sprint1_access_account_management/10_test_screenshots/account_activation_deactivation_test.png}
+
+\ReportSubsection{II.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the conception structure of profile update and password change.
+\indent Sprint 1 delivered the access foundation of the platform. It covered user registration, secure authentication, the \textbf{NEW\_USER} pending state, password reset, profile management, HR user account setup, role assignment notification and email, account activation and deactivation, and access control. This result provides the stable base required before implementing the next workflow.
 }
 
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_profile_update_password_change.png}{Design Class Diagram -- Profile Update and Password Change}{design_profile_update_password_change}
+\ReportSubsection{II.6 Sprint Retrospective}{\hspace{0.5cm} 6. Sprint Retrospective}
 
 {\fontsize{12}{18}\selectfont
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The diagram below presents the conception structure of HR account management and login-history consultation.
+\indent The main positive point of Sprint 1 was the establishment of a coherent access-management base that connects authentication, user status, and HR account-control actions. The main difficulty was integrating Keycloak, the local database, role assignment, and account states in a consistent way. For the next sprint, the improvement point is to keep workflow validation and UI feedback consistent across all user actions.
 }
-
-\ChapterThreeFigure{sections/chapitre3/img/class_diagrams/design_hr_account_management_login_history.png}{Design Class Diagram -- HR Account Management and Login History}{design_hr_account_management_login_history}
-
-
-\textbf{Conception Sequence Diagrams:}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the conception interaction flow of registration and pending access.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_registration_pending_access.png}{Conception Sequence Diagram -- Registration and Pending Access}{conception_sequence_registration_pending_access}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the conception interaction flow of secure login and logout.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_secure_login_logout.png}{Conception Sequence Diagram -- Secure Login and Logout}{conception_sequence_secure_login_logout}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the conception interaction flow of password reset.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_password_reset.png}{Conception Sequence Diagram -- Password Reset}{conception_sequence_password_reset}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the conception interaction flow of profile update and authenticated password change.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_profile_update_password_change.png}{Conception Sequence Diagram -- Profile Update and Authenticated Password Change}{conception_sequence_profile_update_password_change}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent The diagram below presents the conception interaction flow of HR account management and login history.
-}
-
-\ChapterThreeFigure{sections/chapitre3/img/sequence_diagrams/conception_sequence_hr_account_management_login_history.png}{Conception Sequence Diagram -- HR Account Management and Login History}{conception_sequence_hr_account_management_login_history}
