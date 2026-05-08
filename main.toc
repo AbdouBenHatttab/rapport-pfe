@@ -57,5 +57,5 @@
 \contentsline {subsection}{II.2 Visual Sprint Journal}{30}{section*.66}%
 \contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.67}%
 \contentsline {subsection}{II.4 Sprint Implementation}{31}{section*.69}%
-\contentsline {subsection}{II.5 Sprint Review}{47}{section*.89}%
-\contentsline {subsection}{II.6 Sprint Retrospective}{47}{section*.90}%
+\contentsline {subsection}{II.5 Sprint Review}{62}{section*.105}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{62}{section*.106}%

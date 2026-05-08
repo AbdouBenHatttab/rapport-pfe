@@ -12,19 +12,35 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Use Case Diagram – Sprint 1 Access and Account Management}}{31}{figure.caption.70}%
 \contentsline {figure}{\numberline {12}{\ignorespaces System Sequence Diagram – User Registration}}{32}{figure.caption.71}%
 \contentsline {figure}{\numberline {13}{\ignorespaces System Sequence Diagram – Secure Login}}{33}{figure.caption.72}%
-\contentsline {figure}{\numberline {14}{\ignorespaces System Sequence Diagram – Logout}}{33}{figure.caption.73}%
+\contentsline {figure}{\numberline {14}{\ignorespaces System Sequence Diagram – Logout}}{34}{figure.caption.73}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Use Case Diagram – Personal Account Management}}{34}{figure.caption.74}%
-\contentsline {figure}{\numberline {16}{\ignorespaces System Sequence Diagram – Password Reset}}{34}{figure.caption.75}%
-\contentsline {figure}{\numberline {17}{\ignorespaces System Sequence Diagram – Profile Update}}{35}{figure.caption.76}%
-\contentsline {figure}{\numberline {18}{\ignorespaces System Sequence Diagram – Authenticated Password Change}}{36}{figure.caption.77}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Use Case Diagram – HR User Account Management}}{37}{figure.caption.78}%
-\contentsline {figure}{\numberline {20}{\ignorespaces System Sequence Diagram – HR User Account Setup}}{37}{figure.caption.79}%
-\contentsline {figure}{\numberline {21}{\ignorespaces System Sequence Diagram – Account Activation and Deactivation}}{38}{figure.caption.80}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Domain Model – Sprint 1 Access and Account Management}}{39}{figure.caption.81}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Participant Class Diagram – Authentication and Access Control}}{39}{figure.caption.82}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Participant Class Diagram – Password Reset and Password Change}}{40}{figure.caption.83}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Participant Class Diagram – HR Account Management}}{40}{figure.caption.84}%
-\contentsline {figure}{\numberline {26}{\ignorespaces State Diagram – User Account Lifecycle}}{41}{figure.caption.85}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Design Class Diagram – Registration and Pending Access}}{42}{figure.caption.86}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Design Class Diagram – Security, Keycloak, and Access Control}}{42}{figure.caption.87}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Design Class Diagram – HR Account Setup and Notification}}{43}{figure.caption.88}%
+\contentsline {figure}{\numberline {16}{\ignorespaces System Sequence Diagram – Password Reset}}{35}{figure.caption.75}%
+\contentsline {figure}{\numberline {17}{\ignorespaces System Sequence Diagram – Profile Update}}{36}{figure.caption.76}%
+\contentsline {figure}{\numberline {18}{\ignorespaces System Sequence Diagram – Authenticated Password Change}}{37}{figure.caption.77}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Use Case Diagram – HR User Account Management}}{38}{figure.caption.78}%
+\contentsline {figure}{\numberline {20}{\ignorespaces System Sequence Diagram – HR User Account Setup}}{38}{figure.caption.79}%
+\contentsline {figure}{\numberline {21}{\ignorespaces System Sequence Diagram – Account Activation and Deactivation}}{39}{figure.caption.80}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Domain Model – Sprint 1 Access and Account Management}}{40}{figure.caption.81}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Participant Class Diagram – Authentication and Access Control}}{40}{figure.caption.82}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Participant Class Diagram – Password Reset and Password Change}}{41}{figure.caption.83}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Participant Class Diagram – HR Account Management}}{41}{figure.caption.84}%
+\contentsline {figure}{\numberline {26}{\ignorespaces State Diagram – User Account Lifecycle}}{42}{figure.caption.85}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Design Class Diagram – Registration and Pending Access}}{43}{figure.caption.86}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Design Class Diagram – Security, Keycloak, and Access Control}}{43}{figure.caption.87}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Design Class Diagram – HR Account Setup and Notification}}{44}{figure.caption.88}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Conception Sequence Diagram -- User Registration Frontend}}{45}{figure.caption.89}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Conception Sequence Diagram -- User Registration Backend}}{46}{figure.caption.90}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Conception Sequence Diagram -- Secure Login Frontend}}{47}{figure.caption.91}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Conception Sequence Diagram -- Secure Login Backend}}{48}{figure.caption.92}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Conception Sequence Diagram -- Logout Frontend}}{49}{figure.caption.93}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Conception Sequence Diagram -- Logout Backend}}{50}{figure.caption.94}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Conception Sequence Diagram -- Password Reset Frontend}}{51}{figure.caption.95}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Conception Sequence Diagram -- Password Reset Backend}}{52}{figure.caption.96}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Conception Sequence Diagram -- Profile Update Frontend}}{53}{figure.caption.97}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Conception Sequence Diagram -- Profile Update Backend}}{54}{figure.caption.98}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Conception Sequence Diagram -- Authenticated Password Change Frontend}}{55}{figure.caption.99}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Conception Sequence Diagram -- Authenticated Password Change Backend}}{56}{figure.caption.100}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Conception Sequence Diagram -- HR User Account Setup Frontend}}{57}{figure.caption.101}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Conception Sequence Diagram -- HR User Account Setup Backend}}{58}{figure.caption.102}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Conception Sequence Diagram -- Account Activation and Deactivation Frontend}}{59}{figure.caption.103}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Conception Sequence Diagram -- Account Activation and Deactivation Backend}}{60}{figure.caption.104}%
