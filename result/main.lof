@@ -57,13 +57,14 @@
 \contentsline {figure}{\numberline {56}{\ignorespaces Participant Class Diagram -- HR Final Leave Decision}}{74}{figure.caption.124}%
 \contentsline {figure}{\numberline {57}{\ignorespaces State Diagram -- Leave Request Lifecycle}}{74}{figure.caption.125}%
 \contentsline {figure}{\numberline {58}{\ignorespaces Design Class Diagram -- Leave Request Creation and Validation}}{75}{figure.caption.126}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Design Class Diagram -- Leave Decision Workflow}}{75}{figure.caption.127}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Design Class Diagram -- Working Day, Holiday, and Balance Management}}{76}{figure.caption.128}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Frontend}}{76}{figure.caption.129}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Backend}}{77}{figure.caption.130}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}}{77}{figure.caption.131}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}}{77}{figure.caption.132}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Frontend}}{78}{figure.caption.133}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Backend}}{78}{figure.caption.134}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Conception Sequence Diagram -- HR Final Review Frontend}}{78}{figure.caption.135}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Conception Sequence Diagram -- HR Final Review Backend}}{79}{figure.caption.136}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Design Class Diagram -- Team Leader Leave Review}}{75}{figure.caption.127}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Design Class Diagram -- HR Final Leave Decision}}{76}{figure.caption.128}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Design Class Diagram -- Working Day, Holiday, and Balance Management}}{76}{figure.caption.129}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Frontend}}{77}{figure.caption.130}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Backend}}{77}{figure.caption.131}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}}{78}{figure.caption.132}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}}{78}{figure.caption.133}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Frontend}}{79}{figure.caption.134}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Backend}}{80}{figure.caption.135}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Conception Sequence Diagram -- HR Final Review Frontend}}{81}{figure.caption.136}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Conception Sequence Diagram -- HR Final Review Backend}}{82}{figure.caption.137}%

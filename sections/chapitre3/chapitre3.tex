@@ -642,19 +642,9 @@ The objective is to obtain an operational base for the next functional developme
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent At the end of Sprint 1, a review was conducted to verify that the access and account-management foundation was operational. The sprint delivered the following elements:
-}
+\indent At the end of Sprint 1, the main access and account-management features were reviewed and validated. The sprint provided a secure foundation for the platform by implementing registration, authentication, logout, password recovery, profile update, HR account setup, role assignment, and account activation or deactivation. It also introduced the restricted \textbf{NEW\_USER} state, which ensures that newly registered users cannot access the platform before HR completes their account setup.
 
-\begin{itemize}
-    \item User registration with restricted pending access.
-    \item Secure authentication and role-based access control.
-    \item Logout and local session cleanup.
-    \item Password reset and authenticated password change.
-    \item User profile consultation and update.
-    \item HR user account setup with role, department, job title, and team information.
-    \item Account activation and deactivation controlled by HR.
-    \item Role assignment notification and email integration.
-\end{itemize}
+}
 
 \ReportSubsection{II.6 Sprint Retrospective}{\hspace{0.5cm} 6. Sprint Retrospective}
 
@@ -667,14 +657,14 @@ The objective is to obtain an operational base for the next functional developme
 \rowcolor{blue!20}
 \textbf{What went well} & \textbf{What needs improvement} \\
 \hline
-The sprint established a coherent access-management base connecting registration, authentication, pending access, HR setup, and account status control.
+The sprint delivered a stable access-management base covering registration, authentication, account setup, and role-based access.
 &
-The integration between Keycloak, the local database, user roles, and account activation required careful synchronization.
+Keycloak, local user records, roles, and account status had to remain carefully synchronized.
 \\
 \hline
-The main access scenarios were modeled through system, class, state, and conception sequence diagrams.
+The main access scenarios were clearly modeled through use-case, sequence, state, and class diagrams.
 &
-Future workflow modules must keep validation rules and frontend feedback consistent from the beginning.
+Future modules should keep frontend feedback and backend validation aligned from the beginning.
 \\
 \hline
 \end{tabular}
@@ -1130,22 +1120,9 @@ The objective is to deliver the first complete administrative workflow involving
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent At the end of Sprint 2, a review was conducted to verify that the leave-management workflow was operational. The sprint delivered the following elements:
+\indent At the end of Sprint 2, the leave-management workflow was reviewed as the first complete administrative process of the platform. The sprint enabled employees to submit, update, cancel, and track leave requests while applying working-day validation, public-holiday exclusion, overlap prevention, and leave-balance control. It also introduced the two-level approval workflow, where team leaders review requests first and HR managers make the final decision. In addition, role-aware calendars, filters, notifications, and approved leave PDF generation improved visibility and traceability across the workflow.
 
 }
-
-\begin{itemize}
-    \item Employee leave request creation with validation feedback.
-    \item Leave balance and leave history consultation.
-    \item Working-day calculation with weekend and public-holiday exclusion.
-    \item Overlap prevention between pending or approved leave requests.
-    \item Leave request update and cancellation while pending team leader review.
-    \item Team leader approval and rejection with traceable decisions.
-    \item HR final approval and rejection after team leader approval.
-    \item Role-aware leave calendar consultation and filtering.
-    \item Leave workflow events and notifications.
-    \item Approved leave PDF download for finalized approved requests.
-\end{itemize}
 
 \ReportSubsection{III.6 Sprint Retrospective}{\hspace{0.5cm} 6. Sprint Retrospective}
 
@@ -1160,25 +1137,33 @@ The objective is to deliver the first complete administrative workflow involving
 \hline
 The sprint delivered a complete leave workflow from employee submission to HR final decision.
 &
-Working-day, weekend, and public-holiday rules required careful synchronization between frontend feedback and backend validation.
+Working-day, holiday, balance, and overlap rules required careful coordination between frontend feedback and backend validation.
 \\
 \hline
-The validation rules improved reliability by preventing invalid dates, insufficient balance, and overlapping requests.
+The two-level approval process improved traceability through clear statuses, decision reasons, notifications, and history records.
 &
-The leave calendar can still require future UI polishing to improve readability when many events are displayed.
+Calendar readability can still be improved when many leave events are displayed at the same time.
 \\
 \hline
-The calendar, filters, balance view, and leave history improved visibility for employees, team leaders, and HR managers.
+The leave balance, history, filters, and role-aware calendars improved visibility for employees, team leaders, and HR managers.
 &
-Decision feedback must remain clear for all actors, especially when a request moves between team leader review and HR review.
-\\
-\hline
-Workflow traceability became clearer through status changes, decision reasons, notifications, and leave records.
-&
-The approved leave PDF can later be expanded with broader reporting and analytics if needed.
+Future reporting can extend the approved leave PDF into broader analytics and export features.
 \\
 \hline
 \end{tabular}
 \caption{Sprint Retrospective -- Sprint 2}
 \label{tab:sprint2_retrospective}
 \end{table}
+
+% ============================================================
+%  CONCLUSION
+% ============================================================
+\ReportSection{Conclusion}{Conclusion}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This chapter covered Release 1 of the ArabSoft internal platform, structured into two complementary sprints. Sprint 1 established the secure access foundation of the system through registration, authentication, password recovery, profile management, HR account setup, role assignment, and account activation control. Sprint 2 delivered the leave-management module, including leave submission, update and cancellation, working-day validation, leave balance control, team leader review, HR final decision, calendars, notifications, and approved leave reporting. These two sprints provided the first operational version of the platform, combining secure user access with a complete administrative workflow. The next chapter will present Release 2, which extends the platform with additional administrative requests and HR management features.
+
+}

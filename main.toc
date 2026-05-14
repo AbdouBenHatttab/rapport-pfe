@@ -66,3 +66,4 @@
 \contentsline {subsection}{III.4 Sprint Implementation}{65}{section*.113}%
 \contentsline {subsection}{III.5 Sprint Review}{83}{section*.138}%
 \contentsline {subsection}{III.6 Sprint Retrospective}{84}{section*.139}%
+\contentsline {section}{Conclusion}{84}{section*.141}%
