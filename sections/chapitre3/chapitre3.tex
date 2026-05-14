@@ -10,6 +10,22 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{Chapter 3: Release 1 - Foundations}
 
+\newcommand{\ChapterThreeMissingFigurePlaceholder}[2]{%
+  \fbox{%
+    \begin{minipage}[c][5.2cm][c]{0.88\textwidth}
+      \centering
+      {\fontsize{13}{16}\selectfont\bfseries #1}\par
+      \vspace{0.28cm}
+      {\fontsize{9}{11}\selectfont\textit{Reserved image placeholder}}\par
+      \vspace{0.18cm}
+      \begin{minipage}{0.82\textwidth}
+        \centering
+        {\fontsize{8.5}{10.5}\selectfont\path{#2}}
+      \end{minipage}
+    \end{minipage}%
+  }%
+}
+
 \newcommand{\ChapterThreePlaceholder}[1]{%
   \fbox{%
     \begin{minipage}[c][5.2cm][c]{0.88\textwidth}
@@ -23,12 +39,12 @@
   \begin{figure}[H]
     \centering
     \if\relax\detokenize{#1}\relax
-      \ChapterThreePlaceholder{#2}
+      \ChapterThreeMissingFigurePlaceholder{#2}{No image path reserved}
     \else
       \IfFileExists{#1}{%
         \includegraphics[width=0.95\textwidth,keepaspectratio]{#1}%
       }{%
-        \ChapterThreePlaceholder{#2}%
+        \ChapterThreeMissingFigurePlaceholder{#2}{#1}%
       }%
     \fi
     \caption{#2}
@@ -40,12 +56,12 @@
   \begin{figure}[H]
     \centering
     \if\relax\detokenize{#1}\relax
-      \ChapterThreePlaceholder{#2}
+      \ChapterThreeMissingFigurePlaceholder{#2}{No image path reserved}
     \else
       \IfFileExists{#1}{%
         \includegraphics[width=#4\textwidth,keepaspectratio]{#1}%
       }{%
-        \ChapterThreePlaceholder{#2}%
+        \ChapterThreeMissingFigurePlaceholder{#2}{#1}%
       }%
     \fi
     \caption{#2}
@@ -56,7 +72,15 @@
 \newcommand{\SprintOneConceptionFigure}[3]{%
   \begin{figure}[H]
     \centering
-    \includegraphics[width=0.98\textwidth,height=0.78\textheight,keepaspectratio]{#1}
+    \if\relax\detokenize{#1}\relax
+      \ChapterThreeMissingFigurePlaceholder{#2}{No image path reserved}
+    \else
+      \IfFileExists{#1}{%
+        \includegraphics[width=0.98\textwidth,height=0.78\textheight,keepaspectratio]{#1}%
+      }{%
+        \ChapterThreeMissingFigurePlaceholder{#2}{#1}%
+      }%
+    \fi
     \caption{#2}
     \label{fig:#3}
   \end{figure}
@@ -88,6 +112,18 @@
       \end{minipage}%
     }%
   \end{center}
+}
+
+\newcommand{\SprintTwoImplementationHeading}[1]{%
+  \SprintOneImplementationHeading{#1}%
+}
+
+\newcommand{\SprintTwoScenarioHeading}[1]{%
+  \SprintOneScenarioHeading{#1}%
+}
+
+\newcommand{\SprintTwoAssetPlaceholder}[2]{%
+  \SprintOneAssetPlaceholder{#1}{#2}%
 }
 
 \begin{center}
@@ -644,4 +680,505 @@ Future workflow modules must keep validation rules and frontend feedback consist
 \end{tabular}
 \caption{Sprint Retrospective -- Sprint 1}
 \label{tab:sprint1_retrospective}
+\end{table}
+
+% ============================================================
+%  III. SPRINT 2: LEAVE MANAGEMENT
+% ============================================================
+
+\clearpage
+\ReportSection{III. Sprint 2: Leave Management}{III. Sprint 2: Leave Management}
+
+\ReportSubsection{III.1 Sprint Goal}{\hspace{0.5cm} 1. Sprint Goal}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This second sprint aims to implement the leave-management workflow of the ArabSoft platform after the access foundation established in Sprint 1.
+It allows employees to submit leave requests, consult their leave balance and history, update or cancel requests while they are still pending team leader review, and follow the progress of their leave workflow.
+The sprint also introduces working-day validation, weekend and public-holiday exclusion, overlap prevention, team leader approval or rejection, HR final decision after team leader approval, calendar visualization, filters, workflow notifications, and approved leave PDF download.
+The objective is to deliver the first complete administrative workflow involving employees, team leaders, and HR managers.
+
+}
+
+\ReportSubsection{III.2 Visual Sprint Journal}{\hspace{0.5cm} 2. Visual Sprint Journal}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The visual sprint journal will document the selected user stories of Sprint 2 and their completion status in Jira. The final Sprint 2 journal screenshot will be inserted after validation.
+
+}
+
+\SprintTwoAssetPlaceholder
+{Jira Sprint Journal -- Sprint 2 Leave Management}
+{sections/chapitre3/img/sprint2_leave_management/01_jira/sprint2_jira_journal.png}
+
+\ReportSubsection{III.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The table below presents the backlog of the second sprint, planned as a two-week iteration dedicated to leave management.
+
+}
+
+\begin{table}[H]
+\centering
+\small
+\renewcommand{\arraystretch}{1.36}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.5cm}|>{\centering\bfseries\arraybackslash}m{3.6cm}|>{\RaggedRight\arraybackslash}m{7.4cm}|>{\centering\arraybackslash}m{1.6cm}|}
+\hline
+\rowcolor{blue!20}
+\textbf{Sprint} & \textbf{Stories} & \centering\textbf{Tasks} & \textbf{Duration} \\
+\hline
+\multirow{17}{=}{\centering\textbf{Sprint 2}}
+& \multirow{3}{=}{\centering\textbf{Leave request submission and balance consultation}}
+& Implement leave request creation
+& \multirow{3}{=}{\centering 2d} \\
+\cline{3-3}
+& & Display leave balance and leave history & \\
+\cline{3-3}
+& & Connect employee leave actions with backend APIs & \\
+\cline{2-4}
+& \multirow{4}{=}{\centering\textbf{Working-day, holiday, and overlap validation}}
+& Validate leave dates using working days
+& \multirow{4}{=}{\centering 2d} \\
+\cline{3-3}
+& & Exclude weekends and public holidays from deducted days & \\
+\cline{3-3}
+& & Prevent overlapping leave requests & \\
+\cline{3-3}
+& & Display clear validation feedback to the user & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{Leave update and cancellation}}
+& Allow request update while pending team leader review
+& \multirow{2}{=}{\centering 1d} \\
+\cline{3-3}
+& & Allow request cancellation while pending team leader review & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{Team leader leave decision}}
+& Implement team leader approval
+& \multirow{2}{=}{\centering 2d} \\
+\cline{3-3}
+& & Implement team leader rejection with reason & \\
+\cline{2-4}
+& \multirow{2}{=}{\centering\textbf{HR final leave decision}}
+& Implement HR final approval
+& \multirow{2}{=}{\centering 2d} \\
+\cline{3-3}
+& & Implement HR final rejection and decision tracking & \\
+\cline{2-4}
+& \multirow{4}{=}{\centering\textbf{Leave calendar, filters, notifications, and approved PDF}}
+& Display leave requests in role-aware calendar views
+& \multirow{4}{=}{\centering 1d} \\
+\cline{3-3}
+& & Add leave filters by employee, status, date, department, and team & \\
+\cline{3-3}
+& & Send workflow events and leave notifications & \\
+\cline{3-3}
+& & Enable approved leave PDF download & \\
+\hline
+\end{tabular}
+\caption{Sprint Backlog -- Sprint 2}
+\label{tab:sprint2_leave_management_backlog}
+\end{table}
+
+\clearpage
+\ReportSubsection{III.4 Sprint Implementation}{\hspace{0.5cm} 4. Sprint Implementation}
+
+\SprintTwoImplementationHeading{Requirements Analysis}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent Sprint 2 covers the leave-management workflow, including employee leave request management, team leader review, HR final decision after team leader approval, leave calendar consultation, filtering, workflow notifications, and approved leave PDF download. The following use-case diagram first presents the global scope of the sprint.
+
+}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Use Case Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams summarize the main user-system exchanges for Sprint 2 leave-management scenarios. The section also introduces focused use-case views before the employee request-management scenarios and the approval workflow scenarios.
+
+}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Use Case Diagram -- Sprint 2 Leave Management}
+
+\noindent This diagram presents the general leave-management use cases of Sprint 2. It shows the main actions performed by the employee, the team leader, and the HR manager within the leave workflow.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png}
+{Use Case Diagram -- Sprint 2 Leave Management}
+{sprint2_leave_management_use_case}
+
+\SprintTwoImplementationHeading{System Sequence Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams summarize the main user-system exchanges for Sprint 2 leave-management scenarios. The section also introduces focused use-case views before the employee request-management scenarios and the approval workflow scenarios.
+
+}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Use Case Diagram -- Employee Leave Request Management}
+
+\noindent This diagram groups the leave actions available to an employee, including request submission, balance consultation, history tracking, update or cancellation while pending team leader review, and approved leave PDF download.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png}
+{Use Case Diagram -- Employee Leave Request Management}
+{sprint2_employee_leave_request_management_use_case}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Submit Leave Request}
+
+\noindent This diagram shows how an employee submits a leave request and receives validation feedback from the system.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png}
+{System Sequence Diagram -- Submit Leave Request}
+{sprint2_ssd_submit_leave_request}
+{0.90}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Edit or Cancel Pending Leave}
+
+\noindent This diagram shows how an employee updates or cancels a leave request while it is still pending team leader review.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png}
+{System Sequence Diagram -- Edit or Cancel Pending Leave}
+{sprint2_ssd_edit_cancel_pending_leave}
+{0.90}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Use Case Diagram -- Leave Approval Workflow}
+
+\noindent This diagram presents the approval responsibilities of the team leader and HR manager, including team review, approval, rejection, HR final decision, leave records, and calendar consultation.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png}
+{Use Case Diagram -- Leave Approval Workflow}
+{sprint2_leave_approval_workflow_use_case}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Team Leader Leave Decision}
+
+\noindent This diagram shows how a team leader approves or rejects a team member's leave request with a traceable decision.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png}
+{System Sequence Diagram -- Team Leader Leave Decision}
+{sprint2_ssd_team_leader_leave_decision}
+{0.90}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{HR Final Leave Decision}
+
+\noindent This diagram shows how HR makes the final decision after team leader approval and updates the leave workflow accordingly.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png}
+{System Sequence Diagram -- HR Final Leave Decision}
+{sprint2_ssd_hr_final_leave_decision}
+{0.90}
+
+\SprintTwoImplementationHeading{Analysis}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This section summarizes the main business concepts and lifecycle rules involved in the leave-management workflow.
+
+}
+
+\Needspace{7.2cm}
+\SprintTwoScenarioHeading{Domain Model -- Sprint 2 Leave Management}
+
+\noindent This diagram shows the main business concepts used for leave request management, including users, teams, leave requests, leave types, balances, public holidays, request history, and approval decisions.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png}
+{Domain Model -- Sprint 2 Leave Management}
+{sprint2_domain_model_leave_management}
+{0.95}
+
+\SprintTwoImplementationHeading{Participant Class Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams identify the main frontend and backend participants involved in the leave-management workflow, following the main responsibility stages of the sprint: employee leave request management, team leader review, and HR final decision.
+
+}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Participant Class Diagram -- Employee Leave Request Management}
+
+\noindent This diagram identifies the main frontend and backend participants involved in employee leave submission, validation, balance consultation, and pending request update or cancellation.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png}
+{Participant Class Diagram -- Employee Leave Request Management}
+{sprint2_participant_employee_leave_request_management}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Participant Class Diagram -- Team Leader Leave Review}
+
+\noindent This diagram presents the participants involved in team leader leave review, including team request consultation, approval or rejection, and decision traceability.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png}
+{Participant Class Diagram -- Team Leader Leave Review}
+{sprint2_participant_team_leader_leave_review}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Participant Class Diagram -- HR Final Leave Decision}
+
+\noindent This diagram shows the participants involved in the HR final decision workflow, including approval queue consultation, final approval or rejection, and balance update.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png}
+{Participant Class Diagram -- HR Final Leave Decision}
+{sprint2_participant_hr_final_leave_decision}
+
+\SprintTwoImplementationHeading{State Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This section presents the lifecycle of a leave request using the real workflow states and stages of Sprint 2.
+
+}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{State Diagram -- Leave Request Lifecycle}
+
+\noindent This diagram shows the leave request lifecycle from submission to team leader review, HR final decision, approval, rejection, or employee cancellation.\par
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/04_state_diagrams/ }
+{State Diagram -- Leave Request Lifecycle}
+{sprint2_leave_request_lifecycle_state}
+{0.95}
+
+\SprintTwoImplementationHeading{Design Class Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams present the main classes supporting Sprint 2 leave-management features.
+
+}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Design Class Diagram -- Leave Request Creation and Validation}
+
+\noindent This diagram illustrates the main classes used to create leave requests and apply validation rules before persistence.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png}
+{Design Class Diagram -- Leave Request Creation and Validation}
+{sprint2_design_leave_request_creation_validation}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Design Class Diagram -- Team Leader Leave Review}
+
+\noindent This diagram presents the main frontend and backend classes used for team leader leave consultation, approval, rejection, history recording, and balance release when needed.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png}
+{Design Class Diagram -- Team Leader Leave Review}
+{sprint2_design_team_leader_leave_review}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Design Class Diagram -- HR Final Leave Decision}
+
+\noindent This diagram shows the classes used by HR to make the final leave decision, update the request status, record history, and consume or release reserved balance.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png}
+{Design Class Diagram -- HR Final Leave Decision}
+{sprint2_design_hr_final_leave_decision}
+
+\Needspace{8.5cm}
+\SprintTwoScenarioHeading{Design Class Diagram -- Working Day, Holiday, and Balance Management}
+
+\noindent This diagram presents the classes used to calculate deducted working days, exclude weekends and public holidays, manage leave policy, and check available balance.\par
+
+\ChapterThreeFigure
+{sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png}
+{Design Class Diagram -- Working Day, Holiday, and Balance Management}
+{sprint2_design_working_day_holiday_balance_management}
+
+\SprintTwoImplementationHeading{Conception Sequence Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams detail the internal frontend and backend interactions behind the main Sprint 2 scenarios: leave submission, pending leave update or cancellation, team leader review, and HR final review.
+
+}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png}
+{Conception Sequence Diagram -- Submit Leave Request Frontend}
+{sprint2_csd_submit_leave_request_frontend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png}
+{Conception Sequence Diagram -- Submit Leave Request Backend}
+{sprint2_csd_submit_leave_request_backend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png}
+{Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}
+{sprint2_csd_edit_cancel_pending_leave_frontend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png}
+{Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}
+{sprint2_csd_edit_cancel_pending_leave_backend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png}
+{Conception Sequence Diagram -- Team Leader Review Frontend}
+{sprint2_csd_team_leader_review_frontend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png}
+{Conception Sequence Diagram -- Team Leader Review Backend}
+{sprint2_csd_team_leader_review_backend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png}
+{Conception Sequence Diagram -- HR Final Review Frontend}
+{sprint2_csd_hr_final_review_frontend}
+{0.95}
+
+\ChapterThreeFigureSized
+{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png}
+{Conception Sequence Diagram -- HR Final Review Backend}
+{sprint2_csd_hr_final_review_backend}
+{0.95}
+
+\SprintTwoImplementationHeading{Realization}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent This section presents the main user interfaces reserved for Sprint 2 leave management. The final screenshots will be inserted after implementation.
+
+}
+
+\SprintTwoAssetPlaceholder
+{Employee Leave Request Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_employee_leave_requests.png}
+
+\SprintTwoAssetPlaceholder
+{Employee Leave Details Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_employee_leave_details.png}
+
+\SprintTwoAssetPlaceholder
+{Team Leader Leave Review Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_team_requests.png}
+
+\SprintTwoAssetPlaceholder
+{Team Leader Leave Calendar Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_team_calendar.png}
+
+\SprintTwoAssetPlaceholder
+{HR Leave Approvals Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_hr_approvals.png}
+
+\SprintTwoAssetPlaceholder
+{HR Leave Records and Filters Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_hr_all_leaves.png}
+
+\SprintTwoAssetPlaceholder
+{Role-Aware Leave Calendar Interface}
+{sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_company_calendar.png}
+
+\ReportSubsection{III.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent At the end of Sprint 2, a review was conducted to verify that the leave-management workflow was operational. The sprint delivered the following elements:
+
+}
+
+\begin{itemize}
+    \item Employee leave request creation with validation feedback.
+    \item Leave balance and leave history consultation.
+    \item Working-day calculation with weekend and public-holiday exclusion.
+    \item Overlap prevention between pending or approved leave requests.
+    \item Leave request update and cancellation while pending team leader review.
+    \item Team leader approval and rejection with traceable decisions.
+    \item HR final approval and rejection after team leader approval.
+    \item Role-aware leave calendar consultation and filtering.
+    \item Leave workflow events and notifications.
+    \item Approved leave PDF download for finalized approved requests.
+\end{itemize}
+
+\ReportSubsection{III.6 Sprint Retrospective}{\hspace{0.5cm} 6. Sprint Retrospective}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{5.2cm}|>{\centering\bfseries\arraybackslash}m{5.2cm}|}
+\hline
+\rowcolor{blue!20}
+\textbf{What went well} & \textbf{What needs improvement} \\
+\hline
+The sprint delivered a complete leave workflow from employee submission to HR final decision.
+&
+Working-day, weekend, and public-holiday rules required careful synchronization between frontend feedback and backend validation.
+\\
+\hline
+The validation rules improved reliability by preventing invalid dates, insufficient balance, and overlapping requests.
+&
+The leave calendar can still require future UI polishing to improve readability when many events are displayed.
+\\
+\hline
+The calendar, filters, balance view, and leave history improved visibility for employees, team leaders, and HR managers.
+&
+Decision feedback must remain clear for all actors, especially when a request moves between team leader review and HR review.
+\\
+\hline
+Workflow traceability became clearer through status changes, decision reasons, notifications, and leave records.
+&
+The approved leave PDF can later be expanded with broader reporting and analytics if needed.
+\\
+\hline
+\end{tabular}
+\caption{Sprint Retrospective -- Sprint 2}
+\label{tab:sprint2_retrospective}
 \end{table}

@@ -57,5 +57,12 @@
 \contentsline {subsection}{II.2 Visual Sprint Journal}{30}{section*.66}%
 \contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.67}%
 \contentsline {subsection}{II.4 Sprint Implementation}{31}{section*.69}%
-\contentsline {subsection}{II.5 Sprint Review}{48}{section*.89}%
-\contentsline {subsection}{II.6 Sprint Retrospective}{48}{section*.90}%
+\contentsline {subsection}{II.5 Sprint Review}{62}{section*.105}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{62}{section*.106}%
+\contentsline {section}{III. Sprint 2: Leave Management}{63}{section*.108}%
+\contentsline {subsection}{III.1 Sprint Goal}{63}{section*.109}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{63}{section*.110}%
+\contentsline {subsection}{III.3 Sprint Backlog}{63}{section*.111}%
+\contentsline {subsection}{III.4 Sprint Implementation}{65}{section*.113}%
+\contentsline {subsection}{III.5 Sprint Review}{79}{section*.136}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{80}{section*.137}%
