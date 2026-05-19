@@ -76,7 +76,7 @@
       \ChapterThreeMissingFigurePlaceholder{#2}{No image path reserved}
     \else
       \IfFileExists{#1}{%
-        \includegraphics[width=0.98\textwidth,height=0.78\textheight,keepaspectratio]{#1}%
+        \includegraphics[width=1.0\textwidth,height=0.82\textheight,keepaspectratio]{#1}%
       }{%
         \ChapterThreeMissingFigurePlaceholder{#2}{#1}%
       }%
@@ -350,7 +350,7 @@ The objective is to obtain an operational base for the next functional developme
 
 
 
-\Needspace{9cm}
+\Needspace{10cm}
 \SprintOneScenarioHeading{Authenticated Password Change}
 
 \noindent This diagram shows password change using the current password or OTP verification.\par
@@ -359,9 +359,9 @@ The objective is to obtain an operational base for the next functional developme
 {sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png}
 {System Sequence Diagram – Authenticated Password Change}
 {sprint1_change_password_system_sequence}
-{0.90}
+{0.98}
 
-\Needspace{7.2cm}
+\Needspace{10cm}
 \SprintOneScenarioHeading{Use Case Diagram – HR User Account Management}
 
 \noindent This diagram groups the HR actions used to manage user accounts.\par
@@ -372,7 +372,7 @@ The objective is to obtain an operational base for the next functional developme
 {sprint1_hr_user_account_management_use_case}
 
 
-\Needspace{7.2cm}
+\Needspace{10cm}
 \SprintOneScenarioHeading{HR User Account Setup}
 
 \noindent This diagram shows how HR completes a pending account setup and activates access.\par
@@ -381,7 +381,7 @@ The objective is to obtain an operational base for the next functional developme
 {sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png}
 {System Sequence Diagram – HR User Account Setup}
 {sprint1_hr_user_account_setup_system_sequence}
-{0.90}
+{0.98}
 
 \Needspace{7.2cm}
 \SprintOneScenarioHeading{Account Activation and Deactivation}
@@ -482,35 +482,38 @@ The objective is to obtain an operational base for the next functional developme
 \indent These diagrams present the main classes supporting Sprint 1 access-management features.
 }
 
-\Needspace{8.5cm}
+\Needspace{9.5cm}
 \SprintOneScenarioHeading{Design Class Diagram – Registration and Pending Access}
 
 \noindent This diagram illustrates the main classes used to register a new user and keep the account pending until HR validation.\par
 
-\ChapterThreeFigure
+\ChapterThreeFigureSized
 {sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png}
 {Design Class Diagram – Registration and Pending Access}
 {sprint1_registration_pending_access_design_class}
+{0.98}
 
-\Needspace{8.5cm}
+\Needspace{9.5cm}
 \SprintOneScenarioHeading{Design Class Diagram – Security, Keycloak, and Access Control}
 
 \noindent This diagram shows the classes involved in secure authentication, Keycloak integration, and role-based access control.\par
 
-\ChapterThreeFigure
+\ChapterThreeFigureSized
 {sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png}
 {Design Class Diagram – Security, Keycloak, and Access Control}
 {sprint1_security_keycloak_access_control_design_class}
+{0.98}
 
-\Needspace{8.5cm}
+\Needspace{9.5cm}
 \SprintOneScenarioHeading{Design Class Diagram – HR Account Setup and Notification}
 
 \noindent This diagram presents the classes used by HR to complete account setup, update access rights, and trigger notifications.\par
 
-\ChapterThreeFigure
+\ChapterThreeFigureSized
 {sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png}
 {Design Class Diagram – HR Account Setup and Notification}
 {sprint1_hr_account_setup_notification_design_class}
+{0.98}
 \SprintOneImplementationHeading{Conception Sequence Diagrams}
 
 {\fontsize{12}{18}\selectfont
