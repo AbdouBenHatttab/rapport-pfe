@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {25}{\ignorespaces Participant Class Diagram – HR Account Management}}{41}{figure.caption.84}%
 \contentsline {figure}{\numberline {26}{\ignorespaces State Diagram – User Account Lifecycle}}{42}{figure.caption.85}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Design Class Diagram – Registration and Pending Access}}{43}{figure.caption.86}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Design Class Diagram – Security, Keycloak, and Access Control}}{43}{figure.caption.87}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Design Class Diagram – Security, Keycloak, and Access Control}}{44}{figure.caption.87}%
 \contentsline {figure}{\numberline {29}{\ignorespaces Design Class Diagram – HR Account Setup and Notification}}{44}{figure.caption.88}%
 \contentsline {figure}{\numberline {30}{\ignorespaces Conception Sequence Diagram -- User Registration Frontend}}{45}{figure.caption.89}%
 \contentsline {figure}{\numberline {31}{\ignorespaces Conception Sequence Diagram -- User Registration Backend}}{46}{figure.caption.90}%
@@ -52,17 +52,56 @@
 \contentsline {figure}{\numberline {51}{\ignorespaces System Sequence Diagram -- Team Leader Leave Decision}}{70}{figure.caption.119}%
 \contentsline {figure}{\numberline {52}{\ignorespaces System Sequence Diagram -- HR Final Leave Decision}}{71}{figure.caption.120}%
 \contentsline {figure}{\numberline {53}{\ignorespaces Domain Model -- Sprint 2 Leave Management}}{72}{figure.caption.121}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Participant Class Diagram -- Frontend Leave Management}}{72}{figure.caption.122}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Participant Class Diagram -- Backend Leave Management}}{73}{figure.caption.123}%
-\contentsline {figure}{\numberline {56}{\ignorespaces State Diagram -- Leave Request Lifecycle}}{73}{figure.caption.124}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Design Class Diagram -- Leave Request Creation and Validation}}{74}{figure.caption.125}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Design Class Diagram -- Leave Decision Workflow}}{74}{figure.caption.126}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Design Class Diagram -- Working Day, Holiday, and Balance Management}}{75}{figure.caption.127}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Frontend}}{75}{figure.caption.128}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Backend}}{76}{figure.caption.129}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}}{76}{figure.caption.130}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}}{76}{figure.caption.131}%
-\contentsline {figure}{\numberline {64}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Frontend}}{77}{figure.caption.132}%
-\contentsline {figure}{\numberline {65}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Backend}}{77}{figure.caption.133}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Conception Sequence Diagram -- HR Final Review Frontend}}{77}{figure.caption.134}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Conception Sequence Diagram -- HR Final Review Backend}}{78}{figure.caption.135}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Participant Class Diagram -- Employee Leave Request Management}}{73}{figure.caption.122}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Participant Class Diagram -- Team Leader Leave Review}}{73}{figure.caption.123}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Participant Class Diagram -- HR Final Leave Decision}}{74}{figure.caption.124}%
+\contentsline {figure}{\numberline {57}{\ignorespaces State Diagram -- Leave Request Lifecycle}}{74}{figure.caption.125}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Design Class Diagram -- Leave Request Creation and Validation}}{75}{figure.caption.126}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Design Class Diagram -- Team Leader Leave Review}}{75}{figure.caption.127}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Design Class Diagram -- HR Final Leave Decision}}{76}{figure.caption.128}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Design Class Diagram -- Working Day, Holiday, and Balance Management}}{76}{figure.caption.129}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Frontend}}{77}{figure.caption.130}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Conception Sequence Diagram -- Submit Leave Request Backend}}{77}{figure.caption.131}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}}{78}{figure.caption.132}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}}{78}{figure.caption.133}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Frontend}}{79}{figure.caption.134}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Conception Sequence Diagram -- Team Leader Review Backend}}{80}{figure.caption.135}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Conception Sequence Diagram -- HR Final Review Frontend}}{81}{figure.caption.136}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Conception Sequence Diagram -- HR Final Review Backend}}{82}{figure.caption.137}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Release 2 Organization}}{85}{figure.caption.145}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Use Case Diagram -- Sprint 3 Administrative Requests}}{88}{figure.caption.152}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Use Case Diagram -- HR Administrative Request Processing}}{88}{figure.caption.153}%
+\contentsline {figure}{\numberline {73}{\ignorespaces System Sequence Diagram -- Submit Document Request}}{89}{figure.caption.154}%
+\contentsline {figure}{\numberline {74}{\ignorespaces System Sequence Diagram -- Process Document Request}}{90}{figure.caption.155}%
+\contentsline {figure}{\numberline {75}{\ignorespaces System Sequence Diagram -- Submit Loan Request}}{91}{figure.caption.156}%
+\contentsline {figure}{\numberline {76}{\ignorespaces System Sequence Diagram -- Schedule Loan Meeting}}{91}{figure.caption.157}%
+\contentsline {figure}{\numberline {77}{\ignorespaces System Sequence Diagram -- Submit Authorization Request}}{92}{figure.caption.158}%
+\contentsline {figure}{\numberline {78}{\ignorespaces System Sequence Diagram -- HR Administrative Request Decision}}{93}{figure.caption.159}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Domain Model -- Sprint 3 Administrative Requests}}{94}{figure.caption.160}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Participant Class Diagram -- Document Request Management}}{95}{figure.caption.161}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Participant Class Diagram -- Loan Request Management}}{95}{figure.caption.162}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Participant Class Diagram -- Authorization Request Management}}{96}{figure.caption.163}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Participant Class Diagram -- HR Request Processing}}{96}{figure.caption.164}%
+\contentsline {figure}{\numberline {84}{\ignorespaces State Diagram -- Document Request Lifecycle}}{97}{figure.caption.165}%
+\contentsline {figure}{\numberline {85}{\ignorespaces State Diagram -- Loan Request Lifecycle}}{97}{figure.caption.166}%
+\contentsline {figure}{\numberline {86}{\ignorespaces State Diagram -- Authorization Request Lifecycle}}{98}{figure.caption.167}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Design Class Diagram -- Document Request Final File Management}}{98}{figure.caption.168}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Design Class Diagram -- Loan Request Review Management}}{99}{figure.caption.169}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Design Class Diagram -- Authorization Request Management}}{100}{figure.caption.170}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Design Class Diagram -- HR Request Processing}}{100}{figure.caption.171}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Conception Sequence Diagram -- Document Request HR Decision Frontend}}{101}{figure.caption.172}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Conception Sequence Diagram -- Document Request Decision Backend}}{102}{figure.caption.173}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Conception Sequence Diagram -- Document Request Final File Frontend}}{103}{figure.caption.174}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Conception Sequence Diagram -- Document Request Final File Backend}}{104}{figure.caption.175}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Conception Sequence Diagram -- Loan Request Submission Frontend}}{105}{figure.caption.176}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Conception Sequence Diagram -- Loan Request Submission Backend}}{106}{figure.caption.177}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Conception Sequence Diagram -- Loan Request Meeting Scheduling Frontend}}{107}{figure.caption.178}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Conception Sequence Diagram -- Loan Meeting Scheduling Backend}}{108}{figure.caption.179}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Conception Sequence Diagram -- Loan Request Decision Frontend}}{109}{figure.caption.180}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Conception Sequence Diagram -- Loan Request Decision Backend}}{111}{figure.caption.181}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Conception Sequence Diagram -- Loan Final File Delivery Frontend}}{112}{figure.caption.182}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Conception Sequence Diagram -- Loan Final File Backend}}{113}{figure.caption.183}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Conception Sequence Diagram -- Authorization Request Submission Frontend}}{114}{figure.caption.184}%
+\contentsline {figure}{\numberline {104}{\ignorespaces Conception Sequence Diagram -- Authorization Request Submission Backend}}{115}{figure.caption.185}%
+\contentsline {figure}{\numberline {105}{\ignorespaces Conception Sequence Diagram -- Authorization Request Decision Frontend}}{116}{figure.caption.186}%
+\contentsline {figure}{\numberline {106}{\ignorespaces Conception Sequence Diagram -- Authorization Request Decision Backend}}{117}{figure.caption.187}%
