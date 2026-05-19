@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  14 MAY 2026 23:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  19 MAY 2026 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,12 +710,12 @@ Package hyperref Info: Link coloring OFF on input line 160.
 \openout2 = `sections/page_garde/page_garde.aux'.
 
  (sections/page_garde/page_garde.tex
-<sections/page_garde/img/iset_logo.png, id=278, 217.81375pt x 232.87pt>
+<sections/page_garde/img/iset_logo.png, id=350, 217.81375pt x 232.87pt>
 File: sections/page_garde/img/iset_logo.png Graphic file (type png)
 <use sections/page_garde/img/iset_logo.png>
 Package pdftex.def Info: sections/page_garde/img/iset_logo.png  used on input line 8.
 (pdftex.def)             Requested size: 71.13188pt x 76.04784pt.
-<sections/page_garde/img/arabsoft_logo.jpg, id=279, 200.75pt x 200.75pt>
+<sections/page_garde/img/arabsoft_logo.jpg, id=351, 200.75pt x 200.75pt>
 File: sections/page_garde/img/arabsoft_logo.jpg Graphic file (type jpg)
 <use sections/page_garde/img/arabsoft_logo.jpg>
 Package pdftex.def Info: sections/page_garde/img/arabsoft_logo.jpg  used on input line 24.
@@ -845,7 +845,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.60 ...der Leave Review}}{75}{figure.caption.127}
-                                                  % [7])
+                                                  % [7]
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 ...uest Processing}}{100}{figure.caption.171}
+                                                  % [8]
+Overfull \hbox (7.16501pt too wide) in paragraph at lines 92--92
+ [][] [][]\T1/ptm/m/n/12 Conception Se-quence Di-a-gram -- Doc-u-ment Re-quest HR De-ci-sion Fron- 
+ []
+
+
+Overfull \hbox (4.88554pt too wide) in paragraph at lines 106--106
+ [][] [][]\T1/ptm/m/n/12 Conception Se-quence Di-a-gram -- Au-tho-riza-tion Re-quest De-ci-sion Fron- 
+ []
+
+
+Overfull \hbox (6.87743pt too wide) in paragraph at lines 107--107
+ [][] [][]\T1/ptm/m/n/12 Conception Se-quence Di-a-gram -- Au-tho-riza-tion Re-quest De-ci-sion Back- 
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -854,7 +874,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.171 ...ude{sections/liste_figures/liste_figures}
-                                                   [8]
+                                                   [9]
 \openout2 = `sections/liste_tableaux/liste_tableaux.aux'.
 
  (sections/liste_tableaux/liste_tableaux.tex (main.lot)
@@ -866,7 +886,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 <to be read again> 
                    \relax 
 l.172 ...e{sections/liste_tableaux/liste_tableaux}
-                                                   [9
+                                                   [10
 
 
 
@@ -905,7 +925,7 @@ Overfull \hbox (0.44165pt too wide) in paragraph at lines 143--144
  []
 
 [4]
-<sections/chapitre1/img/uml_logo.png, id=556, 1284.8pt x 935.495pt>
+<sections/chapitre1/img/uml_logo.png, id=735, 1284.8pt x 935.495pt>
 File: sections/chapitre1/img/uml_logo.png Graphic file (type png)
 <use sections/chapitre1/img/uml_logo.png>
 Package pdftex.def Info: sections/chapitre1/img/uml_logo.png  used on input line 187.
@@ -916,102 +936,102 @@ Overfull \hbox (2.56657pt too wide) in paragraph at lines 199--200
  []
 
 [5 <./sections/chapitre1/img/uml_logo.png>]
-<sections/chapitre1/img/scrum_roles_custom.png, id=563, 1059.96pt x 578.16pt>
+<sections/chapitre1/img/scrum_roles_custom.png, id=742, 1059.96pt x 578.16pt>
 File: sections/chapitre1/img/scrum_roles_custom.png Graphic file (type png)
 <use sections/chapitre1/img/scrum_roles_custom.png>
 Package pdftex.def Info: sections/chapitre1/img/scrum_roles_custom.png  used on input line 274.
 (pdftex.def)             Requested size: 369.88582pt x 201.75912pt.
  [6]
-<sections/chapitre1/img/scrum.png, id=568, 1027.84pt x 501.875pt>
+<sections/chapitre1/img/scrum.png, id=747, 1027.84pt x 501.875pt>
 File: sections/chapitre1/img/scrum.png Graphic file (type png)
 <use sections/chapitre1/img/scrum.png>
 Package pdftex.def Info: sections/chapitre1/img/scrum.png  used on input line 295.
 (pdftex.def)             Requested size: 341.43306pt x 166.71434pt.
-<sections/chapitre1/img/specs_abderrahmen_ben_hattab.png, id=569, 801.59476pt x 154.77824pt>
+<sections/chapitre1/img/specs_abderrahmen_ben_hattab.png, id=748, 801.59476pt x 154.77824pt>
 File: sections/chapitre1/img/specs_abderrahmen_ben_hattab.png Graphic file (type png)
 <use sections/chapitre1/img/specs_abderrahmen_ben_hattab.png>
 Package pdftex.def Info: sections/chapitre1/img/specs_abderrahmen_ben_hattab.png  used on input line 315.
 (pdftex.def)             Requested size: 369.88582pt x 71.42085pt.
  [7 <./sections/chapitre1/img/scrum_roles_custom.png> <./sections/chapitre1/img/scrum.png>]
-<sections/chapitre1/img/vscode.png, id=576, 1204.5pt x 632.3625pt>
+<sections/chapitre1/img/vscode.png, id=755, 1204.5pt x 632.3625pt>
 File: sections/chapitre1/img/vscode.png Graphic file (type png)
 <use sections/chapitre1/img/vscode.png>
 Package pdftex.def Info: sections/chapitre1/img/vscode.png  used on input line 380.
 (pdftex.def)             Requested size: 71.13013pt x 69.51375pt.
-<sections/chapitre1/img/intellij.png, id=578, 256.96pt x 256.96pt>
+<sections/chapitre1/img/intellij.png, id=757, 256.96pt x 256.96pt>
 File: sections/chapitre1/img/intellij.png Graphic file (type png)
 <use sections/chapitre1/img/intellij.png>
 Package pdftex.def Info: sections/chapitre1/img/intellij.png  used on input line 384.
 (pdftex.def)             Requested size: 65.43962pt x 65.43962pt.
-<sections/chapitre1/img/postman.png, id=579, 200.75pt x 200.75pt>
+<sections/chapitre1/img/postman.png, id=758, 200.75pt x 200.75pt>
 File: sections/chapitre1/img/postman.png Graphic file (type png)
 <use sections/chapitre1/img/postman.png>
 Package pdftex.def Info: sections/chapitre1/img/postman.png  used on input line 388.
 (pdftex.def)             Requested size: 54.05925pt x 54.05925pt.
  [8 <./sections/chapitre1/img/specs_abderrahmen_ben_hattab.png> <./sections/chapitre1/img/intellij.png> <./sections/chapitre1/img/postman.png> <./sections/chapitre1/img/vscode.png>]
-<sections/chapitre1/img/drawio.png, id=589, 813.0375pt x 457.71pt>
+<sections/chapitre1/img/drawio.png, id=769, 813.0375pt x 457.71pt>
 File: sections/chapitre1/img/drawio.png Graphic file (type png)
 <use sections/chapitre1/img/drawio.png>
 Package pdftex.def Info: sections/chapitre1/img/drawio.png  used on input line 392.
 (pdftex.def)             Requested size: 54.05266pt x 30.42964pt.
-<sections/chapitre1/img/git.png, id=590, 973.6375pt x 501.875pt>
+<sections/chapitre1/img/git.png, id=770, 973.6375pt x 501.875pt>
 File: sections/chapitre1/img/git.png Graphic file (type png)
 <use sections/chapitre1/img/git.png>
 Package pdftex.def Info: sections/chapitre1/img/git.png  used on input line 404.
 (pdftex.def)             Requested size: 38.41005pt x 18.77823pt.
-<sections/chapitre1/img/github.png, id=592, 224.84pt x 224.84pt>
+<sections/chapitre1/img/github.png, id=772, 224.84pt x 224.84pt>
 File: sections/chapitre1/img/github.png Graphic file (type png)
 <use sections/chapitre1/img/github.png>
 Package pdftex.def Info: sections/chapitre1/img/github.png  used on input line 405.
 (pdftex.def)             Requested size: 49.79086pt x 49.79086pt.
-<sections/chapitre1/img/jira.png, id=593, 2509.375pt x 2509.375pt>
+<sections/chapitre1/img/jira.png, id=773, 2509.375pt x 2509.375pt>
 File: sections/chapitre1/img/jira.png Graphic file (type png)
 <use sections/chapitre1/img/jira.png>
 Package pdftex.def Info: sections/chapitre1/img/jira.png  used on input line 418.
 (pdftex.def)             Requested size: 54.02708pt x 54.02708pt.
-<sections/chapitre1/img/latex.png, id=594, 869.2475pt x 652.4375pt>
+<sections/chapitre1/img/latex.png, id=774, 869.2475pt x 652.4375pt>
 File: sections/chapitre1/img/latex.png Graphic file (type png)
 <use sections/chapitre1/img/latex.png>
 Package pdftex.def Info: sections/chapitre1/img/latex.png  used on input line 422.
 (pdftex.def)             Requested size: 54.04929pt x 40.56818pt.
-<sections/chapitre1/img/figma.png, id=595, 319.1925pt x 159.59625pt>
+<sections/chapitre1/img/figma.png, id=775, 319.1925pt x 159.59625pt>
 File: sections/chapitre1/img/figma.png Graphic file (type png)
 <use sections/chapitre1/img/figma.png>
 Package pdftex.def Info: sections/chapitre1/img/figma.png  used on input line 426.
 (pdftex.def)             Requested size: 54.05743pt x 27.02872pt.
  [9 <./sections/chapitre1/img/drawio.png> <./sections/chapitre1/img/github.png> <./sections/chapitre1/img/jira.png> <./sections/chapitre1/img/latex.png> <./sections/chapitre1/img/figma.png> <./sections/chapitre1/img/git.png>]
-<sections/chapitre1/img/react.png, id=608, 238.8925pt x 212.795pt>
+<sections/chapitre1/img/react.png, id=787, 238.8925pt x 212.795pt>
 File: sections/chapitre1/img/react.png Graphic file (type png)
 <use sections/chapitre1/img/react.png>
 Package pdftex.def Info: sections/chapitre1/img/react.png  used on input line 445.
 (pdftex.def)             Requested size: 59.74849pt x 53.22134pt.
-<sections/chapitre1/img/tailwind.png, id=609, 331.2375pt x 202.7575pt>
+<sections/chapitre1/img/tailwind.png, id=788, 331.2375pt x 202.7575pt>
 File: sections/chapitre1/img/tailwind.png Graphic file (type png)
 <use sections/chapitre1/img/tailwind.png>
 Package pdftex.def Info: sections/chapitre1/img/tailwind.png  used on input line 449.
 (pdftex.def)             Requested size: 59.74652pt x 36.57211pt.
-<sections/chapitre1/img/springboot.png, id=610, 401.5pt x 401.5pt>
+<sections/chapitre1/img/springboot.png, id=789, 401.5pt x 401.5pt>
 File: sections/chapitre1/img/springboot.png Graphic file (type png)
 <use sections/chapitre1/img/springboot.png>
 Package pdftex.def Info: sections/chapitre1/img/springboot.png  used on input line 453.
 (pdftex.def)             Requested size: 59.74649pt x 27.1574pt.
-<sections/chapitre1/img/PostgreSQL.png, id=612, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/PostgreSQL.png, id=791, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/PostgreSQL.png Graphic file (type png)
 <use sections/chapitre1/img/PostgreSQL.png>
 Package pdftex.def Info: sections/chapitre1/img/PostgreSQL.png  used on input line 457.
 (pdftex.def)             Requested size: 59.7518pt x 59.7518pt.
-<sections/chapitre1/img/keycloak.jpg, id=613, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/keycloak.jpg, id=792, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/keycloak.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/keycloak.jpg>
 Package pdftex.def Info: sections/chapitre1/img/keycloak.jpg  used on input line 461.
 (pdftex.def)             Requested size: 59.7518pt x 59.7518pt.
  [10 <./sections/chapitre1/img/react.png> <./sections/chapitre1/img/tailwind.png> <./sections/chapitre1/img/PostgreSQL.png> <./sections/chapitre1/img/keycloak.jpg> <./sections/chapitre1/img/springboot.png>]
-<sections/chapitre1/img/docker.png, id=623, 241.90375pt x 209.78375pt>
+<sections/chapitre1/img/docker.png, id=802, 241.90375pt x 209.78375pt>
 File: sections/chapitre1/img/docker.png Graphic file (type png)
 <use sections/chapitre1/img/docker.png>
 Package pdftex.def Info: sections/chapitre1/img/docker.png  used on input line 465.
 (pdftex.def)             Requested size: 59.74863pt x 51.81519pt.
-<sections/chapitre1/img/kafka.png, id=624, 225.84375pt x 225.84375pt>
+<sections/chapitre1/img/kafka.png, id=803, 225.84375pt x 225.84375pt>
 File: sections/chapitre1/img/kafka.png Graphic file (type png)
 <use sections/chapitre1/img/kafka.png>
 Package pdftex.def Info: sections/chapitre1/img/kafka.png  used on input line 469.
@@ -1027,19 +1047,19 @@ Overfull \hbox (0.51491pt too wide) in paragraph at lines 484--485
  []
 
 [11 <./sections/chapitre1/img/docker.png> <./sections/chapitre1/img/kafka.png>]
-<sections/chapitre1/img/arch_frontend.jpg, id=633, 477.9456pt x 460.119pt>
+<sections/chapitre1/img/arch_frontend.jpg, id=812, 477.9456pt x 460.119pt>
 File: sections/chapitre1/img/arch_frontend.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_frontend.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_frontend.jpg  used on input line 510.
 (pdftex.def)             Requested size: 409.71692pt x 394.4379pt.
  [12 <./sections/chapitre1/img/arch_frontend.jpg>]
-<sections/chapitre1/img/arch_backend.jpg, id=638, 1011.78pt x 803.25093pt>
+<sections/chapitre1/img/arch_backend.jpg, id=817, 1011.78pt x 803.25093pt>
 File: sections/chapitre1/img/arch_backend.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_backend.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_backend.jpg  used on input line 536.
 (pdftex.def)             Requested size: 409.71692pt x 325.27808pt.
  [13 <./sections/chapitre1/img/arch_backend.jpg>]
-<sections/chapitre1/img/arch_globale.jpg, id=643, 1003.95074pt x 449.2785pt>
+<sections/chapitre1/img/arch_globale.jpg, id=822, 1003.95074pt x 449.2785pt>
 File: sections/chapitre1/img/arch_globale.jpg Graphic file (type jpg)
 <use sections/chapitre1/img/arch_globale.jpg>
 Package pdftex.def Info: sections/chapitre1/img/arch_globale.jpg  used on input line 577.
@@ -1138,7 +1158,7 @@ Underfull \hbox (badness 2744) in paragraph at lines 656--656
  []
 
 [27]) [28] (sections/chapitre3/chapitre3.tex
-<sections/chapitre3/img/other/release1_organization.png, id=717, 903.375pt x 342.5297pt>
+<sections/chapitre3/img/other/release1_organization.png, id=896, 903.375pt x 342.5297pt>
 File: sections/chapitre3/img/other/release1_organization.png Graphic file (type png)
 <use sections/chapitre3/img/other/release1_organization.png>
 Package pdftex.def Info: sections/chapitre3/img/other/release1_organization.png  used on input line 165.
@@ -1157,7 +1177,7 @@ Overfull \vbox (3.80803pt too high) detected at line 240
  []
 
 [30]
-<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png, id=727, 888.31876pt x 753.81625pt>
+<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png, id=906, 888.31876pt x 753.81625pt>
 File: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png  used on input line 274.
@@ -1165,360 +1185,580 @@ Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_managemen
  [31
 
  <./sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png, id=733, 995.72pt x 693.59125pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png, id=912, 995.72pt x 693.59125pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png  used on input line 294.
 (pdftex.def)             Requested size: 409.71692pt x 285.40083pt.
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png, id=734, 994.71625pt x 788.9475pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png, id=913, 994.71625pt x 788.9475pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png  used on input line 305.
 (pdftex.def)             Requested size: 400.61703pt x 317.75233pt.
  [32 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/registration_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png, id=740, 764.8575pt x 502.87875pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png, id=920, 764.8575pt x 502.87875pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png  used on input line 317.
 (pdftex.def)             Requested size: 409.71692pt x 269.37894pt.
  [33 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/login_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png, id=747, 829.0975pt x 433.62pt>
+<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png, id=926, 829.0975pt x 433.62pt>
 File: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png  used on input line 327.
 (pdftex.def)             Requested size: 432.48051pt x 226.18504pt.
  [34 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/logout_system_sequence.png> <./sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/personal_account_management_use_case.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png, id=754, 985.6825pt x 677.53125pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png, id=933, 985.6825pt x 677.53125pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png  used on input line 338.
 (pdftex.def)             Requested size: 409.71692pt x 281.6251pt.
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png, id=755, 611.28375pt x 563.10374pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png, id=934, 611.28375pt x 563.10374pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png  used on input line 349.
 (pdftex.def)             Requested size: 409.71692pt x 377.42361pt.
  [35 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/password_reset_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png, id=761, 894.34125pt x 773.89125pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png, id=940, 894.34125pt x 773.89125pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png  used on input line 362.
-(pdftex.def)             Requested size: 409.71692pt x 354.54184pt.
- [36 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png, id=767, 879.285pt x 502.87875pt>
+(pdftex.def)             Requested size: 446.13727pt x 386.05902pt.
+ [36 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/profile_update_system_sequence.png>] [37 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png>]
+<sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png, id=951, 879.285pt x 502.87875pt>
 File: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png  used on input line 372.
 (pdftex.def)             Requested size: 432.48051pt x 247.3412pt.
- [37 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/change_password_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png, id=773, 984.67876pt x 613.29124pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png, id=952, 984.67876pt x 613.29124pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png  used on input line 384.
-(pdftex.def)             Requested size: 409.71692pt x 255.18489pt.
+(pdftex.def)             Requested size: 446.13727pt x 277.86884pt.
  [38 <./sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/hr_user_account_management_use_case.png> <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/hr_user_account_setup_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png, id=780, 954.56625pt x 623.32875pt>
+<sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png, id=960, 954.56625pt x 623.32875pt>
 File: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png  used on input line 395.
 (pdftex.def)             Requested size: 409.71692pt x 267.54106pt.
-<sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png, id=781, 829.0975pt x 432.61626pt>
+<sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png, id=961, 829.0975pt x 432.61626pt>
 File: sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png  used on input line 415.
 (pdftex.def)             Requested size: 432.48051pt x 225.66147pt.
  [39 <./sections/chapitre3/img/sprint1_access_account_management/03_system_sequence_diagrams/account_activation_deactivation_system_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png, id=788, 1125.20375pt x 524.96124pt>
+<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png, id=967, 1125.20375pt x 524.96124pt>
 File: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png  used on input line 434.
 (pdftex.def)             Requested size: 432.48051pt x 201.77026pt.
  [40 <./sections/chapitre3/img/sprint1_access_account_management/05_domain_model/sprint1_domain_model.png> <./sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/authentication_access_control_participant_classes.png>]
-<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png, id=795, 1210.5225pt x 570.13pt>
+<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png, id=974, 1210.5225pt x 570.13pt>
 File: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png  used on input line 444.
 (pdftex.def)             Requested size: 432.48051pt x 203.68944pt.
-<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png, id=796, 1170.3725pt x 524.96124pt>
+<sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png, id=975, 1170.3725pt x 524.96124pt>
 File: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png  used on input line 454.
 (pdftex.def)             Requested size: 432.48051pt x 193.9843pt.
  [41 <./sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/password_reset_change_participant_classes.png> <./sections/chapitre3/img/sprint1_access_account_management/06_participant_class_diagrams/hr_account_management_participant_classes.png>]
-<sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png, id=803, 723.70375pt x 503.8825pt>
+<sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png, id=982, 723.70375pt x 503.8825pt>
 File: sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png>
 Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png  used on input line 474.
 (pdftex.def)             Requested size: 432.48051pt x 301.11703pt.
  [42 <./sections/chapitre3/img/sprint1_access_account_management/04_state_diagrams/user_account_lifecycle.png>]
-<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png, id=809, 1190.4475pt x 695.59875pt>
+<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png, id=988, 1190.4475pt x 695.59875pt>
 File: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png  used on input line 493.
-(pdftex.def)             Requested size: 432.48051pt x 252.69736pt.
-<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png, id=810, 1190.4475pt x 695.59875pt>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png  used on input line 494.
+(pdftex.def)             Requested size: 446.13727pt x 260.67906pt.
+<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png, id=989, 1190.4475pt x 695.59875pt>
 File: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png  used on input line 503.
-(pdftex.def)             Requested size: 432.48051pt x 252.69736pt.
- [43 <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png> <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png>]
-<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png, id=817, 1190.4475pt x 702.625pt>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png  used on input line 505.
+(pdftex.def)             Requested size: 446.13727pt x 260.67906pt.
+ [43 <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/registration_pending_access_design_class.png>]
+<sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png, id=995, 1190.4475pt x 702.625pt>
 File: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png  used on input line 513.
-(pdftex.def)             Requested size: 432.48051pt x 255.24985pt.
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png, id=818, 924.45375pt x 702.625pt>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png  used on input line 516.
+(pdftex.def)             Requested size: 446.13727pt x 263.31218pt.
+ [44 <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/security_keycloak_access_control_design_class.png> <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png>]
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png, id=1003, 924.45375pt x 702.625pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png  used on input line 526.
-(pdftex.def)             Requested size: 446.13078pt x 339.07877pt.
- [44 <./sections/chapitre3/img/sprint1_access_account_management/07_design_class_diagrams/hr_account_setup_notification_design_class.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png, id=824, 1660.2025pt x 1401.235pt>
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png  used on input line 529.
+(pdftex.def)             Requested size: 455.24327pt x 346.00464pt.
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png, id=1004, 1660.2025pt x 1401.235pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png  used on input line 531.
-(pdftex.def)             Requested size: 446.13274pt x 376.5425pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png  used on input line 534.
+(pdftex.def)             Requested size: 455.22714pt x 384.2183pt.
  [45 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png, id=831, 1608.0075pt x 1529.715pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png, id=1010, 1608.0075pt x 1529.715pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png  used on input line 536.
-(pdftex.def)             Requested size: 446.11696pt x 424.3959pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png  used on input line 539.
+(pdftex.def)             Requested size: 455.24442pt x 433.07895pt.
  [46 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png, id=837, 1521.685pt x 1682.285pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png, id=1016, 1521.685pt x 1682.285pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png  used on input line 541.
-(pdftex.def)             Requested size: 446.13013pt x 493.2151pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png  used on input line 544.
+(pdftex.def)             Requested size: 455.23198pt x 503.27757pt.
  [47 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png, id=843, 1728.4575pt x 1260.71pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png, id=1022, 1728.4575pt x 1260.71pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png  used on input line 546.
-(pdftex.def)             Requested size: 446.11797pt x 325.3915pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png  used on input line 549.
+(pdftex.def)             Requested size: 455.24341pt x 332.04745pt.
  [48 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png, id=849, 1419.3025pt x 1200.485pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png, id=1028, 1419.3025pt x 1200.485pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png  used on input line 551.
-(pdftex.def)             Requested size: 446.12976pt x 377.34879pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png  used on input line 554.
+(pdftex.def)             Requested size: 455.24727pt x 385.06062pt.
  [49 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png, id=855, 2001.4775pt x 2226.3175pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png, id=1034, 2001.4775pt x 2226.3175pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png  used on input line 556.
-(pdftex.def)             Requested size: 446.12903pt x 496.24583pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png  used on input line 559.
+(pdftex.def)             Requested size: 455.22997pt x 506.36914pt.
  [50 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png, id=861, 1887.05pt x 1868.9825pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png, id=1041, 1887.05pt x 1868.9825pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png  used on input line 561.
-(pdftex.def)             Requested size: 446.13466pt x 441.86316pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png  used on input line 564.
+(pdftex.def)             Requested size: 455.23357pt x 450.87495pt.
  [51 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png, id=868, 1539.7525pt x 1622.06pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png, id=1047, 1539.7525pt x 1622.06pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png  used on input line 566.
-(pdftex.def)             Requested size: 446.14087pt x 469.98935pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png  used on input line 569.
+(pdftex.def)             Requested size: 455.23332pt x 479.56784pt.
  [52 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png, id=874, 1836.8625pt x 1439.3775pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png, id=1053, 1836.8625pt x 1439.3775pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png  used on input line 571.
-(pdftex.def)             Requested size: 446.12532pt x 349.58672pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png  used on input line 574.
+(pdftex.def)             Requested size: 455.2345pt x 356.72473pt.
  [53 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png, id=880, 1610.015pt x 2465.21pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png, id=1059, 1610.015pt x 2465.21pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png  used on input line 576.
-(pdftex.def)             Requested size: 357.98769pt x 548.14076pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png  used on input line 579.
+(pdftex.def)             Requested size: 376.36366pt x 576.27754pt.
  [54 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png, id=886, 2131.965pt x 2427.0675pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png, id=1065, 2131.965pt x 2427.0675pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png  used on input line 581.
-(pdftex.def)             Requested size: 446.13184pt x 507.88455pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png  used on input line 584.
+(pdftex.def)             Requested size: 455.24055pt x 518.25409pt.
  [55 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png, id=892, 1730.465pt x 1744.5175pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png, id=1071, 1730.465pt x 1744.5175pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png  used on input line 586.
-(pdftex.def)             Requested size: 446.13441pt x 449.75732pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png  used on input line 589.
+(pdftex.def)             Requested size: 455.24405pt x 458.94093pt.
  [56 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png, id=898, 2041.6275pt x 1764.5925pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png, id=1078, 2041.6275pt x 1764.5925pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png  used on input line 591.
-(pdftex.def)             Requested size: 446.13763pt x 385.59978pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png  used on input line 594.
+(pdftex.def)             Requested size: 455.23422pt x 393.46202pt.
  [57 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png, id=905, 1951.29pt x 2083.785pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png, id=1084, 1951.29pt x 2083.785pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png  used on input line 596.
-(pdftex.def)             Requested size: 446.13736pt x 476.43063pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png  used on input line 599.
+(pdftex.def)             Requested size: 455.2185pt x 486.1284pt.
  [58 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png>]
-<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png, id=911, 1953.2975pt x 1762.585pt>
+<sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png, id=1090, 1953.2975pt x 1762.585pt>
 File: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png Graphic file (type png)
 <use sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png  used on input line 601.
-(pdftex.def)             Requested size: 446.11946pt x 402.56207pt.
+Package pdftex.def Info: sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png  used on input line 604.
+(pdftex.def)             Requested size: 455.23976pt x 410.79189pt.
  [59 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png>]
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 613.
+(Font)              size <8> substituted on input line 616.
 
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 613.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 616.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 613.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 616.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.29004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 613.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 616.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.10005> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 613.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 616.
 [60 <./sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png>] [61] [62] [63
 
 ] [64]
-Overfull \hbox (12.09485pt too wide) in paragraph at lines 801--802
+Overfull \hbox (12.09485pt too wide) in paragraph at lines 804--805
 []\T1/ptm/m/n/12 These di-a-grams sum-ma-rize the main user-system ex-changes for Sprint 2 leave-management
  []
 
-<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png, id=940, 1009.7725pt x 839.135pt>
+<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png, id=1119, 1009.7725pt x 839.135pt>
 File: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png  used on input line 813.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png  used on input line 816.
 (pdftex.def)             Requested size: 432.48051pt x 359.39975pt.
 [65
 
 ]
-Overfull \hbox (12.09485pt too wide) in paragraph at lines 821--822
+Overfull \hbox (12.09485pt too wide) in paragraph at lines 824--825
 []\T1/ptm/m/n/12 These di-a-grams sum-ma-rize the main user-system ex-changes for Sprint 2 leave-management
  []
 
 [66 <./sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png>]
-<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png, id=950, 814.04124pt x 483.8075pt>
+<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png, id=1129, 814.04124pt x 483.8075pt>
 File: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png  used on input line 833.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png  used on input line 836.
 (pdftex.def)             Requested size: 432.48051pt x 257.03687pt.
-<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png, id=951, 914.41624pt x 568.1225pt>
+<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png, id=1130, 914.41624pt x 568.1225pt>
 File: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png  used on input line 844.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png  used on input line 847.
 (pdftex.def)             Requested size: 409.71692pt x 254.5518pt.
  [67 <./sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/employee_leave_request_management_use_case.png>]
-<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png, id=957, 910.40125pt x 667.49374pt>
+<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png, id=1136, 910.40125pt x 667.49374pt>
 File: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png  used on input line 855.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png  used on input line 858.
 (pdftex.def)             Requested size: 409.71692pt x 300.39996pt.
  [68 <./sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_submit_leave_request.png> <./sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_edit_cancel_pending_leave.png>]
-<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png, id=964, 849.1725pt x 683.55376pt>
+<sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png, id=1144, 849.1725pt x 683.55376pt>
 File: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png  used on input line 865.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png  used on input line 868.
 (pdftex.def)             Requested size: 432.48051pt x 348.12802pt.
-<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png, id=965, 920.43875pt x 679.53876pt>
+<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png, id=1145, 920.43875pt x 679.53876pt>
 File: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png  used on input line 876.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png  used on input line 879.
 (pdftex.def)             Requested size: 409.71692pt x 302.49231pt.
  [69 <./sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/leave_approval_workflow_use_case.png>]
-<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png, id=972, 919.435pt x 640.3925pt>
+<sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png, id=1151, 919.435pt x 640.3925pt>
 File: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png  used on input line 887.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png  used on input line 890.
 (pdftex.def)             Requested size: 409.71692pt x 285.3695pt.
  [70 <./sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_team_leader_leave_decision.png>]
-<sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png, id=978, 1076.02pt x 740.7675pt>
+<sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png, id=1157, 1076.02pt x 740.7675pt>
 File: sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png  used on input line 908.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png  used on input line 911.
 (pdftex.def)             Requested size: 432.48051pt x 297.73724pt.
  [71 <./sections/chapitre3/img/sprint2_leave_management/03_system_sequence_diagrams/ssd_hr_final_leave_decision.png>]
-<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png, id=984, 1125.20375pt x 483.8075pt>
+<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png, id=1163, 1125.20375pt x 483.8075pt>
 File: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png  used on input line 928.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png  used on input line 931.
 (pdftex.def)             Requested size: 432.48051pt x 185.95271pt.
  [72 <./sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png>]
-<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png, id=990, 1200.485pt x 503.8825pt>
+<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png, id=1169, 1200.485pt x 503.8825pt>
 File: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png  used on input line 938.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png  used on input line 941.
 (pdftex.def)             Requested size: 432.48051pt x 181.52057pt.
  [73 <./sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_employee_leave_request_management.png> <./sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_team_leader_leave_review.png>]
-<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png, id=997, 1210.5225pt x 503.8825pt>
+<sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png, id=1176, 1210.5225pt x 503.8825pt>
 File: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png  used on input line 948.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png  used on input line 951.
 (pdftex.def)             Requested size: 432.48051pt x 180.0213pt.
  [74 <./sections/chapitre3/img/sprint2_leave_management/06_participant_class_diagrams/participant_hr_final_leave_decision.png>]
-<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png, id=1003, 1005.7575pt x 688.5725pt>
+<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png, id=1183, 1005.7575pt x 688.5725pt>
 File: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png  used on input line 989.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png  used on input line 992.
 (pdftex.def)             Requested size: 432.48051pt x 296.0909pt.
-<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png, id=1004, 1388.18625pt x 529.98pt>
+<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png, id=1184, 1388.18625pt x 529.98pt>
 File: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png  used on input line 999.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png  used on input line 1002.
 (pdftex.def)             Requested size: 432.48051pt x 165.10886pt.
  [75 <./sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_leave_request_creation_validation.png> <./sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_team_leader_leave_review.png>]
-<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png, id=1012, 1192.455pt x 563.10374pt>
+<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png, id=1191, 1192.455pt x 563.10374pt>
 File: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png  used on input line 1009.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png  used on input line 1012.
 (pdftex.def)             Requested size: 432.48051pt x 204.22084pt.
-<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png, id=1013, 1195.46625pt x 668.4975pt>
+<sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png, id=1192, 1195.46625pt x 668.4975pt>
 File: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png  used on input line 1019.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png  used on input line 1022.
 (pdftex.def)             Requested size: 432.48051pt x 241.84216pt.
  [76 <./sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_hr_final_leave_decision.png> <./sections/chapitre3/img/sprint2_leave_management/07_design_class_diagrams/design_working_day_holiday_balance_management.png>]
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png, id=1020, 1305.87875pt x 864.22874pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png, id=1199, 1305.87875pt x 864.22874pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png  used on input line 1035.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png  used on input line 1038.
 (pdftex.def)             Requested size: 432.48051pt x 286.21176pt.
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png, id=1021, 1365.1pt x 679.53876pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png, id=1200, 1365.1pt x 679.53876pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png  used on input line 1041.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png  used on input line 1044.
 (pdftex.def)             Requested size: 432.48051pt x 215.27937pt.
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png, id=1022, 1312.905pt x 991.705pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png, id=1201, 1312.905pt x 991.705pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png  used on input line 1047.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png  used on input line 1050.
 (pdftex.def)             Requested size: 432.48051pt x 326.67351pt.
  [77 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png> <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png>]
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png, id=1029, 1467.4825pt x 1001.7425pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png, id=1208, 1467.4825pt x 1001.7425pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png  used on input line 1053.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png  used on input line 1056.
 (pdftex.def)             Requested size: 432.48051pt x 295.22105pt.
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png, id=1030, 1317.92375pt x 1008.76875pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png, id=1209, 1317.92375pt x 1008.76875pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png  used on input line 1059.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png  used on input line 1062.
 (pdftex.def)             Requested size: 432.48051pt x 331.03221pt.
  [78 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png> <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png>]
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png, id=1037, 1334.9875pt x 971.63pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png, id=1216, 1334.9875pt x 971.63pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png  used on input line 1065.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png  used on input line 1068.
 (pdftex.def)             Requested size: 432.48051pt x 314.76785pt.
  [79 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png>]
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png, id=1043, 1317.92375pt x 975.645pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png, id=1222, 1317.92375pt x 975.645pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png  used on input line 1071.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png  used on input line 1074.
 (pdftex.def)             Requested size: 432.48051pt x 320.1625pt.
  [80 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png>]
-<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png, id=1049, 1350.04375pt x 991.705pt>
+<sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png, id=1229, 1350.04375pt x 991.705pt>
 File: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png Graphic file (type png)
 <use sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png>
-Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png  used on input line 1077.
+Package pdftex.def Info: sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png  used on input line 1080.
 (pdftex.def)             Requested size: 432.48051pt x 317.685pt.
- [81 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png>] [82 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png>] [83]) [84] (main.aux (sections/page_garde/page_garde.aux) (sections/dedicace/dedicace.aux) (sections/remerciements/remerciements.aux) (sections/table_matieres/table_matieres.aux) (sections/liste_figures/liste_figures.aux) (sections/liste_tableaux/liste_tableaux.aux) (sections/introduction_generale/introduction_generale.aux) (sections/chapitre1/chapitre1.aux))
+ [81 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png>] [82 <./sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png>] [83]) [84] (sections/chapitre4/chapitre4.tex [85
+
+] [86] [87
+
+]
+<sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png, id=1261, 927.465pt x 703.62875pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png  used on input line 239.
+(pdftex.def)             Requested size: 418.82375pt x 317.7466pt.
+<sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png, id=1262, 1015.795pt x 412.54124pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png  used on input line 250.
+(pdftex.def)             Requested size: 418.82375pt x 170.09352pt.
+
+Overfull \hbox (4.86989pt too wide) in paragraph at lines 258--259
+[]\T1/ptm/m/n/12 These di-a-grams de-scribe the main re-quest sub-mis-sions, HR pro-cess-ing steps, and schedul-
+ []
+
+[88 <./sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png> <./sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png, id=1269, 905.3825pt x 615.29875pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png  used on input line 271.
+(pdftex.def)             Requested size: 418.82375pt x 284.62755pt.
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png, id=1270, 1107.13625pt x 865.2325pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png  used on input line 282.
+(pdftex.def)             Requested size: 418.82375pt x 327.3131pt.
+ [89 <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png, id=1276, 985.6825pt x 614.295pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png  used on input line 293.
+(pdftex.def)             Requested size: 418.82375pt x 261.02036pt.
+ [90 <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png, id=1282, 2073.7475pt x 1589.94pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png  used on input line 304.
+(pdftex.def)             Requested size: 418.82375pt x 321.11197pt.
+ [91 <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png> <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png, id=1289, 2073.7475pt x 1369.115pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png  used on input line 315.
+(pdftex.def)             Requested size: 418.82375pt x 276.51308pt.
+<sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png, id=1290, 2200.22pt x 1872.9975pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png  used on input line 326.
+(pdftex.def)             Requested size: 418.82375pt x 356.53056pt.
+ [92 <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png, id=1297, 2061.7025pt x 1551.7975pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png  used on input line 348.
+(pdftex.def)             Requested size: 418.82375pt x 315.23177pt.
+ [93 <./sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png, id=1303, 1125.20375pt x 605.26125pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png  used on input line 368.
+(pdftex.def)             Requested size: 432.48051pt x 232.63377pt.
+ [94 <./sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png, id=1309, 1466.47874pt x 704.6325pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png  used on input line 379.
+(pdftex.def)             Requested size: 432.48051pt x 207.80028pt.
+ [95 <./sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png> <./sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png, id=1316, 1396.21625pt x 694.595pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png  used on input line 390.
+(pdftex.def)             Requested size: 432.48051pt x 215.15265pt.
+<sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png, id=1317, 1546.77875pt x 564.1075pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png  used on input line 401.
+(pdftex.def)             Requested size: 432.48051pt x 157.72522pt.
+ [96 <./sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png> <./sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png, id=1324, 1086.0575pt x 505.89pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png  used on input line 421.
+(pdftex.def)             Requested size: 409.71692pt x 190.85072pt.
+<sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png, id=1325, 1116.17pt x 487.8225pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png  used on input line 432.
+(pdftex.def)             Requested size: 409.71692pt x 179.06233pt.
+ [97 <./sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png> <./sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png, id=1332, 1014.79124pt x 347.2975pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png  used on input line 443.
+(pdftex.def)             Requested size: 409.71692pt x 140.22017pt.
+<sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png, id=1333, 1196.47pt x 725.71124pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png  used on input line 464.
+(pdftex.def)             Requested size: 432.48051pt x 262.3189pt.
+ [98 <./sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png> <./sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png, id=1341, 1106.1325pt x 1014.79124pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png  used on input line 475.
+(pdftex.def)             Requested size: 432.48051pt x 396.758pt.
+<sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png, id=1342, 1106.1325pt x 666.49pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png  used on input line 486.
+(pdftex.def)             Requested size: 432.48051pt x 260.58092pt.
+ [99 <./sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png, id=1348, 1086.0575pt x 625.33624pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png  used on input line 497.
+(pdftex.def)             Requested size: 432.48051pt x 249.01367pt.
+ [100 <./sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png> <./sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png, id=1355, 1147.28625pt x 1033.8625pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png  used on input line 516.
+(pdftex.def)             Requested size: 432.48051pt x 389.71675pt.
+ [101 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png, id=1361, 1061.9675pt x 1035.87pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png  used on input line 525.
+(pdftex.def)             Requested size: 432.48051pt x 421.84854pt.
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png, id=1362, 1343.0175pt x 1126.2075pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png  used on input line 534.
+(pdftex.def)             Requested size: 432.48051pt x 362.66212pt.
+ [102 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png, id=1368, 1578.89874pt x 1278.7775pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png  used on input line 543.
+(pdftex.def)             Requested size: 432.48051pt x 350.26974pt.
+ [103 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png, id=1374, 1122.1925pt x 1020.81375pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png  used on input line 552.
+(pdftex.def)             Requested size: 432.48051pt x 393.39613pt.
+ [104 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png, id=1381, 1091.07625pt x 1236.62pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png  used on input line 561.
+(pdftex.def)             Requested size: 432.48051pt x 490.16722pt.
+ [105 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png>] [106 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png, id=1392, 1064.97874pt x 912.40875pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png  used on input line 570.
+(pdftex.def)             Requested size: 432.48051pt x 370.512pt.
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png, id=1393, 1039.885pt x 714.67pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png  used on input line 579.
+(pdftex.def)             Requested size: 432.48051pt x 297.2259pt.
+ [107 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png, id=1399, 1097.09875pt x 1407.2575pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png  used on input line 588.
+(pdftex.def)             Requested size: 432.48051pt x 554.73329pt.
+ [108 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png>] [109 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png, id=1410, 1081.03876pt x 1684.2925pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png  used on input line 597.
+(pdftex.def)             Requested size: 432.48051pt x 673.80788pt.
+ [110] [111 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png, id=1421, 1893.0725pt x 1979.395pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png  used on input line 606.
+(pdftex.def)             Requested size: 432.48051pt x 452.20078pt.
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png, id=1422, 1295.84125pt x 1226.5825pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png  used on input line 615.
+(pdftex.def)             Requested size: 432.48051pt x 409.35893pt.
+ [112 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png, id=1428, 1026.83624pt x 1076.02pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png  used on input line 624.
+(pdftex.def)             Requested size: 432.48051pt x 453.18958pt.
+ [113 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png, id=1434, 1162.3425pt x 1025.8325pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png  used on input line 633.
+(pdftex.def)             Requested size: 432.48051pt x 381.69653pt.
+ [114 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png, id=1440, 1113.15875pt x 1136.245pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png  used on input line 642.
+(pdftex.def)             Requested size: 432.48051pt x 441.45201pt.
+ [115 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png>]
+<sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png, id=1446, 1207.51125pt x 1527.7075pt>
+File: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png Graphic file (type png)
+<use sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png>
+Package pdftex.def Info: sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png  used on input line 651.
+(pdftex.def)             Requested size: 432.48051pt x 547.15367pt.
+ [116 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png>] [117 <./sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png>] [118] [119] [120
+
+] [121] [122
+
+] [123] [124]) [125
+
+] (main.aux (sections/page_garde/page_garde.aux) (sections/dedicace/dedicace.aux) (sections/remerciements/remerciements.aux) (sections/table_matieres/table_matieres.aux) (sections/liste_figures/liste_figures.aux) (sections/liste_tableaux/liste_tableaux.aux) (sections/introduction_generale/introduction_generale.aux) (sections/chapitre1/chapitre1.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1529,20 +1769,20 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 66650A0ED374010B55153ECE295DE5CC;12952.
+(rerunfilecheck)             Checksum: 98C077C1630A9AA24A514F789744D67F;16289.
  ) 
 Here is how much of TeX's memory you used:
- 25869 strings out of 467867
- 548180 string characters out of 5418334
- 886952 words of memory out of 5000000
- 53991 multiletter control sequences out of 15000+600000
+ 26299 strings out of 467867
+ 585032 string characters out of 5418334
+ 891518 words of memory out of 5000000
+ 54317 multiletter control sequences out of 15000+600000
  762014 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,15n,94p,982b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (94 pages, 4633042 bytes).
+Output written on main.pdf (136 pages, 6448155 bytes).
 PDF statistics:
- 1180 PDF objects out of 1200 (max. 8388607)
- 233 named destinations out of 1000 (max. 500000)
- 1001 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1628 PDF objects out of 1728 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 1325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

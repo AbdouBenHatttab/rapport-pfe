@@ -67,3 +67,21 @@
 \contentsline {subsection}{III.5 Sprint Review}{83}{section*.138}%
 \contentsline {subsection}{III.6 Sprint Retrospective}{84}{section*.139}%
 \contentsline {section}{Conclusion}{84}{section*.141}%
+\contentsline {chapter}{Chapter 4: Release 2 - Workflow Management}{85}{section*.142}%
+\contentsline {section}{Introduction}{85}{section*.143}%
+\contentsline {section}{I. Release Organization}{85}{section*.144}%
+\contentsline {section}{II. Sprint 3: Administrative Requests}{85}{section*.146}%
+\contentsline {subsection}{II.1 Sprint Goal}{85}{section*.147}%
+\contentsline {subsection}{II.2 Visual Sprint Journal}{85}{section*.148}%
+\contentsline {subsection}{II.3 Sprint Backlog}{86}{section*.149}%
+\contentsline {subsection}{II.4 Sprint Implementation}{87}{section*.151}%
+\contentsline {subsection}{II.5 Sprint Review}{118}{section*.188}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{119}{section*.189}%
+\contentsline {section}{III. Sprint 4: HR Management and Calendar}{120}{section*.191}%
+\contentsline {subsection}{III.1 Sprint Goal}{120}{section*.192}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{120}{section*.193}%
+\contentsline {subsection}{III.3 Sprint Backlog}{120}{section*.194}%
+\contentsline {subsection}{III.4 Sprint Implementation}{122}{section*.196}%
+\contentsline {subsection}{III.5 Sprint Review}{124}{section*.197}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{124}{section*.198}%
+\contentsline {section}{Conclusion}{125}{section*.199}%
