@@ -197,7 +197,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 3 covers the administrative-request workflow of Release 2. It includes document requests, loan requests, loan meetings, authorization requests, request tracking, and the related HR processing rules.
+\indent The following analysis describes the business rules that govern each request type handled in Sprint 3, covering document requests, loan requests and meetings, authorization requests, and the HR processing and tracking logic behind each one.
 
 }
 
@@ -213,7 +213,7 @@
 
 \indent Authorization requests in the active workflow are limited to time permission and equipment request types. Time permission must respect working hours and avoid leave overlap, while equipment requests require a type, reason, and start date. HR can approve or reject each pending request with a required rejection reason.
 
-\indent Each request keeps a trace through its detail view, history records, status updates, and request-event notifications. Employee pages show personal request progress, and HR pages support local search and filtering.
+\indent Each request is traceable through its detail view, history records, status updates, and notification events. Employee pages show personal request progress, and HR pages support search and filtering.
 
 }
 
@@ -331,7 +331,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The analysis section groups the request concepts, decision traces, and final-file handling used in Sprint 3.
+\indent The analysis covers the main domain concepts in Sprint 3: the request entities, decision traces, and final-file handling across the three request types.
 
 }
 
@@ -686,7 +686,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 3 was reviewed and validated as the administrative request workflow of the platform. The delivered features allow employees to submit and track document, loan, and authorization requests, while HR managers can review, approve, reject, schedule loan meetings, upload final files when needed, and follow request history. The sprint improved traceability through clear request statuses, decision notes, history records, and notification events. Document final-file delivery and loan final-file delivery were also modeled and integrated into the workflow.
+\indent Sprint 3 covered the administrative request workflow of the platform. Employees can submit and track document, loan, and authorization requests. HR managers can review each request, approve or reject it with a decision note, schedule loan meetings, upload final files where required, and consult the full request history. Request statuses, history records, decision notes, and notification events keep each request traceable from submission through to final decision. Final-file handling for document and loan requests was also built into the workflow.
 
 }
 
@@ -703,17 +703,17 @@
 \hline
 The sprint delivered the main administrative request workflows for documents, loans, and authorizations.
 &
-Some large sequence diagrams still need better print readability.
+Workflow complexity required tighter validation rules and a clearer HR decision flow across request states.
 \\
 \hline
 Request history, decision notes, statuses, and notifications improved workflow traceability.
 &
-Final-file workflows are dense and should be visually polished before the final report pass.
+Final-file handling and edge-case paths still need clearer validation and traceability.
 \\
 \hline
 Splitting frontend and backend diagrams made the technical design easier to explain.
 &
-UI screenshots are still placeholders and must be replaced after the interface validation.
+UI validation and user testing still need to cover feedback messages and request-state transitions.
 \\
 \hline
 \end{tabular}
