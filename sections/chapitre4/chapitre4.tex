@@ -733,7 +733,7 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This sprint section is reserved for HR management and calendar operations. It will be completed once the validated scope is confirmed.
+\indent This sprint covers HR management and calendar supervision. It centralizes HR user administration, employee records, team setup, role assignment, account activation or deactivation, and leave-availability views for employees and teams.
 
 }
 
@@ -835,7 +835,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will summarize the main HR and calendar use cases for Sprint 4.
+\indent The Sprint 4 scope covers the HR supervision features implemented in the application: HR dashboard and user management, employee records and employment information, role assignment and account activation or deactivation, team creation and leader assignment, team member management, and leave-availability calendars.
+
+\indent Departments and job titles act as reference data for HR setup, while the request and approval dashboard links remain supporting screens rather than the main Sprint 4 pillar.
 
 }
 
@@ -863,7 +865,11 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will describe the main business concepts used by Sprint 4.
+\indent The main Sprint 4 business concepts are HR users, employee records, account state, roles, departments, job titles, teams, team leaders, team membership, and leave-availability calendars.
+
+\indent HR can maintain the organizational structure by updating employee information, assigning roles, activating or deactivating accounts, creating teams, assigning or changing team leaders, and managing team membership within the allowed scope.
+
+\indent Calendar views expose leave availability according to user role and team context.
 
 }
 
@@ -877,7 +883,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will identify the frontend and backend participants involved in HR management and calendar features.
+\indent These diagrams identify the frontend and backend participants involved in HR supervision, employee record maintenance, team administration, and calendar-based leave visibility.
+
+\indent They emphasize the division between HR operations, team-leader membership management inside the team scope, and calendar consultation by role.
 
 }
 
@@ -891,7 +899,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will capture the lifecycle states for the Sprint 4 workflow.
+\indent These diagrams capture the lifecycle states associated with account activation, team membership changes, and leave-visibility handling in Sprint 4.
+
+\indent They focus on the transitions that HR can enforce and the boundaries that restrict team leaders to their own team.
 
 }
 
@@ -905,7 +915,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will document the main design classes that support Sprint 4.
+\indent These diagrams document the main design classes that support HR dashboard actions, employee record handling, team administration, and calendar visibility.
+
+\indent They reflect the backend-enforced rules around roles, account state, and membership management.
 
 }
 
@@ -919,7 +931,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will outline the internal frontend and backend interactions for Sprint 4.
+\indent These diagrams outline the internal frontend and backend interactions for HR user management, team operations, and calendar consultation.
+
+\indent They show how frontend requests are validated through the backend for role-aware actions and membership changes.
 
 }
 
@@ -933,7 +947,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The realization subsection will later present the validated user interfaces for Sprint 4.
+\indent The realization subsection presents the interface screens for HR supervision, employee records, team administration, and calendar visibility.
+
+\indent It highlights the implemented flows available in the application and prepares the section for the final validated screenshots.
 
 }
 
@@ -947,7 +963,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 4 review content will be inserted after implementation validation is completed.
+\indent Sprint 4 delivered the HR management and calendar supervision block.
+
+\indent It shows how HR centralizes user management, employee information, team setup, role assignment, account activation or deactivation, and leave-availability consultation for employees and teams.
 
 }
 
@@ -957,7 +975,34 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 4 retrospective content will be added after the review is finalized.
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{5.2cm}|>{\centering\bfseries\arraybackslash}m{5.2cm}|}
+\hline
+\rowcolor{blue!20}
+\textbf{What went well} & \textbf{What needs improvement} \\
+\hline
+The sprint centralized HR user, team, and calendar supervision in one release block.
+&
+HR screens still need more validation testing across edge cases.
+\\
+\hline
+Role assignment, activation/deactivation, and employment updates improved HR control over account lifecycle.
+&
+Team membership operations should be clearer for complex reassignment cases.
+\\
+\hline
+Team and calendar views improved visibility over organization structure and leave availability.
+&
+Calendar readability should still be reviewed when many leave records are displayed.
+\\
+\hline
+\end{tabular}
+\caption{Sprint Retrospective -- Sprint 4}
+\label{tab:sprint4_retrospective}
+\end{table}
 
 }
 
