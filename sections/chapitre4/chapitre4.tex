@@ -68,7 +68,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This chapter presents Release 2 of the ArabSoft internal platform. It introduces the workflow-oriented capabilities delivered in Sprint 3 and Sprint 4, while keeping the same reporting structure used in the previous chapter. The final content will detail the validated diagrams, implementation views, and interface illustrations once the related assets are ready.
+\indent This chapter presents Release 2 of the ArabSoft internal platform. It focuses on workflow management through two main sprints: Sprint 3, dedicated to administrative requests, and Sprint 4, dedicated to HR management and calendar supervision. The chapter follows the same structure as the previous release by presenting the sprint goals, backlog, UML diagrams, implementation views, review, and retrospective.
 
 }
 
@@ -83,7 +83,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Release 2 is organized around workflow management. The release will cover administrative requests first, then HR management and calendar-related operations.
+\indent Release 2 is organized around workflow management. It first covers administrative request processing through document, loan, and authorization workflows, then extends the platform with HR user supervision, organization setup, team management, and leave calendar consultation.
 
 }
 
@@ -733,7 +733,7 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This sprint covers HR management and calendar supervision. It centralizes HR user administration, employee records, team setup, role assignment, account activation or deactivation, and leave-availability views for employees and teams.
+\indent This sprint covers HR management and calendar supervision. It handles HR user administration, employee records, team setup, role assignment, account activation and deactivation, and leave-availability views for employees and teams.
 
 }
 
@@ -743,7 +743,7 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The sprint journal will later summarize the tracked HR and calendar user stories.
+\indent The sprint journal captures the tracked HR and calendar user stories and their validation status in Jira.
 
 }
 
@@ -757,7 +757,7 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The detailed Sprint 4 backlog will be inserted after mapping the relevant Chapter 2 backlog items.
+\indent The table below summarizes the Sprint 4 work packages prepared from the product backlog defined in Chapter 2.
 
 }
 
@@ -835,15 +835,33 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The Sprint 4 scope covers the HR supervision features implemented in the application: HR dashboard and user management, employee records and employment information, role assignment and account activation or deactivation, team creation and leader assignment, team member assignment, movement, and removal, and leave-availability calendars.
-
-\indent Departments and job titles act as reference data for HR setup, while the request and approval dashboard links remain supporting screens rather than the main Sprint 4 pillar.
+\indent Sprint 4 covers HR management and calendar supervision, including the HR dashboard, employee account supervision, organization setup, team structure management, and leave calendar views.
 
 }
 
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/sprint4_use_case_diagram.png}
-{Reserved placeholder -- Sprint 4 Use Case Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_management_calendar.png}
+{Use Case Diagram -- Sprint 4 HR Management and Calendar}
+{use_case_sprint4_hr_management_calendar}
+{0.92}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_employee_account_supervision.png}
+{Use Case Diagram -- HR Employee and Account Supervision}
+{use_case_sprint4_hr_employee_account_supervision}
+{0.92}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_organization_team_management.png}
+{Use Case Diagram -- Organization and Team Management}
+{use_case_sprint4_organization_team_management}
+{0.92}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_calendar_supervision.png}
+{Use Case Diagram -- Calendar Supervision}
+{use_case_sprint4_calendar_supervision}
+{0.92}
 
 \SprintFourImplementationHeading{System Sequence Diagrams}
 
@@ -851,13 +869,45 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This section will document the main user-system exchanges for HR management and calendar work.
+\indent These diagrams show the main user--system exchanges for Sprint 4 HR management and calendar workflows.
 
 }
 
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/sprint4_system_sequence_placeholder.png}
-{Reserved placeholder -- Sprint 4 System Sequence Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_dashboard.png}
+{System Sequence Diagram -- Consult HR Dashboard}
+{ssd_sprint4_consult_hr_dashboard}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_supervise_employee_account.png}
+{System Sequence Diagram -- Supervise Employee Account}
+{ssd_sprint4_supervise_employee_account}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_organization_reference_data.png}
+{System Sequence Diagram -- Manage Organization Reference Data}
+{ssd_sprint4_manage_organization_reference_data}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_team_structure.png}
+{System Sequence Diagram -- Manage Team Structure}
+{ssd_sprint4_manage_team_structure}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_leave_calendar.png}
+{System Sequence Diagram -- Consult HR Leave Calendar}
+{ssd_sprint4_consult_hr_leave_calendar}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_team_leave_calendar.png}
+{System Sequence Diagram -- Consult Team Leave Calendar}
+{ssd_sprint4_consult_team_leave_calendar}
+{0.95}
 
 \SprintFourImplementationHeading{Analysis}
 
@@ -865,17 +915,15 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The main Sprint 4 business concepts are HR users, employee records, account state, roles, departments, job titles, teams, team leaders, team membership, and leave-availability calendars.
-
-\indent HR can maintain the organizational structure by updating employee information, assigning roles, activating or deactivating accounts, creating teams, assigning or changing team leaders, and managing team membership, including assignment, movement, and removal, within the allowed scope.
-
-\indent Team leaders can manage membership only inside their own team, while calendar views expose leave availability according to user role and team context.
+\indent The Sprint 4 domain covers User accounts, Departments, Job Titles, Teams, team membership, and the leave requests used in the calendar views.
 
 }
 
-\ChapterFourDiagramPlaceholder
+\ChapterFourFigureSized
 {sections/chapitre4/img/sprint4_hr_management_calendar/05_domain_model/domain_model_sprint4_hr_management_calendar.png}
-{Reserved placeholder -- Sprint 4 Domain Model}
+{Domain Model -- Sprint 4 HR Management and Calendar}
+{domain_model_sprint4_hr_management_calendar}
+{0.92}
 
 \SprintFourImplementationHeading{Participant Class Diagrams}
 
@@ -883,31 +931,39 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent These diagrams identify the frontend and backend participants involved in HR supervision, employee record maintenance, team administration, and calendar-based leave visibility.
-
-\indent They emphasize the division between HR operations, team-leader membership management restricted to the leader's own team, and calendar consultation by role.
+\indent These diagrams show the main frontend and backend participants for HR employee account supervision, organization reference data management, team structure management, and leave calendar consultation.
 
 }
 
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_management_calendar.png}
-{Reserved placeholder -- Sprint 4 Participant Class Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_employee_account_supervision.png}
+{Participant Class Diagram -- HR Employee and Account Supervision}
+{participant_sprint4_hr_employee_account_supervision}
+{0.95}
 
-\SprintFourImplementationHeading{State Diagrams}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_organization_reference_data_management.png}
+{Participant Class Diagram -- Organization Reference Data Management}
+{participant_sprint4_organization_reference_data_management}
+{0.95}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_structure_management.png}
+{Participant Class Diagram -- Team Structure Management}
+{participant_sprint4_team_structure_management}
+{0.95}
 
-\indent These diagrams capture the lifecycle states associated with account activation, team membership changes, and leave-visibility handling in Sprint 4.
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_leave_calendar_consultation.png}
+{Participant Class Diagram -- HR Leave Calendar Consultation}
+{participant_sprint4_hr_leave_calendar_consultation}
+{0.95}
 
-\indent They focus on the transitions that HR can enforce and the boundaries that restrict team leaders to their own team.
-
-}
-
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/04_state_diagrams/state_diagram_sprint4_hr_management_calendar.png}
-{Reserved placeholder -- Sprint 4 State Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_leave_calendar_consultation.png}
+{Participant Class Diagram -- Team Leave Calendar Consultation}
+{participant_sprint4_team_leave_calendar_consultation}
+{0.95}
 
 \SprintFourImplementationHeading{Design Class Diagrams}
 
@@ -915,15 +971,39 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent These diagrams document the main design classes that support HR dashboard actions, employee record handling, team administration, and calendar visibility.
-
-\indent They reflect the backend-enforced rules around roles, account state, and membership management.
+\indent These diagrams show the frontend MVVM classes and backend Spring Boot classes used for HR user management, organization setup, team administration, and leave calendar consultation.
 
 }
 
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_management_calendar.png}
-{Reserved placeholder -- Sprint 4 Design Class Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_user_management.png}
+{Design Class Diagram -- HR User Management}
+{design_sprint4_hr_user_management}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_organization_setup.png}
+{Design Class Diagram -- HR Organization Setup}
+{design_sprint4_hr_organization_setup}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_team_management.png}
+{Design Class Diagram -- HR Team Management}
+{design_sprint4_hr_team_management}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_leave_calendar.png}
+{Design Class Diagram -- HR Leave Calendar}
+{design_sprint4_hr_leave_calendar}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_team_leave_calendar.png}
+{Design Class Diagram -- Team Leave Calendar}
+{design_sprint4_team_leave_calendar}
+{0.95}
 
 \SprintFourImplementationHeading{Conception Sequence Diagrams}
 
@@ -931,15 +1011,69 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent These diagrams outline the internal frontend and backend interactions for HR user management, team operations, and calendar consultation.
-
-\indent They show how frontend requests are validated through the backend for role-aware actions and membership changes.
+\indent These diagrams trace the interactions between the React frontend and the Spring Boot backend for HR account supervision, organization setup, team management, and leave calendar consultation.
 
 }
 
-\ChapterFourDiagramPlaceholder
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_management_calendar.png}
-{Reserved placeholder -- Sprint 4 Conception Sequence Diagram}
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_frontend.png}
+{Conception Sequence Diagram -- HR User Management Frontend}
+{csd_sprint4_hr_user_management_frontend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_backend.png}
+{Conception Sequence Diagram -- HR User Management Backend}
+{csd_sprint4_hr_user_management_backend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_frontend.png}
+{Conception Sequence Diagram -- HR Organization Setup Frontend}
+{csd_sprint4_hr_organization_setup_frontend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_backend.png}
+{Conception Sequence Diagram -- HR Organization Setup Backend}
+{csd_sprint4_hr_organization_setup_backend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_frontend.png}
+{Conception Sequence Diagram -- HR Team Management Frontend}
+{csd_sprint4_hr_team_management_frontend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_backend..png}
+{Conception Sequence Diagram -- HR Team Management Backend}
+{csd_sprint4_hr_team_management_backend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_frontend.png}
+{Conception Sequence Diagram -- HR Leave Calendar Frontend}
+{csd_sprint4_hr_leave_calendar_frontend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_backend.png}
+{Conception Sequence Diagram -- HR Leave Calendar Backend}
+{csd_sprint4_hr_leave_calendar_backend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_calendar_frontend.png}
+{Conception Sequence Diagram -- Team Leave Calendar Frontend}
+{csd_sprint4_team_leave_calendar_frontend}
+{0.95}
+
+\ChapterFourFigureSized
+{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_decision_backend.png}
+{Conception Sequence Diagram -- Team Leave Decision Backend}
+{csd_sprint4_team_leave_decision_backend}
+{0.95}
 
 \SprintFourImplementationHeading{Realization}
 
@@ -947,9 +1081,9 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The realization subsection presents the interface screens for HR supervision, employee records, team administration, and calendar visibility.
+\indent This subsection shows the interface screens for HR supervision, employee records, team administration, and calendar views.
 
-\indent It highlights the implemented flows available in the application while keeping the screenshot placeholders in place.
+\indent The screenshots below cover the main implemented flows in the application.
 
 }
 
@@ -963,9 +1097,7 @@ UI validation and user testing still need to cover feedback messages and request
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 4 delivered the HR management and calendar supervision block.
-
-\indent It shows how HR centralizes user management, employee information, team setup, role assignment, account activation or deactivation, and leave-availability consultation for employees and teams, while request and approval dashboard links remain supporting screens.
+\indent Sprint 4 covered HR management and calendar supervision. The sprint included HR user management, employee records, role assignment, account activation and deactivation, department and job title management, team creation, team leader assignment, team membership changes, and leave calendar consultation. Team leaders also received a dedicated team calendar and leave-decision support within their team scope.
 
 }
 
@@ -984,19 +1116,14 @@ UI validation and user testing still need to cover feedback messages and request
 \rowcolor{blue!20}
 \textbf{What went well} & \textbf{What needs improvement} \\
 \hline
-The sprint centralized HR user, team, and calendar supervision in one release block.
+Sprint 4 features were completed and integrated successfully.
 &
-HR screens still need more validation testing across edge cases.
+Some code still needs final cleanup and consistency checks.
 \\
 \hline
-Role assignment, activation/deactivation, and employment updates improved HR control over account lifecycle.
+HR user, team, and calendar workflows now work in the platform.
 &
-Team membership operations should be clearer for complex reassignment cases.
-\\
-\hline
-Team and calendar views improved visibility over organization structure and leave availability.
-&
-Calendar readability should still be reviewed when many leave records are displayed.
+A few screens need small frontend adjustments after final testing.
 \\
 \hline
 \end{tabular}
@@ -1016,6 +1143,8 @@ Calendar readability should still be reviewed when many leave records are displa
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent This chapter is reserved for Release 2, which extends the ArabSoft platform with workflow management. Sprint 3 will cover administrative requests, and Sprint 4 will focus on HR management and calendar-related operations. The final chapter text will summarize the completed diagrams, implementation views, and validation results once the release is fully documented.
+\indent This chapter presented Release 2 of the ArabSoft platform. Sprint 3 introduced the administrative request workflows for documents, loans, and authorizations, including HR decisions, request history, notifications, meetings, and final-file handling. Sprint 4 extended the platform with HR management and calendar supervision by covering user records, roles, account status, organization reference data, teams, team membership, and role-aware leave calendar views.
+
+\indent Together, these two sprints added request workflows, HR supervision, team management, and leave calendar access to the platform. The next release covers project tracking, task management, reporting, notifications, and AI-assisted support features.
 
 }
