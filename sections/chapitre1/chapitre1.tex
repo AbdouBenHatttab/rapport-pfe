@@ -166,7 +166,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent For project modeling and design, I chose \textbf{UML (Unified Modeling Language)}. UML is a standardized visual language used to represent both system structure and behavior.
+\indent For project modeling and design, I chose \textbf{UML (Unified Modeling Language)}. UML is a standardized visual language used to represent both system structure and behavior. \cite{uml_docs}
 
 \indent Using UML in this project allows me to:
 
@@ -196,7 +196,7 @@
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent For project management, I adopted the \textbf{Agile} methodology, specifically the \textbf{Scrum} framework. This iterative and incremental approach supports requirement changes and continuous user feedback.
+\indent For project management, I adopted the \textbf{Agile} methodology, specifically the \textbf{Scrum} framework. This iterative and incremental approach supports requirement changes and continuous user feedback. \cite{scrum_guide}
 
 }
 
@@ -376,19 +376,22 @@
 % IV.2 Software environment
 % =========================
 \toolitemtrimmed{Visual Studio Code}{vscode.png}{2.5cm}{380 100 380 100}{
-Main code editor used for \textbf{frontend} development with \textbf{React} and \textbf{Tailwind CSS}. Its lightweight design and extension ecosystem provide a productive environment for UI implementation.
+Main code editor used for \textbf{frontend} development with \textbf{React} and \textbf{Tailwind CSS}. Its lightweight design and extension ecosystem provide a productive environment for UI implementation. \cite{vscode_docs}
 }
 
 \toolitemnormal{IntelliJ IDEA}{intellij.png}{2.3cm}{
 Integrated development environment used for \textbf{backend} development with \textbf{Spring Boot} and \textbf{PostgreSQL}. IntelliJ IDEA provides advanced autocompletion, debugging, refactoring, and native integration with Maven and Spring.
+\cite{intellij_docs}
 }
 
 \toolitemnormal{Postman}{postman.png}{1.9cm}{
 Used to test and validate REST APIs developed with Spring Boot through an intuitive interface and strong debugging and documentation features.
+\cite{postman_docs}
 }
 
 \toolitemnormal{Draw.io}{drawio.png}{1.9cm}{
 Used to design UML diagrams such as use-case, class, and sequence diagrams, as well as functional mockups, thanks to its ease of use and free access.
+\cite{drawio_docs}
 }
 
 \Needspace{13\baselineskip}%
@@ -408,22 +411,22 @@ Used to design UML diagrams such as use-case, class, and sequence diagrams, as w
 \begin{minipage}[t]{0.64\textwidth}
   \vspace{0pt}%
   {\fontsize{12}{18}\selectfont\setlength{\parskip}{0pt}\setlength{\emergencystretch}{1em}\justifying
-  Used for version control and source-code management, with reliable workflows and easy integration in Visual Studio Code and IntelliJ IDEA.\par}%
+  Used for version control and source-code management, with reliable workflows and easy integration in Visual Studio Code and IntelliJ IDEA.\cite{git_docs,github_docs}\par}%
 \end{minipage}%
 \par\vspace{10pt}%
 \end{samepage}
 
 \toolitemnormal{Jira}{jira.png}{1.9cm}{
 Used for task management and Scrum sprint tracking. It supports user-story planning, sprint monitoring, and progress reporting.
+\cite{jira_docs}
 }
 
 \toolitemnormal{\LaTeX}{latex.png}{1.9cm}{
 \LaTeX{} was selected for report writing to ensure a professional layout, accurate references, and typographic consistency throughout the document.
+\cite{latex_project}
 }
 
-\toolitemnormal{Figma}{figma.png}{1.9cm}{
-Used to create wireframes for the user interface. It enables quick visual prototyping and ergonomic validation before development.
-}
+
 
 \vspace{12pt}
 
@@ -442,30 +445,37 @@ Used to create wireframes for the user interface. It enables quick visual protot
 
 \toolitemnormal{React}{react.png}{2.1cm}{
 Main frontend library used in the View layer of the platform interface. React provides reusable components, efficient rendering, and flexible state management for scalable user interfaces.
+\cite{react_docs}
 }
 
 \toolitemnormal{Tailwind CSS}{tailwind.png}{2.1cm}{
 Utility-first CSS framework used for interface styling and layout. Tailwind CSS enables fast, consistent, and responsive UI development while supporting design customization.
+\cite{tailwind_docs}
 }
 
 \toolitemtrimmed{Spring Boot}{springboot.png}{2.1cm}{35 125 35 125}{
 Java framework used for \textbf{backend} development based on a \textbf{layered architecture}. Spring Boot simplifies secure and high-performance REST API development through auto-configuration and a rich ecosystem.
+\cite{spring_boot_docs}
 }
 
 \toolitemnormal{PostgreSQL}{PostgreSQL.png}{2.1cm}{
 Relational database management system used for platform data storage and management. PostgreSQL was selected for reliability, performance, and strong support for complex queries and data integrity.
+\cite{postgresql_docs}
 }
 
 \toolitemnormal{Keycloak}{keycloak.jpg}{2.1cm}{
 Identity and access management solution used to handle secure authentication, role-based authorization, and token-based security for the platform.
+\cite{keycloak_docs}
 }
 
 \toolitemnormal{Docker}{docker.png}{2.1cm}{
 Containerization platform used to package and run application services consistently across development and deployment environments.
+\cite{docker_docs}
 }
 
 \toolitemtrimmed{Kafka}{kafka.png}{2.35cm}{35 25 35 25}{
 Distributed event-streaming platform used for asynchronous communication, especially for notifications and background event processing in the system.
+\cite{kafka_docs}
 }
 
 \vspace{12pt}
@@ -481,7 +491,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The application follows a web-based architecture composed of two complementary parts: a \textbf{React frontend structured with MVVM} and a \textbf{layered} backend. This organization fits an internal platform used by employees, team leaders, and HR managers to manage requests, projects, tasks, notifications, and dashboards. It ensures clear separation of responsibilities, smooth integration through REST APIs, and maintainable system evolution. External services such as Keycloak, Kafka, JasperReports, and email notifications are integrated when needed to support authentication, event handling, reporting, and communication.
+\indent The application follows a web-based architecture composed of two complementary parts: a \textbf{React frontend structured with MVVM} and a \textbf{layered} backend. This organization fits an internal platform used by employees, team leaders, and HR managers to manage requests, projects, tasks, notifications, and dashboards. It ensures clear separation of responsibilities, smooth integration through REST APIs, and maintainable system evolution. External services such as Keycloak, Kafka, Apache POI for Excel export, and email notifications are integrated when needed to support authentication, event handling, reporting, and communication. \cite{react_docs,spring_boot_docs,keycloak_docs,kafka_docs,apache_poi_docs}
 
 }
 
@@ -493,7 +503,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The frontend part is implemented with \textbf{React} and \textbf{Tailwind CSS} and organized according to the \textbf{MVVM} pattern. This choice is appropriate for a role-aware internal platform where employees, team leaders, and HR managers access different views over the same operational data. React provides the View layer, view models coordinate presentation logic and state, and service classes handle communication with the Spring Boot REST API. This organization ensures a clear separation between interface rendering, presentation behavior, and service communication, which improves maintainability and functional consistency.
+\indent The frontend part is implemented with \textbf{React} and \textbf{Tailwind CSS} and organized according to the \textbf{MVVM} pattern. This choice is appropriate for a role-aware internal platform where employees, team leaders, and HR managers access different views over the same operational data. React provides the View layer, view models coordinate presentation logic and state, and service classes handle communication with the Spring Boot REST API. This organization ensures a clear separation between interface rendering, presentation behavior, and service communication, which improves maintainability and functional consistency. \cite{react_docs,tailwind_docs}
 
 \begin{itemize}[leftmargin=2cm, itemsep=4pt]
   {\fontsize{12}{18}\selectfont
@@ -507,7 +517,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 
 \begin{figure}[H]
 \centering
-\safeimg[width=0.9\textwidth]{arch_frontend.jpg}
+\safeimg[width=0.9\textwidth]{arch_frontend.png}
 \caption{MVVM frontend architecture with React}
 \end{figure}
 
@@ -519,7 +529,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent The backend is based on a \textbf{layered architecture}, implemented with \textbf{Spring Boot} and \textbf{PostgreSQL}. This architecture structures the backend into clear functional layers, improving maintainability, testability, and scalability.
+\indent The backend is based on a \textbf{layered architecture}, implemented with \textbf{Spring Boot} and \textbf{PostgreSQL}. This architecture structures the backend into clear functional layers, improving maintainability, testability, and scalability. \cite{spring_boot_docs,postgresql_docs}
 
 \begin{itemize}[leftmargin=2cm, itemsep=4pt]
   {\fontsize{12}{18}\selectfont
@@ -533,7 +543,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 
 \begin{figure}[H]
 \centering
-\safeimg[width=0.9\textwidth]{arch_backend.jpg}
+\safeimg[width=0.9\textwidth]{arch_backend.png}
 \caption{Layered architecture with Spring Boot}
 \end{figure}
 
@@ -574,7 +584,7 @@ Distributed event-streaming platform used for asynchronous communication, especi
 
 \begin{figure}[H]
 \centering
-\safeimg[width=0.95\textwidth]{arch_globale.jpg}
+\safeimg[width=0.95\textwidth]{arch_globale.png}
 \caption{Global application architecture}
 \end{figure}
 

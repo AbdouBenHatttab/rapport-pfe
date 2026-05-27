@@ -1,0 +1,4799 @@
+                      Ministry of Higher Education and Scientific Research
+                           General Directorate of Technological Studies
+                        Higher Institute of Technological Studies of Bizerte
+                               Information Technology Department
+
+
+
+
+             Dep.   IT
+ Reference   AY     2026
+             No.    DSI2625
+
+
+
+                                           Report of
+                    END-OF-STUDIES PROJECT
+                                 In partial fulfillment for:
+ Applied Bachelor’s Degree in Information Systems Development
+
+      Development of an Internal Platform for
+     Managing Requests, Projects, and Tasks at
+                    ArabSoft
+
+                                          Prepared by:
+                               Abderrahmen Ben Hattab
+
+
+Supervised by:
+Ms. Anissa CHALOUAH (ISET)
+Mr. Mouadh Zidi (COMPANY)
+
+Conducted at:
+Company: ArabSoft
+• Address: Montplaisir, Tunis
+• Tel: 71 951 248
+• Email: arabsoft@arabsoft.com.tn
+
+                               Academic Year: 2025/2026
+                          Dedication
+To all those whose presence illuminated every step of this journey. . .
+
+
+                          To my father, Adel,
+
+           You taught me that hard work and perseverance
+                     are the keys to every success.
+                Your constant support and trust in me
+           have been my anchor throughout this journey.
+         This work is the result of your precious guidance.
+
+
+                        To my mother, Amira,
+
+            An endless source of love and encouragement,
+             your caring presence has always carried me.
+             Every effort I made contains a part of you,
+            because you have been my greatest strength.
+
+
+                          To my sister, Sarra,
+
+           For your joy, your support, and your generosity.
+             With one smile, you always gave me courage
+                     in the most difficult moments.
+                   Your presence is a precious gift.
+
+
+ To all my friends and colleagues, and to everyone who contributed,
+         directly or indirectly, to the completion of this work.
+
+
+
+
+                                                        Abderrahmen Ben Hattab
+                              Acknowledgements
+
+First, I thank Allah for granting me the health, determination, and courage required to complete
+this work.
+
+   I express my sincere gratitude to my academic supervisor, Miss Anissa CHALOUAH, lec-
+turer at ISET Bizerte, for her valuable guidance, insightful advice, and continuous availability
+throughout this project.
+
+   I also warmly thank my company supervisor, Mr. Mouadh Zidi, from ArabSoft, for his
+welcome, professional support, and the knowledge he shared with me.
+
+   My thanks also go to the entire ArabSoft team for their collaboration, availability, and the
+positive work environment they provided during the internship period.
+
+   I am equally grateful to all faculty and administrative staff of the Information Technology
+Department at ISET Bizerte for the quality of education and support provided throughout my
+university journey.
+
+   Finally, I thank everyone who contributed, directly or indirectly, to the completion of this
+end-of-studies project.
+                                                      Table of Contents
+
+General Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              1
+Chapter 1: Project Context Presentation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                        2
+      I. Host organization presentation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                         2
+                 I.1 General presentation of ArabSoft . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                               2
+                 I.2 ArabSoft in Tunisia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              2
+      II. Project presentation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .            3
+                 II.1 Current-state study . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .               3
+                 II.2 Current-state critique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                3
+                 II.3 Proposed solution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             4
+      III. Adopted methodologies and formalism . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                        5
+                 III.1 Modeling and design methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                      5
+                 III.2 Working methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      5
+      IV. Development environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                         7
+                 IV.1 Hardware environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                        7
+                 IV.2 Software environment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                      8
+                 IV.3 Technologies used . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                 9
+      V. Application architecture. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+                 V.1 Global architecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+                 V.2 Frontend part: MVVM architecture with React . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+                 V.3 Backend part: layered architecture with Spring Boot . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+                 V.4 Why these architectures? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                 V.5 Global architecture illustration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+      Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Chapter 2: Product Backlog Planning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+      Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+      I. Actor Identification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                 I.1 Employee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                 I.2 Team Leader . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                 I.3 HR Manager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                I.4 New User . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+     II. Functional Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                II.1 Authentication and access management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+                II.2 Administrative request management. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                II.3 Team and employee management. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                II.4 Project and task management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                II.5 Notification and reporting . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                II.6 AI assistance and decision support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+     III. Non-Functional Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                III.1 Security . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                III.2 Performance. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                III.3 Usability. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+                III.4 Maintainability. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                III.5 Scalability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+     IV. User Stories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                IV.1 Employee User Stories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+                IV.2 Team Leader User Stories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+                IV.3 HR Manager User Stories . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+     V. Product Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+     VI. Release Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+     Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Chapter 3: Release 1 - Foundations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+     Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+     I. Release Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+     II. Sprint 1: Access and Account Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+                II.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+                II.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+                II.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+                II.4 Sprint Implementation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+                II.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+                II.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+     III. Sprint 2: Leave Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+                III.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+                III.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+                III.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+                III.4 Sprint Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+                III.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+                III.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+     Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+Chapter 4: Release 2 - Workflow Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+     Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+     I. Release Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+     II. Sprint 3: Administrative Requests. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+                II.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+                II.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+                II.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+                II.4 Sprint Implementation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+                II.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+                II.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+     III. Sprint 4: HR Management and Calendar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+                III.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+                III.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+                III.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+                III.4 Sprint Implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+                III.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148
+                III.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+     Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 150
+Chapter 5: Release 3 - Advanced Support and Intelligence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+     Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+     I. Release Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+     II. Sprint 5: Projects, Tasks and Reports . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+                II.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+                II.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+                II.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+                II.4 Sprint Implementation. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+                II.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+                II.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+     III. Sprint 6: AI Assistant, Local Deployment, and Stabilization . . . . . . . . . . . . . . . . . . . . . . . . . 167
+                 III.1 Sprint Goal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+                 III.2 Visual Sprint Journal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+                 III.3 Sprint Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168
+                 III.4 Requirements Analysis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169
+                 III.5 Sprint Review . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+                 III.6 Sprint Retrospective . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+General Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Bibliographie et Nétographie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+                                       List of Figures
+
+Figure 1:    ArabSoft logo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      2
+Figure 2:    UML logo . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   5
+Figure 3:    Scrum team roles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .           7
+Figure 4:    SCRUM method . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             7
+Figure 5:    PC specifications used for development . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                     8
+Figure 6:    MVVM frontend architecture with React . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Figure 7:    Layered architecture with Spring Boot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 8:    Global application architecture. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 9:    Organization of Releases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Figure 10:   Release 1 Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Figure 11:   Use Case Diagram – Sprint 1 Access and Account Management . . . . . . . . 32
+Figure 12:   System Sequence Diagram – User Registration . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Figure 13:   System Sequence Diagram – Secure Login . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+Figure 14:   System Sequence Diagram – Logout . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Figure 15:   Use Case Diagram – Personal Account Management. . . . . . . . . . . . . . . . . . . . . 35
+Figure 16:   System Sequence Diagram – Password Reset . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Figure 17:   System Sequence Diagram – User Information Update . . . . . . . . . . . . . . . . . . 37
+Figure 18:   System Sequence Diagram – Authenticated Password Change . . . . . . . . . . 38
+Figure 19:   Use Case Diagram – HR User Account Management . . . . . . . . . . . . . . . . . . . . 39
+Figure 20:   System Sequence Diagram – HR User Account Setup . . . . . . . . . . . . . . . . . . . 39
+Figure 21:   System Sequence Diagram – Account Activation and Deactivation . . . . . 40
+Figure 22:   Domain Model – Sprint 1 Access and Account Management . . . . . . . . . . . . 41
+Figure 23:   Participant Class Diagram – Authentication and Access Control . . . . . . . . 42
+Figure 24:   Participant Class Diagram – Password Reset and Password Change. . . . . 42
+Figure 25:   Participant Class Diagram – HR Account Management . . . . . . . . . . . . . . . . . . 43
+Figure 26:   State Diagram – User Account Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+Figure 27:   Design Class Diagram – Registration and Pending Access . . . . . . . . . . . . . . . 45
+Figure 28:   Design Class Diagram – Security, Keycloak, and Access Control . . . . . . . 45
+Figure 29:   Design Class Diagram – HR Account Setup and Notification. . . . . . . . . . . . 46
+Figure 30:   Conception Sequence Diagram – User Registration Frontend . . . . . . . . . . . 47
+Figure 31:   Conception Sequence Diagram – User Registration Backend . . . . . . . . . . . . 48
+Figure 32:   Conception Sequence Diagram – Secure Login Frontend . . . . . . . . . . . . . . . . 49
+Figure 33:   Conception Sequence Diagram – Secure Login Backend . . . . . . . . . . . . . . . . 50
+Figure 34:   Conception Sequence Diagram – Logout Frontend . . . . . . . . . . . . . . . . . . . . . . . 51
+Figure 35:   Conception Sequence Diagram – Logout Backend . . . . . . . . . . . . . . . . . . . . . . . 52
+Figure 36:   Conception Sequence Diagram – Password Reset Frontend. . . . . . . . . . . . . . 53
+Figure 37:   Conception Sequence Diagram – Password Reset Backend . . . . . . . . . . . . . . 54
+Figure 38:   Conception Sequence Diagram – User Information Update Frontend . . . 55
+Figure 39:   Conception Sequence Diagram – User Information Update Backend . . . 56
+Figure 40:   Conception Sequence Diagram – Authenticated Password Change Fron-
+             tend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Figure 41:   Conception Sequence Diagram – Authenticated Password Change Back-
+             end . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Figure 42:   Conception Sequence Diagram – HR User Account Setup Frontend . . . . 59
+Figure 43:   Conception Sequence Diagram – HR User Account Setup Backend . . . . 60
+Figure 44:   Conception Sequence Diagram – Account Activation and Deactivation
+             Frontend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+Figure 45:   Conception Sequence Diagram – Account Activation and Deactivation
+             Backend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+Figure 46:   Use Case Diagram – Sprint 2 Leave Management . . . . . . . . . . . . . . . . . . . . . . . . 68
+Figure 47:   Use Case Diagram – Employee Leave Request Management . . . . . . . . . . . . 69
+Figure 48:   System Sequence Diagram – Submit Leave Request . . . . . . . . . . . . . . . . . . . . . 70
+Figure 49:   System Sequence Diagram – Edit or Cancel Pending Leave . . . . . . . . . . . . . 70
+Figure 50:   Use Case Diagram – Leave Approval Workflow . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+Figure 51:   System Sequence Diagram – Team Leader Leave Decision . . . . . . . . . . . . . . 72
+Figure 52:   System Sequence Diagram – HR Final Leave Decision . . . . . . . . . . . . . . . . . . 73
+Figure 53:   Domain Model – Sprint 2 Leave Management . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+Figure 54:   Participant Class Diagram – Employee Leave Request Management . . . . 75
+Figure 55:   Participant Class Diagram – Team Leader Leave Review . . . . . . . . . . . . . . . . 75
+Figure 56:   Participant Class Diagram – HR Final Leave Decision . . . . . . . . . . . . . . . . . . . 76
+Figure 57:   State Diagram – Leave Request Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Figure 58:   Design Class Diagram – Leave Request Creation and Validation . . . . . . . . 78
+Figure 59:   Design Class Diagram – Team Leader Leave Review . . . . . . . . . . . . . . . . . . . . 78
+Figure 60:   Design Class Diagram – HR Final Leave Decision . . . . . . . . . . . . . . . . . . . . . . . 79
+Figure 61:   Design Class Diagram – Working Day, Holiday, and Balance Manage-
+             ment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+Figure 62:   Conception Sequence Diagram – Submit Leave Request Frontend . . . . . . 80
+Figure 63:   Conception Sequence Diagram – Submit Leave Request Backend . . . . . . 80
+Figure 64:   Conception Sequence Diagram – Edit or Cancel Pending Leave Frontend 81
+Figure 65:   Conception Sequence Diagram – Edit or Cancel Pending Leave Backend 81
+Figure 66:   Conception Sequence Diagram – Team Leader Review Frontend . . . . . . . 82
+Figure 67:   Conception Sequence Diagram – Team Leader Review Backend . . . . . . . . 83
+Figure 68:   Conception Sequence Diagram – HR Final Review Frontend . . . . . . . . . . . . 84
+Figure 69:   Conception Sequence Diagram – HR Final Review Backend . . . . . . . . . . . . 85
+Figure 70:   Release 2 Organization . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+Figure 71:   Use Case Diagram – Sprint 3 Administrative Requests. . . . . . . . . . . . . . . . . . . 92
+Figure 72:   Use Case Diagram – HR Administrative Request Processing . . . . . . . . . . . . 92
+Figure 73:   System Sequence Diagram – Submit Document Request . . . . . . . . . . . . . . . . 93
+Figure 74:   System Sequence Diagram – Process Document Request . . . . . . . . . . . . . . . . 94
+Figure 75:   System Sequence Diagram – Submit Loan Request . . . . . . . . . . . . . . . . . . . . . . 95
+Figure 76:   System Sequence Diagram – Schedule Loan Meeting . . . . . . . . . . . . . . . . . . . . 95
+Figure 77:   System Sequence Diagram – Submit Authorization Request. . . . . . . . . . . . . 96
+Figure 78:   System Sequence Diagram – HR Administrative Request Decision . . . . . 97
+Figure 79:   Domain Model – Sprint 3 Administrative Requests . . . . . . . . . . . . . . . . . . . . . . 98
+Figure 80:   Participant Class Diagram – Document Request Management . . . . . . . . . . . 99
+Figure 81:   Participant Class Diagram – Loan Request Management. . . . . . . . . . . . . . . . . 99
+Figure 82:   Participant Class Diagram – Authorization Request Management . . . . . . . 100
+Figure 83:   Participant Class Diagram – HR Request Processing . . . . . . . . . . . . . . . . . . . . . 100
+Figure 84:   State Diagram – Document Request Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Figure 85:   State Diagram – Loan Request Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+Figure 86:   State Diagram – Authorization Request Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . 103
+Figure 87:   Design Class Diagram – Document Request Final File Management . . . 104
+Figure 88:   Design Class Diagram – Loan Request Review Management . . . . . . . . . . . . 105
+Figure 89:    Design Class Diagram – Authorization Request Management . . . . . . . . . . . 106
+Figure 90:    Design Class Diagram – HR Request Processing . . . . . . . . . . . . . . . . . . . . . . . . . 106
+Figure 91:    Conception Sequence Diagram – Document Request HR Decision Fron-
+              tend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+Figure 92:    Conception Sequence Diagram – Document Request Decision Backend 108
+Figure 93:    Conception Sequence Diagram – Document Request Final File Frontend109
+Figure 94:    Conception Sequence Diagram – Document Request Final File Backend110
+Figure 95:    Conception Sequence Diagram – Loan Request Submission Frontend . . 111
+Figure 96:    Conception Sequence Diagram – Loan Request Submission Backend . . 112
+Figure 97:    Conception Sequence Diagram – Loan Request Meeting Scheduling
+              Frontend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Figure 98:    Conception Sequence Diagram – Loan Meeting Scheduling Backend . . 114
+Figure 99:    Conception Sequence Diagram – Loan Request Decision Frontend . . . . . 115
+Figure 100:   Conception Sequence Diagram – Loan Request Decision Backend . . . . . 117
+Figure 101:   Conception Sequence Diagram – Loan Final File Delivery Frontend. . . . 118
+Figure 102:   Conception Sequence Diagram – Loan Final File Backend . . . . . . . . . . . . . . 119
+Figure 103:   Conception Sequence Diagram – Authorization Request Submission
+              Frontend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Figure 104:   Conception Sequence Diagram – Authorization Request Submission
+              Backend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Figure 105:   Conception Sequence Diagram – Authorization Request Decision Fron-
+              tend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+Figure 106:   Conception Sequence Diagram – Authorization Request Decision Back-
+              end . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Figure 107:   Use Case Diagram – Sprint 4 HR Management and Calendar . . . . . . . . . . . 128
+Figure 108:   Use Case Diagram – HR Employee and Account Supervision . . . . . . . . . . . 129
+Figure 109:   Use Case Diagram – Organization and Team Management . . . . . . . . . . . . . . 129
+Figure 110:   Use Case Diagram – Calendar Supervision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130
+Figure 111:   System Sequence Diagram – Consult HR Dashboard . . . . . . . . . . . . . . . . . . . . 131
+Figure 112:   System Sequence Diagram – Supervise Employee Account . . . . . . . . . . . . . 131
+Figure 113:   System Sequence Diagram – Manage Organization Reference Data . . . . 132
+Figure 114:   System Sequence Diagram – Manage Team Structure . . . . . . . . . . . . . . . . . . . . 132
+Figure 115:   System Sequence Diagram – Consult HR Leave Calendar . . . . . . . . . . . . . . . 133
+Figure 116:   System Sequence Diagram – Consult Team Leave Calendar . . . . . . . . . . . . . 133
+Figure 117:   Domain Model – Sprint 4 HR Management and Calendar . . . . . . . . . . . . . . . 134
+Figure 118:   Participant Class Diagram – HR Employee and Account Supervision. . . 135
+Figure 119:   Participant Class Diagram – Organization Reference Data Management 135
+Figure 120:   Participant Class Diagram – Team Structure Management . . . . . . . . . . . . . . . 136
+Figure 121:   Participant Class Diagram – HR Leave Calendar Consultation . . . . . . . . . . 136
+Figure 122:   Participant Class Diagram – Team Leave Calendar Consultation . . . . . . . . 137
+Figure 123:   Design Class Diagram – HR User Management . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Figure 124:   Design Class Diagram – HR Organization Setup . . . . . . . . . . . . . . . . . . . . . . . . . 138
+Figure 125:   Design Class Diagram – HR Team Management . . . . . . . . . . . . . . . . . . . . . . . . . 138
+Figure 126:   Design Class Diagram – HR Leave Calendar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+Figure 127:   Design Class Diagram – Team Leave Calendar . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+Figure 128:   Conception Sequence Diagram – HR User Management Frontend . . . . . . 140
+Figure 129:   Conception Sequence Diagram – HR User Management Backend . . . . . . 141
+Figure 130:   Conception Sequence Diagram – HR Organization Setup Frontend . . . . . 142
+Figure 131:   Conception Sequence Diagram – HR Organization Setup Backend . . . . . 143
+Figure 132:   Conception Sequence Diagram – HR Team Management Frontend . . . . . 144
+Figure 133:   Conception Sequence Diagram – HR Team Management Backend . . . . . 145
+Figure 134:   Conception Sequence Diagram – HR Leave Calendar Frontend . . . . . . . . . 146
+Figure 135:   Conception Sequence Diagram – HR Leave Calendar Backend . . . . . . . . . 146
+Figure 136:   Conception Sequence Diagram – Team Leave Calendar Frontend . . . . . . . 147
+Figure 137:   Conception Sequence Diagram – Team Leave Decision Backend . . . . . . . 148
+Figure 138:   Use Case Diagram – Sprint 5 Projects, Tasks and Reports . . . . . . . . . . . . . . . 153
+Figure 139:   Use Case Diagram – Team Leader Project and Task Management. . . . . . . 154
+Figure 140:   System Sequence Diagram – Create Project . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Figure 141:   System Sequence Diagram – Create and Assign Task . . . . . . . . . . . . . . . . . . . . 155
+Figure 142:   System Sequence Diagram – Update Task Status . . . . . . . . . . . . . . . . . . . . . . . . . 155
+Figure 143:   System Sequence Diagram – Consult HR Reports . . . . . . . . . . . . . . . . . . . . . . . . 156
+Figure 144:   Domain Model – Sprint 5 Projects, Tasks and Reports . . . . . . . . . . . . . . . . . . . 157
+Figure 145:   State Diagram – Task Lifecycle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
+Figure 146:   Participant Class Diagram – Team Leader Project and Task Management159
+Figure 147:   Participant Class Diagram – Task Status Update . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+Figure 148:   Participant Class Diagram – HR Reports and Export . . . . . . . . . . . . . . . . . . . . . 160
+Figure 149:   Design Class Diagram – Team Leader Project and Task Management . . 160
+Figure 150:   Design Class Diagram – Task Status Update . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+Figure 151:   Design Class Diagram – HR Reports and Excel Export . . . . . . . . . . . . . . . . . . 161
+Figure 152:   Conception Sequence Diagram – Project Management Frontend . . . . . . . . 162
+Figure 153:   Conception Sequence Diagram – Project Management Backend . . . . . . . . 163
+Figure 154:   Conception Sequence Diagram – Task Assignment Frontend . . . . . . . . . . . . 164
+Figure 155:   Conception Sequence Diagram – Task Assignment Backend . . . . . . . . . . . . 165
+Figure 156:   Conception Sequence Diagram – Task Status Update Frontend. . . . . . . . . . 166
+Figure 157:   Conception Sequence Diagram – Task Status Update Backend . . . . . . . . . . 166
+Figure 158:   Use Case Diagram – Sprint 6 AI Assistant and Decision Support . . . . . . . 169
+Figure 159:   System Sequence Diagram – Assistant Platform Question . . . . . . . . . . . . . . . 170
+Figure 160:   System Sequence Diagram – Assistant Request Drafting . . . . . . . . . . . . . . . . 171
+Figure 161:   System Sequence Diagram – Team Leader Decision Support . . . . . . . . . . . . 171
+Figure 162:   Domain Model – Sprint 6 AI Assistant Context Data. . . . . . . . . . . . . . . . . . . . . 172
+Figure 163:   Participant Class Diagram – AI Assistant Gateway and Safe Context . . . 173
+Figure 164:   Design Class Diagram – Assistant Gateway and Safe Context . . . . . . . . . . . 173
+Figure 168:   Conception Sequence Diagram – Assistant Platform Question Frontend 174
+Figure 169:   Conception Sequence Diagram – Assistant Platform Question Backend 174
+Figure 170:   Conception Sequence Diagram – Assistant Request Drafting Frontend . 175
+Figure 171:   Conception Sequence Diagram – Assistant Request Drafting Backend . 175
+Figure 172:   Conception Sequence Diagram – Team Leader Decision Support Fron-
+              tend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Figure 173:   Conception Sequence Diagram – Team Leader Decision Support Back-
+              end . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+                                         List of Tables
+Table 1:    Product Backlog . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Table 2:    Sprint Backlog – Sprint 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Table 3:    Sprint Retrospective – Sprint 1 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Table 4:    Sprint Backlog – Sprint 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+Table 5:    Sprint Retrospective – Sprint 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+Table 6:    Sprint Backlog – Sprint 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+Table 7:    Sprint Retrospective – Sprint 3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Table 8:    Sprint Backlog – Sprint 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+Table 9:    Sprint Retrospective – Sprint 4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+Table 10:   Sprint Retrospective – Sprint 5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+Table 11:   Sprint Retrospective – Sprint 6 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+                             General Introduction
+
+
+       Digital transformation has become a major strategic driver for companies seeking to
+improve organizational efficiency and ensure smooth management of internal processes. The
+centralization of administrative requests, project tracking, and internal communication repre-
+sents significant challenges when operations are handled manually or in a fragmented manner.
+The growing complexity of internal workflows, together with the need for effective coordination
+between departments, makes the adoption of modern and structured digital tools essential.
+
+       In this context, my work focuses on the development of an internal platform for man-
+aging requests, projects, and tasks at ArabSoft. The objective is to design a practical and re-
+liable solution that centralizes administrative requests, monitors project progress, and improves
+communication between employees, team leaders, and HR managers. By providing a global
+and real-time view of organizational activities, this platform aims to strengthen collaboration,
+improve process efficiency, and support better operational decision-making.
+
+       The ambition of this project is to provide a tool that addresses current organizational
+needs while remaining adaptable to future evolution. Whether for handling internal requests,
+tracking project progress, assigning tasks, or improving information flow between stakehold-
+ers, the platform is designed as a complete and intuitive solution that integrates smoothly into
+existing work practices.
+
+       This report presents the different phases of project realization. From requirements anal-
+ysis to deployment, including design, development, and testing phases, I explain how this plat-
+form was built to meet user expectations and deliver concrete added value to the company.
+Particular attention is given to the methodological approach, technical choices, and implemen-
+tation strategy adopted throughout the project.
+       Through this work, I aim to contribute to the modernization of internal management
+practices and to the continuous improvement of organizational performance. This project repre-
+sents an opportunity to rethink how administrative and project activities are managed by making
+them more structured, collaborative, and efficient.
+
+
+
+
+                                                  1
+                                       Chapter 1
+
+
+                      Project Context Presentation
+
+   I. Host organization presentation
+       1. General presentation of ArabSoft
+
+       ArabSoft is a company specialized in software engineering and digital solutions for
+organizations. It operates in several areas such as business process management, enterprise
+application development, systems integration, and digital transformation support. Through its
+experience in information systems, the company helps institutions modernize operations and
+improve service quality.
+
+       ArabSoft combines technological expertise and business understanding to deliver re-
+liable and scalable solutions adapted to client needs. With a structured project approach and
+multidisciplinary teams, the company supports organizations in optimizing internal workflows,
+improving traceability, and increasing overall operational efficiency.
+
+
+
+
+                                    Figure 1: ArabSoft logo
+
+
+       2. ArabSoft in Tunisia
+
+       In Tunisia, ArabSoft supports both public and private organizations in the digitaliza-
+tion of their internal processes. Its teams work on the design, development, deployment, and
+maintenance of business-oriented platforms, with a focus on security, scalability, and long-term
+
+
+
+                                                2
+Chapter 1: Project Context Presentation
+
+
+
+maintainability. Key missions include process automation, workflow management, data cen-
+tralization, and decision support through structured reporting.
+    II. Project presentation
+        1. Current-state study
+
+        At present, internal process management at ArabSoft relies on a combination of office
+tools and partially connected workflows. Daily practices include Excel files, email exchanges,
+messaging channels, and manual follow-up sheets to handle administrative requests and monitor
+project execution.
+
+        Although these tools support day-to-day operations, information remains distributed
+across multiple sources and teams. This fragmentation limits process visibility, slows coor-
+dination, and increases the risk of inconsistencies between request status, project progress, and
+assigned tasks.
+
+        The current operational flow mainly covers:
+
+
+           • Administrative request handling, to receive, validate, and process internal service
+             requests.
+
+           • Project and task follow-up, to plan activities, assign responsibilities, and track
+             execution progress.
+
+           • Operational coordination, to synchronize information between employees, team
+             leaders, and HR managers and ensure timely communication.
+
+
+        2. Current-state critique
+
+        Despite the use of multiple tools, several difficulties remain and reduce operational effi-
+ciency. Main issues include:
+
+
+           • Data fragmentation: Request, project, and task information is spread across mul-
+             tiple files and channels, which makes a coherent global view difficult.
+
+           • Delayed follow-up: Manual tracking slows the handling of requests and makes it
+             harder to monitor priorities, deadlines, and responsibilities.
+
+
+                                                 3
+Chapter 1: Project Context Presentation
+
+
+
+           • Inefficient coordination: Employees, team leaders, and HR managers do not share
+             a single operational workspace, which increases duplication and communication
+             gaps.
+
+           • Limited access to updated information: Stakeholders do not always have real-
+             time access to the latest status, which reduces responsiveness.
+
+
+        These limitations show that the current tools and processes no longer fully meet Arab-
+Soft’s needs for traceability, responsiveness, and coordination in the management of internal
+requests, projects, and tasks.
+        3. Proposed solution
+
+        To address these challenges, I propose the development of an internal platform for
+managing requests, projects, and tasks at ArabSoft. The platform is designed to centralize
+operational data, structure workflow execution, and improve coordination across departments
+through a practical and intuitive environment. Key features include:
+
+
+           • Data centralization: All requests, projects, and tasks are stored in a unified database
+             accessible in real time.
+
+           • Workflow management: Structured request lifecycle with clear statuses, validation
+             steps, and processing history.
+
+           • Project and task tracking: Planning, assignment, prioritization, and progress mon-
+             itoring through dedicated views.
+
+           • Role-based access: Secure access control according to user profiles and organiza-
+             tional responsibilities for employees, team leaders, and HR managers.
+
+           • Notifications and integrations: Alerts and automated exchanges with external ser-
+             vices when needed to support authentication, messaging, and reporting.
+
+           • Dashboards and reporting: Operational indicators for monitoring performance,
+             identifying bottlenecks, and supporting decision-making.
+
+
+        This solution provides a global real-time view of internal activities and improves effi-
+ciency, responsiveness, and traceability across the organization.
+
+                                                 4
+Chapter 1: Project Context Presentation
+
+
+
+         Modular, secure, and scalable, the platform is designed to adapt to ArabSoft’s evolving
+needs while enabling progressive adoption and continuous process improvement.
+    III. Adopted methodologies and formalism
+         1. Modeling and design methodology
+
+         For project modeling and design, I chose UML (Unified Modeling Language). UML
+is a standardized visual language used to represent both system structure and behavior. [1]
+
+         Using UML in this project allows me to:
+
+
+           • Visualize requirements: Use-case diagrams capture expected functionalities and
+             actor-system interactions.
+
+           • Structure the system: Class and sequence diagrams define module architecture
+             and data/interaction flows.
+
+           • Facilitate communication: UML provides a common language for developers,
+             project managers, and clients.
+
+
+         UML was selected for its flexibility, standardization, and ability to fit complex project
+needs.
+
+
+
+
+                                          Figure 2: UML logo
+
+
+         2. Working methodology
+
+         For project management, I adopted the Agile methodology, specifically the Scrum frame-
+work. This iterative and incremental approach supports requirement changes and continuous
+user feedback. [2]
+            2.1. Methodological choice (Scrum)
+
+         Scrum was chosen for several reasons:
+
+
+                                                  5
+Chapter 1: Project Context Presentation
+
+
+
+           • Flexibility: Scrum adapts quickly to change, which is critical when requirements
+             evolve.
+
+           • Transparency: Regular meetings such as daily stand-ups and sprint reviews ensure
+             clear communication.
+
+           • Continuous delivery: Sprint cycles provide continuous validation of implemented
+             features.
+
+            2.2. Why Scrum?
+
+        Scrum is well suited to this project because it supports multidisciplinary teams and col-
+laboration. It also helps to:
+
+
+           • Maximize value: Focus on high-priority features aligned with project objectives.
+
+           • Improve quality: Frequent feedback and regular testing enable rapid issue detec-
+             tion and correction.
+
+            2.3. Scrum team roles
+
+        In this project, Scrum roles are distributed as follows:
+
+
+           • Product Owner: Defines priorities and manages the backlog to ensure delivered
+             features meet user needs. In this project, the Product Owner is Mr. Mouadh Zidi,
+             my company supervisor.
+
+           • Scrum Master: Ensures Scrum principles are followed and helps remove obsta-
+             cles. In this project, the Scrum Master is Ms. Anissa CHALOUAH, my ISET
+             supervisor.
+
+           • Development Team: Responsible for design, development, and testing of platform
+             features. In this project, the development team is composed of Abderrahmen Ben
+             Hattab only.
+
+
+        This role distribution enables efficient collaboration and clear responsibilities, contribut-
+ing directly to project success.
+
+                                                  6
+Chapter 1: Project Context Presentation
+
+
+
+
+                                          Figure 3: Scrum team roles
+
+
+    IV. Development environment
+
+        To complete this project, an appropriate development environment was set up. It in-
+cludes hardware resources, software tools, and modern technologies to ensure effective design,
+development, and deployment.
+
+
+
+
+                                          Figure 4: SCRUM method
+
+
+        1. Hardware environment
+
+        This project was developed on a laptop with the following specifications:
+
+
+
+
+                                                      7
+Chapter 1: Project Context Presentation
+
+
+
+
+                          Figure 5: PC specifications used for development
+
+
+        2. Software environment
+
+        For developing the internal request, project, and task management platform, several soft-
+ware tools were used. Each tool was selected for its specific features and its fit with project
+requirements.
+
+        • Visual Studio Code :
+
+                                    Main code editor used for frontend development with
+                                React and Tailwind CSS. Its lightweight design and exten-
+                                sion ecosystem provide a productive environment for UI im-
+                                plementation. [3]
+
+        • IntelliJ IDEA :
+
+                                    Integrated development environment used for backend
+                                development with Spring Boot and PostgreSQL. IntelliJ
+                                IDEA provides advanced autocompletion, debugging, refac-
+                                toring, and native integration with Maven and Spring. [4]
+
+        • Postman :
+
+                                    Used to test and validate REST APIs developed with
+                                Spring Boot through an intuitive interface and strong debug-
+                                ging and documentation features. [5]
+
+
+
+
+                                                    8
+Chapter 1: Project Context Presentation
+
+
+
+        • Draw.io :
+
+                                    Used to design UML diagrams such as use-case, class,
+                                and sequence diagrams, as well as functional mockups,
+                                thanks to its ease of use and free access. [6]
+
+        • Git and GitHub :
+
+                                    Used for version control and source-code management,
+                                with reliable workflows and easy integration in Visual Studio
+                                Code and IntelliJ IDEA.[7, 8]
+
+
+
+        • Jira :
+
+                                    Used for task management and Scrum sprint tracking. It
+                                supports user-story planning, sprint monitoring, and progress
+                                reporting. [9]
+
+        • LATEX :
+
+                                    LATEX was selected for report writing to ensure a profes-
+                                sional layout, accurate references, and typographic consis-
+                                tency throughout the document. [10]
+
+        3. Technologies used
+
+        The following technologies were chosen for their fit with project requirements and their
+ability to deliver a modern, high-performance solution.
+
+
+
+
+                                                    9
+Chapter 1: Project Context Presentation
+
+
+
+        • React :
+
+                                    Main frontend library used in the View layer of the plat-
+                                form interface. React provides reusable components, effi-
+                                cient rendering, and flexible state management for scalable
+                                user interfaces. [11]
+
+        • Tailwind CSS :
+
+                                    Utility-first CSS framework used for interface styling and
+                                layout. Tailwind CSS enables fast, consistent, and responsive
+                                UI development while supporting design customization. [12]
+
+        • Spring Boot :
+
+                                    Java framework used for backend development based
+                                on a layered architecture. Spring Boot simplifies secure
+                                and high-performance REST API development through auto-
+                                configuration and a rich ecosystem. [13]
+
+        • PostgreSQL :
+
+                                    Relational database management system used for plat-
+                                form data storage and management. PostgreSQL was se-
+                                lected for reliability, performance, and strong support for
+                                complex queries and data integrity. [14]
+
+        • Keycloak :
+
+                                    Identity and access management solution used to handle
+                                secure authentication, role-based authorization, and token-
+                                based security for the platform. [15]
+
+
+
+
+                                                   10
+Chapter 1: Project Context Presentation
+
+
+
+        • Docker :
+
+                                    Containerization platform used to package and run appli-
+                                cation services consistently across development and deploy-
+                                ment environments. [16]
+
+        • Kafka :
+
+                                    Distributed event-streaming platform used for asyn-
+                                chronous communication, especially for notifications and
+                                background event processing in the system. [17]
+
+
+
+    V. Application architecture
+        1. Global architecture
+
+        The application follows a web-based architecture composed of two complementary parts:
+a React frontend structured with MVVM and a layered backend. This organization fits
+an internal platform used by employees, team leaders, and HR managers to manage requests,
+projects, tasks, notifications, and dashboards. It ensures clear separation of responsibilities,
+smooth integration through REST APIs, and maintainable system evolution. External ser-
+vices such as Keycloak, Kafka, Apache POI for Excel export, and email notifications are in-
+tegrated when needed to support authentication, event handling, reporting, and communication.
+[11, 13, 15, 17, 19]
+        2. Frontend part: MVVM architecture with React
+
+        The frontend part is implemented with React and Tailwind CSS and organized accord-
+ing to the MVVM pattern. This choice is appropriate for a role-aware internal platform where
+employees, team leaders, and HR managers access different views over the same operational
+data. React provides the View layer, view models coordinate presentation logic and state, and
+service classes handle communication with the Spring Boot REST API. This organization en-
+sures a clear separation between interface rendering, presentation behavior, and service com-
+munication, which improves maintainability and functional consistency. [11, 12]
+
+
+           • View layer: Contains React pages and reusable UI components used to display
+
+
+                                                  11
+Chapter 1: Project Context Presentation
+
+
+
+             request forms, task boards, project dashboards, notification panels, and role-specific
+             interfaces.
+
+           • ViewModel layer: Handles presentation logic, state coordination, form behavior,
+             interaction flows, and the transformation of backend data into structures adapted to
+             the interface.
+
+           • Model / Service layer: Groups frontend data models, DTO-shaped structures when
+             needed, and service classes or functions responsible for calling the backend API and
+             managing request and response data.
+
+
+
+
+                         Figure 6: MVVM frontend architecture with React
+
+
+        3. Backend part: layered architecture with Spring Boot
+
+        The backend is based on a layered architecture, implemented with Spring Boot and
+PostgreSQL. This architecture structures the backend into clear functional layers, improving
+maintainability, testability, and scalability. [13, 14]
+
+
+           • Controller layer: Spring MVC REST controllers expose API endpoints and handle
+
+                                                 12
+Chapter 1: Project Context Presentation
+
+
+
+             HTTP requests from the React frontend.
+
+           • Service layer: Contains business logic, validation rules, and orchestration of appli-
+             cation use cases.
+
+           • Repository layer: Spring Data JPA repositories handle persistence and data access
+             in PostgreSQL.
+
+
+
+
+                           Figure 7: Layered architecture with Spring Boot
+
+
+        4. Why these architectures?
+
+        These architectures were selected for several reasons:
+
+
+           • Separation of concerns: MVVM separates the interface, presentation logic, and
+             service access in the frontend, while the backend keeps controllers, services, and
+             repositories clearly isolated.
+
+           • Maintainability and testability: View models can be tested and evolved inde-
+             pendently from React pages, and backend service logic remains independent from
+             persistence concerns.
+
+                                                 13
+Chapter 1: Project Context Presentation
+
+
+
+           • Reusability and consistency: A structured frontend makes it easier to reuse UI
+             components and shared presentation logic across requests, projects, tasks, dash-
+             boards, and notifications.
+
+           • Scalability and integration: React communicates efficiently with the Spring Boot
+             REST API, which supports progressive extension of the platform without compro-
+             mising organization.
+
+
+        5. Global architecture illustration
+
+        The figure below presents the global application architecture in a cleaner and more
+report-ready form. It shows the React frontend structured with MVVM, the Spring Boot back-
+end organized in layers, PostgreSQL as the persistent storage, and the external services in-
+tegrated to support authentication, asynchronous communication, reporting, and notifications.
+The diagram also highlights the role-based usage of the platform by employees, team leaders,
+and HR managers.
+
+
+
+
+                               Figure 8: Global application architecture
+
+
+
+
+                                                  14
+Chapter 1: Project Context Presentation
+
+
+
+    Conclusion
+
+        This chapter presented the general project context: the host organization ArabSoft, the
+current internal management challenges related to requests, projects, and tasks, the proposed so-
+lution, and the adopted methodologies and development environment. These elements provide
+the foundation for the rest of the work. The next chapter focuses on product backlog planning
+and functional requirement identification.
+
+
+
+
+                                               15
+                                        Chapter 2
+
+
+                         Product Backlog Planning
+
+    Introduction
+        This chapter defines the product backlog planning for the proposed internal platform at
+ArabSoft. It identifies the actors, structures the functional and non-functional requirements, and
+formalizes user stories and backlog priorities that will guide sprint planning and implementa-
+tion.
+    I. Actor Identification
+        1. Employee
+
+        The employee submits administrative requests, tracks processing status, accesses as-
+signed tasks, and receives notifications related to approvals, rejections, and project activities.
+        2. Team Leader
+
+        The team leader supervises team activities, validates requests requiring managerial ap-
+proval, assigns and follows tasks, and monitors project execution indicators.
+        3. HR Manager
+
+        The HR manager manages employee records and roles, performs final validation of ad-
+ministrative requests, and monitors compliance through dashboards and reports.
+        4. New User
+
+        A new user is registered in the platform but remains in a restricted state until HR valida-
+tion and role assignment are completed.
+    II. Functional Requirements
+        1. Authentication and access management
+
+        The system shall support registration, secure authentication, logout, account activation
+by HR, and role-based access control according to user profile.
+
+
+
+                                                16
+Chapter 2: Product Backlog Planning
+
+
+
+        2. Administrative request management
+
+       The platform shall manage submission, validation, rejection, and history tracking for
+leave requests, document requests, loan requests, and authorization requests.
+        3. Team and employee management
+
+       The system shall provide profile management, team assignment, leader designation, and
+maintenance of employee administrative information.
+        4. Project and task management
+
+       The platform shall support project creation, task assignment, workload organization,
+progress tracking, and status visibility for all authorized stakeholders.
+        5. Notification and reporting
+
+       The system shall send operational notifications and provide reports and dashboards to
+support monitoring, traceability, and decision-making.
+        6. AI assistance and decision support
+
+       The platform shall provide AI-assisted support to help employees prepare administrative
+requests, assist team leaders in reviewing requests and workload constraints, and support HR
+managers with recommendation-oriented decision assistance while preserving human valida-
+tion, traceability, and auditability.
+    III. Non-Functional Requirements
+        1. Security
+
+       The application must guarantee secure authentication, protection of sensitive data, strict
+role-based permissions, and complete audit traceability.
+        2. Performance
+
+       The platform must maintain acceptable response times under expected internal usage
+and support concurrent request processing without significant delays.
+        3. Usability
+
+       Interfaces must be clear and intuitive to reduce training effort and facilitate adoption by
+employees, team leaders, and HR managers.
+
+                                                17
+Chapter 2: Product Backlog Planning
+
+
+
+        4. Maintainability
+
+        The system architecture must allow efficient correction, enhancement, and extension
+through modular and well-documented components.
+        5. Scalability
+
+        The platform should support future growth in users, workflows, and modules without
+requiring major redesign.
+    IV. User Stories
+        1. Employee User Stories
+
+                                      Employee User Stories
+
+
+    As an employee, I want                                               As an employee, I want to
+                                       As an employee, I want to
+    to sign in securely so that                                          manage my profile informa-
+                                       sign out securely so that I can
+    I can access the platform                                            tion so that my personal data
+                                       protect my account after use.
+    according to my role.                                                stays accurate.
+
+
+
+
+                                                                         As an employee, I want to
+    As an employee, I want             As an employee, I want to ac-
+                                                                         submit and cancel a leave
+    to change my password              cess my personal dashboard
+                                                                         request before decision so
+    securely so that I can keep        so that I can quickly view the
+                                                                         that my leave workflow stays
+    my account protected.              most relevant information.
+                                                                         accurate.
+
+
+
+
+    As an employee, I want to          As an employee, I want to         As an employee, I want to
+    submit a document request          submit a loan request so that     submit an authorization re-
+    so that I can obtain official      I can ask for financial support   quest so that I can formalize
+    HR documents.                      through the platform.             exceptional permissions.
+
+
+
+
+                                                  18
+Chapter 2: Product Backlog Planning
+
+
+
+    As an employee, I want
+                                         As an employee, I want to         As an employee, I want to
+    to track request status and
+                                         view my assigned tasks and        filter tasks by project so
+    history so that I can follow
+                                         project calendar so that I can    that I can focus on the work
+    leave and administrative
+                                         organize my work efficiently.     context concerned.
+    workflows.
+
+
+
+    As an employee, I want to
+    receive notifications and
+    emails about role, request,
+    leave, and task updates so
+    that I stay informed.
+
+
+
+        2. Team Leader User Stories
+
+                                      Team Leader User Stories
+
+
+    As a team leader, I want                                               As a team leader, I want to
+                                         As a team leader, I want to
+    to sign in securely so that                                            manage my profile informa-
+                                         sign out securely so that I can
+    I can access the platform                                              tion so that my personal data
+                                         protect my account after use.
+    according to my role.                                                  stays accurate.
+
+
+
+
+    As a team leader, I want             As a team leader, I want to       As a team leader, I want to
+    to change my password                access my dashboard so that       review team leave requests
+    securely so that I can keep          I can quickly monitor team        so that I can process them ac-
+    my account protected.                activity.                         cording to team constraints.
+
+
+
+
+    As a team leader, I want
+                                         As a team leader, I want to       As a team leader, I want
+    to approve or reject leave
+                                         monitor team workload so          to assign tasks to team
+    requests with a reason so that
+                                         that I can balance responsi-      members so that project
+    decisions remain clear and
+                                         bilities effectively.             work is distributed properly.
+    traceable.
+
+
+
+
+                                                     19
+Chapter 2: Product Backlog Planning
+
+
+
+    As a team leader, I want                                               As a team leader, I want
+                                         As a team leader, I want to
+    to follow task progress                                                to use employee-side leave
+                                         view the team leave calendar
+    and receive completion                                                 and request actions for my
+                                         within my scope so that I can
+    notifications so that I can                                            own needs so that personal
+                                         anticipate availability issues.
+    monitor delivery.                                                      workflows remain consistent.
+
+
+
+        3. HR Manager User Stories
+
+                                      HR Manager User Stories
+
+
+    As an HR manager, I want             As an HR manager, I want          As an HR manager, I want to
+    to sign in securely so that          to sign out securely so that I    manage my profile informa-
+    I can access the platform            can protect my account after      tion so that my personal data
+    according to my role.                use.                              stays accurate.
+
+
+
+
+                                                                           As an HR manager, I want to
+    As an HR manager, I want             As an HR manager, I want to
+                                                                           assign roles and trigger user
+    to change my password                access my dashboard so that
+                                                                           notification so that access
+    securely so that I can keep          I can monitor operational
+                                                                           changes are communicated
+    my account protected.                activity.
+                                                                           clearly.
+
+
+
+                                         As an HR manager, I want          As an HR manager, I want
+    As an HR manager, I want
+                                         to manage employee admin-         to make final decisions on
+    to activate or deactivate
+                                         istrative information so that     leave and administrative
+    accounts so that access
+                                         records stay complete and         requests so that workflows
+    remains controlled.
+                                         accurate.                         are completed properly.
+
+
+
+                                         As an HR manager, I want
+    As an HR manager, I want to                                            As an HR manager, I want to
+                                         broad leave calendar visibil-
+    manage teams and team lead-                                            review pending user accounts
+                                         ity and filters so that I can
+    ers so that the organizational                                         so that I can complete their
+                                         supervise teams, employees,
+    structure remains consistent.                                          access setup.
+                                         dates, and statuses.
+
+
+
+
+                                                     20
+Chapter 2: Product Backlog Planning
+
+
+
+    As an HR manager, I want              As an HR manager, I want
+    to upload official request            to trace request history and
+    files and notify users so             cancellations before decision
+    that final HR outputs are             so that workflow follow-up
+    communicated.                         remains clear.
+
+
+    V. Product Backlog
+
+        The product backlog is organized into six functional sprints. Each sprint groups a coherent set
+of user stories and technical tasks according to business value, implementation dependencies, and the
+progressive delivery of the platform. The backlog was tracked through Jira and structured around access
+management, leave workflows, administrative requests, HR operations, collaboration features, reporting,
+notifications, and AI-assisted support.
+
+
+
+
+                                                     21
+ Chapter 2: Product Backlog Planning
+
+
+
+                                        Table 1: Product Backlog
+
+  Sprint        Num     User Story / Task                    Description                       Complexity
+
+                 US                          As a new user, I want to create an account
+                        User registration                                                      Medium
+                  01                         so that I can request access to the platform.
+                 US           Secure         As a user, I want to sign in securely so that I
+                                                                                               Medium
+                  02      authentication     can access features according to my role.
+ Sprint 1        US      Pending access      As a new user, I want to see a pending-
+                                                                                                 Low
+Access and        03           state         access page until HR assigns my role.
+ Account         US                          As a user, I want to reset my password so
+                         Password reset                                                        Medium
+Management        04                         that I can recover access to my account.
+                                             As a user, I want to update my profile in-
+                 US
+                          Profile update     formation so that my personal data remains          Low
+                  05
+                                             accurate.
+                 US                          As an HR manager, I want to assign roles so
+                         Role assignment                                                       Medium
+                  06                         that users receive the correct access rights.
+                                             As an HR manager, I want to activate or de-
+                 US
+                         Account control     activate accounts so that platform access re- Medium
+                  07
+                                             mains controlled.
+                                             As an HR manager, I want to review pend-
+                 US       Pending user
+                                             ing user accounts so that I can complete Medium
+                  08          review
+                                             their access setup.
+                                             Configure Keycloak,       PostgreSQL, and
+                 TS          Security
+                                             Spring Security for secure role-based               High
+                  01      configuration
+                                             access.
+                 TS                          Send notification and email after role as-
+                         Role notification                                                       Low
+                  02                         signment.
+
+
+
+
+                                                    22
+ Chapter 2: Product Backlog Planning
+
+
+
+                              Table 1: Product Backlog (continued)
+  Sprint        Num     User Story / Task                   Description                     Complexity
+
+                 US                         As an employee, I want to submit a leave
+                        Leave submission                                                    Medium
+                  09                        request so that I can ask for time off.
+                 US    Leave balance and As an employee, I want to view my leave
+                                                                                            Medium
+                  10          history       balance and leave history.
+                                            As an employee, I want the system to val-
+                 US       Working-day
+ Sprint 2                                   idate leave dates using working days and          High
+                  11        validation
+   Leave                                    public holidays.
+Management       US          Overlap        As an employee, I want the system to pre-
+                                                                                              High
+                  12        prevention      vent overlapping leave requests.
+                 US          Edit and       As an employee, I want to edit or cancel a
+                                                                                            Medium
+                  13       cancellation     leave request before final decision.
+                 US        Team leader      As a team leader, I want to approve or reject
+                                                                                            Medium
+                  14         decision       team leave requests.
+                 US                         As an HR manager, I want to make the final
+                        HR final decision                                                     High
+                  15                        decision on leave requests.
+                 US                         As a user, I want to view leave requests in a
+                         Leave calendar                                                     Medium
+                  16                        calendar.
+                 US                         As an HR manager, I want to filter leave
+                           Leave filters                                                      Low
+                  17                        records by employee, status, and date.
+                 TS           Leave         Send leave decision notifications and
+                                                                                              Low
+                  03       notifications    emails.
+                 TS
+                          Leave reports     Generate leave approval reports.                Medium
+                  04
+
+
+
+
+                                                   23
+  Chapter 2: Product Backlog Planning
+
+
+
+                               Table 1: Product Backlog (continued)
+    Sprint       Num     User Story / Task                   Description                      Complexity
+
+                                             As an employee, I want to submit a docu-
+                  US
+                         Document request ment request so that I can obtain official HR Medium
+                   18
+                                             documents.
+                  US         Document        As an HR manager, I want to process docu-
+                                                                                              Medium
+                   19        processing      ment requests and upload final files.
+                  US                         As an employee, I want to submit a loan re-
+   Sprint 3                Loan request                                                       Medium
+                   20                        quest so that I can request financial support.
+Administrative
+                  US                         As an HR manager, I want to check loan el-
+  Requests                Loan eligibility                                                      High
+                   21                        igibility before making a decision.
+                  US                         As an HR manager, I want to schedule a loan
+                           Loan meeting                                                         High
+                   22                        meeting with valid time slots.
+                  US       Authorization     As an employee, I want to submit an autho-
+                                                                                              Medium
+                   23          request       rization request for exceptional permission.
+                  US        HR request       As an HR manager, I want to approve or re-
+                                                                                                High
+                   24         decision       ject administrative requests.
+                  US                         As a user, I want to track the status and his-
+                         Request tracking                                                       Low
+                   25                        tory of my administrative requests.
+                  US                         As an HR manager, I want to search and fil-
+                           Request filters                                                      Low
+                   26                        ter administrative requests.
+                  TS          Request
+                                             Send request status notifications and emails.      Low
+                   05       notifications
+                  TS
+                             Final files     Manage final request files and downloads.        Medium
+                   06
+
+
+
+
+                                                    24
+ Chapter 2: Product Backlog Planning
+
+
+
+                              Table 1: Product Backlog (continued)
+   Sprint       Num     User Story / Task                     Description                 Complexity
+
+                 US                         As an HR manager, I want to manage em-
+                        Employee records                                                  Medium
+                  27                        ployee records.
+                 US        Department       As an HR manager, I want to manage de-
+                                                                                          Medium
+                  28       management       partments.
+                 US          Job title      As an HR manager, I want to manage job
+  Sprint 4                                                                                Medium
+                  29       management       titles.
+    HR
+                 US            Team         As an HR manager, I want to create teams
+Management                                                                                  High
+                  30       management       and assign team leaders.
+and Calendar
+                 US         Employee        As an HR manager, I want to move employ-
+                                                                                          Medium
+                  31        movement        ees between teams.
+                 US      User search and    As an HR manager, I want to search and fil-
+                                                                                            Low
+                  32          filters       ter users.
+                 US                         As an HR manager, I want to view HR dash-
+                         HR dashboard                                                     Medium
+                  33                        board indicators.
+                 US                         As an HR manager, I want to supervise leave
+                           HR calendar                                                    Medium
+                  34                        planning through the HR calendar.
+                 US                         As a team leader, I want to view my team
+                         Team calendar                                                    Medium
+                  35                        calendar to understand availability.
+                 TS                         Add calendar filters by employee, status,
+                         Calendar filters                                                   Low
+                  07                        and date.
+                 TS       HR approval
+                                            Improve HR request and approval views.        Medium
+                  08           views
+
+
+
+
+                                                      25
+  Chapter 2: Product Backlog Planning
+
+
+
+                               Table 1: Product Backlog (continued)
+    Sprint         Num   User Story / Task                    Description                      Complexity
+
+                   US          Project        As a team leader, I want to create and man-
+                                                                                               Medium
+                   36       management        age projects.
+                   US                         As a team leader, I want to create and assign
+                          Task assignment                                                      Medium
+                   37                         tasks to team members.
+   Sprint 5        US                         As an assignee, I want to update task status
+                         Task status update                                                      Low
+Projects, Tasks,   38                         so that progress remains visible.
+   Reports         US                         As a user, I want to filter tasks by project
+                             Task filters                                                        Low
+                   39                         and status.
+                   US                         As a team leader, I want to check availability
+                         Availability check                                                      High
+                   40                         before assigning work.
+                                              As an HR manager, I want to export filtered
+                   US       Excel report
+                                              reports to Excel so that reporting data can be Medium
+                   41          export
+                                              reviewed and archived outside the platform.
+                                              As an HR manager, I want to monitor report
+                   US       Reports and
+                                              indicators and statistics so that I can follow Medium
+                   42         statistics
+                                              operational activity.
+                                              Normalize project, task, user, team, and re-
+                   TS       Report data
+                                              quest data for consistent report filtering and     High
+                   09      normalization
+                                              aggregation.
+                                              Implement the backend report export ser-
+                   TS       Excel export
+                                              vice and generate structured Excel work-           High
+                   10         backend
+                                              books.
+
+
+
+
+                                                       26
+ Chapter 2: Product Backlog Planning
+
+
+
+                              Table 1: Product Backlog (continued)
+   Sprint       Num     User Story / Task                       Description                    Complexity
+
+                 US          Platform         As a user, I want to ask platform questions
+                                                                                               Medium
+                  43        questions         using the assistant.
+                 US        Role-aware         As a user, I want the assistant to answer ac-
+                                                                                                 High
+                  44         answers          cording to my role.
+  Sprint 6       US        Leave draft        As an employee, I want the assistant to help
+                                                                                                 High
+    AI,           45        assistance        draft a leave request.
+Deployment       US                           As an employee, I want the system to vali-
+                         Draft validation                                                        High
+    and           46                          date the leave draft before submission.
+Stabilization    US          Explicit         As an employee, I want leave submission to
+                                                                                               Medium
+                  47       confirmation       require explicit confirmation.
+                 US       Unsafe-action       As a user, I want the assistant to refuse un-
+                                                                                               Medium
+                  48          refusal         safe actions.
+                 TS      React assistant      Integrate the React chatbot with the Spring
+                                                                                                 High
+                  11        integration       Boot assistant gateway.
+                 TS          FastAPI          Connect the Spring Boot assistant gateway
+                                                                                                 High
+                  12        integration       with the FastAPI AI service.
+                 TS     Demo deployment Prepare local demonstration deployment
+                                                                                               Medium
+                  13       preparation        configuration.
+                 TS                           Run final frontend, backend, and AI service
+                        Final build checks                                                     Medium
+                  14                          build checks.
+                 TS                           Stabilize the platform and correct final inte-
+                        Final stabilization                                                      High
+                  15                          gration issues.
+
+
+
+
+                                                     27
+Chapter 2: Product Backlog Planning
+
+
+
+    VI. Release Organization
+
+       The six planned sprints are grouped into three major releases to ensure progressive and
+coherent delivery of the platform.
+
+          Core                                            Workflow                             Advanced Support
+       Foundation                                        Management                             and Intelligence
+            Release 1                                         Release 2                                Release 3
+
+
+                                                                           Administrative                          Projects, Tasks
+                        Access and Account                                   Requests                               and Reports
+                           Management                                               Sprint 3                                 Sprint 5
+                                   Sprint 1
+
+                                       Leave                              HR Management                            AI, Deployment
+                                     Management                            and Calendar                            and Stabilization
+                                              Sprint 2                             Sprint 4                                  Sprint 6
+
+
+
+
+                                               Figure 9: Organization of Releases
+
+
+    Conclusion
+       This chapter established the backlog-planning foundation of the project through actor
+identification, requirement structuring, user stories, and prioritized backlog definition. It pro-
+vides the planning baseline for sprint execution and the progressive realization of the platform
+at ArabSoft.
+
+
+
+
+                                                                          28
+Chapter 3: Release 1 - Foundations
+
+
+
+                                             Chapter 3
+
+                              Release 1 – Foundations
+
+    Introduction
+
+        This chapter focuses on Release 1, which forms the functional and technical foundation
+of the ArabSoft internal platform. Through its use case diagrams, system sequence diagrams,
+state diagrams, class diagrams, and interface illustrations, this chapter presents how the first core
+functionalities of the platform are structured. It highlights the implementation logic of secure
+access management and the first complete administrative workflow. More specifically, Release
+1 covers user registration, authentication, role assignment, account control, and leave request
+management. Together, these elements establish the first operational base of the platform for
+employees, team leaders, and HR managers.
+    I. Release Organization
+
+
+
+
+                                     Figure 10: Release 1 Organization
+
+
+    II. Sprint 1: Access and Account Management
+        1. Sprint Goal
+
+        This first sprint aims to establish the technical and functional access foundation of the
+platform. It implements the core access features: user registration, secure authentication, pass-
+word reset, HR user account setup, role assignment with notification and email, account ac-
+tivation and deactivation, profile update, and access control. It also introduces the restricted
+
+                                                    29
+Chapter 3: Release 1 - Foundations
+
+
+
+NEW_USER state to control onboarding before HR validation. The sprint is planned as a
+two-week iteration. The objective is to obtain an operational base for the next functional devel-
+opments of the platform.
+        2. Visual Sprint Journal
+
+        The visual sprint journal below presents the selected user stories of Sprint 1 and their
+completion status in Jira.
+
+
+
+
+                                     Visual Sprint Journal – Sprint 1
+
+
+        3. Sprint Backlog
+
+        The table below presents the backlog of the first sprint, planned as a two-week iteration.
+
+
+
+
+                                                   30
+Chapter 3: Release 1 - Foundations
+
+
+
+     Sprint             Stories                                Tasks                        Duration
+                                           Configure Keycloak realm, client, and roles
+                 Configure security
+                                           Set up PostgreSQL, Docker, and Kafka               2d
+                 and infrastructure
+                                           Connect Spring Boot to PostgreSQL and Key-
+                                           cloak
+                                           Implement user registration
+                  Registration and         Enforce the restricted NEW_USER state
+                                                                                              3d
+                   access control          Implement secure login
+    Sprint 1
+                                           Implement frontend logout
+                 Password recovery         Implement password reset
+                     and profile                                                              2d
+                   management              Implement profile update
+                                           Implement HR role assignment
+                     HR account
+                                           Trigger role assignment notification and email     2d
+                     governance
+                                           Implement account activation and deactivation
+                  HR account setup         Validate pending users and complete their ac-
+                                                                                              1d
+                     validation            cess setup
+
+                                     Table 2: Sprint Backlog – Sprint 1
+
+
+
+
+                                                     31
+Chapter 3: Release 1 - Foundations
+
+
+
+        4. Sprint Implementation
+
+Requirements Analysis
+
+       Sprint 1 covers the access and account management foundation, including registration,
+authentication, password recovery, profile management, HR account setup, and account status
+control.
+
+
+
+
+           Figure 11: Use Case Diagram – Sprint 1 Access and Account Management
+
+
+
+System Sequence Diagrams
+
+        These diagrams summarize the main user-system exchanges for Sprint 1 access scenar-
+ios.
+
+
+
+
+                                            32
+Chapter 3: Release 1 - Foundations
+
+
+
+User Registration
+This diagram shows how a visitor registers and remains pending until HR validation.
+
+
+
+
+                     Figure 12: System Sequence Diagram – User Registration
+
+
+Secure Login
+This diagram shows credential validation through Keycloak and role-based redirection.
+
+
+
+
+                                              33
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                       Figure 13: System Sequence Diagram – Secure Login
+
+
+Logout
+This diagram shows session cleanup, optional Keycloak logout, and redirection to the login
+page.
+
+
+
+
+                                              34
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                           Figure 14: System Sequence Diagram – Logout
+
+
+Use Case Diagram – Personal Account Management
+This diagram groups the personal account actions available to an authenticated user.
+
+
+
+
+                 Figure 15: Use Case Diagram – Personal Account Management
+
+
+
+
+                                               35
+Chapter 3: Release 1 - Foundations
+
+
+
+Password Reset
+This diagram shows how a user receives a reset code and defines a new password.
+
+
+
+
+                      Figure 16: System Sequence Diagram – Password Reset
+
+
+Profile Update
+This diagram shows how an authenticated user updates allowed profile information.
+
+
+
+
+                                              36
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                Figure 17: System Sequence Diagram – User Information Update
+
+
+Authenticated Password Change
+This diagram shows password change using the current password or OTP verification.
+
+
+
+
+                                            37
+Chapter 3: Release 1 - Foundations
+
+
+
+
+            Figure 18: System Sequence Diagram – Authenticated Password Change
+
+
+
+
+                                           38
+Chapter 3: Release 1 - Foundations
+
+
+
+Use Case Diagram – HR User Account Management
+This diagram groups the HR actions used to manage user accounts.
+
+
+
+
+                 Figure 19: Use Case Diagram – HR User Account Management
+
+
+HR User Account Setup
+This diagram shows how HR completes a pending account setup and activates access.
+
+
+
+
+                 Figure 20: System Sequence Diagram – HR User Account Setup
+
+
+                                            39
+Chapter 3: Release 1 - Foundations
+
+
+
+Account Activation and Deactivation
+This diagram shows HR-controlled account activation and deactivation.
+
+
+
+
+         Figure 21: System Sequence Diagram – Account Activation and Deactivation
+
+
+
+Analysis
+
+       This section summarizes the account lifecycle and the main business concepts used in
+Sprint 1.
+
+Domain Model – Sprint 1 Access and Account Management
+This diagram shows the main business concepts used for Sprint 1 account and access manage-
+ment.
+
+
+
+
+                                            40
+Chapter 3: Release 1 - Foundations
+
+
+
+
+             Figure 22: Domain Model – Sprint 1 Access and Account Management
+
+
+
+Participant Class Diagrams
+
+       These diagrams identify the main frontend and backend participants involved in Sprint
+1 scenarios.
+
+Participant Class Diagram – Authentication and Access Control
+This diagram shows the participants involved in authentication and role-based access control.
+
+
+
+
+                                              41
+Chapter 3: Release 1 - Foundations
+
+
+
+
+           Figure 23: Participant Class Diagram – Authentication and Access Control
+
+
+Participant Class Diagram – Password Reset and Password Change
+This diagram shows the participants involved in password recovery and authenticated password
+change.
+
+
+
+
+         Figure 24: Participant Class Diagram – Password Reset and Password Change
+
+
+
+
+                                             42
+Chapter 3: Release 1 - Foundations
+
+
+
+Participant Class Diagram – HR Account Management
+This diagram shows the participants involved in HR account setup, role assignment, and account
+status control.
+
+
+
+
+                Figure 25: Participant Class Diagram – HR Account Management
+
+
+
+State Diagrams
+
+       This diagram presents the lifecycle of a user account during the access-management
+workflow.
+
+State Diagram – User Account Lifecycle
+This diagram shows the transition from a pending account to an active or deactivated account.
+
+
+
+
+                                             43
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                        Figure 26: State Diagram – User Account Lifecycle
+
+
+
+Design Class Diagrams
+
+         These diagrams present the main classes supporting Sprint 1 access-management fea-
+tures.
+
+Design Class Diagram – Registration and Pending Access
+This diagram illustrates the main classes used to register a new user and keep the account
+pending until HR validation.
+
+
+
+
+                                               44
+Chapter 3: Release 1 - Foundations
+
+
+
+
+              Figure 27: Design Class Diagram – Registration and Pending Access
+
+
+Design Class Diagram – Security, Keycloak, and Access Control
+This diagram shows the classes involved in secure authentication, Keycloak integration, and
+role-based access control.
+
+
+
+
+          Figure 28: Design Class Diagram – Security, Keycloak, and Access Control
+
+
+
+
+                                             45
+Chapter 3: Release 1 - Foundations
+
+
+
+Design Class Diagram – HR Account Setup and Notification
+This diagram presents the classes used by HR to complete account setup, update access rights,
+and trigger notifications.
+
+
+
+
+             Figure 29: Design Class Diagram – HR Account Setup and Notification
+
+
+
+Conception Sequence Diagrams
+
+       These diagrams detail the internal frontend and backend interactions behind the main
+Sprint 1 scenarios.
+
+
+
+
+                                             46
+Chapter 3: Release 1 - Foundations
+
+
+
+
+             Figure 30: Conception Sequence Diagram – User Registration Frontend
+
+
+
+
+                                             47
+Chapter 3: Release 1 - Foundations
+
+
+
+
+             Figure 31: Conception Sequence Diagram – User Registration Backend
+
+
+
+
+                                            48
+Chapter 3: Release 1 - Foundations
+
+
+
+
+               Figure 32: Conception Sequence Diagram – Secure Login Frontend
+
+
+
+
+                                            49
+Chapter 3: Release 1 - Foundations
+
+
+
+
+               Figure 33: Conception Sequence Diagram – Secure Login Backend
+
+
+
+
+                                            50
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                   Figure 34: Conception Sequence Diagram – Logout Frontend
+
+
+
+
+                                             51
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                   Figure 35: Conception Sequence Diagram – Logout Backend
+
+
+
+
+                                             52
+Chapter 3: Release 1 - Foundations
+
+
+
+
+              Figure 36: Conception Sequence Diagram – Password Reset Frontend
+
+
+
+
+                                            53
+Chapter 3: Release 1 - Foundations
+
+
+
+
+              Figure 37: Conception Sequence Diagram – Password Reset Backend
+
+
+
+
+                                            54
+Chapter 3: Release 1 - Foundations
+
+
+
+
+        Figure 38: Conception Sequence Diagram – User Information Update Frontend
+
+
+
+
+                                           55
+Chapter 3: Release 1 - Foundations
+
+
+
+
+         Figure 39: Conception Sequence Diagram – User Information Update Backend
+
+
+
+
+                                           56
+Chapter 3: Release 1 - Foundations
+
+
+
+
+    Figure 40: Conception Sequence Diagram – Authenticated Password Change Frontend
+
+
+
+
+                                          57
+Chapter 3: Release 1 - Foundations
+
+
+
+
+    Figure 41: Conception Sequence Diagram – Authenticated Password Change Backend
+
+
+
+
+                                         58
+Chapter 3: Release 1 - Foundations
+
+
+
+
+         Figure 42: Conception Sequence Diagram – HR User Account Setup Frontend
+
+
+
+
+                                           59
+Chapter 3: Release 1 - Foundations
+
+
+
+
+         Figure 43: Conception Sequence Diagram – HR User Account Setup Backend
+
+
+
+
+                                          60
+Chapter 3: Release 1 - Foundations
+
+
+
+
+ Figure 44: Conception Sequence Diagram – Account Activation and Deactivation Frontend
+
+
+
+
+                                          61
+Chapter 3: Release 1 - Foundations
+
+
+
+
+  Figure 45: Conception Sequence Diagram – Account Activation and Deactivation Backend
+
+
+
+Realization
+
+       This section will present the main user interfaces implemented during Sprint 1. The final
+screenshots will be inserted after the frontend redesign is completed.
+
+
+
+                             Login Interface and Validation Feedback
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                         login_validation_ui.png
+
+
+
+
+                                                    62
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                            Registration and Pending Access Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                        registration_pending_access_ui.png
+
+
+
+
+                                         Password Reset Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                              password_reset_ui.png
+
+
+
+
+                                          Profile Update Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                              profile_update_ui.png
+
+
+
+
+                            Authenticated Password Change Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                      authenticated_password_change_ui.png
+
+
+
+
+                                     HR User Account Setup Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                           hr_user_account_setup_ui.png
+
+
+
+
+                          Account Activation and Deactivation Interface
+                sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/
+
+                                      account_activation_deactivation_ui.png
+
+
+
+
+                                                       63
+Chapter 3: Release 1 - Foundations
+
+
+
+        5. Sprint Review
+
+        At the end of Sprint 1, the main access and account-management features were reviewed
+and validated. The sprint provided a secure foundation for the platform by implementing reg-
+istration, authentication, logout, password recovery, profile update, HR account setup, role as-
+signment, and account activation or deactivation. It also introduced the restricted NEW_USER
+state, which ensures that newly registered users cannot access the platform before HR completes
+their account setup.
+        6. Sprint Retrospective
+
+                         What went well                What needs improvement
+                 The sprint delivered a stable
+                                                      Keycloak, local user records,
+                   access-management base
+                                                      roles, and account status had
+                     covering registration,
+                                                           to remain carefully
+                    authentication, account
+                                                              synchronized.
+                 setup, and role-based access.
+                   The main access scenarios          Future modules should keep
+                     were clearly modeled               frontend feedback and
+                  through use-case, sequence,         backend validation aligned
+                   state, and class diagrams.             from the beginning.
+
+                               Table 3: Sprint Retrospective – Sprint 1
+
+
+
+
+                                                 64
+Chapter 3: Release 1 - Foundations
+
+
+
+    III. Sprint 2: Leave Management
+        1. Sprint Goal
+
+        This second sprint aims to implement the leave-management workflow of the ArabSoft
+platform after the access foundation established in Sprint 1. It allows employees to submit
+leave requests, consult their leave balance and history, update or cancel requests while they
+are still pending team leader review, and follow the progress of their leave workflow. The
+sprint also introduces working-day validation, weekend and public-holiday exclusion, overlap
+prevention, team leader approval or rejection, HR final decision after team leader approval,
+calendar visualization, filters, workflow notifications, and approved leave PDF download. The
+objective is to deliver the first complete administrative workflow involving employees, team
+leaders, and HR managers.
+        2. Visual Sprint Journal
+
+        The visual sprint journal below presents the selected user stories of Sprint 2 and their
+completion status in Jira.
+
+
+
+
+                                     Visual Sprint Journal – Sprint 2
+
+
+        3. Sprint Backlog
+
+        The table below presents the backlog of the second sprint, planned as a two-week itera-
+tion dedicated to leave management.
+
+
+
+
+                                                   65
+Chapter 3: Release 1 - Foundations
+
+
+
+     Sprint             Stories                                 Tasks                      Duration
+
+                   Leave request           Implement leave request creation
+                  submission and           Display leave balance and leave history           2d
+                balance consultation
+                                           Connect employee leave actions with backend
+                                           APIs
+                                           Validate leave dates using working days
+                   Working-day,            Exclude weekends and public holidays from
+                holiday, and overlap       deducted days                                     2d
+                     validation
+                                           Prevent overlapping leave requests
+                                           Display clear validation feedback to the user
+    Sprint 2
+                                           Allow request update while pending team
+                  Leave update and         leader review                                     1d
+                    cancellation
+                                           Allow request cancellation while pending team
+                                           leader review
+                  Team leader leave        Implement team leader approval
+                                                                                             2d
+                      decision             Implement team leader rejection with reason
+                    HR final leave         Implement HR final approval
+                                                                                             2d
+                      decision             Implement HR final rejection and decision
+                                           tracking
+                                           Display leave requests in role-aware calendar
+                                           views
+                    Leave calendar,
+                 filters, notifications,   Add leave filters by employee, status, date,      1d
+                  and approved PDF         department, and team
+                                           Send workflow events and leave notifications
+                                           Enable approved leave PDF download
+
+                                     Table 4: Sprint Backlog – Sprint 2
+
+
+
+
+                                                     66
+Chapter 3: Release 1 - Foundations
+
+
+
+        4. Sprint Implementation
+
+Requirements Analysis
+
+        Sprint 2 covers the leave-management workflow, including employee leave request man-
+agement, team leader review, HR final decision after team leader approval, leave calendar con-
+sultation, filtering, workflow notifications, and approved leave PDF download. The following
+use-case diagram first presents the global scope of the sprint.
+
+Use Case Diagrams
+
+        These diagrams summarize the main user-system exchanges for Sprint 2 leave-management
+scenarios. The section also introduces focused use-case views before the employee request-
+management scenarios and the approval workflow scenarios.
+
+Use Case Diagram – Sprint 2 Leave Management
+This diagram presents the general leave-management use cases of Sprint 2. It shows the main
+actions performed by the employee, the team leader, and the HR manager within the leave
+workflow.
+
+
+
+
+                                               67
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                   Figure 46: Use Case Diagram – Sprint 2 Leave Management
+
+
+
+System Sequence Diagrams
+
+        These diagrams summarize the main user-system exchanges for Sprint 2 leave-management
+scenarios. The section also introduces focused use-case views before the employee request-
+management scenarios and the approval workflow scenarios.
+
+
+
+
+                                             68
+Chapter 3: Release 1 - Foundations
+
+
+
+Use Case Diagram – Employee Leave Request Management
+This diagram groups the leave actions available to an employee, including request submission,
+balance consultation, history tracking, update or cancellation while pending team leader review,
+and approved leave PDF download.
+
+
+
+
+             Figure 47: Use Case Diagram – Employee Leave Request Management
+
+
+Submit Leave Request
+This diagram shows how an employee submits a leave request and receives validation feedback
+from the system.
+
+
+
+
+                                              69
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                  Figure 48: System Sequence Diagram – Submit Leave Request
+
+
+Edit or Cancel Pending Leave
+This diagram shows how an employee updates or cancels a leave request while it is still pending
+team leader review.
+
+
+
+
+              Figure 49: System Sequence Diagram – Edit or Cancel Pending Leave
+
+
+                                              70
+Chapter 3: Release 1 - Foundations
+
+
+
+Use Case Diagram – Leave Approval Workflow
+This diagram presents the approval responsibilities of the team leader and HR manager, includ-
+ing team review, approval, rejection, HR final decision, leave records, and calendar consultation.
+
+
+
+
+                    Figure 50: Use Case Diagram – Leave Approval Workflow
+
+
+Team Leader Leave Decision
+This diagram shows how a team leader approves or rejects a team member’s leave request with
+a traceable decision.
+
+
+
+
+                                               71
+Chapter 3: Release 1 - Foundations
+
+
+
+
+              Figure 51: System Sequence Diagram – Team Leader Leave Decision
+
+
+HR Final Leave Decision
+This diagram shows how HR makes the final decision after team leader approval and updates
+the leave workflow accordingly.
+
+
+
+
+                                            72
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                Figure 52: System Sequence Diagram – HR Final Leave Decision
+
+
+
+Analysis
+
+        This section summarizes the main business concepts and lifecycle rules involved in the
+leave-management workflow.
+
+Domain Model – Sprint 2 Leave Management
+This diagram shows the main business concepts used for leave request management, including
+users, teams, leave requests, leave types, balances, public holidays, request history, and approval
+decisions.
+
+
+
+
+                                                73
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                     Figure 53: Domain Model – Sprint 2 Leave Management
+
+
+
+Participant Class Diagrams
+
+        These diagrams identify the main frontend and backend participants involved in the
+leave-management workflow, following the main responsibility stages of the sprint: employee
+leave request management, team leader review, and HR final decision.
+
+Participant Class Diagram – Employee Leave Request Management
+This diagram identifies the main frontend and backend participants involved in employee leave
+submission, validation, balance consultation, and pending request update or cancellation.
+
+
+
+
+                                             74
+Chapter 3: Release 1 - Foundations
+
+
+
+
+         Figure 54: Participant Class Diagram – Employee Leave Request Management
+
+
+Participant Class Diagram – Team Leader Leave Review
+This diagram presents the participants involved in team leader leave review, including team
+request consultation, approval or rejection, and decision traceability.
+
+
+
+
+               Figure 55: Participant Class Diagram – Team Leader Leave Review
+
+
+
+
+                                             75
+Chapter 3: Release 1 - Foundations
+
+
+
+Participant Class Diagram – HR Final Leave Decision
+This diagram shows the participants involved in the HR final decision workflow, including
+approval queue consultation, final approval or rejection, and balance update.
+
+
+
+
+                 Figure 56: Participant Class Diagram – HR Final Leave Decision
+
+
+
+State Diagrams
+
+        This section presents the lifecycle of a leave request using the real workflow states and
+stages of Sprint 2.
+
+State Diagram – Leave Request Lifecycle
+This diagram shows the leave request lifecycle from submission to team leader review, HR final
+decision, approval, rejection, or employee cancellation.
+
+
+
+
+                                               76
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                        Figure 57: State Diagram – Leave Request Lifecycle
+
+
+
+Design Class Diagrams
+
+        These diagrams present the main classes supporting Sprint 2 leave-management features.
+
+Design Class Diagram – Leave Request Creation and Validation
+This diagram illustrates the main classes used to create leave requests and apply validation rules
+before persistence.
+
+
+
+
+                                               77
+Chapter 3: Release 1 - Foundations
+
+
+
+
+           Figure 58: Design Class Diagram – Leave Request Creation and Validation
+
+
+Design Class Diagram – Team Leader Leave Review
+This diagram presents the main frontend and backend classes used for team leader leave con-
+sultation, approval, rejection, history recording, and balance release when needed.
+
+
+
+
+                 Figure 59: Design Class Diagram – Team Leader Leave Review
+
+
+
+
+                                             78
+Chapter 3: Release 1 - Foundations
+
+
+
+Design Class Diagram – HR Final Leave Decision
+This diagram shows the classes used by HR to make the final leave decision, update the request
+status, record history, and consume or release reserved balance.
+
+
+
+
+                   Figure 60: Design Class Diagram – HR Final Leave Decision
+
+
+Design Class Diagram – Working Day, Holiday, and Balance Management
+This diagram presents the classes used to calculate deducted working days, exclude weekends
+and public holidays, manage leave policy, and check available balance.
+
+
+
+
+     Figure 61: Design Class Diagram – Working Day, Holiday, and Balance Management
+
+
+
+Conception Sequence Diagrams
+
+                                              79
+Chapter 3: Release 1 - Foundations
+
+
+
+        These diagrams detail the internal frontend and backend interactions behind the main
+Sprint 2 scenarios: leave submission, pending leave update or cancellation, team leader review,
+and HR final review.
+
+
+
+
+          Figure 62: Conception Sequence Diagram – Submit Leave Request Frontend
+
+
+
+
+          Figure 63: Conception Sequence Diagram – Submit Leave Request Backend
+
+
+
+
+                                              80
+Chapter 3: Release 1 - Foundations
+
+
+
+
+      Figure 64: Conception Sequence Diagram – Edit or Cancel Pending Leave Frontend
+
+
+
+
+      Figure 65: Conception Sequence Diagram – Edit or Cancel Pending Leave Backend
+
+
+                                           81
+Chapter 3: Release 1 - Foundations
+
+
+
+
+           Figure 66: Conception Sequence Diagram – Team Leader Review Frontend
+
+
+
+
+                                           82
+Chapter 3: Release 1 - Foundations
+
+
+
+
+           Figure 67: Conception Sequence Diagram – Team Leader Review Backend
+
+
+
+
+                                           83
+Chapter 3: Release 1 - Foundations
+
+
+
+
+             Figure 68: Conception Sequence Diagram – HR Final Review Frontend
+
+
+
+
+                                            84
+Chapter 3: Release 1 - Foundations
+
+
+
+
+             Figure 69: Conception Sequence Diagram – HR Final Review Backend
+
+
+
+Realization
+
+        This section presents the main user interfaces reserved for Sprint 2 leave management.
+The final screenshots will be inserted after implementation.
+
+
+
+                                 Employee Leave Request Interface
+                sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_
+
+                                          employee_leave_requests.png
+
+
+
+
+                                     Employee Leave Details Interface
+                sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_
+
+                                          employee_leave_details.png
+
+
+
+
+                                                      85
+Chapter 3: Release 1 - Foundations
+
+
+
+
+                               Team Leader Leave Review Interface
+                sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_
+
+                                            team_requests.png
+
+
+
+
+                              Team Leader Leave Calendar Interface
+                sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_
+
+                                            team_calendar.png
+
+
+
+
+                                     HR Leave Approvals Interface
+               sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_hr_
+
+                                              approvals.png
+
+
+
+
+                              HR Leave Records and Filters Interface
+               sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_hr_
+
+                                              all_leaves.png
+
+
+
+
+                               Role-Aware Leave Calendar Interface
+                sections/chapitre3/img/sprint2_leave_management/09_ui_screenshots/sprint2_
+
+                                           company_calendar.png
+
+
+
+
+        5. Sprint Review
+
+        At the end of Sprint 2, the leave-management workflow was reviewed as the first com-
+plete administrative process of the platform. The sprint enabled employees to submit, update,
+cancel, and track leave requests while applying working-day validation, public-holiday exclu-
+sion, overlap prevention, and leave-balance control. It also introduced the two-level approval
+
+                                                    86
+Chapter 3: Release 1 - Foundations
+
+
+
+workflow, where team leaders review requests first and HR managers make the final decision.
+In addition, role-aware calendars, filters, notifications, and approved leave PDF generation im-
+proved visibility and traceability across the workflow.
+        6. Sprint Retrospective
+
+                         What went well                What needs improvement
+                                                         Working-day, holiday,
+                     The sprint delivered a            balance, and overlap rules
+                    complete leave workflow                 required careful
+                   from employee submission              coordination between
+                      to HR final decision.             frontend feedback and
+                                                          backend validation.
+                     The two-level approval
+                        process improved                Calendar readability can
+                   traceability through clear         still be improved when many
+                   statuses, decision reasons,        leave events are displayed at
+                    notifications, and history                 the same time.
+                             records.
+                  The leave balance, history,
+                                                      Future reporting can extend
+                     filters, and role-aware
+                                                      the approved leave PDF into
+                 calendars improved visibility
+                                                      broader analytics and export
+                 for employees, team leaders,
+                                                               features.
+                       and HR managers.
+
+                               Table 5: Sprint Retrospective – Sprint 2
+
+
+    Conclusion
+
+        This chapter covered Release 1 of the ArabSoft internal platform, structured into two
+complementary sprints. Sprint 1 established the secure access foundation of the system through
+registration, authentication, password recovery, profile management, HR account setup, role
+assignment, and account activation control. Sprint 2 delivered the leave-management module,
+including leave submission, update and cancellation, working-day validation, leave balance
+control, team leader review, HR final decision, calendars, notifications, and approved leave re-
+porting. These two sprints provided the first operational version of the platform, combining
+secure user access with a complete administrative workflow. The next chapter will present Re-
+lease 2, which extends the platform with additional administrative requests and HR management
+features.
+
+
+
+                                                 87
+Chapter 4: Release 2 - Workflow Management
+
+
+
+                                             Chapter 4
+
+                  Release 2 – Workflow Management
+
+   Introduction
+
+         This chapter presents Release 2 of the ArabSoft internal platform. It focuses on work-
+flow management through two main sprints: Sprint 3, dedicated to administrative requests, and
+Sprint 4, dedicated to HR management and calendar supervision. The chapter follows the same
+structure as the previous release by presenting the sprint goals, backlog, UML diagrams, imple-
+mentation views, review, and retrospective.
+   I. Release Organization
+
+         Release 2 is organized around workflow management. It first covers administrative re-
+quest processing through document, loan, and authorization workflows, then extends the plat-
+form with HR user supervision, organization setup, team management, and leave calendar con-
+sultation.
+
+
+
+
+                                    Release 2 Organization
+                                       Reserved image placeholder
+
+                         sections/chapitre4/img/other/release2_organization.png
+
+
+
+
+                                Figure 70: Release 2 Organization
+
+
+   II. Sprint 3: Administrative Requests
+         1. Sprint Goal
+
+         This sprint covers the administrative-request workflow of Release 2. It focuses on docu-
+ment requests, loan requests, authorization requests, request tracking, and the related HR deci-
+sions.
+
+
+                                                  88
+Chapter 4: Release 2 - Workflow Management
+
+
+
+       2. Visual Sprint Journal
+
+       The sprint journal will capture the tracked user stories and their validation status in Jira.
+
+
+
+
+                                  Visual Sprint Journal – Sprint 3
+
+
+       3. Sprint Backlog
+
+       The table below summarizes the Sprint 3 work packages prepared from the product
+backlog defined in Chapter 2.
+
+
+
+
+                                                89
+Chapter 4: Release 2 - Workflow Management
+
+
+
+    Sprint            Stories                                 Tasks                        Duration
+                                         Implement employee document request submis-
+                Document request         sion
+                                                                                             2d
+                 and processing          Implement HR document request processing
+                                         Manage final document file upload and down-
+                                         load
+                                         Implement employee loan request submission
+                 Loan request and
+                                         Add HR loan eligibility verification                2d
+                    eligibility
+                                         Display clear loan request status and feedback
+                                         Implement loan meeting scheduling by HR
+   Sprint 3        Loan meeting
+                                         Validate meeting date and available time slots      2d
+                    scheduling
+                                         Prevent scheduling conflicts when applicable
+                                    Implement authorization request submission
+              Authorization request
+                                    Support short absence and equipment request              2d
+                  management
+                                    workflows
+                                         Connect HR decision handling for authoriza-
+                                         tions
+                                         Display administrative request history and sta-
+                                         tus
+                 Request tracking,
+               filters, notifications,   Add HR search and filtering for requests            2d
+                   and final files       Send request status notifications and emails
+                                         Manage final files for completed requests
+
+                                 Table 6: Sprint Backlog – Sprint 3
+
+
+
+
+                                                   90
+Chapter 4: Release 2 - Workflow Management
+
+
+
+       4. Sprint Implementation
+
+Requirements Analysis
+
+       The following analysis describes the business rules that govern each request type handled
+in Sprint 3, covering document requests, loan requests and meetings, authorization requests, and
+the HR processing and tracking logic behind each one.
+
+Business Rules
+
+       Employees can request official HR documents such as employment certificates, salary
+certificates, work reference letters, experience certificates, custom administrative letters, and
+leave balance statements. The leave balance statement is generated automatically after HR ap-
+proval, while the other employee-requestable documents require HR to upload a final file before
+download. Contract copies are not submitted through the employee document request flow; they
+remain HR-managed through stored employee documents. Pending document requests may be
+approved or rejected by HR, and rejected requests require a reason.
+
+       Loan requests require a type, amount, and reason. Eligibility depends on salary, senior-
+ity, and the absence of an existing active loan request. HR validation also includes meeting
+scheduling rules, and each decision is stored in the request history with notifications or emails.
+
+       Authorization requests in the active workflow are limited to time permission and equip-
+ment request types. Time permission must respect working hours and avoid leave overlap, while
+equipment requests require a type, reason, and start date. HR can approve or reject each pending
+request with a required rejection reason.
+
+       Each request is traceable through its detail view, history records, status updates, and
+notification events. Employee pages show personal request progress, and HR pages support
+search and filtering.
+
+Use Case Diagrams
+
+       These diagrams present the global administrative-request scope of Sprint 3 and the HR
+processing viewpoint for document, loan, and authorization requests.
+
+
+
+
+                                               91
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Use Case Diagram – Sprint 3 Administrative Requests
+This diagram presents the overall administrative-request scope of Sprint 3.
+
+
+
+
+               Figure 71: Use Case Diagram – Sprint 3 Administrative Requests
+
+
+Use Case Diagram – HR Administrative Request Processing
+This diagram summarizes HR processing, validation, and final decision responsibilities.
+
+
+
+
+            Figure 72: Use Case Diagram – HR Administrative Request Processing
+
+
+
+                                              92
+Chapter 4: Release 2 - Workflow Management
+
+
+
+System Sequence Diagrams
+
+       These diagrams describe the main request submissions, HR processing steps, and schedul-
+ing interactions in Sprint 3.
+
+System Sequence Diagram – Submit Document Request
+This diagram shows how a user, either an employee or a team leader using employee-side
+request actions, submits a document request and receives validation feedback.
+
+
+
+
+              Figure 73: System Sequence Diagram – Submit Document Request
+
+
+System Sequence Diagram – Process Document Request
+This diagram shows how HR processes a pending document request and manages the final file.
+
+
+
+
+                                             93
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+              Figure 74: System Sequence Diagram – Process Document Request
+
+
+System Sequence Diagram – Submit Loan Request
+This diagram shows how a user, either an employee or a team leader using employee-side
+request actions, submits a loan request with the required request data.
+
+
+
+
+                                             94
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                 Figure 75: System Sequence Diagram – Submit Loan Request
+
+
+System Sequence Diagram – Schedule Loan Meeting
+This diagram shows how HR schedules a loan meeting under the workflow constraints.
+
+
+
+
+                Figure 76: System Sequence Diagram – Schedule Loan Meeting
+
+                                             95
+Chapter 4: Release 2 - Workflow Management
+
+
+
+System Sequence Diagram – Submit Authorization Request
+This diagram shows how a user, either an employee or a team leader using employee-side
+request actions, submits a time permission or equipment request.
+
+
+
+
+            Figure 77: System Sequence Diagram – Submit Authorization Request
+
+
+System Sequence Diagram – HR Administrative Request Decision
+This diagram shows how HR approves or rejects a pending administrative request.
+
+
+
+
+                                             96
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+         Figure 78: System Sequence Diagram – HR Administrative Request Decision
+
+
+
+Analysis
+
+       The analysis covers the main domain concepts in Sprint 3: the request entities, decision
+traces, and final-file handling across the three request types.
+
+Domain Model – Sprint 3 Administrative Requests
+This diagram presents the main domain concepts used to manage Sprint 3 administrative re-
+quests, including document requests, loan requests, authorization requests, request history,
+stored employee documents, and the related status and type values.
+
+
+
+
+                                                97
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                 Figure 79: Domain Model – Sprint 3 Administrative Requests
+
+
+
+Participant Class Diagrams
+
+       These diagrams identify the main frontend and backend participants involved in em-
+ployee administrative request submission and HR request processing during Sprint 3.
+
+Participant Class Diagram – Document Request Management
+This diagram shows the participants involved in employee document request submission, draft
+validation, status tracking, and request history management.
+
+
+
+
+                                             98
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+            Figure 80: Participant Class Diagram – Document Request Management
+
+
+Participant Class Diagram – Loan Request Management
+This diagram shows the participants involved in employee loan request submission, draft vali-
+dation, eligibility evaluation, status tracking, and request history management.
+
+
+
+
+              Figure 81: Participant Class Diagram – Loan Request Management
+
+
+
+
+                                             99
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Participant Class Diagram – Authorization Request Management
+This diagram shows the participants involved in employee authorization request submission,
+draft validation, status tracking, and request history management.
+
+
+
+
+          Figure 82: Participant Class Diagram – Authorization Request Management
+
+
+Participant Class Diagram – HR Request Processing
+This diagram shows the participants involved in HR processing of document, loan, and autho-
+rization requests, including request review, status updates, and history tracking.
+
+
+
+
+                 Figure 83: Participant Class Diagram – HR Request Processing
+
+
+State Diagrams
+
+       These diagrams summarize the lifecycle states and transitions used by document, loan,
+and authorization requests during Sprint 3. They distinguish real backend request statuses from
+derived display outcomes such as document readiness or waiting for an HR-uploaded file.
+
+                                             100
+Chapter 4: Release 2 - Workflow Management
+
+
+
+State Diagram – Document Request Lifecycle
+This diagram shows the lifecycle of a document request from submission to HR decision, in-
+cluding the derived fulfillment outcomes used when a leave balance statement is immediately
+ready or another document is waiting for an HR-uploaded file.
+
+
+
+
+                    Figure 84: State Diagram – Document Request Lifecycle
+
+
+State Diagram – Loan Request Lifecycle
+This diagram shows the lifecycle of a loan request, including meeting and final decision states.
+
+
+
+
+                                              101
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                       Figure 85: State Diagram – Loan Request Lifecycle
+
+
+State Diagram – Authorization Request Lifecycle
+This diagram shows the lifecycle of an authorization request from submission to HR decision.
+
+
+
+
+                                             102
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                  Figure 86: State Diagram – Authorization Request Lifecycle
+
+
+
+Design Class Diagrams
+
+       These diagrams present the main design classes that support document handling, loan
+eligibility, authorization decisions, and history tracking.
+
+Design Class Diagram – Document Request Final File Management
+This diagram shows the classes used to manage generated documents and HR-uploaded final
+files.
+
+
+
+
+                                                103
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 87: Design Class Diagram – Document Request Final File Management
+
+
+Design Class Diagram – Loan Eligibility and Meeting Management
+This diagram shows the classes used to verify loan eligibility and manage loan meetings.
+
+
+
+
+                                             104
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+            Figure 88: Design Class Diagram – Loan Request Review Management
+
+
+Design Class Diagram – Authorization Request Decision Management
+This diagram shows the classes used to process authorization decisions and rejection reasons.
+
+
+
+
+                                             105
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+            Figure 89: Design Class Diagram – Authorization Request Management
+
+
+Design Class Diagram – Request History and Notification Management
+This diagram shows the classes used to trace history and emit request events and notifications.
+
+
+
+
+                   Figure 90: Design Class Diagram – HR Request Processing
+
+
+Conception Sequence Diagrams
+
+       These diagrams describe the internal frontend and backend interactions behind the ad-
+
+                                              106
+Chapter 4: Release 2 - Workflow Management
+
+
+
+ministrative request workflows of Sprint 3. They are organized by request category: document
+requests, loan requests, and authorization requests. Each workflow is split into focused frontend
+and backend views to keep the diagrams readable and to separate user-interface behavior from
+backend validation, persistence, history, and notification logic.
+
+Conception Sequence Diagram – Document Request HR Decision Frontend
+
+
+
+
+    Figure 91: Conception Sequence Diagram – Document Request HR Decision Frontend
+
+
+
+
+                                               107
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Conception Sequence Diagram – Document Request Decision Backend
+
+
+
+
+      Figure 92: Conception Sequence Diagram – Document Request Decision Backend
+
+
+Conception Sequence Diagram – Document Request Final File Frontend
+
+
+
+
+                                             108
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+      Figure 93: Conception Sequence Diagram – Document Request Final File Frontend
+
+
+Conception Sequence Diagram – Document Request Final File Backend
+
+
+
+
+                                             109
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+      Figure 94: Conception Sequence Diagram – Document Request Final File Backend
+
+
+Conception Sequence Diagram – Loan Request Submission Frontend
+
+
+
+
+                                             110
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+       Figure 95: Conception Sequence Diagram – Loan Request Submission Frontend
+
+
+Conception Sequence Diagram – Loan Request Submission Backend
+
+
+
+
+                                             111
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+       Figure 96: Conception Sequence Diagram – Loan Request Submission Backend
+
+
+
+
+                                             112
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Conception Sequence Diagram – Loan Request Meeting Scheduling Frontend
+
+
+
+
+   Figure 97: Conception Sequence Diagram – Loan Request Meeting Scheduling Frontend
+
+
+Conception Sequence Diagram – Loan Meeting Scheduling Backend
+
+
+
+
+                                             113
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 98: Conception Sequence Diagram – Loan Meeting Scheduling Backend
+
+
+Conception Sequence Diagram – Loan Request Decision Frontend
+
+
+
+
+                                             114
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+         Figure 99: Conception Sequence Diagram – Loan Request Decision Frontend
+
+
+
+
+                                             115
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Conception Sequence Diagram – Loan Request Decision Backend
+
+
+
+
+                                             116
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                                          117 – Loan Request Decision Backend
+        Figure 100: Conception Sequence Diagram
+Chapter 4: Release 2 - Workflow Management
+
+
+
+Conception Sequence Diagram – Loan Final File Delivery Frontend
+
+
+
+
+       Figure 101: Conception Sequence Diagram – Loan Final File Delivery Frontend
+
+
+Conception Sequence Diagram – Loan Final File Backend
+
+
+
+
+                                             118
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+             Figure 102: Conception Sequence Diagram – Loan Final File Backend
+
+
+Conception Sequence Diagram – Authorization Request Submission Frontend
+
+
+
+
+                                             119
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+  Figure 103: Conception Sequence Diagram – Authorization Request Submission Frontend
+
+
+Conception Sequence Diagram – Authorization Request Submission Backend
+
+
+
+
+                                             120
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+  Figure 104: Conception Sequence Diagram – Authorization Request Submission Backend
+
+
+Conception Sequence Diagram – Authorization Request Decision Frontend
+
+
+
+
+                                             121
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+   Figure 105: Conception Sequence Diagram – Authorization Request Decision Frontend
+
+
+Conception Sequence Diagram – Authorization Request Decision Backend
+
+
+
+
+                                             122
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+    Figure 106: Conception Sequence Diagram – Authorization Request Decision Backend
+
+
+
+Realization
+
+       The realization section will later present the validated user interfaces for Sprint 3.
+
+
+
+
+                                               123
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                     Reserved placeholder – Employee Documents Page
+              sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_
+
+                                      employee_documents_page.png
+
+
+
+
+                        Reserved placeholder – Employee Loans Page
+              sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_
+
+                                        employee_loans_page.png
+
+
+
+
+                   Reserved placeholder – Employee Authorizations Page
+              sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_
+
+                                    employee_authorizations_page.png
+
+
+
+
+                          Reserved placeholder – HR Requests Page
+              sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_
+
+                                         hr_requests_page.png
+
+
+
+
+                        Reserved placeholder – Request Detail History
+              sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_
+
+                                      request_detail_history.png
+
+
+
+
+       5. Sprint Review
+
+       Sprint 3 covered the administrative request workflow of the platform. Employees can
+submit and track document, loan, and authorization requests. HR managers can review each
+request, approve or reject it with a decision note, schedule loan meetings, upload final files
+where required, and consult the full request history. Request statuses, history records, decision
+
+                                                 124
+Chapter 4: Release 2 - Workflow Management
+
+
+
+notes, and notification events keep each request traceable from submission through to final
+decision. Final-file handling for document and loan requests was also built into the workflow.
+       6. Sprint Retrospective
+
+                        What went well               What needs improvement
+                                                        Workflow complexity
+                  The sprint delivered the
+                                                     required tighter validation
+                main administrative request
+                                                       rules and a clearer HR
+                 workflows for documents,
+                                                     decision flow across request
+                 loans, and authorizations.
+                                                                 states.
+                  Request history, decision            Final-file handling and
+                    notes, statuses, and              edge-case paths still need
+                   notifications improved              clearer validation and
+                   workflow traceability.                   traceability.
+                   Splitting frontend and              UI validation and user
+                backend diagrams made the             testing still need to cover
+                 technical design easier to            feedback messages and
+                           explain.                   request-state transitions.
+
+                             Table 7: Sprint Retrospective – Sprint 3
+
+
+
+
+                                               125
+Chapter 4: Release 2 - Workflow Management
+
+
+
+    III. Sprint 4: HR Management and Calendar
+        1. Sprint Goal
+
+        This sprint covers HR management and calendar supervision. It handles HR user admin-
+istration, employee records, team setup, role assignment, account activation and deactivation,
+and leave-availability views for employees and teams.
+        2. Visual Sprint Journal
+
+        The sprint journal captures the tracked HR and calendar user stories and their validation
+status in Jira.
+
+
+
+
+                                  Visual Sprint Journal – Sprint 4
+
+
+        3. Sprint Backlog
+
+        The table below summarizes the Sprint 4 work packages prepared from the product
+backlog defined in Chapter 2.
+
+
+
+
+                                                126
+Chapter 4: Release 2 - Workflow Management
+
+
+
+    Sprint            Stories                               Tasks                      Duration
+                                       Implement employee record consultation and
+                Employee records       update
+                                                                                         2d
+                 and user search       Add user search and filtering for HR
+                                       Improve employee profile visibility for HR
+                                       Implement department management
+               Department and job
+                                       Implement job title management                    2d
+                title management
+                                       Connect departments and job titles with em-
+                                       ployee records
+
+                Team management        Implement team creation and update
+                   and leader          Assign or change team leaders                     2d
+   Sprint 4
+                   assignment
+                                       Handle teams without assigned leaders when
+                                       needed
+
+               Employee movement       Move employees between teams
+                and HR approval        Improve HR request and approval views             1d
+                     views
+                                       Keep employee assignment data consistent
+                                       Display HR dashboard indicators
+                HR dashboard and
+                                       Implement HR leave calendar supervision           2d
+                  HR calendar
+                                       Add calendar visibility for employees, teams,
+                                       and statuses
+                                       Implement team calendar consultation
+                Team calendar and
+                                       Add calendar filters by employee, status, and     1d
+                  calendar filters
+                                       date
+                                       Improve calendar readability for planning
+
+                                Table 8: Sprint Backlog – Sprint 4
+
+
+
+
+                                                127
+Chapter 4: Release 2 - Workflow Management
+
+
+
+       4. Sprint Implementation
+
+Requirements Analysis
+
+       Sprint 4 covers HR management and calendar supervision, including the HR dashboard,
+employee account supervision, organization setup, team structure management, and leave cal-
+endar views.
+
+
+
+
+           Figure 107: Use Case Diagram – Sprint 4 HR Management and Calendar
+
+
+
+
+                                             128
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+           Figure 108: Use Case Diagram – HR Employee and Account Supervision
+
+
+
+
+             Figure 109: Use Case Diagram – Organization and Team Management
+
+
+
+
+                                             129
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                     Figure 110: Use Case Diagram – Calendar Supervision
+
+
+
+System Sequence Diagrams
+
+       These diagrams show the main user–system exchanges for Sprint 4 HR management and
+calendar workflows.
+
+
+
+
+                                             130
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                Figure 111: System Sequence Diagram – Consult HR Dashboard
+
+
+
+
+            Figure 112: System Sequence Diagram – Supervise Employee Account
+
+
+
+
+                                             131
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 113: System Sequence Diagram – Manage Organization Reference Data
+
+
+
+
+               Figure 114: System Sequence Diagram – Manage Team Structure
+
+
+
+
+                                             132
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+             Figure 115: System Sequence Diagram – Consult HR Leave Calendar
+
+
+
+
+            Figure 116: System Sequence Diagram – Consult Team Leave Calendar
+
+
+
+Analysis
+
+
+                                             133
+Chapter 4: Release 2 - Workflow Management
+
+
+
+       The Sprint 4 domain covers User accounts, Departments, Job Titles, Teams, team mem-
+bership, and the leave requests used in the calendar views.
+
+
+
+
+             Figure 117: Domain Model – Sprint 4 HR Management and Calendar
+
+
+
+Participant Class Diagrams
+
+       These diagrams show the main frontend and backend participants for HR employee ac-
+count supervision, organization reference data management, team structure management, and
+leave calendar consultation.
+
+
+
+
+                                              134
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+       Figure 118: Participant Class Diagram – HR Employee and Account Supervision
+
+
+
+
+     Figure 119: Participant Class Diagram – Organization Reference Data Management
+
+
+
+
+                                             135
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+             Figure 120: Participant Class Diagram – Team Structure Management
+
+
+
+
+           Figure 121: Participant Class Diagram – HR Leave Calendar Consultation
+
+
+
+
+                                             136
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+          Figure 122: Participant Class Diagram – Team Leave Calendar Consultation
+
+
+
+Design Class Diagrams
+
+       These diagrams show the frontend MVVM classes and backend Spring Boot classes
+used for HR user management, organization setup, team administration, and leave calendar
+consultation.
+
+
+
+
+                  Figure 123: Design Class Diagram – HR User Management
+
+
+
+
+                                             137
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                  Figure 124: Design Class Diagram – HR Organization Setup
+
+
+
+
+                  Figure 125: Design Class Diagram – HR Team Management
+
+
+
+
+                                             138
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+                    Figure 126: Design Class Diagram – HR Leave Calendar
+
+
+
+
+                   Figure 127: Design Class Diagram – Team Leave Calendar
+
+
+
+Conception Sequence Diagrams
+
+       These diagrams trace the interactions between the React frontend and the Spring Boot
+backend for HR account supervision, organization setup, team management, and leave calendar
+
+                                             139
+Chapter 4: Release 2 - Workflow Management
+
+
+
+consultation.
+
+
+
+
+         Figure 128: Conception Sequence Diagram – HR User Management Frontend
+
+
+
+
+                                             140
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+         Figure 129: Conception Sequence Diagram – HR User Management Backend
+
+
+
+
+                                             141
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 130: Conception Sequence Diagram – HR Organization Setup Frontend
+
+
+
+
+                                             142
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 131: Conception Sequence Diagram – HR Organization Setup Backend
+
+
+
+
+                                             143
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 132: Conception Sequence Diagram – HR Team Management Frontend
+
+
+
+
+                                             144
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+        Figure 133: Conception Sequence Diagram – HR Team Management Backend
+
+
+
+
+                                             145
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+          Figure 134: Conception Sequence Diagram – HR Leave Calendar Frontend
+
+
+
+
+          Figure 135: Conception Sequence Diagram – HR Leave Calendar Backend
+
+
+
+                                             146
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+         Figure 136: Conception Sequence Diagram – Team Leave Calendar Frontend
+
+
+
+
+                                             147
+Chapter 4: Release 2 - Workflow Management
+
+
+
+
+         Figure 137: Conception Sequence Diagram – Team Leave Decision Backend
+
+
+
+Realization
+
+       This subsection shows the interface screens for HR supervision, employee records, team
+administration, and calendar views.
+
+       The screenshots below cover the main implemented flows in the application.
+
+
+
+                        Reserved placeholder – Sprint 4 UI Screenshot
+                sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/
+
+                                      sprint4_ui_placeholder.png
+
+
+
+
+       5. Sprint Review
+
+       Sprint 4 covered HR management and calendar supervision. The sprint included HR
+user management, employee records, role assignment, account activation and deactivation, de-
+partment and job title management, team creation, team leader assignment, team membership
+
+
+                                                 148
+Chapter 4: Release 2 - Workflow Management
+
+
+
+changes, and leave calendar consultation. Team leaders also received a dedicated team calendar
+and leave-decision support within their team scope.
+       6. Sprint Retrospective
+
+                        What went well               What needs improvement
+                    Sprint 4 features were           Some code still needs final
+                  completed and integrated            cleanup and consistency
+                         successfully.                        checks.
+                HR user, team, and calendar           A few screens need small
+                workflows now work in the            frontend adjustments after
+                         platform.                          final testing.
+
+                             Table 9: Sprint Retrospective – Sprint 4
+
+
+
+
+                                               149
+Chapter 4: Release 2 - Workflow Management
+
+
+
+   Conclusion
+
+       This chapter presented Release 2 of the ArabSoft platform. Sprint 3 introduced the
+administrative request workflows for documents, loans, and authorizations, including HR de-
+cisions, request history, notifications, meetings, and final-file handling. Sprint 4 extended the
+platform with HR management and calendar supervision by covering user records, roles, ac-
+count status, organization reference data, teams, team membership, and role-aware leave calen-
+dar views.
+
+       Together, these two sprints added request workflows, HR supervision, team manage-
+ment, and leave calendar access to the platform. The next release covers project tracking, task
+management, report export, and AI-assisted support features.
+
+
+
+
+                                              150
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+                                             Chapter 5
+
+      Release 3 – Advanced Support and Intelligence
+
+    Introduction
+
+        This chapter presents Release 3 of the ArabSoft platform. It covers the final advanced
+scope of the project through two sprints. Sprint 5 focuses on project management, task as-
+signment, task progress tracking, and HR report export. Sprint 6 is reserved for AI assistance,
+deployment preparation, and final stabilization. Together, these elements complete the platform
+by adding collaboration, reporting, and intelligent support features on top of the workflows
+developed in the previous releases.
+    I. Release Organization
+
+        Release 3 is organized into two final sprints. Sprint 5 covers Projects, Tasks and Reports,
+while Sprint 6 covers AI, Deployment and Stabilization. This organization separates collabo-
+ration and reporting features from the assistant and stabilization work, making the final release
+easier to document and validate.
+    II. Sprint 5: Projects, Tasks and Reports
+        1. Sprint Goal
+
+        This sprint focuses on project and task management for team leaders, assignee-side task
+progress tracking, and HR reporting through consultation and Excel export. It connects oper-
+ational planning, task execution, and reporting features while keeping each workflow aligned
+with the implemented role permissions.
+        2. Visual Sprint Journal
+
+        The visual sprint journal below presents the selected user stories of Sprint 5 and their
+completion status in Jira.
+
+
+
+
+                                                    151
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                                    Visual Sprint Journal – Sprint 5
+
+
+        3. Sprint Backlog
+
+        The table below summarizes the Sprint 5 work packages prepared from the product
+backlog defined in Chapter 2.
+
+     Sprint             Stories                                 Tasks                       Duration
+                                          Create, update, delete, and view team-scoped
+                Project management        projects                                            2d
+                                          Keep project consultation limited to the con-
+                                          nected team scope
+                                          Create tasks and assign them using ONE, SE-
+                  Task creation and       LECTED, or ALL modes
+    Sprint 5                                                                                  2d
+                     assignment           Preview member availability before assigning
+                                          tasks
+                                          Keep task assignment aligned with team mem-
+                                          bership and assignment mode rules
+                                          Allow assigned users to update the task lifecy-
+                 Task status update       cle from TODO to IN_PROGRESS to DONE                1d
+                                          Track assignee-side progress through the de-
+                                          fined lifecycle states
+                                          Consult leave, document, loan, and authoriza-
+                    HR reports            tion report data
+                  consultation and                                                            2d
+                                          Filter report results before export
+                    Excel export
+                                          Export filtered HR reports to Excel
+
+                                       Sprint Backlog – Sprint 5
+
+
+
+
+                                                    152
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+        4. Sprint Implementation
+
+        The Sprint 5 implementation is presented through the following UML diagrams, cover-
+ing project management, task assignment, task status update, and HR report export.
+    Requirements Analysis
+
+        The use case diagrams below show the main actor interactions for Sprint 5.
+
+
+
+
+              Figure 138: Use Case Diagram – Sprint 5 Projects, Tasks and Reports
+
+
+
+
+                                                    153
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+         Figure 139: Use Case Diagram – Team Leader Project and Task Management
+
+
+    System Sequence Diagrams
+
+        These diagrams show how the user and system interact for the main Sprint 5 operations.
+
+
+
+
+                      Figure 140: System Sequence Diagram – Create Project
+
+                                                    154
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                Figure 141: System Sequence Diagram – Create and Assign Task
+
+
+
+
+                   Figure 142: System Sequence Diagram – Update Task Status
+
+
+
+                                                    155
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                  Figure 143: System Sequence Diagram – Consult HR Reports
+
+
+    Analysis
+
+        This diagram shows the main domain concepts behind Sprint 5’s project management,
+task assignment, and reporting features.
+
+
+
+
+                                                    156
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                Figure 144: Domain Model – Sprint 5 Projects, Tasks and Reports
+
+
+    State Diagrams
+
+        The state diagram below shows the task lifecycle for Sprint 5. A task starts as TODO,
+moves to IN_PROGRESS when the assignee picks it up, and ends as DONE.
+
+
+
+
+                                                    157
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                             Figure 145: State Diagram – Task Lifecycle
+
+
+    Participant Class Diagrams
+
+        The participant class diagrams below show the frontend and backend classes involved in
+the main Sprint 5 workflows.
+
+
+
+
+                                                    158
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+     Figure 146: Participant Class Diagram – Team Leader Project and Task Management
+
+
+
+
+                   Figure 147: Participant Class Diagram – Task Status Update
+
+
+
+
+                                                    159
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                 Figure 148: Participant Class Diagram – HR Reports and Export
+
+
+    Design Class Diagrams
+
+        The design class diagrams below show the class structure for Sprint 5 project manage-
+ment, task handling, and HR report export.
+
+
+
+
+       Figure 149: Design Class Diagram – Team Leader Project and Task Management
+
+
+
+
+                                                    160
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+                      Figure 150: Design Class Diagram – Task Status Update
+
+
+
+
+               Figure 151: Design Class Diagram – HR Reports and Excel Export
+
+
+    Conception Sequence Diagrams
+
+        The conception sequence diagrams below show the frontend and backend interactions
+for project management, task assignment, and status update.
+
+
+
+
+                                                    161
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+          Figure 152: Conception Sequence Diagram – Project Management Frontend
+
+
+
+
+                                                    162
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+          Figure 153: Conception Sequence Diagram – Project Management Backend
+
+
+
+
+                                                    163
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+            Figure 154: Conception Sequence Diagram – Task Assignment Frontend
+
+
+
+
+                                                    164
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+            Figure 155: Conception Sequence Diagram – Task Assignment Backend
+
+
+
+
+                                                    165
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+           Figure 156: Conception Sequence Diagram – Task Status Update Frontend
+
+
+
+
+           Figure 157: Conception Sequence Diagram – Task Status Update Backend
+
+                                                    166
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+        5. Sprint Review
+
+        Sprint 5 delivered team-scoped project management, task assignment with availability
+checks, task status tracking by assignees, and HR report consultation with Excel export. Team
+leaders can manage projects and tasks in one place, and HR managers can filter and export
+administrative request data.
+        6. Sprint Retrospective
+
+                         What went well                     What needs improvement
+                                                             Task assignment needed
+                   Having project and task                  careful validation to keep
+                  management scoped to the                  availability checks, team
+                  team made the workflows                       membership, and
+                 easier to follow and validate.                 assignment modes
+                                                                    consistent.
+                                                           Future changes to the report
+                                                             section should keep the
+                   HR managers could filter
+                                                                 export limited to
+                  administrative request data
+                                                           administrative request data
+                    and export it to Excel
+                                                            and not include project or
+                           directly.
+                                                           task data unless a dedicated
+                                                              backend source exists.
+
+                               Table 10: Sprint Retrospective – Sprint 5
+
+
+    III. Sprint 6: AI Assistant, Local Deployment, and Stabilization
+        1. Sprint Goal
+
+        This sprint focuses on the ArabSoft AI assistant, local deployment packaging, and final
+stabilization. The assistant is guidance-only, Spring Boot remains the secure gateway, and
+FastAPI receives only safe context prepared by the backend. [18] Gemini is optional and the
+deployment scope remains limited to local Docker Compose.
+        2. Visual Sprint Journal
+
+        The Sprint 6 visual journal reflects the validated assistant and deployment work com-
+pleted during the sprint.
+
+
+
+
+                                                    167
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+        3. Sprint Backlog
+
+        The table below summarizes the Sprint 6 work packages prepared from the validated
+implementation scope.
+
+     Sprint             Stories                                Tasks                         Duration
+                                      Route assistant questions through Spring Boot,
+                AI assistant platform use role-aware platform guidance, and return             2d
+                   help and Q&A       safe navigation/help responses.
+                                          Support leave, document, authorization, and
+                 AI request drafting      loan drafts with preview, validation, and ex-        3d
+    Sprint 6          assistant           plicit submission.
+                                    Provide read-only decision support for one se-
+               Team Leader decision lected leave request using safe team and work-             2d
+                     support        load context.
+                                          Enforce refusal rules, sanitize routes, protect
+                Assistant safety and      against stale confirmations, and keep the assis-     2d
+                 role restrictions        tant guidance-only.
+                     Assistant UI         Render assistant replies, draft previews, and
+                                                                                               2d
+                      rendering           decision-support cards in the frontend.
+                                          Containerize the frontend, backend, AI service,
+                    Local Docker          PostgreSQL, Keycloak, Kafka, Zookeeper, and          2d
+                     deployment           PgAdmin for local deployment and testing.
+                                          Keep fallback paths, safety checks, and assis-
+                  Stabilization and       tant regression tests aligned with the imple-        1d
+                 regression coverage      mented behavior.
+
+                                       Sprint Backlog – Sprint 6
+
+
+
+
+                                                    168
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+        4. Requirements Analysis
+
+        Sprint 6 adds an assistant scope centered on guidance, request drafting, and decision
+support. The assistant helps users ask platform questions, prepare drafts, review validation
+feedback, and access suggested pages. Final workflow decisions remain with the user and the
+authorized role.
+    Assistant Scope and Business Rules
+
+        Figure 158 summarizes the user-facing assistant scope for Sprint 6. It covers platform
+questions, request drafting, validation preview, suggested pages, and Team Leader decision
+support. The assistant remains guidance-only and does not take workflow decisions.
+
+
+
+
+          Figure 158: Use Case Diagram – Sprint 6 AI Assistant and Decision Support
+
+
+        The assistant remains focused on safe guidance and manual control. It does not approve,
+reject, submit, or change roles on behalf of the user.
+
+
+
+
+                                                    169
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+    System Sequence Diagrams
+
+        The Sprint 6 system sequence diagrams describe the user-system interaction for assistant
+access, request drafting, and Team Leader decision support. The assistant remains guidance-
+only and does not take workflow decisions.
+
+
+
+
+              Figure 159: System Sequence Diagram – Assistant Platform Question
+
+
+
+
+                                                    170
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+               Figure 160: System Sequence Diagram – Assistant Request Drafting
+
+
+
+
+            Figure 161: System Sequence Diagram – Team Leader Decision Support
+
+
+                                                    171
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+    Analysis and Design Decisions
+
+        Sprint 6 is documented with three complementary views: the domain model for the
+assistant context data, the participant class view for the gateway interaction, and the design
+class view for the safe assistant structures. Together, these diagrams separate persistent domain
+data from the assistant-specific object structure.
+    Domain Model
+
+        The domain model below shows the real Spring Boot entities used to build the assistant
+context.
+
+
+
+
+                 Figure 162: Domain Model – Sprint 6 AI Assistant Context Data
+
+
+    Participant Class Diagrams
+
+        The participant class diagram below captures the assistant gateway and the safe context
+contract used during the Sprint 6 assistant flow.
+
+
+
+
+                                                    172
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+        Figure 163: Participant Class Diagram – AI Assistant Gateway and Safe Context
+
+
+    Design Class Diagrams
+
+        The design class diagram below presents the assistant gateway and safe context classes
+used by the backend implementation.
+
+
+
+
+            Figure 164: Design Class Diagram – Assistant Gateway and Safe Context
+
+
+
+
+                                                    173
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+    Conception Sequence Diagrams
+
+        The Sprint 6 conception sequence diagrams describe the frontend and backend realiza-
+tion of the assistant flows. The diagrams keep the assistant guidance-only: user questions,
+request drafting, and Team Leader decision support remain controlled by the authorized user.
+
+
+
+
+      Figure 165: Conception Sequence Diagram – Assistant Platform Question Frontend
+
+
+
+
+      Figure 166: Conception Sequence Diagram – Assistant Platform Question Backend
+
+
+
+
+                                                    174
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+       Figure 167: Conception Sequence Diagram – Assistant Request Drafting Frontend
+
+
+
+
+       Figure 168: Conception Sequence Diagram – Assistant Request Drafting Backend
+
+
+
+
+                                                    175
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+
+    Figure 169: Conception Sequence Diagram – Team Leader Decision Support Frontend
+
+
+
+
+    Figure 170: Conception Sequence Diagram – Team Leader Decision Support Backend
+
+
+    Realization
+
+        The realization section presents the assistant widget, draft preview cards, decision-support
+panel, and the local packaging used to validate the sprint scope.
+    Testing and Validation
+
+        This section summarizes the regression coverage and safety checks already present in
+the implementation.
+
+
+                                                    176
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+        5. Sprint Review
+
+        Sprint 6 completed the assistant scope added in Release 3. The assistant was integrated
+through the React widget, Spring Boot gateway, and FastAPI AI service. [18] It supports plat-
+form questions, request-draft preparation, draft validation preview, suggested page navigation,
+unsafe-action refusal, and Team Leader decision-support guidance. The review confirmed that
+the assistant remains guidance-only: it does not approve, reject, submit, cancel, change roles,
+or modify workflow states on behalf of the user. The sprint also covered local packaging and
+final stabilization checks.
+        6. Sprint Retrospective
+
+                         What went well                     What needs improvement
+                                                           Request drafting, validation
+                  The assistant was integrated
+                                                               preview, suggested
+                     through a controlled
+                                                              navigation, and Team
+                    backend gateway while
+                                                            Leader decision-support
+                   keeping workflow actions
+                                                           guidance were documented
+                      under user control.
+                                                                   and tested.
+                                                             Any future deployment
+                 Future work should keep the
+                                                           work should remain clearly
+                  assistant scope narrow and
+                                                           separated from the current
+                  avoid claiming actions that
+                                                              local packaging and
+                     are not implemented.
+                                                                validation scope.
+
+                               Table 11: Sprint Retrospective – Sprint 6
+
+
+
+
+                                                    177
+                                General Conclusion
+
+       This end-of-studies project focused on the design and development of an internal plat-
+form for managing requests, projects, and tasks at ArabSoft. The main objective was to cen-
+tralize internal workflows, improve traceability, and provide employees, team leaders, and HR
+managers with a structured digital environment adapted to their responsibilities.
+       The platform was developed progressively through six sprints. The first releases estab-
+lished the core foundations of the system, including authentication, role-based access, leave
+management, administrative requests, HR supervision, calendars, project tracking, task assign-
+ment, and reporting support. These modules helped replace fragmented manual processes with
+clearer and more reliable digital workflows.
+       The final release added advanced support features, including reporting, Excel export, and
+an AI-assisted guidance layer. The assistant was integrated through a controlled architecture
+using a React widget, a Spring Boot gateway, and a FastAPI service. [18] Its role remains
+limited to platform guidance, request drafting support, validation preview, suggested navigation,
+and Team Leader decision-support explanations, while all workflow decisions remain under
+user control.
+       This project also allowed me to strengthen my skills in React, Spring Boot, PostgreSQL,
+Keycloak, Kafka, FastAPI, UML modeling, testing, and Scrum-based organization. In conclu-
+sion, the project delivered a functional platform aligned with the needs identified at the begin-
+ning of the internship, while providing a solid foundation for future improvements such as UI
+refinement, broader local deployment preparation, and additional analytics features.
+
+
+
+
+                                               178
+                    Bibliographie et Nétographie
+
+
+ [1] Object Management Group – Unified Modeling Language specification and resources:
+     consulted on 27/05/2026, url: https://www.omg.org/spec/UML/
+
+ [2] Scrum Guides – The official Scrum Guide: consulted on 27/05/2026, url: https:
+     //scrumguides.org/scrum-guide.html
+
+ [3] Microsoft – Visual Studio Code documentation: consulted on 27/05/2026, url: https:
+     //code.visualstudio.com/docs
+
+ [4] JetBrains – IntelliJ IDEA documentation: consulted on 27/05/2026, url: https://www.
+     jetbrains.com/help/idea/
+
+ [5] Postman – Postman documentation: consulted on 27/05/2026, url: https://learning.
+     postman.com/docs/
+
+ [6] diagrams.net – diagrams.net documentation: consulted on 27/05/2026, url: https://
+     www.diagrams.net/doc/
+
+ [7] Git – Official Git documentation: consulted on 27/05/2026, url: https://git-scm.com/
+     doc
+
+ [8] GitHub Docs – GitHub documentation: consulted on 27/05/2026, url: https://docs.
+     github.com/
+
+ [9] Atlassian – Jira Software documentation: consulted on 27/05/2026, url: https://
+     support.atlassian.com/jira-software-cloud/
+
+[10] The LaTeX Project – LaTeX documentation and project information: consulted on
+     27/05/2026, url: https://www.latex-project.org/help/documentation/
+
+[11] React Documentation – Official documentation for building user interfaces with React:
+     consulted on 27/05/2026, url: https://react.dev/
+
+[12] Tailwind CSS Documentation – Official documentation for the utility-first CSS frame-
+     work: consulted on 27/05/2026, url: https://tailwindcss.com/docs
+
+[13] Spring Boot Documentation – Official documentation for creating Spring Boot ap-
+     plications and REST services: consulted on 27/05/2026, url: https://spring.io/
+     projects/spring-boot
+
+                                           179
+Chapter 5: Release 3 - Advanced Support and Intelligence
+
+
+
+[14] PostgreSQL Documentation – Official PostgreSQL database documentation: consulted on
+     27/05/2026, url: https://www.postgresql.org/docs/
+
+[15] Keycloak Documentation – Official documentation for identity and access management:
+     consulted on 27/05/2026, url: https://www.keycloak.org/documentation
+
+[16] Docker Docs – Official Docker documentation for containerizing applications: consulted
+     on 27/05/2026, url: https://docs.docker.com/
+
+[17] Apache Kafka Documentation – Official documentation for distributed event streaming:
+     consulted on 27/05/2026, url: https://kafka.apache.org/documentation/
+
+[18] FastAPI Documentation – Official documentation for building APIs with Python: con-
+     sulted on 27/05/2026, url: https://fastapi.tiangolo.com/
+
+[19] Apache POI – Official documentation for Java APIs used to read and write Microsoft
+     Office files: consulted on 27/05/2026, url: https://poi.apache.org/
+
+
+
+
+                                                    180
+

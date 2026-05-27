@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="Authenticated Password Change Frontend" id="NR0WWcw-0lN6r4eyh9Kw">
+    <mxGraphModel dx="952" dy="-444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-35" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="480" width="1120" x="1350" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-36" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1">
+          <mxGeometry height="480" width="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-37" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" value="Frontend React (MVVM)" vertex="1">
+          <mxGeometry height="23.04" width="341.769820971867" x="75.94884910485935" y="28.799999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-38" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontStyle=1;fontSize=11;align=center;verticalAlign=middle;" value="Backend Spring Boot" vertex="1">
+          <mxGeometry height="23.04" width="341.769820971867" x="612.3375959079284" y="28.799999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-39" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" style="endArrow=none;html=1;rounded=0;strokeColor=#666666;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="498.41432225063943" y="4.8" as="sourcePoint" />
+            <mxPoint x="498.41432225063943" y="475.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-40" parent="Zdb4YSTcvNTVYH6bvylf-35" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=10;" value="Employee" vertex="1">
+          <mxGeometry height="67.2" width="42.72122762148337" x="18.987212276214837" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-41" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;View&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveRequestsPage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="151.89769820971867" x="185.12531969309464" y="91.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-42" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;ViewModel&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveRequestsViewModel&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="151.89769820971867" x="185.12531969309464" y="172.79999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-43" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveFrontendService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="151.89769820971867" x="185.12531969309464" y="254.39999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-44" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;DTO&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveRequestFormDto&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="151.89769820971867" x="185.12531969309464" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-45" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;External&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;Keycloak&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="128.16368286445012" x="600.4705882352941" y="91.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-46" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;EmployeeLeaveController&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="161.3913043478261" x="583.8567774936062" y="211.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-47" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Controller&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;CalendarLeaveController&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="161.3913043478261" x="583.8567774936062" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-48" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;EmployeeLeaveService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="161.3913043478261" x="787.9693094629156" y="211.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-49" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Service&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveValidationService&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="161.3913043478261" x="787.9693094629156" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-50" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;DTO&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveRequestDto&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="99.68286445012788" x="980.2148337595908" y="211.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-51" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&#39;font-size:10px&#39;&gt;&amp;lt;&amp;lt;Entity&amp;gt;&amp;gt;&lt;/div&gt;&lt;b&gt;LeaveRequest&lt;/b&gt;" vertex="1">
+          <mxGeometry height="52.8" width="113.923273657289" x="973.0946291560101" y="315.84" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-52" parent="Zdb4YSTcvNTVYH6bvylf-35" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" value="&lt;div style=&quot;font-size:10px&quot;&gt;&amp;lt;&amp;lt;Entity&amp;gt;&amp;gt;&lt;/div&gt;EmployeeLeaveBalance" vertex="1">
+          <mxGeometry height="52.8" width="128.16368286445012" x="804.5831202046036" y="403.2" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-53" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-40" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-54" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-41" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-55" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-42" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-56" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-43" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-57" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-43" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-58" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-43" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-59" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-46" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-60" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-47" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-61" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-48" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-62" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-48" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-63" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-48" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-64" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-49" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-65" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-49" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" target="Zdb4YSTcvNTVYH6bvylf-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zdb4YSTcvNTVYH6bvylf-66" edge="1" parent="Zdb4YSTcvNTVYH6bvylf-35" source="Zdb4YSTcvNTVYH6bvylf-46" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;strokeColor=#666666;" target="Zdb4YSTcvNTVYH6bvylf-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

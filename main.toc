@@ -18,8 +18,8 @@
 \contentsline {section}{V. Application architecture}{11}{section*.22}%
 \contentsline {subsection}{V.1 Global architecture}{11}{section*.23}%
 \contentsline {subsection}{V.2 Frontend part: MVVM architecture with React}{11}{section*.24}%
-\contentsline {subsection}{V.3 Backend part: layered architecture with Spring Boot}{13}{section*.26}%
-\contentsline {subsection}{V.4 Why these architectures?}{14}{section*.28}%
+\contentsline {subsection}{V.3 Backend part: layered architecture with Spring Boot}{12}{section*.26}%
+\contentsline {subsection}{V.4 Why these architectures?}{13}{section*.28}%
 \contentsline {subsection}{V.5 Global architecture illustration}{14}{section*.29}%
 \contentsline {section}{Conclusion}{15}{section*.31}%
 \contentsline {chapter}{Chapter 2: Product Backlog Planning}{16}{section*.32}%
@@ -55,33 +55,52 @@
 \contentsline {section}{II. Sprint 1: Access and Account Management}{29}{section*.64}%
 \contentsline {subsection}{II.1 Sprint Goal}{29}{section*.65}%
 \contentsline {subsection}{II.2 Visual Sprint Journal}{30}{section*.66}%
-\contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.67}%
-\contentsline {subsection}{II.4 Sprint Implementation}{31}{section*.69}%
-\contentsline {subsection}{II.5 Sprint Review}{62}{section*.105}%
-\contentsline {subsection}{II.6 Sprint Retrospective}{62}{section*.106}%
-\contentsline {section}{III. Sprint 2: Leave Management}{63}{section*.108}%
-\contentsline {subsection}{III.1 Sprint Goal}{63}{section*.109}%
-\contentsline {subsection}{III.2 Visual Sprint Journal}{63}{section*.110}%
-\contentsline {subsection}{III.3 Sprint Backlog}{63}{section*.111}%
-\contentsline {subsection}{III.4 Sprint Implementation}{65}{section*.113}%
-\contentsline {subsection}{III.5 Sprint Review}{83}{section*.138}%
-\contentsline {subsection}{III.6 Sprint Retrospective}{84}{section*.139}%
-\contentsline {section}{Conclusion}{84}{section*.141}%
-\contentsline {chapter}{Chapter 4: Release 2 - Workflow Management}{85}{section*.142}%
-\contentsline {section}{Introduction}{85}{section*.143}%
-\contentsline {section}{I. Release Organization}{85}{section*.144}%
-\contentsline {section}{II. Sprint 3: Administrative Requests}{85}{section*.146}%
-\contentsline {subsection}{II.1 Sprint Goal}{85}{section*.147}%
-\contentsline {subsection}{II.2 Visual Sprint Journal}{86}{section*.148}%
-\contentsline {subsection}{II.3 Sprint Backlog}{86}{section*.149}%
-\contentsline {subsection}{II.4 Sprint Implementation}{87}{section*.151}%
-\contentsline {subsection}{II.5 Sprint Review}{118}{section*.188}%
-\contentsline {subsection}{II.6 Sprint Retrospective}{119}{section*.189}%
-\contentsline {section}{III. Sprint 4: HR Management and Calendar}{120}{section*.191}%
-\contentsline {subsection}{III.1 Sprint Goal}{120}{section*.192}%
-\contentsline {subsection}{III.2 Visual Sprint Journal}{120}{section*.193}%
-\contentsline {subsection}{III.3 Sprint Backlog}{120}{section*.194}%
-\contentsline {subsection}{III.4 Sprint Implementation}{122}{section*.196}%
-\contentsline {subsection}{III.5 Sprint Review}{142}{section*.228}%
-\contentsline {subsection}{III.6 Sprint Retrospective}{143}{section*.229}%
-\contentsline {section}{Conclusion}{144}{section*.231}%
+\contentsline {subsection}{II.3 Sprint Backlog}{30}{section*.69}%
+\contentsline {subsection}{II.4 Sprint Implementation}{32}{section*.71}%
+\contentsline {subsection}{II.5 Sprint Review}{64}{section*.107}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{64}{section*.108}%
+\contentsline {section}{III. Sprint 2: Leave Management}{65}{section*.110}%
+\contentsline {subsection}{III.1 Sprint Goal}{65}{section*.111}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{65}{section*.112}%
+\contentsline {subsection}{III.3 Sprint Backlog}{65}{section*.115}%
+\contentsline {subsection}{III.4 Sprint Implementation}{67}{section*.117}%
+\contentsline {subsection}{III.5 Sprint Review}{86}{section*.142}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{87}{section*.143}%
+\contentsline {section}{Conclusion}{87}{section*.145}%
+\contentsline {chapter}{Chapter 4: Release 2 - Workflow Management}{88}{section*.146}%
+\contentsline {section}{Introduction}{88}{section*.147}%
+\contentsline {section}{I. Release Organization}{88}{section*.148}%
+\contentsline {section}{II. Sprint 3: Administrative Requests}{88}{section*.150}%
+\contentsline {subsection}{II.1 Sprint Goal}{88}{section*.151}%
+\contentsline {subsection}{II.2 Visual Sprint Journal}{89}{section*.152}%
+\contentsline {subsection}{II.3 Sprint Backlog}{89}{section*.155}%
+\contentsline {subsection}{II.4 Sprint Implementation}{91}{section*.157}%
+\contentsline {subsection}{II.5 Sprint Review}{124}{section*.194}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{125}{section*.195}%
+\contentsline {section}{III. Sprint 4: HR Management and Calendar}{126}{section*.197}%
+\contentsline {subsection}{III.1 Sprint Goal}{126}{section*.198}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{126}{section*.199}%
+\contentsline {subsection}{III.3 Sprint Backlog}{126}{section*.202}%
+\contentsline {subsection}{III.4 Sprint Implementation}{128}{section*.204}%
+\contentsline {subsection}{III.5 Sprint Review}{148}{section*.236}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{149}{section*.237}%
+\contentsline {section}{Conclusion}{150}{section*.239}%
+\contentsline {chapter}{Chapter 5: Release 3 - Advanced Support and Intelligence}{151}{section*.240}%
+\contentsline {section}{Introduction}{151}{section*.241}%
+\contentsline {section}{I. Release Organization}{151}{section*.242}%
+\contentsline {section}{II. Sprint 5: Projects, Tasks and Reports}{151}{section*.243}%
+\contentsline {subsection}{II.1 Sprint Goal}{151}{section*.244}%
+\contentsline {subsection}{II.2 Visual Sprint Journal}{151}{section*.245}%
+\contentsline {subsection}{II.3 Sprint Backlog}{152}{section*.248}%
+\contentsline {subsection}{II.4 Sprint Implementation}{153}{section*.251}%
+\contentsline {subsection}{II.5 Sprint Review}{167}{section*.272}%
+\contentsline {subsection}{II.6 Sprint Retrospective}{167}{section*.273}%
+\contentsline {section}{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}{167}{section*.275}%
+\contentsline {subsection}{III.1 Sprint Goal}{167}{section*.276}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{167}{section*.277}%
+\contentsline {subsection}{III.3 Sprint Backlog}{168}{section*.278}%
+\contentsline {subsection}{III.4 Requirements Analysis}{169}{section*.281}%
+\contentsline {subsection}{III.5 Sprint Review}{177}{section*.295}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{177}{section*.296}%
+\contentsline {chapter}{General Conclusion}{178}{section*.298}%
+\contentsline {chapter}{Bibliographie et Nétographie}{179}{section*.299}%
