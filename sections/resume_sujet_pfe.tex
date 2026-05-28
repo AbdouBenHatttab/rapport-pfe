@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[a4paper,top=2.0cm,bottom=2.0cm,left=2.4cm,right=2.4cm]{geometry}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{ragged2e}
+
+\setdefaultlanguage{french}
+\setotherlanguages{english,arabic}
+
+\setmainfont{Times New Roman}
+\newfontfamily\arabicfont[Script=Arabic,Scale=1.05]{Tahoma}
+\newcommand{\textLR}[1]{\textenglish{#1}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\sloppy
+
+\begin{document}
+\thispagestyle{empty}
+
+\noindent\rule{\linewidth}{1.1pt}
+
+\vspace{0.18cm}
+
+\begin{center}
+{\fontsize{16}{19}\selectfont\textbf{Résumé du sujet PFE}}
+\end{center}
+
+\vspace{0.18cm}
+
+{\fontsize{10.7}{12.7}\selectfont
+
+\textbf{Résumé}
+
+\justifying
+Ce rapport présente un projet de fin d’études réalisé au sein d’ArabSoft. Il consiste en la conception et le développement d’une plateforme interne destinée à la gestion des demandes, des projets et des tâches. La solution centralise les workflows administratifs, améliore la traçabilité des opérations et fournit un espace numérique adapté aux employés, aux chefs d’équipe et aux responsables RH. Elle couvre la gestion des comptes, des congés, des documents, des prêts, des autorisations, des équipes, des projets, des tâches, des rapports et des notifications. La plateforme repose sur React, Spring Boot, PostgreSQL, Keycloak, Kafka et un service FastAPI dédié à l’assistance intelligente. Le projet a été modélisé avec UML et organisé selon Scrum.
+
+\textbf{Mots clés :} Plateforme interne, gestion des demandes, gestion de projets, gestion des tâches, React, Spring Boot, PostgreSQL, Keycloak, Kafka, FastAPI, assistant intelligent, UML, Scrum.
+
+\vspace{0.12cm}
+
+\textbf{Abstract}
+
+\justifying
+This report presents an end-of-studies project carried out at ArabSoft. It focuses on the design and development of an internal platform for managing requests, projects, and tasks. The solution centralizes administrative workflows, improves operational traceability, and provides a digital workspace adapted to employees, team leaders, and HR managers. It supports account management, leave requests, document requests, loans, authorizations, teams, projects, tasks, reports, and notifications. The platform is built with React, Spring Boot, PostgreSQL, Keycloak, Kafka, and a FastAPI service for intelligent assistance. The project was modeled using UML and organized according to Scrum.
+
+\textbf{Keywords:} Internal platform, request management, project management, task management, React, Spring Boot, PostgreSQL, Keycloak, Kafka, FastAPI, AI assistant, UML, Scrum.
+
+\vspace{0.12cm}
+
+\begin{Arabic}
+\begin{flushright}
+\textbf{الملخص}
+
+يقدم هذا التقرير مشروع ختم الدراسة المنجز داخل شركة \textLR{ArabSoft}. يتمثل المشروع في تصميم وتطوير منصة داخلية لإدارة المطالب والمشاريع والمهام. تهدف هذه المنصة إلى مركزية سير العمل الإداري، تحسين تتبع العمليات، وتوفير فضاء رقمي مناسب للموظفين ورؤساء الفرق ومسؤولي الموارد البشرية. تشمل المنصة إدارة الحسابات، مطالب العطل، الوثائق، القروض، التراخيص، الفرق، المشاريع، المهام، التقارير، والإشعارات. تعتمد المنظومة على واجهة \textLR{React}، وخادم خلفي \textLR{Spring Boot}، وقاعدة بيانات \textLR{PostgreSQL}، ونظام \textLR{Keycloak} للمصادقة، و \textLR{Kafka} للتبادلات غير المتزامنة، وخدمة \textLR{FastAPI} للمساعدة الذكية. كما تم اعتماد \textLR{UML} في التصميم ومنهجية \textLR{Scrum} في تنظيم مراحل الإنجاز.
+
+\textbf{الكلمات المفتاحية :} منصة داخلية، إدارة المطالب، إدارة المشاريع، إدارة المهام، \textLR{React}، \textLR{Spring Boot}، \textLR{PostgreSQL}، \textLR{Keycloak}، \textLR{Kafka}، \textLR{FastAPI}، مساعد ذكي، \textLR{UML}، \textLR{Scrum}.
+\end{flushright}
+\end{Arabic}
+
+}
+
+\end{document}
