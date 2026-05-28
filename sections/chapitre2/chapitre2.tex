@@ -402,17 +402,6 @@
 \renewcommand{\arraystretch}{1.18}
 \setlength{\tabcolsep}{3.2pt}
 \setlength{\LTleft}{-0.6cm}
-
-\newcommand{\BacklogSprintPageGuard}{\Needspace{0.80\textheight}}
-\newcommand{\BacklogNextSprintTable}{%
-  \par
-  \BacklogSprintPageGuard
-  \par
-}
-\newcommand{\BacklogContinuedCaption}{\multicolumn{5}{c}{Table \ref{tab:product_backlog}: Product Backlog (continued)}}
-
-% ---------- Sprint 1 ----------
-\BacklogSprintPageGuard
 \begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
 \caption{Product Backlog}\label{tab:product_backlog}\\
 \hline
@@ -425,6 +414,7 @@
 \textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
 \hline
 \endhead
+\hline
 \endfoot
 \endlastfoot
 
@@ -449,25 +439,6 @@
 \cline{2-5}
 & TS 02 & Role notification & Send notification and email after role assignment. & Low \\
 \hline
-\end{longtable}
-
-% ---------- Sprint 2 ----------
-\BacklogNextSprintTable
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
-\BacklogContinuedCaption\\
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endhead
-\endfoot
-\endlastfoot
-
 \multirow{11}{=}{\centering\textbf{Sprint 2\\[4pt] Leave\\Management}}
 & US 09 & Leave submission & As an employee, I want to submit a leave request so that I can ask for time off. & Medium \\
 \cline{2-5}
@@ -491,25 +462,6 @@
 \cline{2-5}
 & TS 04 & Leave reports & Generate leave approval reports. & Medium \\
 \hline
-\end{longtable}
-
-% ---------- Sprint 3 ----------
-\BacklogNextSprintTable
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
-\BacklogContinuedCaption\\
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endhead
-\endfoot
-\endlastfoot
-
 \multirow{11}{=}{\centering\textbf{Sprint 3\\[4pt] Administrative\\Requests}}
 & US 18 & Document request & As an employee, I want to submit a document request so that I can obtain official HR documents. & Medium \\
 \cline{2-5}
@@ -533,25 +485,6 @@
 \cline{2-5}
 & TS 06 & Final files & Manage final request files and downloads. & Medium \\
 \hline
-\end{longtable}
-
-% ---------- Sprint 4 ----------
-\BacklogNextSprintTable
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
-\BacklogContinuedCaption\\
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endhead
-\endfoot
-\endlastfoot
-
 \multirow{11}{=}{\centering\textbf{Sprint 4\\[4pt] HR Management\\and Calendar}}
 & US 27 & Employee records & As an HR manager, I want to manage employee records. & Medium \\
 \cline{2-5}
@@ -575,28 +508,10 @@
 \cline{2-5}
 & TS 08 & HR approval views & Improve HR request and approval views. & Medium \\
 \hline
-\end{longtable}
 
-% ---------- Sprint 5 ----------
-\BacklogNextSprintTable
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
-\BacklogContinuedCaption\\
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endhead
-\endfoot
-\endlastfoot
-
-\multirow{9}{=}{\centering\textbf{Sprint 5\\[4pt] Projects, Tasks,\\Reports}}
 & US 36 & Project management & As a team leader, I want to create and manage projects. & Medium \\
 \cline{2-5}
+\multicolumn{1}{|>{\centering\bfseries}m{2.55cm}|}{\centering\textbf{Sprint 5\\[4pt] Projects, Tasks,\\Reports}}
 & US 37 & Task assignment & As a team leader, I want to create and assign tasks to team members. & Medium \\
 \cline{2-5}
 & US 38 & Task status update & As an assignee, I want to update task status so that progress remains visible. & Low \\
@@ -605,33 +520,14 @@
 \cline{2-5}
 & US 40 & Availability check & As a team leader, I want to check availability before assigning work. & High \\
 \cline{2-5}
-  & US 41 & Excel report export & As an HR manager, I want to export filtered reports to Excel so that reporting data can be reviewed and archived outside the platform. & Medium \\
-  \cline{2-5}
-  & US 42 & Reports and statistics & As an HR manager, I want to monitor report indicators and statistics so that I can follow operational activity. & Medium \\
-  \cline{2-5}
-  & TS 09 & Report data normalization & Normalize project, task, user, team, and request data for consistent report filtering and aggregation. & High \\
-  \cline{2-5}
-  & TS 10 & Excel export backend & Implement the backend report export service and generate structured Excel workbooks. & High \\
-  \hline
-  \end{longtable}
-
-% ---------- Sprint 6 ----------
-\BacklogNextSprintTable
-\begin{longtable}{|>{\centering\bfseries}m{2.55cm}|>{\centering\bfseries}m{0.9cm}|>{\centering\bfseries}m{3.05cm}|m{6.75cm}|>{\centering\arraybackslash}m{1.45cm}|}
-\BacklogContinuedCaption\\
+& US 41 & Excel report export & As an HR manager, I want to export filtered reports to Excel so that reporting data can be reviewed and archived outside the platform. & Medium \\
+\cline{2-5}
+& US 42 & Reports and statistics & As an HR manager, I want to monitor report indicators and statistics so that I can follow operational activity. & Medium \\
+\cline{2-5}
+& TS 09 & Report data normalization & Normalize project, task, user, team, and request data for consistent report filtering and aggregation. & High \\
+\cline{2-5}
+& TS 10 & Excel export backend & Implement the backend report export service and generate structured Excel workbooks. & High \\
 \hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{blue!20}
-\textbf{Sprint} & \textbf{Num} & \textbf{User Story / Task} & \centering\textbf{Description} & {\scriptsize\textbf{Complexity}} \\
-\hline
-\endhead
-\endfoot
-\endlastfoot
-
 \multirow{11}{=}{\centering\textbf{Sprint 6\\[4pt] AI, Deployment\\and Stabilization}}
 & US 43 & Platform questions & As a user, I want to ask platform questions using the assistant. & Medium \\
 \cline{2-5}
@@ -659,7 +555,6 @@
 
 \normalsize
 \setlength{\tabcolsep}{6pt}
-\setcounter{table}{1}
 
 \vspace{6pt}
   % ============================================================
