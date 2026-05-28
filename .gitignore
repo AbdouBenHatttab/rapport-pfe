@@ -2,3 +2,21 @@
 # Local AI assistant skills/tools
 .claude/
 .codex/
+# LaTeX build files
+*.aux
+*.log
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Root accidental build output
+
+
+# Temporary PDF page inspection renders
+/reult/ch_*.png
+/reult/ch_tail_*.png
+/reult/ch_start_check.png

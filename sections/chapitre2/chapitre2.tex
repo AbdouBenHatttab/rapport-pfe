@@ -677,89 +677,10 @@
   }
 
   \begin{figure}[H]
-  \centering
-  \begin{tikzpicture}[
-    x=1cm,
-    y=1cm,
-    font=\fontsize{7.4}{8.6}\selectfont,
-    planbox/.style={
-      draw=black!70,
-      fill=cyan!18,
-      line width=0.32pt,
-      align=center,
-      inner sep=2pt
-    },
-    releasebox/.style={
-      planbox,
-      minimum width=2.62cm,
-      minimum height=0.78cm,
-      text width=2.35cm,
-      font=\fontsize{7.4}{8.5}\selectfont\bfseries
-    },
-  sprintbox/.style={
-    planbox,
-    minimum width=3.00cm,
-    minimum height=1.05cm,
-    text width=2.72cm,
-    font=\fontsize{5.85}{6.85}\selectfont\bfseries
-    },
-    tag/.style={
-      draw=black!70,
-      fill=white,
-      line width=0.28pt,
-      minimum width=1.02cm,
-      minimum height=0.24cm,
-      inner sep=1pt,
-      align=center,
-      font=\fontsize{6.25}{7.1}\selectfont\bfseries
-    },
-    connector/.style={
-      draw=orange!62!yellow!82!black,
-      line width=0.38pt,
-      line cap=butt
-    }
-  ]
-
-  \draw[line width=0.38pt, draw=black] (0.00,0.05) rectangle (14.95,-4.08);
-
-  \node[releasebox] (r1) at (1.30,-0.55) {Core\\Foundation};
-  \node[releasebox] (r2) at (6.35,-0.50) {Workflow\\Management};
-  \node[releasebox] (r3) at (11.55,-0.55) {Advanced Support\\and Intelligence};
-
-  \node[tag] (rt1) at (1.75,-0.91) {Release 1};
-  \node[tag] (rt2) at (6.80,-0.86) {Release 2};
-  \node[tag] (rt3) at (12.00,-0.91) {Release 3};
-
-  \node[sprintbox] (s1) at (3.15,-2.08) {Access and Account\\Management};
-  \node[sprintbox] (s2) at (4.20,-3.18) {Leave\\Management};
-
-  \node[sprintbox] (s3) at (8.30,-1.78) {Administrative\\Requests};
-  \node[sprintbox] (s4) at (8.20,-3.22) {HR Management\\and Calendar};
-
-  \node[sprintbox] (s5) at (13.40,-1.78) {Projects, Tasks\\and Reports};
-  \node[sprintbox] (s6) at (13.45,-3.22) {AI, Deployment\\and Stabilization};
-
-  \node[tag] at (3.75,-2.48) {Sprint 1};
-  \node[tag] at (4.80,-3.58) {Sprint 2};
-  \node[tag] at (8.90,-2.18) {Sprint 3};
-  \node[tag] at (8.80,-3.62) {Sprint 4};
-  \node[tag] at (14.00,-2.18) {Sprint 5};
-  \node[tag] at (14.05,-3.62) {Sprint 6};
-
-  \draw[connector] (1.30,-1.20) -- (1.30,-3.18);
-  \draw[connector] (1.30,-2.08) -- (s1.west);
-  \draw[connector] (1.30,-3.18) -- (s2.west);
-
-  \draw[connector] (6.35,-1.18) -- (6.35,-3.22);
-  \draw[connector] (6.35,-1.78) -- (s3.west);
-  \draw[connector] (6.35,-3.22) -- (s4.west);
-
-  \draw[connector] (11.55,-1.20) -- (11.55,-3.22);
-  \draw[connector] (11.55,-1.78) -- (s5.west);
-  \draw[connector] (11.55,-3.22) -- (s6.west);
-
-  \end{tikzpicture}
-  \caption{Organization of Releases}
+    \centering
+    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre2/img/organization_of_releases.png}
+    \caption{Organization of Releases}
+    \label{organization_of_releases}
   \end{figure}
 
   \vspace{6pt}

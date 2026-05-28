@@ -1,8 +1,13 @@
-\newpage
-\thispagestyle{plain}
+\clearpage
+\pagestyle{empty}
+\thispagestyle{empty}
+\markboth{}{}
+\markright{}
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
 \phantomsection
 \addcontentsline{toc}{chapter}{Bibliographie et Nétographie}
-\markboth{Bibliographie et Nétographie}{Bibliographie et Nétographie}
 \renewcommand{\bibname}{}
 
 \begin{center}
@@ -15,7 +20,6 @@
 \patchcmd{\thebibliography}{\chapter*{\bibname}}{}{}{}
 
 \begin{thebibliography}{99}
-\markboth{Bibliographie et Nétographie}{Bibliographie et Nétographie}
 
 \bibitem{uml_docs}
 Object Management Group -- Unified Modeling Language specification and resources: consulted on 27/05/2026, url:

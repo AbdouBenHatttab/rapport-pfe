@@ -19,6 +19,12 @@
 \usepackage[english]{babel}     % English typography
 \usepackage{pdfpages}           % include the final standalone résumé page
 \usepackage[hidelinks]{hyperref} % clickable TOC links without colored borders
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
 \usepackage[table]{xcolor}
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -191,7 +197,8 @@
 \input{sections/chapitre5/chapitre5}
 \input{sections/bibliographie/bibliographie}
 \clearpage
-\includepdf[pages=1,pagecommand={\thispagestyle{plain}}]{sections/resume_sujet_pfe.pdf}
+\pagestyle{empty}
+\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{sections/resume_sujet_pfe.pdf}
 % Uncomment for next chapters:
 % \include{chapitre2}
 % \include{chapitre3}
