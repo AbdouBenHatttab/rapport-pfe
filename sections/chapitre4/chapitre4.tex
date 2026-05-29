@@ -136,7 +136,8 @@
 \begin{table}[H]
 \centering
 \small
-\renewcommand{\arraystretch}{1.36}
+\renewcommand{\arraystretch}{1.85}
+\setlength{\extrarowheight}{4pt}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.5cm}|>{\centering\bfseries\arraybackslash}m{3.6cm}|>{\RaggedRight\arraybackslash}m{7.4cm}|>{\centering\arraybackslash}m{1.6cm}|}
 \hline
@@ -282,18 +283,23 @@
 {sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png}
 {System Sequence Diagram -- Process Document Request}
 {ssd_process_document_request}
-{0.92}
+{0.88}
 
-\Needspace{6.2cm}
 \SprintThreeScenarioHeading{System Sequence Diagram -- Submit Loan Request}
 
 \noindent This diagram shows how a user, either an employee or a team leader using employee-side request actions, submits a loan request with the required request data.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png}
-{System Sequence Diagram -- Submit Loan Request}
-{ssd_submit_loan_request}
-{0.92}
+\enlargethispage{6cm}
+\begingroup
+\setlength{\intextsep}{0pt}
+\setlength{\abovecaptionskip}{2pt}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png}
+  \caption{System Sequence Diagram -- Submit Loan Request}
+  \label{fig:ssd_submit_loan_request}
+\end{figure}
+\endgroup
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{System Sequence Diagram -- Schedule Loan Meeting}

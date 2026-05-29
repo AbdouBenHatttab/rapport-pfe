@@ -86,6 +86,23 @@
   \end{figure}
 }
 
+\newcommand{\SprintOneConceptionFigureTall}[3]{%
+  \begin{figure}[H]
+    \centering
+    \if\relax\detokenize{#1}\relax
+      \ChapterThreeMissingFigurePlaceholder{#2}{No image path reserved}
+    \else
+      \IfFileExists{#1}{%
+        \includegraphics[width=1.0\textwidth,height=0.98\textheight,keepaspectratio]{#1}%
+      }{%
+        \ChapterThreeMissingFigurePlaceholder{#2}{#1}%
+      }%
+    \fi
+    \caption{#2}
+    \label{fig:#3}
+  \end{figure}
+}
+
 \newcommand{\SprintOneImplementationHeading}[1]{%
   \vspace{0.45cm}
   \noindent{\fontsize{13}{16}\selectfont\textbf{#1}}\par
@@ -534,80 +551,104 @@ The objective is to obtain an operational base for the next functional developme
 \indent These diagrams detail the internal frontend and backend interactions behind the main Sprint 1 scenarios.
 }
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- User Registration Frontend}
-{sprint1-registration-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.76\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- User Registration Frontend}
+  \label{fig:sprint1-registration-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png}
-{Conception Sequence Diagram -- User Registration Backend}
-{sprint1-registration-backend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.76\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/registration_backend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- User Registration Backend}
+  \label{fig:sprint1-registration-backend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- Secure Login Frontend}
-{sprint1-secure-login-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.78\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Secure Login Frontend}
+  \label{fig:sprint1-secure-login-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
+\SprintOneConceptionFigureTall
 {sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/secure_login_backend_conception_sequence.png}
 {Conception Sequence Diagram -- Secure Login Backend}
 {sprint1-secure-login-backend-conception-sequence}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- Logout Frontend}
-{sprint1-logout-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.78\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Logout Frontend}
+  \label{fig:sprint1-logout-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
+\SprintOneConceptionFigureTall
 {sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/logout_backend_conception_sequence.png}
 {Conception Sequence Diagram -- Logout Backend}
 {sprint1-logout-backend-conception-sequence}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- Password Reset Frontend}
-{sprint1-password-reset-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Password Reset Frontend}
+  \label{fig:sprint1-password-reset-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png}
-{Conception Sequence Diagram -- Password Reset Backend}
-{sprint1-password-reset-backend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/password_reset_backend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Password Reset Backend}
+  \label{fig:sprint1-password-reset-backend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- User Information Update Frontend}
-{sprint1-profile-update-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.78\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- User Information Update Frontend}
+  \label{fig:sprint1-profile-update-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png}
-{Conception Sequence Diagram -- User Information Update Backend}
-{sprint1-profile-update-backend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/profile_update_backend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- User Information Update Backend}
+  \label{fig:sprint1-profile-update-backend-conception-sequence}
+\end{figure}
 
 \SprintOneConceptionFigure
 {sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_frontend_conception_sequence.png}
 {Conception Sequence Diagram -- Authenticated Password Change Frontend}
 {sprint1-authenticated-password-change-frontend-conception-sequence}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png}
-{Conception Sequence Diagram -- Authenticated Password Change Backend}
-{sprint1-authenticated-password-change-backend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.84\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/authenticated_password_change_backend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Authenticated Password Change Backend}
+  \label{fig:sprint1-authenticated-password-change-backend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- HR User Account Setup Frontend}
-{sprint1-hr-user-account-setup-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.82\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- HR User Account Setup Frontend}
+  \label{fig:sprint1-hr-user-account-setup-frontend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png}
-{Conception Sequence Diagram -- HR User Account Setup Backend}
-{sprint1-hr-user-account-setup-backend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.82\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/hr_user_account_setup_backend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- HR User Account Setup Backend}
+  \label{fig:sprint1-hr-user-account-setup-backend-conception-sequence}
+\end{figure}
 
-\SprintOneConceptionFigure
-{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png}
-{Conception Sequence Diagram -- Account Activation and Deactivation Frontend}
-{sprint1-account-activation-deactivation-frontend-conception-sequence}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.82\textheight]{sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_frontend_conception_sequence.png}
+  \caption{Conception Sequence Diagram -- Account Activation and Deactivation Frontend}
+  \label{fig:sprint1-account-activation-deactivation-frontend-conception-sequence}
+\end{figure}
 
 \SprintOneConceptionFigure
 {sections/chapitre3/img/sprint1_access_account_management/08_conception_sequence_diagrams/account_activation_deactivation_backend_conception_sequence.png}
@@ -688,31 +729,28 @@ The objective is to obtain an operational base for the next functional developme
 
 }
 
+
 \ReportSubsection{II.6 Sprint Retrospective}{\hspace{0.5cm} 6. Sprint Retrospective}
 
 \begin{table}[H]
 \centering
-\renewcommand{\arraystretch}{1.5}
-\setlength{\tabcolsep}{6pt}
-\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{5.2cm}|>{\centering\bfseries\arraybackslash}m{5.2cm}|}
+\renewcommand{\arraystretch}{1.7}
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{|>{\RaggedRight\arraybackslash}m{6.2cm}|>{\RaggedRight\arraybackslash}m{6.2cm}|}
 \hline
 \rowcolor{blue!20}
-\textbf{What went well} & \textbf{What needs improvement} \\
+\centering\textbf{What went well} & \centering\textbf{What needs improvement} \tabularnewline
 \hline
-The sprint delivered a stable access-management base covering registration, authentication, account setup, and role-based access.
+All planned Sprint 1 tasks were completed and delivered.
 &
-Keycloak, local user records, roles, and account status had to remain carefully synchronized.
-\\
-\hline
-The main access scenarios were clearly modeled through use-case, sequence, state, and class diagrams.
-&
-Future modules should keep frontend feedback and backend validation aligned from the beginning.
+Future modules should keep frontend feedback, backend validation, Keycloak roles, and local user records synchronized from the beginning.
 \\
 \hline
 \end{tabular}
 \caption{Sprint Retrospective -- Sprint 1}
 \label{tab:sprint1_retrospective}
 \end{table}
+
 
 % ============================================================
 %  III. SPRINT 2: LEAVE MANAGEMENT
@@ -763,8 +801,10 @@ The objective is to deliver the first complete administrative workflow involving
 
 \begin{table}[H]
 \centering
+\begingroup
 \small
-\renewcommand{\arraystretch}{1.36}
+\renewcommand{\arraystretch}{1.62}
+\setlength{\extrarowheight}{2pt}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.5cm}|>{\centering\bfseries\arraybackslash}m{3.6cm}|>{\RaggedRight\arraybackslash}m{7.4cm}|>{\centering\arraybackslash}m{1.6cm}|}
 \hline
@@ -819,6 +859,7 @@ The objective is to deliver the first complete administrative workflow involving
 & & Enable approved leave PDF download & \\
 \hline
 \end{tabular}
+\endgroup
 \caption{Sprint Backlog -- Sprint 2}
 \label{tab:sprint2_leave_management_backlog}
 \end{table}
@@ -832,25 +873,9 @@ The objective is to deliver the first complete administrative workflow involving
 \setlength{\parindent}{1.2cm}
 \setlength{\parskip}{6pt}
 
-\indent Sprint 2 covers the leave-management workflow, including employee leave request management, team leader review, HR final decision after team leader approval, leave calendar consultation, filtering, workflow notifications, and approved leave PDF download. The following use-case diagram first presents the global scope of the sprint.
+\indent Sprint 2 covers the leave-management workflow, including employee leave request management, team leader review, HR final decision after team leader approval, leave calendar consultation, filtering, workflow notifications, and approved leave PDF download. The following use-case diagram presents the global scope of the sprint.
 
 }
-
-\Needspace{7.2cm}
-\SprintTwoScenarioHeading{Use Case Diagrams}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent These diagrams summarize the main user-system exchanges for Sprint 2 leave-management scenarios. The section also introduces focused use-case views before the employee request-management scenarios and the approval workflow scenarios.
-
-}
-
-\Needspace{7.2cm}
-\SprintTwoScenarioHeading{Use Case Diagram -- Sprint 2 Leave Management}
-
-\noindent This diagram presents the general leave-management use cases of Sprint 2. It shows the main actions performed by the employee, the team leader, and the HR manager within the leave workflow.\par
 
 \ChapterThreeFigure
 {sections/chapitre3/img/sprint2_leave_management/02_use_case_diagrams/sprint2_leave_management_use_case.png}
@@ -1073,53 +1098,77 @@ The objective is to deliver the first complete administrative workflow involving
 
 }
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png}
-{Conception Sequence Diagram -- Submit Leave Request Frontend}
-{sprint2_csd_submit_leave_request_frontend}
-{0.95}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_frontend.png}
+  \caption{Conception Sequence Diagram -- Submit Leave Request Frontend}
+  \label{fig:sprint2_csd_submit_leave_request_frontend}
+\end{figure}
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png}
-{Conception Sequence Diagram -- Submit Leave Request Backend}
-{sprint2_csd_submit_leave_request_backend}
-{0.95}
+\clearpage
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png}
-{Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}
-{sprint2_csd_edit_cancel_pending_leave_frontend}
-{0.95}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_submit_leave_request_backend.png}
+  \caption{Conception Sequence Diagram -- Submit Leave Request Backend}
+  \label{fig:sprint2_csd_submit_leave_request_backend}
+\end{figure}
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png}
-{Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}
-{sprint2_csd_edit_cancel_pending_leave_backend}
-{0.95}
+\clearpage
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png}
-{Conception Sequence Diagram -- Team Leader Review Frontend}
-{sprint2_csd_team_leader_review_frontend}
-{0.95}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_frontend.png}
+  \caption{Conception Sequence Diagram -- Edit or Cancel Pending Leave Frontend}
+  \label{fig:sprint2_csd_edit_cancel_pending_leave_frontend}
+\end{figure}
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png}
-{Conception Sequence Diagram -- Team Leader Review Backend}
-{sprint2_csd_team_leader_review_backend}
-{0.98}
+\clearpage
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png}
-{Conception Sequence Diagram -- HR Final Review Frontend}
-{sprint2_csd_hr_final_review_frontend}
-{0.95}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_edit_cancel_pending_leave_backend.png}
+  \caption{Conception Sequence Diagram -- Edit or Cancel Pending Leave Backend}
+  \label{fig:sprint2_csd_edit_cancel_pending_leave_backend}
+\end{figure}
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png}
-{Conception Sequence Diagram -- HR Final Review Backend}
-{sprint2_csd_hr_final_review_backend}
-{0.98}
+\clearpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_frontend.png}
+  \caption{Conception Sequence Diagram -- Team Leader Review Frontend}
+  \label{fig:sprint2_csd_team_leader_review_frontend}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_team_leader_review_backend.png}
+  \caption{Conception Sequence Diagram -- Team Leader Review Backend}
+  \label{fig:sprint2_csd_team_leader_review_backend}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_frontend.png}
+  \caption{Conception Sequence Diagram -- HR Final Review Frontend}
+  \label{fig:sprint2_csd_hr_final_review_frontend}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.0\textwidth,height=0.80\textheight]{sections/chapitre3/img/sprint2_leave_management/08_conception_sequence_diagrams/csd_hr_final_review_backend.png}
+  \caption{Conception Sequence Diagram -- HR Final Review Backend}
+  \label{fig:sprint2_csd_hr_final_review_backend}
+\end{figure}
+
+\clearpage
 
 \SprintTwoImplementationHeading{Realization}
 
@@ -1185,32 +1234,25 @@ The objective is to deliver the first complete administrative workflow involving
 
 \begin{table}[H]
 \centering
-\renewcommand{\arraystretch}{1.5}
-\setlength{\tabcolsep}{6pt}
-\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{5.2cm}|>{\centering\bfseries\arraybackslash}m{5.2cm}|}
+\renewcommand{\arraystretch}{1.7}
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{|>{\RaggedRight\arraybackslash}m{6.2cm}|>{\RaggedRight\arraybackslash}m{6.2cm}|}
 \hline
 \rowcolor{blue!20}
-\textbf{What went well} & \textbf{What needs improvement} \\
+\centering\textbf{What went well} & \centering\textbf{What needs improvement} \tabularnewline
 \hline
-The sprint delivered a complete leave workflow from employee submission to HR final decision.
+The leave workflow became fully operational, from employee submission to team leader review and HR final decision, with balance control, status tracking, and approved leave PDF generation.
 &
-Working-day, holiday, balance, and overlap rules required careful coordination between frontend feedback and backend validation.
-\\
-\hline
-The two-level approval process improved traceability through clear statuses, decision reasons, notifications, and history records.
-&
-Calendar readability can still be improved when many leave events are displayed at the same time.
-\\
-\hline
-The leave balance, history, filters, and role-aware calendars improved visibility for employees, team leaders, and HR managers.
-&
-Future reporting can extend the approved leave PDF into broader analytics and export features.
+The main improvement point is to simplify complex leave feedback when several rules apply at the same time, especially working-day validation, public holidays, overlaps, and calendar visibility.
 \\
 \hline
 \end{tabular}
 \caption{Sprint Retrospective -- Sprint 2}
 \label{tab:sprint2_retrospective}
 \end{table}
+
+
+
 
 % ============================================================
 %  CONCLUSION
