@@ -507,87 +507,99 @@ Future reporting should be expanded carefully: project and task analytics should
 \label{tab:sprint5_retrospective}
 \end{table}
 
-  % ============================================================
-  %  III. SPRINT 6: AI ASSISTANT, LOCAL DEPLOYMENT, AND STABILIZATION
-  % ============================================================
-  \ReportSection{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}
+\clearpage
 
-  \ReportSubsection{III.1 Sprint Goal}{\hspace{0.5cm} 1. Sprint Goal}
+% ============================================================
+%  III. SPRINT 6: AI ASSISTANT, LOCAL DEPLOYMENT, AND STABILIZATION
+% ============================================================
+\ReportSection{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}
 
-  {\fontsize{12}{18}\selectfont
-  \setlength{\parindent}{1.2cm}
-  \setlength{\parskip}{6pt}
+\ReportSubsection{III.1 Sprint Goal}{\hspace{0.5cm} 1. Sprint Goal}
 
-  \indent This sprint focuses on the ArabSoft AI assistant, local deployment packaging, and final stabilization. The assistant is guidance-only, Spring Boot remains the secure gateway, and FastAPI receives only safe context prepared by the backend. \cite{fastapi_docs} Gemini is optional and the deployment scope remains limited to local Docker Compose.
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
 
-  }
+\indent This sprint focuses on the ArabSoft AI assistant, local deployment packaging, and final stabilization. The assistant is guidance-only, Spring Boot remains the secure gateway, and FastAPI receives only safe context prepared by the backend. \cite{fastapi_docs} Gemini is optional and the deployment scope remains limited to local Docker Compose.
 
-  \ReportSubsection{III.2 Visual Sprint Journal}{\hspace{0.5cm} 2. Visual Sprint Journal}
+}
 
-  {\fontsize{12}{18}\selectfont
-  \setlength{\parindent}{1.2cm}
-  \setlength{\parskip}{6pt}
+\ReportSubsection{III.2 Visual Sprint Journal}{\hspace{0.5cm} 2. Visual Sprint Journal}
 
-  \indent The Sprint 6 visual journal reflects the validated assistant and deployment work completed during the sprint.
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
 
-  }
+\indent The visual sprint journal below presents the selected user stories of Sprint 6 and their completion status in Jira.
 
-  \ReportSubsection{III.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
+}
 
-  {\fontsize{12}{18}\selectfont
-  \setlength{\parindent}{1.2cm}
-  \setlength{\parskip}{6pt}
-
-  \indent The table below summarizes the Sprint 6 work packages prepared from the validated implementation scope.
-
-  }
-
-  \begin{table}[H]
+\vspace{-4pt}
+\begin{figure}[H]
   \centering
-  \normalsize
-  \renewcommand{\arraystretch}{2.05}
-  \setlength{\extrarowheight}{5pt}
-  \setlength{\tabcolsep}{4pt}
-  \begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.5cm}|>{\centering\bfseries\arraybackslash}m{3.6cm}|>{\RaggedRight\arraybackslash}m{7.4cm}|>{\centering\arraybackslash}m{1.6cm}|}
-  \hline
-  \rowcolor{blue!20}
-  \textbf{Sprint} & \textbf{Stories} & \centering\textbf{Tasks} & \textbf{Duration} \\
-  \hline
-  \multirow{7}{=}{\centering\textbf{Sprint 6}}
-  & \multirow{1}{=}{\centering\textbf{AI assistant platform help and Q\&A}}
-  & Route assistant questions through Spring Boot, use role-aware platform guidance, and return safe navigation/help responses.
-  & \multirow{1}{=}{\centering 2d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{AI request drafting assistant}}
-  & Support leave, document, authorization, and loan drafts with preview, validation, and explicit submission.
-  & \multirow{1}{=}{\centering 3d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{Team Leader decision support}}
-  & Provide read-only decision support for one selected leave request using safe team and workload context.
-  & \multirow{1}{=}{\centering 2d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{Assistant safety and role restrictions}}
-  & Enforce refusal rules, sanitize routes, protect against stale confirmations, and keep the assistant guidance-only.
-  & \multirow{1}{=}{\centering 2d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{Assistant UI rendering}}
-  & Render assistant replies, draft previews, and decision-support cards in the frontend.
-  & \multirow{1}{=}{\centering 2d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{Local Docker deployment}}
-  & Containerize the frontend, backend, AI service, PostgreSQL, Keycloak, Kafka, Zookeeper, and PgAdmin for local deployment and testing.
-  & \multirow{1}{=}{\centering 2d} \\
-  \cline{2-4}
-  & \multirow{1}{=}{\centering\textbf{Stabilization and regression coverage}}
-  & Keep fallback paths, safety checks, and assistant regression tests aligned with the implemented behavior.
-  & \multirow{1}{=}{\centering 1d} \\
-  \hline
-  \end{tabular}
-  \caption*{Sprint Backlog -- Sprint 6}
-  \phantomsection\label{tab:sprint6_backlog}
-  \end{table}
+  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png}
+  \caption*{Visual Sprint Journal -- Sprint 6}
+  \phantomsection\label{fig:sprint6_jira_journal}
+\end{figure}
 
-  \clearpage
+\vspace{-4pt}
+\ReportSubsection{III.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent The table below summarizes the Sprint 6 work packages prepared from the validated implementation scope.
+
+}
+
+\vspace{-6pt}
+\begin{table}[H]
+\centering
+\footnotesize
+\renewcommand{\arraystretch}{1.52}
+\setlength{\extrarowheight}{2pt}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|>{\centering\bfseries\arraybackslash}m{1.35cm}|>{\centering\bfseries\arraybackslash}m{3.55cm}|>{\RaggedRight\arraybackslash}m{7.15cm}|>{\centering\arraybackslash}m{1.35cm}|}
+\hline
+\rowcolor{blue!20}
+\textbf{Sprint} & \textbf{Stories} & \centering\textbf{Tasks} & \textbf{Duration} \\
+\hline
+\multirow{7}{=}{\centering\textbf{Sprint 6}}
+& \multirow{1}{=}{\centering\textbf{AI assistant platform help and Q\&A}}
+& Route assistant questions through Spring Boot, use role-aware platform guidance, and return safe navigation/help responses.
+& \multirow{1}{=}{\centering 2d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{AI request drafting assistant}}
+& Support leave, document, authorization, and loan drafts with preview, validation, and explicit submission.
+& \multirow{1}{=}{\centering 3d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{Team Leader decision support}}
+& Provide read-only decision support for one selected leave request using safe team and workload context.
+& \multirow{1}{=}{\centering 2d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{Assistant safety and role restrictions}}
+& Enforce refusal rules, sanitize routes, protect against stale confirmations, and keep the assistant guidance-only.
+& \multirow{1}{=}{\centering 2d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{Assistant UI rendering}}
+& Render assistant replies, draft previews, and decision-support cards in the frontend.
+& \multirow{1}{=}{\centering 2d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{Local Docker deployment}}
+& Containerize the frontend, backend, AI service, PostgreSQL, Keycloak, Kafka, Zookeeper, and PgAdmin for local deployment and testing.
+& \multirow{1}{=}{\centering 2d} \\
+\cline{2-4}
+& \multirow{1}{=}{\centering\textbf{Stabilization and regression coverage}}
+& Keep fallback paths, safety checks, and assistant regression tests aligned with the implemented behavior.
+& \multirow{1}{=}{\centering 1d} \\
+\hline
+\end{tabular}
+\caption*{Sprint Backlog -- Sprint 6}
+\phantomsection\label{tab:sprint6_backlog}
+\end{table}
+
+  
   \ReportSubsection{III.4 Requirements Analysis}{\hspace{0.5cm} 4. Requirements Analysis}
 
   {\fontsize{12}{18}\selectfont
@@ -801,38 +813,40 @@ Future reporting should be expanded carefully: project and task analytics should
   }
 
   \Needspace{7.2cm}
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png}
-    \caption{Assistant Platform Guidance Interface}
-    \label{fig:sprint6_assistant_platform_qa_ui}
-  \end{figure}
+  \begingroup
+\setlength{\intextsep}{2pt}
+\setlength{\textfloatsep}{2pt}
+\setlength{\abovecaptionskip}{2pt}
+\setlength{\belowcaptionskip}{2pt}
 
-  \Needspace{7.2cm}
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png}
-    \caption{Assistant Leave Draft Preview Interface}
-    \label{fig:sprint6_personal_leave_draft_ui}
-  \end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png}
+  \caption{Assistant Platform Guidance Interface}
+  \label{fig:sprint6_assistant_platform_qa_ui}
+\end{figure}
 
-  \Needspace{7.2cm}
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png}
-    \caption{Team Leader Decision Support Interface}
-    \label{fig:sprint6_team_leader_decision_support_ui}
-  \end{figure}
+\vspace{-8pt}
 
-  \ReportSubsubsection{Testing and Validation}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png}
+  \caption{Assistant Leave Draft Preview Interface}
+  \label{fig:sprint6_personal_leave_draft_ui}
+\end{figure}
 
-  {\fontsize{12}{18}\selectfont
-  \setlength{\parindent}{1.2cm}
-  \setlength{\parskip}{6pt}
+\vspace{-8pt}
 
-  \indent This section summarizes the regression coverage and safety checks already present in the implementation.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png}
+  \caption{Team Leader Decision Support Interface}
+  \label{fig:sprint6_team_leader_decision_support_ui}
+\end{figure}
 
-  }
+\endgroup
+
+ \clearpage
 
   \ReportSubsection{III.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
 

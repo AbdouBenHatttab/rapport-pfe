@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  30 MAY 2026 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.28)  30 MAY 2026 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,7 +930,7 @@ l.149 ... Setup Backend}}{143}{figure.caption.246}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.181 ...Update Backend}}{168}{figure.caption.294}
+l.181 ...Update Backend}}{167}{figure.caption.294}
                                                   % [12]
 Overfull \hbox (1.63391pt too wide) in paragraph at lines 199--199
  [][] [][][]\T1/ptm/m/n/12 Conception Se-quence Di-a-gram -- Team Leader De-ci-sion Sup-port Back- 
@@ -2386,123 +2386,149 @@ File: sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/re
 <use sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 2.png>
 Package pdftex.def Info: sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 2.png  used on input line 469.
 (pdftex.def)             Requested size: 432.48051pt x 306.31226pt.
- [171 <./sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 1.png> <./sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 2.png>]
-Overfull \hbox (1.14297pt too wide) in paragraph at lines 554--555
- []|\T1/ptm/b/n/12 Duration| 
+ [171 <./sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 1.png> <./sections/chapitre5/img/sprint5_projects_tasks_reports/09_ui_screenshots/res 2.png>] [172]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png, id=2213, 766.062pt x 211.992pt>
+File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png Graphic file (type png)
+<use sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png>
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png  used on input line 540.
+(pdftex.def)             Requested size: 432.48051pt x 119.68188pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 563.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 563.
+
+Overfull \vbox (2.71996pt too high) detected at line 569
  []
 
 
-Overfull \vbox (3.52496pt too high) detected at line 557
+Overfull \vbox (2.71996pt too high) detected at line 573
  []
 
-[172] [173]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png, id=2221, 1126.2075pt x 814.04124pt>
+
+Overfull \vbox (2.71996pt too high) detected at line 577
+ []
+
+
+Overfull \vbox (2.71996pt too high) detected at line 581
+ []
+
+
+Overfull \vbox (2.71996pt too high) detected at line 589
+ []
+
+
+Overfull \vbox (2.71996pt too high) detected at line 593
+ []
+
+[173
+
+ <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/01_jira/sprint6_jira_journal.png>] [174]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png, id=2229, 1126.2075pt x 814.04124pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png  used on input line 614.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png  used on input line 626.
 (pdftex.def)             Requested size: 432.48051pt x 312.60567pt.
- [174
-
- <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png, id=2227, 1059.96pt x 727.71875pt>
+ [175 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/02_use_case_diagrams/use_case_sprint6_ai_assistant_decision_support.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png, id=2235, 1059.96pt x 727.71875pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png  used on input line 640.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png  used on input line 652.
 (pdftex.def)             Requested size: 432.48051pt x 296.92308pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png, id=2228, 1011.78pt x 739.76375pt>
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png, id=2236, 1011.78pt x 739.76375pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png  used on input line 648.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png  used on input line 660.
 (pdftex.def)             Requested size: 432.48051pt x 316.20714pt.
- [175 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png, id=2234, 966.61125pt x 675.52374pt>
+ [176 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_platform_question.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png, id=2243, 966.61125pt x 675.52374pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png  used on input line 656.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png  used on input line 668.
 (pdftex.def)             Requested size: 432.48051pt x 302.24088pt.
- [176 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_assistant_request_drafting.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png, id=2241, 1044.90375pt x 704.6325pt>
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png, id=2244, 1044.90375pt x 704.6325pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png  used on input line 684.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png  used on input line 696.
 (pdftex.def)             Requested size: 432.48051pt x 291.64291pt.
- [177 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png, id=2247, 1235.61626pt x 719.68875pt>
+ [177 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/03_system_sequence_diagrams/ssd_team_leader_decision_support.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png, id=2250, 1235.61626pt x 719.68875pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png  used on input line 702.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png  used on input line 714.
 (pdftex.def)             Requested size: 432.48051pt x 251.89484pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png, id=2248, 1245.65375pt x 724.7075pt>
+ [178 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/05_domain_model/domain_model_sprint6_ai_assistant_context_data.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png, id=2258, 1245.65375pt x 724.7075pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png  used on input line 720.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png  used on input line 732.
 (pdftex.def)             Requested size: 432.48051pt x 251.61673pt.
- [178 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/06_participant_class_diagrams/participant_ai_assistant_gateway_safe_context.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png, id=2256, 935.74594pt x 539.76656pt>
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png, id=2259, 935.74594pt x 539.76656pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png  used on input line 738.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png  used on input line 750.
 (pdftex.def)             Requested size: 455.2498pt x 262.60185pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png, id=2257, 1049.42062pt x 435.12563pt>
+ [179 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/07_design_class_diagrams/design_ai_assistant_gateway_safe_context.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png, id=2265, 1049.42062pt x 435.12563pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png  used on input line 746.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png  used on input line 758.
 (pdftex.def)             Requested size: 455.24529pt x 188.76024pt.
- [179 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png, id=2264, 1123.19624pt x 678.28406pt>
+ [180 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_platform_question_backend.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png, id=2272, 1123.19624pt x 678.28406pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png  used on input line 754.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png  used on input line 766.
 (pdftex.def)             Requested size: 455.23476pt x 274.91052pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png, id=2265, 1199.23032pt x 548.80031pt>
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png, id=2273, 1199.23032pt x 548.80031pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png  used on input line 762.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png  used on input line 774.
 (pdftex.def)             Requested size: 455.2365pt x 208.32855pt.
- [180 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png, id=2272, 964.35281pt x 526.96875pt>
+ [181 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_assistant_request_drafting_backend.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png, id=2280, 964.35281pt x 526.96875pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png  used on input line 770.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png  used on input line 782.
 (pdftex.def)             Requested size: 455.2471pt x 248.7689pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png, id=2273, 1130.72438pt x 559.33969pt>
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png, id=2281, 1130.72438pt x 559.33969pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png  used on input line 778.
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png  used on input line 790.
 (pdftex.def)             Requested size: 455.23207pt x 225.19136pt.
 
-Overfull \hbox (4.63014pt too wide) in paragraph at lines 789--790
+Overfull \hbox (4.63014pt too wide) in paragraph at lines 801--802
 []\T1/ptm/m/n/12 The re-al-iza-tion sec-tion presents the as-sis-tant wid-get, draft pre-view cards, decision-support
  []
 
-[181 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png, id=2280, 1150.89975pt x 543.83176pt>
+[182 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_frontend.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/08_conception_sequence_diagrams/csd_sprint6_team_leader_decision_support_backend.png>]
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png, id=2288, 1150.89975pt x 543.83176pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png  used on input line 806.
-(pdftex.def)             Requested size: 432.48051pt x 204.3596pt.
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png, id=2281, 1130.42325pt x 497.4585pt>
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png  used on input line 824.
+(pdftex.def)             Requested size: 373.3035pt x 176.3947pt.
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png, id=2289, 1130.42325pt x 497.4585pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png  used on input line 814.
-(pdftex.def)             Requested size: 432.48051pt x 190.319pt.
- [182 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png>]
-<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png, id=2288, 1147.28625pt x 551.05875pt>
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png  used on input line 833.
+(pdftex.def)             Requested size: 373.3035pt x 164.27567pt.
+<sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png, id=2290, 1147.28625pt x 551.05875pt>
 File: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png Graphic file (type png)
 <use sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png>
-Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png  used on input line 822.
-(pdftex.def)             Requested size: 432.48051pt x 207.7228pt.
- [183 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png>] [184]) (sections/bibliographie/bibliographie.tex [185
+Package pdftex.def Info: sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png  used on input line 842.
+(pdftex.def)             Requested size: 373.3035pt x 179.30217pt.
+ [183 <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_assistant_platform_qa.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_personal_leave_draft.png> <./sections/chapitre5/img/sprint6_ai_deployment_stabilization/09_ui_screenshots/sprint6_team_leader_decision_support.png>] [184
+
+]) (sections/bibliographie/bibliographie.tex [185
 
 ] [186
 
 ]) [187]
-<sections/resume_sujet_pfe.pdf, id=2342, 597.51233pt x 845.0471pt>
+<sections/resume_sujet_pfe.pdf, id=2346, 597.51233pt x 845.0471pt>
 File: sections/resume_sujet_pfe.pdf Graphic file (type pdf)
 <use sections/resume_sujet_pfe.pdf>
 Package pdftex.def Info: sections/resume_sujet_pfe.pdf  used on input line 201.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<sections/resume_sujet_pfe.pdf, id=2344, page=1, 597.51233pt x 845.0471pt>
+<sections/resume_sujet_pfe.pdf, id=2348, page=1, 597.51233pt x 845.0471pt>
 File: sections/resume_sujet_pfe.pdf Graphic file (type pdf)
 <use sections/resume_sujet_pfe.pdf, page 1>
 Package pdftex.def Info: sections/resume_sujet_pfe.pdf , page1 used on input line 201.
@@ -2531,25 +2557,21 @@ Package pdftex.def Info: sections/resume_sujet_pfe.pdf , page1 used on input lin
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5355C5475FEAAA547FE70D131F29C1D7;20082.
+(rerunfilecheck)             Checksum: 2F44E761E351E3734EE24A25FAC6C359;20082.
  ) 
 Here is how much of TeX's memory you used:
- 28164 strings out of 467867
- 697364 string characters out of 5418334
- 998075 words of memory out of 5000000
- 55939 multiletter control sequences out of 15000+600000
- 740809 words of font info for 177 fonts, out of 8000000 for 9000
+ 28188 strings out of 467867
+ 698330 string characters out of 5418334
+ 998149 words of memory out of 5000000
+ 55961 multiletter control sequences out of 15000+600000
+ 746229 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,17n,94p,982b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\abdou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/abdou/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (203 pages, 17612534 bytes).
+Output written on main.pdf (203 pages, 17674966 bytes).
 PDF statistics:
- 2553 PDF objects out of 2984 (max. 8388607)
- 540 named destinations out of 1000 (max. 500000)
- 2022 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2559 PDF objects out of 2984 (max. 8388607)
+ 542 named destinations out of 1000 (max. 500000)
+ 2027 words of extra memory for PDF output out of 10000 (max. 10000000)
 

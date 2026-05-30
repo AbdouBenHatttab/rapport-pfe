@@ -95,12 +95,12 @@
 \contentsline {subsection}{II.4 Sprint Implementation}{155}{section*.274}%
 \contentsline {subsection}{II.5 Sprint Review}{171}{section*.300}%
 \contentsline {subsection}{II.6 Sprint Retrospective}{172}{section*.301}%
-\contentsline {section}{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}{172}{section*.303}%
-\contentsline {subsection}{III.1 Sprint Goal}{172}{section*.304}%
-\contentsline {subsection}{III.2 Visual Sprint Journal}{172}{section*.305}%
-\contentsline {subsection}{III.3 Sprint Backlog}{172}{section*.306}%
-\contentsline {subsection}{III.4 Requirements Analysis}{174}{section*.309}%
-\contentsline {subsection}{III.5 Sprint Review}{183}{section*.326}%
-\contentsline {subsection}{III.6 Sprint Retrospective}{183}{section*.327}%
-\contentsline {chapter}{General Conclusion}{185}{section*.329}%
-\contentsline {chapter}{Bibliographie et Nétographie}{186}{section*.330}%
+\contentsline {section}{III. Sprint 6: AI Assistant, Local Deployment, and Stabilization}{173}{section*.303}%
+\contentsline {subsection}{III.1 Sprint Goal}{173}{section*.304}%
+\contentsline {subsection}{III.2 Visual Sprint Journal}{173}{section*.305}%
+\contentsline {subsection}{III.3 Sprint Backlog}{173}{section*.308}%
+\contentsline {subsection}{III.4 Requirements Analysis}{174}{section*.311}%
+\contentsline {subsection}{III.5 Sprint Review}{184}{section*.328}%
+\contentsline {subsection}{III.6 Sprint Retrospective}{184}{section*.329}%
+\contentsline {chapter}{General Conclusion}{185}{section*.331}%
+\contentsline {chapter}{Bibliographie et Nétographie}{186}{section*.332}%
