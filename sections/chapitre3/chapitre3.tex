@@ -183,9 +183,14 @@ Together, these elements establish the first operational base of the platform fo
 % ============================================================
 \ReportSection{I. Release Organization}{I. Release Organization}
 
-\ChapterThreeFigure{sections/chapitre3/img/other/release1_organization.png}{Release 1 Organization}{release1_organization}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.56\textwidth,keepaspectratio]{sections/chapitre3/img/other/release1_organization.png}
+  \caption{Release 1 Organization}
+  \label{fig:release1_organization}
+\end{figure}
 
-\vspace{6pt}
+\clearpage
 
 % ============================================================
 %  II. SPRINT 1: ACCESS AND ACCOUNT MANAGEMENT
@@ -301,14 +306,6 @@ The objective is to obtain an operational base for the next functional developme
 
 \ChapterThreeFigure{sections/chapitre3/img/sprint1_access_account_management/02_use_case_diagrams/sprint1_access_account_management_use_case.png}{Use Case Diagram – Sprint 1 Access and Account Management}{sprint1_access_account_management_use_case}
 
-\SprintOneImplementationHeading{System Sequence Diagrams}
-
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent These diagrams summarize the main user-system exchanges for Sprint 1 access scenarios.
-}
 
 \Needspace{7.2cm}
 \SprintOneScenarioHeading{User Registration}
@@ -331,6 +328,15 @@ The objective is to obtain an operational base for the next functional developme
 {System Sequence Diagram – Secure Login}
 {sprint1_login_system_sequence}
 {0.88}
+\SprintOneImplementationHeading{System Sequence Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams summarize the main user-system exchanges for Sprint 1 access scenarios.
+}
+
 
 
 \Needspace{7.2cm}
@@ -687,37 +693,41 @@ The objective is to obtain an operational base for the next functional developme
   \label{fig:sprint1_password_reset_ui}
 \end{figure}
 
-\Needspace{7.2cm}
+\Needspace{4.8cm}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/profile_update_ui.png}
+  \includegraphics[width=0.78\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/profile_update_ui.png}
   \caption{User Profile Update Interface}
   \label{fig:sprint1_profile_update_ui}
 \end{figure}
+\vspace{-4pt}
 
-\Needspace{7.2cm}
+\Needspace{4.8cm}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/authenticated_password_change_ui.png}
+  \includegraphics[width=0.78\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/authenticated_password_change_ui.png}
   \caption{Authenticated Password Change Interface}
   \label{fig:sprint1_authenticated_password_change_ui}
 \end{figure}
+\vspace{-4pt}
 
-\Needspace{7.2cm}
+\Needspace{4.8cm}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/hr_user_account_setup_ui.png}
+  \includegraphics[width=0.78\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/hr_user_account_setup_ui.png}
   \caption{HR User Account Setup Interface}
   \label{fig:sprint1_hr_user_account_setup_ui}
 \end{figure}
+\vspace{-4pt}
 
-\Needspace{7.2cm}
+\Needspace{4.8cm}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/account_activation_deactivation_ui.png}
+  \includegraphics[width=0.78\textwidth,height=5.4cm]{sections/chapitre3/img/sprint1_access_account_management/09_ui_screenshots/account_activation_deactivation_ui.png}
   \caption{Account Activation and Deactivation Interface}
   \label{fig:sprint1_account_activation_deactivation_ui}
 \end{figure}
+\vspace{-4pt}
 
 \ReportSubsection{II.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
 
@@ -882,15 +892,7 @@ The objective is to deliver the first complete administrative workflow involving
 {Use Case Diagram -- Sprint 2 Leave Management}
 {sprint2_leave_management_use_case}
 
-\SprintTwoImplementationHeading{System Sequence Diagrams}
 
-{\fontsize{12}{18}\selectfont
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{6pt}
-
-\indent These diagrams summarize the main user-system exchanges for Sprint 2 leave-management scenarios. The section also introduces focused use-case views before the employee request-management scenarios and the approval workflow scenarios.
-
-}
 
 \Needspace{8.5cm}
 \SprintTwoScenarioHeading{Use Case Diagram -- Employee Leave Request Management}
@@ -902,6 +904,15 @@ The objective is to deliver the first complete administrative workflow involving
 {Use Case Diagram -- Employee Leave Request Management}
 {sprint2_employee_leave_request_management_use_case}
 
+\SprintTwoImplementationHeading{System Sequence Diagrams}
+
+{\fontsize{12}{18}\selectfont
+\setlength{\parindent}{1.2cm}
+\setlength{\parskip}{6pt}
+
+\indent These diagrams summarize the main user-system exchanges for Sprint 2 leave-management scenarios. The section also introduces focused use-case views before the employee request-management scenarios and the approval workflow scenarios.
+
+} 
 \Needspace{7.2cm}
 \SprintTwoScenarioHeading{Submit Leave Request}
 
@@ -966,16 +977,24 @@ The objective is to deliver the first complete administrative workflow involving
 
 }
 
+
+\clearpage
 \Needspace{7.2cm}
 \SprintTwoScenarioHeading{Domain Model -- Sprint 2 Leave Management}
 
 \noindent This diagram shows the main business concepts used for leave request management, including users, teams, leave requests, leave types, balances, public holidays, request history, and approval decisions.\par
 
-\ChapterThreeFigureSized
-{sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png}
-{Domain Model -- Sprint 2 Leave Management}
-{sprint2_domain_model_leave_management}
-{0.95}
+\begin{figure}[H]
+  \centering
+  \includegraphics[
+    width=1.00\textwidth,
+    height=1.20\textheight,
+    keepaspectratio
+  ]{sections/chapitre3/img/sprint2_leave_management/05_domain_model/domain_model_sprint2_leave_management.png}
+  \caption{Domain Model -- Sprint 2 Leave Management}
+  \label{fig:sprint2_domain_model_leave_management}
+\end{figure}
+\clearpage
 
 \SprintTwoImplementationHeading{Participant Class Diagrams}
 
