@@ -70,8 +70,8 @@
 \contentsline {chapter}{Chapter 4: Release 2 - Workflow Management}{89}{section*.158}%
 \contentsline {section}{Introduction}{89}{section*.159}%
 \contentsline {section}{I. Release Organization}{89}{section*.160}%
-\contentsline {section}{II. Sprint 3: Administrative Requests}{90}{section*.162}%
-\contentsline {subsection}{II.1 Sprint Goal}{90}{section*.163}%
+\contentsline {section}{II. Sprint 3: Administrative Requests}{89}{section*.162}%
+\contentsline {subsection}{II.1 Sprint Goal}{89}{section*.163}%
 \contentsline {subsection}{II.2 Visual Sprint Journal}{90}{section*.164}%
 \contentsline {subsection}{II.3 Sprint Backlog}{90}{section*.167}%
 \contentsline {subsection}{II.4 Sprint Implementation}{92}{section*.169}%
