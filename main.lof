@@ -155,48 +155,48 @@
 \contentsline {figure}{\numberline {154}{\ignorespaces Conception Sequence Diagram -- Team Leave Decision Backend}}{148}{figure.caption.252}%
 \contentsline {figure}{\numberline {155}{\ignorespaces HR Dashboard Interface}}{149}{figure.caption.253}%
 \contentsline {figure}{\numberline {156}{\ignorespaces HR User Management Interface}}{149}{figure.caption.254}%
-\contentsline {figure}{\numberline {157}{\ignorespaces Team Management Interface}}{149}{figure.caption.255}%
-\contentsline {figure}{\numberline {158}{\ignorespaces Organization Reference Data Interface}}{150}{figure.caption.256}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Organization Reference Data Interface}}{149}{figure.caption.255}%
+\contentsline {figure}{\numberline {158}{\ignorespaces Team Management Interface}}{150}{figure.caption.256}%
 \contentsline {figure}{\numberline {159}{\ignorespaces HR Leave Calendar Interface}}{150}{figure.caption.257}%
 \contentsline {figure}{\numberline {160}{\ignorespaces Release 3 Organization}}{152}{figure.caption.265}%
-\contentsline {figure}{\numberline {161}{\ignorespaces Use Case Diagram – Sprint 5 Projects, Tasks and Reports}}{155}{figure.caption.275}%
-\contentsline {figure}{\numberline {162}{\ignorespaces Use Case Diagram – Team Leader Project and Task Management}}{156}{figure.caption.276}%
-\contentsline {figure}{\numberline {163}{\ignorespaces System Sequence Diagram – Create Project}}{156}{figure.caption.277}%
-\contentsline {figure}{\numberline {164}{\ignorespaces System Sequence Diagram – Create and Assign Task}}{157}{figure.caption.278}%
-\contentsline {figure}{\numberline {165}{\ignorespaces System Sequence Diagram – Update Task Status}}{157}{figure.caption.279}%
-\contentsline {figure}{\numberline {166}{\ignorespaces System Sequence Diagram – Consult HR Reports}}{158}{figure.caption.280}%
-\contentsline {figure}{\numberline {167}{\ignorespaces Domain Model -- Sprint 5 Projects, Tasks and Reports}}{159}{figure.caption.281}%
-\contentsline {figure}{\numberline {168}{\ignorespaces State Diagram -- Task Lifecycle}}{159}{figure.caption.282}%
-\contentsline {figure}{\numberline {169}{\ignorespaces Participant Class Diagram -- Team Leader Project and Task Management}}{160}{figure.caption.283}%
-\contentsline {figure}{\numberline {170}{\ignorespaces Participant Class Diagram -- Task Status Update}}{160}{figure.caption.284}%
-\contentsline {figure}{\numberline {171}{\ignorespaces Participant Class Diagram -- HR Reports and Export}}{161}{figure.caption.285}%
-\contentsline {figure}{\numberline {172}{\ignorespaces Design Class Diagram -- Team Leader Project and Task Management}}{161}{figure.caption.286}%
-\contentsline {figure}{\numberline {173}{\ignorespaces Design Class Diagram -- Task Status Update}}{162}{figure.caption.287}%
-\contentsline {figure}{\numberline {174}{\ignorespaces Design Class Diagram -- HR Reports and Excel Export}}{162}{figure.caption.288}%
-\contentsline {figure}{\numberline {175}{\ignorespaces Conception Sequence Diagram -- Project Management Frontend}}{163}{figure.caption.289}%
-\contentsline {figure}{\numberline {176}{\ignorespaces Conception Sequence Diagram -- Project Management Backend}}{164}{figure.caption.290}%
-\contentsline {figure}{\numberline {177}{\ignorespaces Conception Sequence Diagram -- Task Assignment Frontend}}{165}{figure.caption.291}%
-\contentsline {figure}{\numberline {178}{\ignorespaces Conception Sequence Diagram -- Task Assignment Backend}}{166}{figure.caption.292}%
-\contentsline {figure}{\numberline {179}{\ignorespaces Conception Sequence Diagram -- Task Status Update Frontend}}{167}{figure.caption.293}%
-\contentsline {figure}{\numberline {180}{\ignorespaces Conception Sequence Diagram -- Task Status Update Backend}}{167}{figure.caption.294}%
-\contentsline {figure}{\numberline {181}{\ignorespaces Team Projects and Tasks Interface}}{168}{figure.caption.295}%
-\contentsline {figure}{\numberline {182}{\ignorespaces Task Assignment Interface}}{169}{figure.caption.296}%
-\contentsline {figure}{\numberline {183}{\ignorespaces Employee Task Tracking Interface}}{170}{figure.caption.297}%
-\contentsline {figure}{\numberline {184}{\ignorespaces HR Request Reports Interface}}{170}{figure.caption.298}%
-\contentsline {figure}{\numberline {185}{\ignorespaces Excel Report Export Result}}{171}{figure.caption.299}%
-\contentsline {figure}{\numberline {186}{\ignorespaces Use Case Diagram -- Sprint 6 AI Assistant and Decision Support}}{175}{figure.caption.312}%
-\contentsline {figure}{\numberline {187}{\ignorespaces System Sequence Diagram -- Assistant Platform Question}}{176}{figure.caption.313}%
-\contentsline {figure}{\numberline {188}{\ignorespaces System Sequence Diagram -- Assistant Request Drafting}}{176}{figure.caption.314}%
-\contentsline {figure}{\numberline {189}{\ignorespaces System Sequence Diagram -- Team Leader Decision Support}}{177}{figure.caption.315}%
-\contentsline {figure}{\numberline {190}{\ignorespaces Domain Model -- Sprint 6 AI Assistant Context Data}}{178}{figure.caption.316}%
-\contentsline {figure}{\numberline {191}{\ignorespaces Participant Class Diagram -- AI Assistant Gateway and Safe Context}}{178}{figure.caption.317}%
-\contentsline {figure}{\numberline {192}{\ignorespaces Design Class Diagram -- Assistant Gateway and Safe Context}}{179}{figure.caption.318}%
-\contentsline {figure}{\numberline {193}{\ignorespaces Conception Sequence Diagram -- Assistant Platform Question Frontend}}{180}{figure.caption.319}%
-\contentsline {figure}{\numberline {194}{\ignorespaces Conception Sequence Diagram -- Assistant Platform Question Backend}}{180}{figure.caption.320}%
-\contentsline {figure}{\numberline {195}{\ignorespaces Conception Sequence Diagram -- Assistant Request Drafting Frontend}}{181}{figure.caption.321}%
-\contentsline {figure}{\numberline {196}{\ignorespaces Conception Sequence Diagram -- Assistant Request Drafting Backend}}{181}{figure.caption.322}%
-\contentsline {figure}{\numberline {197}{\ignorespaces Conception Sequence Diagram -- Team Leader Decision Support Frontend}}{182}{figure.caption.323}%
-\contentsline {figure}{\numberline {198}{\ignorespaces Conception Sequence Diagram -- Team Leader Decision Support Backend}}{182}{figure.caption.324}%
-\contentsline {figure}{\numberline {199}{\ignorespaces Assistant Platform Guidance Interface}}{183}{figure.caption.325}%
-\contentsline {figure}{\numberline {200}{\ignorespaces Assistant Leave Draft Preview Interface}}{183}{figure.caption.326}%
-\contentsline {figure}{\numberline {201}{\ignorespaces Team Leader Decision Support Interface}}{183}{figure.caption.327}%
+\contentsline {figure}{\numberline {161}{\ignorespaces Use Case Diagram – Sprint 5 Projects, Tasks and Reports}}{155}{figure.caption.274}%
+\contentsline {figure}{\numberline {162}{\ignorespaces Use Case Diagram – Team Leader Project and Task Management}}{156}{figure.caption.275}%
+\contentsline {figure}{\numberline {163}{\ignorespaces System Sequence Diagram – Create Project}}{156}{figure.caption.276}%
+\contentsline {figure}{\numberline {164}{\ignorespaces System Sequence Diagram – Create and Assign Task}}{157}{figure.caption.277}%
+\contentsline {figure}{\numberline {165}{\ignorespaces System Sequence Diagram – Update Task Status}}{157}{figure.caption.278}%
+\contentsline {figure}{\numberline {166}{\ignorespaces System Sequence Diagram – Consult HR Reports}}{158}{figure.caption.279}%
+\contentsline {figure}{\numberline {167}{\ignorespaces Domain Model -- Sprint 5 Projects, Tasks and Reports}}{159}{figure.caption.280}%
+\contentsline {figure}{\numberline {168}{\ignorespaces State Diagram -- Task Lifecycle}}{159}{figure.caption.281}%
+\contentsline {figure}{\numberline {169}{\ignorespaces Participant Class Diagram -- Team Leader Project and Task Management}}{160}{figure.caption.282}%
+\contentsline {figure}{\numberline {170}{\ignorespaces Participant Class Diagram -- Task Status Update}}{160}{figure.caption.283}%
+\contentsline {figure}{\numberline {171}{\ignorespaces Participant Class Diagram -- HR Reports and Export}}{161}{figure.caption.284}%
+\contentsline {figure}{\numberline {172}{\ignorespaces Design Class Diagram -- Team Leader Project and Task Management}}{161}{figure.caption.285}%
+\contentsline {figure}{\numberline {173}{\ignorespaces Design Class Diagram -- Task Status Update}}{162}{figure.caption.286}%
+\contentsline {figure}{\numberline {174}{\ignorespaces Design Class Diagram -- HR Reports and Excel Export}}{162}{figure.caption.287}%
+\contentsline {figure}{\numberline {175}{\ignorespaces Conception Sequence Diagram -- Project Management Frontend}}{163}{figure.caption.288}%
+\contentsline {figure}{\numberline {176}{\ignorespaces Conception Sequence Diagram -- Project Management Backend}}{164}{figure.caption.289}%
+\contentsline {figure}{\numberline {177}{\ignorespaces Conception Sequence Diagram -- Task Assignment Frontend}}{165}{figure.caption.290}%
+\contentsline {figure}{\numberline {178}{\ignorespaces Conception Sequence Diagram -- Task Assignment Backend}}{166}{figure.caption.291}%
+\contentsline {figure}{\numberline {179}{\ignorespaces Conception Sequence Diagram -- Task Status Update Frontend}}{167}{figure.caption.292}%
+\contentsline {figure}{\numberline {180}{\ignorespaces Conception Sequence Diagram -- Task Status Update Backend}}{167}{figure.caption.293}%
+\contentsline {figure}{\numberline {181}{\ignorespaces Team Projects and Tasks Interface}}{168}{figure.caption.294}%
+\contentsline {figure}{\numberline {182}{\ignorespaces Task Assignment Interface}}{169}{figure.caption.295}%
+\contentsline {figure}{\numberline {183}{\ignorespaces Employee Task Tracking Interface}}{170}{figure.caption.296}%
+\contentsline {figure}{\numberline {184}{\ignorespaces HR Request Reports Interface}}{170}{figure.caption.297}%
+\contentsline {figure}{\numberline {185}{\ignorespaces Excel Report Export Result}}{171}{figure.caption.298}%
+\contentsline {figure}{\numberline {186}{\ignorespaces Use Case Diagram -- Sprint 6 AI Assistant and Decision Support}}{175}{figure.caption.310}%
+\contentsline {figure}{\numberline {187}{\ignorespaces System Sequence Diagram -- Assistant Platform Question}}{176}{figure.caption.311}%
+\contentsline {figure}{\numberline {188}{\ignorespaces System Sequence Diagram -- Assistant Request Drafting}}{176}{figure.caption.312}%
+\contentsline {figure}{\numberline {189}{\ignorespaces System Sequence Diagram -- Team Leader Decision Support}}{177}{figure.caption.313}%
+\contentsline {figure}{\numberline {190}{\ignorespaces Domain Model -- Sprint 6 AI Assistant Context Data}}{178}{figure.caption.314}%
+\contentsline {figure}{\numberline {191}{\ignorespaces Participant Class Diagram -- AI Assistant Gateway and Safe Context}}{178}{figure.caption.315}%
+\contentsline {figure}{\numberline {192}{\ignorespaces Design Class Diagram -- Assistant Gateway and Safe Context}}{179}{figure.caption.316}%
+\contentsline {figure}{\numberline {193}{\ignorespaces Conception Sequence Diagram -- Assistant Platform Question Frontend}}{180}{figure.caption.317}%
+\contentsline {figure}{\numberline {194}{\ignorespaces Conception Sequence Diagram -- Assistant Platform Question Backend}}{180}{figure.caption.318}%
+\contentsline {figure}{\numberline {195}{\ignorespaces Conception Sequence Diagram -- Assistant Request Drafting Frontend}}{181}{figure.caption.319}%
+\contentsline {figure}{\numberline {196}{\ignorespaces Conception Sequence Diagram -- Assistant Request Drafting Backend}}{181}{figure.caption.320}%
+\contentsline {figure}{\numberline {197}{\ignorespaces Conception Sequence Diagram -- Team Leader Decision Support Frontend}}{182}{figure.caption.321}%
+\contentsline {figure}{\numberline {198}{\ignorespaces Conception Sequence Diagram -- Team Leader Decision Support Backend}}{182}{figure.caption.322}%
+\contentsline {figure}{\numberline {199}{\ignorespaces Assistant Platform Guidance Interface}}{183}{figure.caption.323}%
+\contentsline {figure}{\numberline {200}{\ignorespaces Assistant Leave Draft Preview Interface}}{183}{figure.caption.324}%
+\contentsline {figure}{\numberline {201}{\ignorespaces Team Leader Decision Support Interface}}{183}{figure.caption.325}%
