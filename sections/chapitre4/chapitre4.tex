@@ -12,49 +12,49 @@
 
 % Chapter 4 follows the same figure style as Chapter 3.
 \newcommand{\ChapterFourFigure}[3]{%
-  \ChapterThreeFigure{#1}{#2}{#3}%
+\ChapterThreeFigure{#1}{#2}{#3}%
 }
 
 \newcommand{\ChapterFourFigureSized}[4]{%
-  \ChapterThreeFigureSized{#1}{#2}{#3}{#4}%
+\ChapterThreeFigureSized{#1}{#2}{#3}{#4}%
 }
 
 \newcommand{\SprintThreeImplementationHeading}[1]{%
-  \SprintOneImplementationHeading{#1}%
+\SprintOneImplementationHeading{#1}%
 }
 
 \newcommand{\SprintThreeScenarioHeading}[1]{%
-  \SprintOneScenarioHeading{#1}%
+\SprintOneScenarioHeading{#1}%
 }
 
 \newcommand{\SprintThreeAssetPlaceholder}[2]{%
-  \SprintOneAssetPlaceholder{#1}{#2}%
+\SprintOneAssetPlaceholder{#1}{#2}%
 }
 
 \newcommand{\SprintFourImplementationHeading}[1]{%
-  \SprintThreeImplementationHeading{#1}%
+\SprintThreeImplementationHeading{#1}%
 }
 
 \newcommand{\SprintFourScenarioHeading}[1]{%
-  \SprintThreeScenarioHeading{#1}%
+\SprintThreeScenarioHeading{#1}%
 }
 
 \newcommand{\SprintFourAssetPlaceholder}[2]{%
-  \SprintThreeAssetPlaceholder{#1}{#2}%
+\SprintThreeAssetPlaceholder{#1}{#2}%
 }
 
 \newcommand{\ChapterFourDiagramPlaceholder}[2]{%
-  \SprintThreeAssetPlaceholder{#2}{#1}%
+\SprintThreeAssetPlaceholder{#2}{#1}%
 }
 
 \begin{center}
-  {\fontsize{18}{22}\selectfont \textbf{Chapter 4}}
+{\fontsize{18}{22}\selectfont \textbf{Chapter 4}}
 \end{center}
 
 \vspace{0.3cm}
 
 \begin{center}
-  {\fontsize{20}{24}\selectfont \textbf{Release 2 -- Workflow Management}}
+{\fontsize{20}{24}\selectfont \textbf{Release 2 -- Workflow Management}}
 \end{center}
 
 \vspace{0.6cm}
@@ -87,12 +87,11 @@
 
 }
 
-
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.56\textwidth,keepaspectratio]{sections/chapitre4/img/other/release2_organization.png}
-  \caption{Release 2 Organization}
-  \label{fig:release2_organization}
+\centering
+\includegraphics[width=0.56\textwidth,keepaspectratio]{sections/chapitre4/img/other/release2_organization.png}
+\caption{Release 2 Organization}
+\label{fig:release2_organization}
 \end{figure}
 % ============================================================
 %  II. SPRINT 3: ADMINISTRATIVE REQUESTS
@@ -120,10 +119,10 @@
 }
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/01_jira/sprint3_jira_journal.png}
-  \caption*{Visual Sprint Journal -- Sprint 3}
-  \phantomsection\label{fig:sprint3_jira_journal}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/01_jira/sprint3_jira_journal.png}
+\caption*{Visual Sprint Journal -- Sprint 3}
+\phantomsection\label{fig:sprint3_jira_journal}
 \end{figure}
 
 \ReportSubsection{II.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
@@ -238,22 +237,24 @@
 
 \noindent This diagram presents the overall administrative-request scope of Sprint 3.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png}
-{Use Case Diagram -- Sprint 3 Administrative Requests}
-{use_case_sprint3_administrative_requests}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_sprint3_administrative_requests.png}
+\caption{Use Case Diagram -- Sprint 3 Administrative Requests}
+\label{fig:use_case_sprint3_administrative_requests}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Use Case Diagram -- HR Administrative Request Processing}
 
 \noindent This diagram summarizes HR processing, validation, and final decision responsibilities.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png}
-{Use Case Diagram -- HR Administrative Request Processing}
-{use_case_hr_administrative_request_processing}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/02_use_case_diagrams/use_case_hr_administrative_request_processing.png}
+\caption{Use Case Diagram -- HR Administrative Request Processing}
+\label{fig:use_case_hr_administrative_request_processing}
+\end{figure}
 
 \SprintThreeImplementationHeading{System Sequence Diagrams}
 
@@ -270,22 +271,24 @@
 
 \noindent This diagram shows how a user, either an employee or a team leader using employee-side request actions, submits a document request and receives validation feedback.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png}
-{System Sequence Diagram -- Submit Document Request}
-{ssd_submit_document_request}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_document_request.png}
+\caption{System Sequence Diagram -- Submit Document Request}
+\label{fig:ssd_submit_document_request}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{System Sequence Diagram -- Process Document Request}
 
 \noindent This diagram shows how HR processes a pending document request and manages the final file.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png}
-{System Sequence Diagram -- Process Document Request}
-{ssd_process_document_request}
-{0.88}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_process_document_request.png}
+\caption{System Sequence Diagram -- Process Document Request}
+\label{fig:ssd_process_document_request}
+\end{figure}
 
 \SprintThreeScenarioHeading{System Sequence Diagram -- Submit Loan Request}
 
@@ -296,10 +299,10 @@
 \setlength{\intextsep}{0pt}
 \setlength{\abovecaptionskip}{2pt}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png}
-  \caption{System Sequence Diagram -- Submit Loan Request}
-  \label{fig:ssd_submit_loan_request}
+\centering
+\includegraphics[width=0.82\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_loan_request.png}
+\caption{System Sequence Diagram -- Submit Loan Request}
+\label{fig:ssd_submit_loan_request}
 \end{figure}
 \endgroup
 
@@ -308,33 +311,36 @@
 
 \noindent This diagram shows how HR schedules a loan meeting under the workflow constraints.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png}
-{System Sequence Diagram -- Schedule Loan Meeting}
-{ssd_schedule_loan_meeting}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_schedule_loan_meeting.png}
+\caption{System Sequence Diagram -- Schedule Loan Meeting}
+\label{fig:ssd_schedule_loan_meeting}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{System Sequence Diagram -- Submit Authorization Request}
 
 \noindent This diagram shows how a user, either an employee or a team leader using employee-side request actions, submits a time permission or equipment request.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png}
-{System Sequence Diagram -- Submit Authorization Request}
-{ssd_submit_authorization_request}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_submit_authorization_request.png}
+\caption{System Sequence Diagram -- Submit Authorization Request}
+\label{fig:ssd_submit_authorization_request}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{System Sequence Diagram -- HR Administrative Request Decision}
 
 \noindent This diagram shows how HR approves or rejects a pending administrative request.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png}
-{System Sequence Diagram -- HR Administrative Request Decision}
-{ssd_hr_administrative_request_decision}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/03_system_sequence_diagrams/ssd_hr_administrative_request_decision.png}
+\caption{System Sequence Diagram -- HR Administrative Request Decision}
+\label{fig:ssd_hr_administrative_request_decision}
+\end{figure}
 
 \SprintThreeImplementationHeading{Analysis}
 
@@ -348,12 +354,12 @@
 
 \clearpage
 \begin{figure}[H]
-  \centering
-  \makebox[\textwidth][c]{%
-    \includegraphics[width=1.12\textwidth,height=0.82\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png}%
-  }
-  \caption{Domain Model -- Sprint 3 Administrative Requests}
-  \label{fig:domain_model_sprint3_administrative_requests}
+\centering
+\makebox[\textwidth][c]{%
+\includegraphics[width=1.12\textwidth,height=0.82\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/05_domain_model/domain_model_sprint3_administrative_requests.png}%
+}
+\caption{Domain Model -- Sprint 3 Administrative Requests}
+\label{fig:domain_model_sprint3_administrative_requests}
 \end{figure}
 \clearpage
 
@@ -376,10 +382,10 @@
 \vspace{-6pt}
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.90\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png}
-  \caption{Participant Class Diagram -- Document Request Management}
-  \label{fig:participant_document_request_management}
+\centering
+\includegraphics[width=0.90\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_document_request_management.png}
+\caption{Participant Class Diagram -- Document Request Management}
+\label{fig:participant_document_request_management}
 \end{figure}
 
 \vspace{-10pt}
@@ -391,10 +397,10 @@
 \vspace{-6pt}
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.90\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png}
-  \caption{Participant Class Diagram -- Loan Request Management}
-  \label{fig:participant_loan_request_management}
+\centering
+\includegraphics[width=0.90\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_loan_request_management.png}
+\caption{Participant Class Diagram -- Loan Request Management}
+\label{fig:participant_loan_request_management}
 \end{figure}
 
 \Needspace{7.2cm}
@@ -403,14 +409,13 @@
 \noindent This diagram shows the participants involved in employee authorization request submission, draft validation, status tracking, and request history management.\par
 
 \begin{figure}[H]
-  \centering
-  \makebox[\textwidth][c]{%
-    \includegraphics[width=1.08\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png}%
-  }
-  \caption{Participant Class Diagram -- Authorization Request Management}
-  \label{fig:participant_authorization_request_management}
+\centering
+\makebox[\textwidth][c]{%
+\includegraphics[width=1.08\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_authorization_request_management.png}%
+}
+\caption{Participant Class Diagram -- Authorization Request Management}
+\label{fig:participant_authorization_request_management}
 \end{figure}
-
 
 \vspace{-8pt}
 \Needspace{7.2cm}
@@ -419,12 +424,12 @@
 \noindent This diagram shows the participants involved in HR processing of document, loan, and authorization requests, including request review, status updates, and history tracking.\par
 
 \begin{figure}[H]
-  \centering
-  \makebox[\textwidth][c]{%
-    \includegraphics[width=1.08\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png}%
-  }
-  \caption{Participant Class Diagram -- HR Request Processing}
-  \label{fig:participant_hr_request_processing}
+\centering
+\makebox[\textwidth][c]{%
+\includegraphics[width=1.08\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/06_participant_class_diagrams/participant_hr_request_processing.png}%
+}
+\caption{Participant Class Diagram -- HR Request Processing}
+\label{fig:participant_hr_request_processing}
 \end{figure}
 \clearpage
 \SprintThreeImplementationHeading{State Diagrams}
@@ -442,34 +447,37 @@
 
 \noindent This diagram shows the lifecycle of a document request from submission to HR decision, including the derived fulfillment outcomes used when a leave balance statement is immediately ready or another document is waiting for an HR-uploaded file.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png}
-{State Diagram -- Document Request Lifecycle}
-{state_document_request_lifecycle}
-{0.90}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_document_request_lifecycle.png}
+\caption{State Diagram -- Document Request Lifecycle}
+\label{fig:state_document_request_lifecycle}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{State Diagram -- Loan Request Lifecycle}
 
 \noindent This diagram shows the lifecycle of a loan request, including meeting and final decision states.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png}
-{State Diagram -- Loan Request Lifecycle}
-{state_loan_request_lifecycle}
-{0.90}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.74\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_loan_request_lifecycle.png}
+\caption{State Diagram -- Loan Request Lifecycle}
+\label{fig:state_loan_request_lifecycle}
+\end{figure}
+\vspace{-8pt}
 
-\Needspace{6.2cm}
 \SprintThreeScenarioHeading{State Diagram -- Authorization Request Lifecycle}
 
 \noindent This diagram shows the lifecycle of an authorization request from submission to HR decision.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png}
-{State Diagram -- Authorization Request Lifecycle}
-{state_authorization_request_lifecycle}
-{0.90}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.74\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/04_state_diagrams/state_authorization_request_lifecycle.png}
+\caption{State Diagram -- Authorization Request Lifecycle}
+\label{fig:state_authorization_request_lifecycle}
+\end{figure}
+\clearpage
 \SprintThreeImplementationHeading{Design Class Diagrams}
 
 {\fontsize{12}{18}\selectfont
@@ -485,45 +493,49 @@
 
 \noindent This diagram shows the classes used to manage generated documents and HR-uploaded final files.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png}
-{Design Class Diagram -- Document Request Final File Management}
-{design_document_request_final_file_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.90\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_document_request_final_file_management.png}
+\caption{Design Class Diagram -- Document Request Final File Management}
+\label{fig:design_document_request_final_file_management}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Design Class Diagram -- Loan Eligibility and Meeting Management}
 
 \noindent This diagram shows the classes used to verify loan eligibility and manage loan meetings.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png}
-{Design Class Diagram -- Loan Request Review Management}
-{design_loan_request_review_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,height=0.90\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_loan_request_review_management.png}
+\caption{Design Class Diagram -- Loan Request Review Management}
+\label{fig:design_loan_request_review_management}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Design Class Diagram -- Authorization Request Decision Management}
 
 \noindent This diagram shows the classes used to process authorization decisions and rejection reasons.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png}
-{Design Class Diagram -- Authorization Request Management}
-{design_authorization_request_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_authorization_request_management.png}
+\caption{Design Class Diagram -- Authorization Request Management}
+\label{fig:design_authorization_request_management}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Design Class Diagram -- Request History and Notification Management}
 
 \noindent This diagram shows the classes used to trace history and emit request events and notifications.\par
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png}
-{Design Class Diagram -- HR Request Processing}
-{design_hr_request_processing}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/07_design_class_diagrams/design_hr_request_processing.png}
+\caption{Design Class Diagram -- HR Request Processing}
+\label{fig:design_hr_request_processing}
+\end{figure}
+\clearpage
 \SprintThreeImplementationHeading{Conception Sequence Diagrams}
 
 {\fontsize{12}{18}\selectfont
@@ -537,147 +549,165 @@
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Document Request HR Decision Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png}
-{Conception Sequence Diagram -- Document Request HR Decision Frontend}
-{sprint3_csd_document_request_hr_decision_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_hr_decision_frontend.png}
+\caption{Conception Sequence Diagram -- Document Request HR Decision Frontend}
+\label{fig:sprint3_csd_document_request_hr_decision_frontend}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Document Request Decision Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png}
-{Conception Sequence Diagram -- Document Request Decision Backend}
-{sprint3_csd_document_request_decision_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_decision_backend.png}
+\caption{Conception Sequence Diagram -- Document Request Decision Backend}
+\label{fig:sprint3_csd_document_request_decision_backend}
+\end{figure}
 
+\clearpage
 \Needspace{6.2cm}
+
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Document Request Final File Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png}
-{Conception Sequence Diagram -- Document Request Final File Frontend}
-{sprint3_csd_document_request_final_file_frontend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_frontend.png}
+\caption{Conception Sequence Diagram -- Document Request Final File Frontend}
+\label{fig:sprint3_csd_document_request_final_file_frontend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Document Request Final File Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png}
-{Conception Sequence Diagram -- Document Request Final File Backend}
-{sprint3_csd_document_request_final_file_backend}
-{0.98}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_document_request_final_file_backend.png}
+\caption{Conception Sequence Diagram -- Document Request Final File Backend}
+\label{fig:sprint3_csd_document_request_final_file_backend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Request Submission Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png}
-{Conception Sequence Diagram -- Loan Request Submission Frontend}
-{sprint3_csd_loan_request_submission_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_frontend.png}
+\caption{Conception Sequence Diagram -- Loan Request Submission Frontend}
+\label{fig:sprint3_csd_loan_request_submission_frontend}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Request Submission Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png}
-{Conception Sequence Diagram -- Loan Request Submission Backend}
-{sprint3_csd_loan_request_submission_backend}
-{0.98}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_submission_backend.png}
+\caption{Conception Sequence Diagram -- Loan Request Submission Backend}
+\label{fig:sprint3_csd_loan_request_submission_backend}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Request Meeting Scheduling Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png}
-{Conception Sequence Diagram -- Loan Request Meeting Scheduling Frontend}
-{sprint3_csd_loan_request_meeting_frontend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_frontend.png}
+\caption{Conception Sequence Diagram -- Loan Request Meeting Scheduling Frontend}
+\label{fig:sprint3_csd_loan_request_meeting_frontend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Meeting Scheduling Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png}
-{Conception Sequence Diagram -- Loan Meeting Scheduling Backend}
-{sprint3_csd_loan_request_meeting_backend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_meeting_backend.png}
+\caption{Conception Sequence Diagram -- Loan Meeting Scheduling Backend}
+\label{fig:sprint3_csd_loan_request_meeting_backend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Request Decision Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png}
-{Conception Sequence Diagram -- Loan Request Decision Frontend}
-{sprint3_csd_loan_request_decision_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_frontend.png}
+\caption{Conception Sequence Diagram -- Loan Request Decision Frontend}
+\label{fig:sprint3_csd_loan_request_decision_frontend}
+\end{figure}
 
 \clearpage
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Request Decision Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png}
-{Conception Sequence Diagram -- Loan Request Decision Backend}
-{sprint3_csd_loan_request_decision_backend}
-{0.82}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,height=0.90\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_decision_backend.png}
+\caption{Conception Sequence Diagram -- Loan Request Decision Backend}
+\label{fig:sprint3_csd_loan_request_decision_backend}
+\end{figure}
 
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Final File Delivery Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png}
-{Conception Sequence Diagram -- Loan Final File Delivery Frontend}
-{sprint3_csd_loan_request_final_file_frontend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,height=0.90\textheight,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_frontend.png}
+\caption{Conception Sequence Diagram -- Loan Final File Delivery Frontend}
+\label{fig:sprint3_csd_loan_request_final_file_frontend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Loan Final File Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png}
-{Conception Sequence Diagram -- Loan Final File Backend}
-{sprint3_csd_loan_request_final_file_backend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_loan_request_final_file_backend.png}
+\caption{Conception Sequence Diagram -- Loan Final File Backend}
+\label{fig:sprint3_csd_loan_request_final_file_backend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Authorization Request Submission Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png}
-{Conception Sequence Diagram -- Authorization Request Submission Frontend}
-{sprint3_csd_authorization_request_submission_frontend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_frontend.png}
+\caption{Conception Sequence Diagram -- Authorization Request Submission Frontend}
+\label{fig:sprint3_csd_authorization_request_submission_frontend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
-\SprintThreeScenarioHeading{Conception Sequence Diagram -- Authorization Request Submission Backend}
+\SprintThreeScenarioHeading{Conception Sequence Diagram -- Authorizati²on Request Submission Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png}
-{Conception Sequence Diagram -- Authorization Request Submission Backend}
-{sprint3_csd_authorization_request_submission_backend}
-{0.98}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_submission_backend.png}
+\caption{Conception Sequence Diagram -- Authorization Request Submission Backend}
+\label{fig:sprint3_csd_authorization_request_submission_backend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Authorization Request Decision Frontend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png}
-{Conception Sequence Diagram -- Authorization Request Decision Frontend}
-{sprint3_csd_authorization_request_decision_frontend}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_frontend.png}
+\caption{Conception Sequence Diagram -- Authorization Request Decision Frontend}
+\label{fig:sprint3_csd_authorization_request_decision_frontend}
+\end{figure}
+\clearpage
 \Needspace{6.2cm}
 \SprintThreeScenarioHeading{Conception Sequence Diagram -- Authorization Request Decision Backend}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png}
-{Conception Sequence Diagram -- Authorization Request Decision Backend}
-{sprint3_csd_authorization_request_decision_backend}
-{0.98}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/08_conception_sequence_diagrams/csd_authorization_request_decision_backend.png}
+\caption{Conception Sequence Diagram -- Authorization Request Decision Backend}
+\label{fig:sprint3_csd_authorization_request_decision_backend}
+\end{figure}
+\clearpage
 \SprintThreeImplementationHeading{Realization}
 
 {\fontsize{12}{18}\selectfont
@@ -690,42 +720,44 @@
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_documents_page.png}
-  \caption{Employee Documents Interface}
-  \label{fig:sprint3_employee_documents_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_documents_page.png}
+\caption{Employee Documents Interface}
+\label{fig:sprint3_employee_documents_ui}
 \end{figure}
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_loans_page.png}
-  \caption{Employee Loans and Advances Interface}
-  \label{fig:sprint3_employee_loans_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_loans_page.png}
+\caption{Employee Loans and Advances Interface}
+\label{fig:sprint3_employee_loans_ui}
 \end{figure}
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_authorizations_page.png}
-  \caption{Employee Authorizations Interface}
-  \label{fig:sprint3_employee_authorizations_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_employee_authorizations_page.png}
+\caption{Employee Authorizations Interface}
+\label{fig:sprint3_employee_authorizations_ui}
 \end{figure}
+\vspace{-8pt}
 
-\Needspace{7.2cm}
+
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_hr_requests_page.png}
-  \caption{HR Administrative Requests Interface}
-  \label{fig:sprint3_hr_requests_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_hr_requests_page.png}
+\caption{HR Administrative Requests Interface}
+\label{fig:sprint3_hr_requests_ui}
 \end{figure}
+\vspace{-8pt}
 
-\Needspace{7.2cm}
+
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_request_detail_history.png}
-  \caption{Request Detail and History Interface}
-  \label{fig:sprint3_request_detail_history_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint3_administrative_requests/09_ui_screenshots/ui_request_detail_history.png}
+\caption{Request Detail and History Interface}
+\label{fig:sprint3_request_detail_history_ui}
 \end{figure}
 
 \ReportSubsection{II.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
@@ -796,10 +828,10 @@ UI validation and user testing still need to cover feedback messages and request
 }
 
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/01_jira/sprint4_jira_journal.png}
-  \caption*{Visual Sprint Journal -- Sprint 4}
-  \phantomsection\label{fig:sprint4_jira_journal}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/01_jira/sprint4_jira_journal.png}
+\caption*{Visual Sprint Journal -- Sprint 4}
+\phantomsection\label{fig:sprint4_jira_journal}
 \end{figure}
 
 \ReportSubsection{III.3 Sprint Backlog}{\hspace{0.5cm} 3. Sprint Backlog}
@@ -890,29 +922,33 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_management_calendar.png}
-{Use Case Diagram -- Sprint 4 HR Management and Calendar}
-{use_case_sprint4_hr_management_calendar}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.84\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_management_calendar.png}
+\caption{Use Case Diagram -- Sprint 4 HR Management and Calendar}
+\label{fig:use_case_sprint4_hr_management_calendar}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_employee_account_supervision.png}
-{Use Case Diagram -- HR Employee and Account Supervision}
-{use_case_sprint4_hr_employee_account_supervision}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.84\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_hr_employee_account_supervision.png}
+\caption{Use Case Diagram -- HR Employee and Account Supervision}
+\label{fig:use_case_sprint4_hr_employee_account_supervision}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_organization_team_management.png}
-{Use Case Diagram -- Organization and Team Management}
-{use_case_sprint4_organization_team_management}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.84\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_organization_team_management.png}
+\caption{Use Case Diagram -- Organization and Team Management}
+\label{fig:use_case_sprint4_organization_team_management}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_calendar_supervision.png}
-{Use Case Diagram -- Calendar Supervision}
-{use_case_sprint4_calendar_supervision}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.84\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/02_use_case_diagrams/use_case_sprint4_calendar_supervision.png}
+\caption{Use Case Diagram -- Calendar Supervision}
+\label{fig:use_case_sprint4_calendar_supervision}
+\end{figure}
 
 \SprintFourImplementationHeading{System Sequence Diagrams}
 
@@ -924,41 +960,47 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_dashboard.png}
-{System Sequence Diagram -- Consult HR Dashboard}
-{ssd_sprint4_consult_hr_dashboard}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_dashboard.png}
+\caption{System Sequence Diagram -- Consult HR Dashboard}
+\label{fig:ssd_sprint4_consult_hr_dashboard}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_supervise_employee_account.png}
-{System Sequence Diagram -- Supervise Employee Account}
-{ssd_sprint4_supervise_employee_account}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_supervise_employee_account.png}
+\caption{System Sequence Diagram -- Supervise Employee Account}
+\label{fig:ssd_sprint4_supervise_employee_account}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_organization_reference_data.png}
-{System Sequence Diagram -- Manage Organization Reference Data}
-{ssd_sprint4_manage_organization_reference_data}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_organization_reference_data.png}
+\caption{System Sequence Diagram -- Manage Organization Reference Data}
+\label{fig:ssd_sprint4_manage_organization_reference_data}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_team_structure.png}
-{System Sequence Diagram -- Manage Team Structure}
-{ssd_sprint4_manage_team_structure}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_manage_team_structure.png}
+\caption{System Sequence Diagram -- Manage Team Structure}
+\label{fig:ssd_sprint4_manage_team_structure}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_leave_calendar.png}
-{System Sequence Diagram -- Consult HR Leave Calendar}
-{ssd_sprint4_consult_hr_leave_calendar}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_hr_leave_calendar.png}
+\caption{System Sequence Diagram -- Consult HR Leave Calendar}
+\label{fig:ssd_sprint4_consult_hr_leave_calendar}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_team_leave_calendar.png}
-{System Sequence Diagram -- Consult Team Leave Calendar}
-{ssd_sprint4_consult_team_leave_calendar}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/03_system_sequence_diagrams/ssd_sprint4_consult_team_leave_calendar.png}
+\caption{System Sequence Diagram -- Consult Team Leave Calendar}
+\label{fig:ssd_sprint4_consult_team_leave_calendar}
+\end{figure}
 
 \SprintFourImplementationHeading{Analysis}
 
@@ -970,11 +1012,12 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/05_domain_model/domain_model_sprint4_hr_management_calendar.png}
-{Domain Model -- Sprint 4 HR Management and Calendar}
-{domain_model_sprint4_hr_management_calendar}
-{0.92}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/05_domain_model/domain_model_sprint4_hr_management_calendar.png}
+\caption{Domain Model -- Sprint 4 HR Management and Calendar}
+\label{fig:domain_model_sprint4_hr_management_calendar}
+\end{figure}
 
 \SprintFourImplementationHeading{Participant Class Diagrams}
 
@@ -986,35 +1029,40 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_employee_account_supervision.png}
-{Participant Class Diagram -- HR Employee and Account Supervision}
-{participant_sprint4_hr_employee_account_supervision}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_employee_account_supervision.png}
+\caption{Participant Class Diagram -- HR Employee and Account Supervision}
+\label{fig:participant_sprint4_hr_employee_account_supervision}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_organization_reference_data_management.png}
-{Participant Class Diagram -- Organization Reference Data Management}
-{participant_sprint4_organization_reference_data_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_organization_reference_data_management.png}
+\caption{Participant Class Diagram -- Organization Reference Data Management}
+\label{fig:participant_sprint4_organization_reference_data_management}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_structure_management.png}
-{Participant Class Diagram -- Team Structure Management}
-{participant_sprint4_team_structure_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_structure_management.png}
+\caption{Participant Class Diagram -- Team Structure Management}
+\label{fig:participant_sprint4_team_structure_management}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_leave_calendar_consultation.png}
-{Participant Class Diagram -- HR Leave Calendar Consultation}
-{participant_sprint4_hr_leave_calendar_consultation}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_hr_leave_calendar_consultation.png}
+\caption{Participant Class Diagram -- HR Leave Calendar Consultation}
+\label{fig:participant_sprint4_hr_leave_calendar_consultation}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_leave_calendar_consultation.png}
-{Participant Class Diagram -- Team Leave Calendar Consultation}
-{participant_sprint4_team_leave_calendar_consultation}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/06_participant_class_diagrams/participant_sprint4_team_leave_calendar_consultation.png}
+\caption{Participant Class Diagram -- Team Leave Calendar Consultation}
+\label{fig:participant_sprint4_team_leave_calendar_consultation}
+\end{figure}
 
 \SprintFourImplementationHeading{Design Class Diagrams}
 
@@ -1026,36 +1074,41 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_user_management.png}
-{Design Class Diagram -- HR User Management}
-{design_sprint4_hr_user_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_user_management.png}
+\caption{Design Class Diagram -- HR User Management}
+\label{fig:design_sprint4_hr_user_management}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_organization_setup.png}
-{Design Class Diagram -- HR Organization Setup}
-{design_sprint4_hr_organization_setup}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_organization_setup.png}
+\caption{Design Class Diagram -- HR Organization Setup}
+\label{fig:design_sprint4_hr_organization_setup}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_team_management.png}
-{Design Class Diagram -- HR Team Management}
-{design_sprint4_hr_team_management}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_team_management.png}
+\caption{Design Class Diagram -- HR Team Management}
+\label{fig:design_sprint4_hr_team_management}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_leave_calendar.png}
-{Design Class Diagram -- HR Leave Calendar}
-{design_sprint4_hr_leave_calendar}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_hr_leave_calendar.png}
+\caption{Design Class Diagram -- HR Leave Calendar}
+\label{fig:design_sprint4_hr_leave_calendar}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_team_leave_calendar.png}
-{Design Class Diagram -- Team Leave Calendar}
-{design_sprint4_team_leave_calendar}
-{0.95}
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/07_design_class_diagrams/design_sprint4_team_leave_calendar.png}
+\caption{Design Class Diagram -- Team Leave Calendar}
+\label{fig:design_sprint4_team_leave_calendar}
+\end{figure}
+\clearpage
 \SprintFourImplementationHeading{Conception Sequence Diagrams}
 
 {\fontsize{12}{18}\selectfont
@@ -1066,65 +1119,75 @@ UI validation and user testing still need to cover feedback messages and request
 
 }
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_frontend.png}
-{Conception Sequence Diagram -- HR User Management Frontend}
-{csd_sprint4_hr_user_management_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_frontend.png}
+\caption{Conception Sequence Diagram -- HR User Management Frontend}
+\label{fig:csd_sprint4_hr_user_management_frontend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_backend.png}
-{Conception Sequence Diagram -- HR User Management Backend}
-{csd_sprint4_hr_user_management_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_user_management_backend.png}
+\caption{Conception Sequence Diagram -- HR User Management Backend}
+\label{fig:csd_sprint4_hr_user_management_backend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_frontend.png}
-{Conception Sequence Diagram -- HR Organization Setup Frontend}
-{csd_sprint4_hr_organization_setup_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_frontend.png}
+\caption{Conception Sequence Diagram -- HR Organization Setup Frontend}
+\label{fig:csd_sprint4_hr_organization_setup_frontend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_backend.png}
-{Conception Sequence Diagram -- HR Organization Setup Backend}
-{csd_sprint4_hr_organization_setup_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_organization_setup_backend.png}
+\caption{Conception Sequence Diagram -- HR Organization Setup Backend}
+\label{fig:csd_sprint4_hr_organization_setup_backend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_frontend.png}
-{Conception Sequence Diagram -- HR Team Management Frontend}
-{csd_sprint4_hr_team_management_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_frontend.png}
+\caption{Conception Sequence Diagram -- HR Team Management Frontend}
+\label{fig:csd_sprint4_hr_team_management_frontend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_backend.png}
-{Conception Sequence Diagram -- HR Team Management Backend}
-{csd_sprint4_hr_team_management_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_team_management_backend.png}
+\caption{Conception Sequence Diagram -- HR Team Management Backend}
+\label{fig:csd_sprint4_hr_team_management_backend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_frontend.png}
-{Conception Sequence Diagram -- HR Leave Calendar Frontend}
-{csd_sprint4_hr_leave_calendar_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_frontend.png}
+\caption{Conception Sequence Diagram -- HR Leave Calendar Frontend}
+\label{fig:csd_sprint4_hr_leave_calendar_frontend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_backend.png}
-{Conception Sequence Diagram -- HR Leave Calendar Backend}
-{csd_sprint4_hr_leave_calendar_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_hr_leave_calendar_backend.png}
+\caption{Conception Sequence Diagram -- HR Leave Calendar Backend}
+\label{fig:csd_sprint4_hr_leave_calendar_backend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_calendar_frontend.png}
-{Conception Sequence Diagram -- Team Leave Calendar Frontend}
-{csd_sprint4_team_leave_calendar_frontend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_calendar_frontend.png}
+\caption{Conception Sequence Diagram -- Team Leave Calendar Frontend}
+\label{fig:csd_sprint4_team_leave_calendar_frontend}
+\end{figure}
 
-\ChapterFourFigureSized
-{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_decision_backend.png}
-{Conception Sequence Diagram -- Team Leave Decision Backend}
-{csd_sprint4_team_leave_decision_backend}
-{0.95}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/08_conception_sequence_diagrams/csd_sprint4_team_leave_decision_backend.png}
+\caption{Conception Sequence Diagram -- Team Leave Decision Backend}
+\label{fig:csd_sprint4_team_leave_decision_backend}
+\end{figure}
 
 \SprintFourImplementationHeading{Realization}
 
@@ -1140,43 +1203,43 @@ UI validation and user testing still need to cover feedback messages and request
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_dashboard.png}
-  \caption{HR Dashboard Interface}
-  \label{fig:sprint4_hr_dashboard_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_dashboard.png}
+\caption{HR Dashboard Interface}
+\label{fig:sprint4_hr_dashboard_ui}
 \end{figure}
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_user_management.png}
-  \caption{HR User Management Interface}
-  \label{fig:sprint4_hr_user_management_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_user_management.png}
+\caption{HR User Management Interface}
+\label{fig:sprint4_hr_user_management_ui}
 \end{figure}
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_organization_reference_data.png}
-  \caption{Team Management Interface}
-  \label{fig:sprint4_team_management_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_organization_reference_data.png}
+\caption{Team Management Interface}
+\label{fig:sprint4_team_management_ui}
 \end{figure}
 
 \Needspace{7.2cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_team_management.png}
-  \caption{Organization Reference Data Interface}
-  \label{fig:sprint4_organization_reference_data_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_team_management.png}
+\caption{Organization Reference Data Interface}
+\label{fig:sprint4_organization_reference_data_ui}
 \end{figure}
 
 \Needspace{12cm}
 \begin{figure}[H]
-  \centering
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_leave_calendar1.png}
-  \includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_leave_calendar2.png}
-  \caption{HR Leave Calendar Interface}
-  \label{fig:sprint4_hr_leave_calendar_ui}
+\centering
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_leave_calendar1.png}
+\includegraphics[width=0.95\textwidth,keepaspectratio]{sections/chapitre4/img/sprint4_hr_management_calendar/09_ui_screenshots/sprint4_hr_leave_calendar2.png}
+\caption{HR Leave Calendar Interface}
+\label{fig:sprint4_hr_leave_calendar_ui}
 \end{figure}
 
 \ReportSubsection{III.5 Sprint Review}{\hspace{0.5cm} 5. Sprint Review}
@@ -1221,7 +1284,6 @@ A few screens need small frontend adjustments after final testing.
 
 }
 
-\clearpage
 % ============================================================
 %  CONCLUSION
 % ============================================================
